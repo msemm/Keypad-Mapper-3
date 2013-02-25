@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#AA000000" >
+    <LinearLayout
+        android:id="@+id/root"
+        android:layout_width="290dp"
+        android:layout_height="273dp"
+        android:layout_gravity="center"
+        android:background="@drawable/popup"
+        android:orientation="vertical"
+        android:paddingBottom="20dp"
+        android:paddingRight="10dp"
+        android:paddingTop="20dp" >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+            <ImageView
+                android:id="@+id/rateme_big_icon"
+                android:layout_width="109dp"
+                android:layout_height="109dp"
+                android:src="@drawable/big_icon" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:orientation="vertical" >
+                <TextView
+                    android:id="@+id/rateme_thankyou"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/rateme_thankyou"
+                    android:textColor="@android:color/white"
+                    android:textSize="13sp" />
+                <TextView
+                    android:id="@+id/rateme_keypad"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="10dp"
+                    android:text="@string/rateme_keypad"
+                    android:textColor="#ffc629"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+                <ImageView
+                    android:id="@+id/rateme_stars"
+                    android:layout_width="133dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/stars" />
+            </LinearLayout>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/rateme_text"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="@string/rateme_text"
+            android:textColor="@android:color/white"
+            android:textSize="13sp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp" >
+            <Button
+                android:id="@+id/rateme_yes"
+                android:layout_width="0dp"
+                android:layout_height="42dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/yes_button"
+                android:text="@string/rateme_yes"
+                android:textSize="25sp" />
+            <LinearLayout
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+                <Button
+                    android:id="@+id/rateme_later"
+                    android:layout_width="match_parent"
+                    android:layout_height="21dp"
+                    android:background="@drawable/no_button"
+                    android:text="@string/rateme_later" />
+                <Button
+                    android:id="@+id/rateme_dont_ask"
+                    android:layout_width="match_parent"
+                    android:layout_height="21dp"
+                    android:background="@drawable/no_button"
+                    android:text="@string/rateme_dont_ask" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

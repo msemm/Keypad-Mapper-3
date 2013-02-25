@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<resources>
+    <string name="menu_undo">Rückgängig</string>
+    <string name="app_name">Keypad-Mapper 3</string>
+    <string name="buttonLeft">L</string>
+    <string name="buttonFront">V</string>
+    <string name="buttonRight">R</string>
+    <string name="button1">1</string>
+    <string name="button2">2</string>
+    <string name="button3">3</string>
+    <string name="button4">4</string>
+    <string name="button5">5</string>
+    <string name="button6">6</string>
+    <string name="button7">7</string>
+    <string name="button8">8</string>
+    <string name="button9">9</string>
+    <string name="button0">0</string>
+    <string name="buttonA">a</string>
+    <string name="buttonB">b</string>
+    <string name="buttonC">c</string>
+    <string name="buttonD">d</string>
+    <string name="buttonE">e</string>
+    <string name="buttonF">f</string>
+    <string name="buttonG">g</string>
+    <string name="buttonI">i</string>
+    <string name="buttonJ">j</string>
+    <string name="buttonK">k</string>
+    <string name="buttonL">l</string>
+    <string name="buttonH">h</string>
+    <string name="buttonSep1">,</string>
+    <string name="buttonSep2">-</string>
+    <string name="buttonSep3">/</string>
+    <string name="buttonCLR">ENTF</string>
+    <string name="errorFileOpen">Beim Speichern der erfassten Daten ist ein Fehler aufgetreten</string>
+    <string name="errorGpsDisabled">GPS ist ausgeschaltet. Bitte GPS einschalten. Ohne GPS kann diese App nicht verwendet werden.</string>
+    <string name="errorStorageRO">Der externe Speicher kann nicht beschrieben werden. Bitte Schreibrechte aktivieren damit die erfassten Daten gespeichert werden können.</string>
+    <string name="errorStorageUnavailable">Es wurde kein externer Speicher gefunden. Bitte externen Speicher zur Verfügung stellen damit die erfassten Daten gespeichert werden können.</string>
+    <string name="OK">Ok</string>
+    <string name="quit">Abbrechen</string>
+    <string name="menu_settings">Einstellungen</string>
+    <string name="system_settings">Einstellungen</string>
+    <string name="writeToNewFile">Neue Dateien werden angelegt</string>
+    <string name="Housenumber">Hausnummer</string>
+    <string name="Housename">Hausname</string>
+    <string name="Street">Strasse</string>
+    <string name="Postcode">Postleitzahl</string>
+    <string name="City">Ort</string>
+    <string name="Countrycode">Ländercode</string>
+    <string name="menu_address_keypad">Tastenfeld</string>
+    <string name="menu_address_editor">Adress-Editor</string>
+    <string name="FolderCreationFailed">Im externen Speicher konnte kein Verzeichnis angelegt werden</string>
+    <string name="locationNotAvailable">Speichern der Hausnummer nicht möglich da kein GPS-Empfang</string>
+    <string name="prefsDataPlacementDistance">Abstand der Hausnummern</string>
+    <string name="prefsAbout">Über</string>
+    <string name="prefsAboutDetails">Details zu dieser Applikation</string>
+    <string name="prefsShare">Daten versenden…</string>
+    <string name="prefsShareDetails">*.gpx, *.osm und *.jpg Dateien versenden</string>
+    <string name="prefsLanguageTitle">Sprache</string>
+    <string name="prefsLanguageSummary">Sprache auswählen: English, Español, Français, Ελληνικά, Русский</string>
+    <string name="zip_fail">Die *.zip Datei konnte nicht erstellt werden</string>
+    <string name="about_message">&lt;br/&gt;
+%1$s&lt;BR/&gt; 
+Version: %2$s&lt;br/&gt;
+&lt;br/&gt;
+keypadmapper wurde ursprünglich von &lt;font color=#ffbf27&gt;&lt;a href=&quot;mailto:nroets@gmail.com&quot;&gt;Nic Roets&lt;/a&gt; &lt;/font&gt; entwickelt und Ende 2010 veröffentlicht.&lt;br/&gt;
+Mitte 2011 wurde die weiterentwickelte Version keypadmapper2 als Fork vorgestellt.&lt;br/&gt;
+Daraus hat &lt;font color=#ffbf27&gt;&lt;a href=&quot;https://www.enaikoon.com&quot;&gt;ENAiKOON&lt;/a&gt;&lt;/font&gt; dann Anfang 2013 die vorliegende Version abgeleitet und den Sourcecode auf github ????? bereitgestellt.&lt;br/&gt;
+&lt;br/&gt;
+An dieser Stelle vielen Dank an Nic für die gute Unterstützung und die vielen guten Ideen für die neue Keypad-Mapper 3 Version!&lt;br/&gt;
+&lt;br/&gt;
+Bei Lob, Kritik oder Anregungen bitte per E-Mail an &lt;font color=#ffbf27&gt;&lt;a href=&quot;mailto:inviu@enaikoon.de&quot;&gt;inViu@enaikoon.de&lt;/a&gt;&lt;/font&gt; oder telefonisch unter 030/397475-30 direkt an ENAiKOON in Berlin wenden.&lt;br/&gt;
+&lt;br/&gt;
+&lt;b&gt;Unsere Bürozeiten:&lt;/b&gt;&lt;br/&gt;
+Mo.-Fr. von 9:00 Uhr bis 13:00 Uhr&lt;br/&gt;
+und von 14:00 Uhr bis 18:00 Uhr&lt;br/&gt;
+&lt;br/&gt;
+&lt;b&gt;Unsere Anschrift:&lt;/b&gt;&lt;br/&gt;
+ENAiKOON GmbH&lt;BR/&gt; Telematics Factory&lt;br/&gt;
+Helmholtzstrasse 2-9&lt;br/&gt;
+10587 Berlin&lt;br/&gt;
+Germany</string>
+    <string name="close">Schliessen</string>
+    <string name="about">Über Keypad-Mapper 3</string>
+    <string name="about_logo_url">http://www.enaikoon.com/en/footer/imprint.html</string>
+    <string name="bugreport_subject">Keypad-Mapper 3 Fehlerbericht</string>
+    <string name="bugreport_dialogheader">Keypad-Mapper 3 Fehler</string>
+    <string name="options_bugreport_question">Keypad-Mapper 3 musste neu gestartet werden.\nSoll ein Fehlerbericht an die Entwickler gesendet werden?</string>
+    <string name="options_bugreport_send">Senden</string>
+    <string name="options_bugreport_dontsend">Nicht senden</string>
+    <string name="options_bugreport_ok">Ok</string>
+    <string name="options_bugreport">Fehlerberichte</string>
+    <string name="options_bugreport_summary">Sollen Fehlerberichte an die Entwickler gesendet werden?</string>
+    <string name="options_bugreport_neversendmessage">Keypad-Mapper 3 musste neu gestartet werden.\nZum Senden eines Fehlerberichts an die Entwickler bitte \'Fehlerberichte\' in den Einstellungen aktivieren.</string>
+    <string name="options_bugreport_values_1">Nie</string>
+    <string name="options_bugreport_values_2">Immer</string>
+    <string name="options_bugreport_values_3">Vorher fragen</string>
+    <string name="menu_freeze_gps">GPS einfrieren</string>
+    <string name="no_location">Ohne GPS-Empfang kann diese Anforderung nicht durchgeführt werden</string>
+    <string name="prefsDataDistanceEntries_1">1 m</string>
+    <string name="prefsDataDistanceEntries_2">2 m</string>
+    <string name="prefsDataDistanceEntries_5">5 m</string>
+    <string name="prefsDataDistanceEntries_8">8 m</string>
+    <string name="prefsDataDistanceEntries_10">10 m</string>
+    <string name="prefsDataDistanceEntries_15">15 m</string>
+    <string name="prefsDataDistanceEntries_20">20 m</string>
+    <string name="prefsDataDistanceEntries_25">25 m</string>
+    <string name="cancel">Abbrechen</string>
+    <string name="prefsClearFolderTitle">Gesammelte Daten löschen</string>
+    <string name="prefsClearFolderQuestion">Sollen alle auf dem Telefon gespeicherten Hausnummern sowie zugehörige Bilder und Tracks gelöscht werden?</string>
+    <string name="prefsClearFolderQuestionYes">Alle Daten löschen</string>
+    <string name="prefsClearFolderQuestionNo">Abbrechen</string>
+    <string name="prefsShareEmailTitle">E-Mail Empfänger</string>
+    <string name="prefsShareEmailHint">E-Mail</string>
+    <string name="prefsShareEmailShare">Teilen</string>
+    <string name="prefsShareEmailCancel">Abbrechen</string>
+    <string name="help_title">Tipps und Tricks</string>
+    <string name="help_text_1">&lt;h2&gt;&lt;font color=&quot;#ffbf27&quot;&gt;Vielen Dank für die Nutzung des Keypad-Mapper 3!&lt;/font&gt;&lt;/h2&gt;
+
+Diese App ist DAS Tool, um Hausnummern und Adressen für OpenStreetMap zu erfassen.&lt;br&gt;
+&lt;br&gt;
+&lt;h3&gt;&lt;u&gt;Und so funktioniert es:&lt;br&gt;&lt;/u&gt;&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li value=&quot;1&quot;&gt;GPS einschalten: Hausnummern können nur abgespeichert werden, wenn GPS eine glaubwürdige Position liefert. Ansonsten wird eine Fehlermeldung angezeigt.&lt;/li&gt;&lt;br&gt;
+&lt;li value=&quot;2&quot;&gt;im Menü der App oben ganz rechts auf das Zahlenfeld-Icon tippen&lt;/li&gt;&lt;br&gt;
+&lt;li value=&quot;3&quot;&gt;zu der Stelle hingehen, an der eine Hausnummer erfasst werden soll. Wichtig hierbei ist, dass man die Hausnummer immer dann erfasst, wenn sie tatsächlich querab links oder rechts liegt bzw. direkt vor einem. Sonst ist es später schwieriger, die Hausnummer dem jeweiligen Gebäude im OSM-Editor zuzuordnen.&lt;/li&gt;&lt;br&gt;
+&lt;li value=&quot;4&quot;&gt;Hausnummer eintippen&lt;/li&gt;&lt;br&gt;
+&lt;li value=&quot;5&quot;&gt;Hausnummer durch Tippen auf eine der Tasten L/V/R abspeichern:&lt;br&gt;
+&lt;br&gt;
+&lt;ul&gt;
+&lt;li&gt;\'L\' bedeutet, dass sich die Hausnummer in Gehrichtung links befindet&lt;/li&gt;&lt;br&gt;
+&lt;li&gt;\'R\' bedeutet, dass sich die Hausnummer in Gehrichtung rechts befindet&lt;/li&gt;&lt;br&gt;
+&lt;li&gt;\'V\' bedeutet, dass sich die Hausnummer voraus befindet. Das ist z.B. öfters an einer T-Kreuzung der Fall.&lt;/li&gt;&lt;br&gt;
+&lt;/ul&gt;
+Links oben im App-Icon wird die Anzahl der in der aktuellen Mapping-Session gesammelten Hausnummern angezeigt.&lt;br&gt;
+Die Schritte 3), 4) und 5) so oft wiederholen, bis alle Hausnummern erfasst sind.&lt;/li&gt;&lt;br&gt;
+&lt;li value=&quot;6&quot;&gt;Wenn alle Hausnummern erfasst sind, dann links oben auf das Icon mit dem Häuschen tippen und danach in dem sich öffnenden Menü ganz unten auf \'Einstellungen\'&lt;/li&gt;&lt;br&gt;
+&lt;li value=&quot;7&quot;&gt;In den Einstellungen findet sich die Option \'Daten versenden...\'. Damit lassen sich die Daten als E-Mail Anhang an den Rechner versenden, auf dem der OSM-Editor läuft (z.B. JOSM oder Potlach)&lt;/li&gt;&lt;br&gt;
+&lt;li value=&quot;8&quot;&gt;E-Mail auf dem PC öffnen und die anhängenden Dateien auf dem PC abspeichern&lt;/li&gt;&lt;br&gt;
+&lt;li value=&quot;9&quot;&gt;Den OSM-Editor öffnen und die jeweils mit gleichem Namen versehene .osm Datei, .gpx Datei sowie die GPS-Bilder öffnen. Zugehörige OSM-Daten laden.&lt;br&gt;
+Nun sind im OSM-Editor der zurückgelegte Weg und die erfassten Hausnummern sowie die GPS-Bilder sichtbar.&lt;/li&gt;&lt;br&gt;
+&lt;li value=&quot;10&quot;&gt;Jeder Hausnummer die PLZ, Straße, Ort und Land zuordnen und die Position des Adress-Nodes ggf. korrigieren&lt;/li&gt;&lt;br&gt;
+&lt;li value=&quot;11&quot;&gt;Die Daten zu OSM hochladen&lt;/li&gt;&lt;br&gt;
+&lt;li value=&quot;12&quot;&gt;Die fertig erfassten Daten auf dem Telefon&amp;nbsp;/ Tablet mithilfe der Funktion \'Gesammelte Daten löschen\', zu finden im Menü \'Einstellungen\', löschen&lt;/li&gt;&lt;br&gt;
+&lt;/ol&gt;
+Nach einigen Minuten und einem Refresh der OSM-Landkarte im Browser sollten nun in den hohen Zoomstufen die eben erfassten Hausnummern auf der Landkarte zu sehen sein.&lt;br&gt;</string>
+    <string name="prefsMeasurementTitle">Maßeinheiten</string>
+    <string name="prefsMeasurementsEntries_1">m</string>
+    <string name="prefsMeasurementsEntries_2">ft</string>
+    <string name="prefsDataDistanceEntriesFt_1">3 ft</string>
+    <string name="prefsDataDistanceEntriesFt_2">5 ft</string>
+    <string name="prefsDataDistanceEntriesFt_5">15 ft</string>
+    <string name="prefsDataDistanceEntriesFt_8">25 ft</string>
+    <string name="prefsDataDistanceEntriesFt_10">35 ft</string>
+    <string name="prefsDataDistanceEntriesFt_15">50 ft</string>
+    <string name="prefsDataDistanceEntriesFt_20">65 ft</string>
+    <string name="prefsDataDistanceEntriesFt_25">80 ft</string>
+    <string name="menu_share">Daten\nversenden</string>
+    <string name="menu_unfreeze_gps">GPS auftauen</string>
+    <string name="menu_camera">Kamera</string>
+    <string name="menu_gps_accuracy">GPS Genauigkeit</string>
+    <string name="keypad_info_hint">Zusatzinfo hier eingeben</string>
+    <string name="satellite_n_a">n/v</string>
+    <string name="satellite_gps">GPS</string>
+    <string name="satellite_glonass">GLONASS</string>
+    <string name="satellite_accuracy">Genauigkeit</string>
+    <string name="satellite_in_view">sichtbar:</string>
+    <string name="satellite_in_use">verwendet:</string>
+    <string name="satellite_no_gps">Bitte an eine Stelle mit besserem GPS-Empfang gehen</string>
+    <string name="prefsScreenOnTitle">Bildschirm nicht abschalten</string>
+    <string name="prefsScreenOnSummary">Der Bildschirm soll immer an bleiben. Die Batterie wird schneller leer, wenn diese Option aktiviert wird.</string>
+    <string name="prefsMeasurementSummary">Zwischen metrischen und angelsächsischen Maßeinheiten wählen</string>
+    <string name="prefsDataPlacementDistanceSummary">Abstand der Adressknoten vom jeweils aktuellen Standort des Geräts zum Zeitpunkt der Speicherung der Hausnummer</string>
+    <string name="prefsClearFolderSummary">Mit dieser Option lassen sich alle von der App auf dem Gerät gespeicherten Daten löschen: .osm Dateien, .gpx Dateien, alle mit der App aufgenommenen GPS-Bilder.</string>
+    <string name="help_text_2">&lt;br&gt;
+&lt;h3&gt;&lt;u&gt;Erweiterte Funktionen&lt;/u&gt;&lt;/h3&gt;
+Es gibt in der App vier Bildschirme:
+&lt;ol&gt;
+&lt;li&gt;Tastatur-Bildschirm&lt;/li&gt;
+&lt;li&gt;Adress-Editor&lt;/li&gt;
+&lt;li&gt;GPS-Genauigkeit&lt;/li&gt;
+&lt;li&gt;Einstellungen&lt;/li&gt;
+&lt;/ol&gt;
+Es gibt drei Möglichkeiten, diese Bildschirme aufzurufen:&lt;br&gt;
+&lt;ol&gt;
+&lt;li&gt;Durch Anklicken des entsprechenden Icons am oberen Bildschirmrand&lt;/li&gt;&lt;br&gt;
+&lt;li&gt;Durch Anklicken des Icons mit dem Häuschen und anschließendes Antippen der entsprechenden Menüoption&lt;/li&gt;&lt;br&gt;
+&lt;li&gt;Durch Swipen (Wischen): indem man, ggf. mehrfach, mit dem Finger auf dem Bildschirm von links nach rechts oder von rechts nach links wischt kann man auf den nächsten Bildschirm wechseln&lt;/li&gt;
+&lt;/ol&gt;
+&lt;b&gt;Kamera:&lt;/b&gt;&lt;br&gt;
+mit dem Kamera-Icon im Menü oben in der Mitte lassen sich GPS-Fotos machen, die zusammen mit der .osm und der .gps Datei per E-Mail übertragen und in den OSM-Editor geladen werden können.&lt;br&gt;
+So lassen sich komplizierte Verhältnisse samt genauem Ort festhalten, damit es später beim Optimieren der Daten im OSM-Editor keine Zweifel gibt.&lt;br&gt;
+&lt;br&gt;
+&lt;b&gt;GPS-Position einfrieren:&lt;/b&gt;&lt;br&gt;
+normalerweise wird ein Adress-Node mit derjenigen GPS-Koordinate abgespeichert, die gerade gültig ist, wenn man auf L/V/R tippt.&lt;br&gt;
+Manchmal möchte man die Hausnummer an einer Stelle auf der Landkarte platzieren, wo sie in Wirklichkeit nicht lesbar ist. Damit man nicht mehrfach hin- und hergehen muss um nach dem Ablesen der Hausnummer beim anschließenden Speichern die richtige GPS-Koordinate mit abzuspeichern, gibt es die Möglichkeit, an der gewünschten Position GPS einzufrieren durch Aktivieren des Schneeflocken-Icons, dann weiterzugehen, um die Hausnummer abzulesen, und dann die Hausnummer einzutippen und mit L/V/R mit der zuvor eingefrorenen GPS-Position abzuspeichern.&lt;br&gt;
+Nach dem Abspeichern der Hausnummer wird das eingefrorene GPS automatisch wieder aufgetaut.&lt;br&gt;
+&lt;br&gt;
+&lt;b&gt;Zusatzinfo erfassen:&lt;/b&gt;&lt;br&gt;
+manchmal ist es sinnvoll, zusätzlich zu einem GPS-Foto oder an dessen Stelle eine Zusatzinfo zu erfassen zur Unterstützung der späteren Arbeit im OSM-Editor. Diese Zusatzinfo wird mit der nächsten Hausnummer gemeinsam abgespeichert sobald L/V/R angetippt wird.&lt;br&gt;
+Die Zusatzinfo kann in der App unter dem großen, weißen Hausnummernfeld eingegeben werden: in die Zeile tippen und dann auf der sich öffnenden Volltastatur den Text eingeben.&lt;br&gt;
+Das Antippen von L/V/R schließt die Volltastatur und speichert Hausnummer samt Zusatztext in der .osm Datei ab.&lt;br&gt;
+Durch Tippen in das große weiße Hausnummernfeld kann die Volltastatur ebenfalls geschlossen werden.&lt;br&gt;
+Im OSM-Editor wird die Zusatzinfo später im \'name\'-Tag angezeigt. I.d.R. wird man diesen Tag nach dessen Verwendung löschen oder die Info mit einem anderen Tag-Name versehen, z.B. \'NOTE\'.&lt;br&gt;
+&lt;br&gt;
+&lt;b&gt;Rückgängig-Icon:&lt;/b&gt;&lt;br&gt;
+Rechts neben dem Hausnummern-Eingabefeld werden die letzten eingegebenen Hausnummern angezeigt. Die zuletzt eingegebene Hausnummer steht oben.&lt;br&gt;
+Durch Antippen des Rückgängig-Icons im Menü (erstes Icon rechts neben dem Häuschen) wird die zuletzt eingegebene Hausnummer gelöscht. Ein Löschen von mehreren Hausnummern hintereinander ist nicht möglich.&lt;br&gt;
+&lt;br&gt;
+&lt;b&gt;Abstand der Hausnummern von der eigenen Position:&lt;/b&gt;&lt;br&gt;
+In den Einstellungen lässt sich der Abstand einer Hausnummer querab von der eigenen Bewegungsrichtung einstellen.&lt;br&gt;
+Bei sehr breiten Straßen, oder bei Straßen, wo die Häuser sehr weit vom Bürgersteig weg stehen, empfiehlt es sich, diesen Abstand entsprechend größer einzustellen. Diese Korrektur kann aber auch später im OSM-Editor vorgenommen werden.&lt;br&gt;
+&lt;br&gt;
+&lt;h3&gt;&lt;u&gt;Tipps&lt;/u&gt;&lt;/h3&gt;
+&lt;b&gt;Vorgehensweise bei der Datenerfassung:&lt;/b&gt;&lt;br&gt;
+Es hat sich als besonders effizient erwiesen, auf einer Seite der Straße den Bürgersteig entlang zu gehen und gleichzeitig die Hausnummern auf beiden Seiten der Straße zu erfassen.&lt;br&gt;
+Mit etwas Übung kann man dabei die Hausnummern eintippen ohne jedes Mal stehen zu bleiben. Über die Gehgeschwindigkeit kann man ganz gut steuern, dass einerseits alle Hausnummern erfasst werden können, andererseits die Erfassung zügig vorangeht.&lt;br&gt;
+&lt;br&gt;</string>
+    <string name="help_text_3">&lt;b&gt;Erfassen von Informationen, die nichts mit Hausnummern / Adressen zu tun haben&lt;/b&gt;&lt;br&gt;
+Vollblut-Mappern zuckt es in den Fingern, wenn sie beim Erfassen von Hausnummern weitere Dinge sehen, die nichts mit Hausnummern zu tun haben, die aber auch dringend in die OSM-Datenbank eingetragen werden sollten.&lt;br&gt;
+Die Praxis zeigt, dass man sich von derlei Dingen nicht ablenken lassen sollte. Am Ende wird man sonst wesentlich weniger Informationen erfasst haben als wenn man sich auf die Aufgabe der Hausnummernerfassung konzentriert.&lt;br&gt;
+Dies gilt auch für die Erfassung von Straßennamen, PLZ und anderen Adressinformationen vor Ort: an vielen Stellen sind in OSM heute schon den Straßen die Straßennamen und PLZ zugeordnet, so dass man diese später im OSM-Editor von dort übernehmen kann. Das spart vor Ort Zeit.&lt;br&gt;
+&lt;br&gt;
+&lt;b&gt;Online-Verbindung für die Adressanzeige:&lt;/b&gt;&lt;br&gt;
+Damit man sehen kann, ob für den aktuellen Standort Straßenname und PLZ schon erfasst sind, wird im Bildschirm mit dem Zahlenfeld die Straße und Hausnummer angezeigt, die an der aktuellen Stelle in der OSM-Datenbank gespeichert ist. Die App verwendet dafür NOMINATIM als Backend-Dienst. Der verwendete NOMINATIM Server wird von ENAiKOON betrieben. Er wird jeweils am Wochenende aktualisiert.&lt;br&gt;
+Die Anzeige von Straßenname und PLZ funktioniert nur, wenn das Handy mit dem Internet verbunden ist. In den Einstellungen kann man die Internet-Verbindung auf W-LAN Netze beschränken. In diesem Fall funktioniert dann i.d.R. die Adressanzeige während des Mappens nicht.&lt;br&gt;
+Die Anzeige der Adresse wird 6x pro Minute aktualisiert. Dadurch entsteht regelmäßig Datenverkehr, der bei ungünstigem SIM-Karten Tarif das Inklusiv-Volumen relativ schnell aufbrauchen kann.&lt;br&gt;
+&lt;br&gt;
+&lt;b&gt;Adress-Editor:&lt;/b&gt;&lt;br&gt;
+Wird keine PLZ und / oder kein Straßenname angezeigt bzw. falsche Daten, weil diese Informationen für die aktuelle GPS-Position in der OSM-Datenbank noch nicht vorhanden sind, so kann man diese Daten im Adress-Editor Bildschirm der App eintragen. Den Adress-Editor erreicht man durch Antippen des Häuschen-Icons und anschließendes Antippen der Menü-Option \'Adress-Editor\'.&lt;br&gt;
+Diese Infos werden dann ebenfalls in der .osm Datei gespeichert, per E-Mail zum OSM-Editor übertragen und dort an jede erfasste Hausnummer angehängt.&lt;br&gt;
+&lt;br&gt;
+&lt;b&gt;Platzoptimierte Bildschirmdarstellung:&lt;/b&gt;&lt;br&gt;
+Abhängig von der Bildschirmauflösung wird der Tastatur-Bildschirm unterschiedlich angezeigt: die Buchstabenanzahl kann im Bildschirm-Hochformat zwischen \'a\'..\'c\' und \'a\'..\'l\' variieren.&lt;br&gt;
+Braucht man ausnahmsweise einmal einen der fehlenden Buchstaben, kann man das Telefon quer halten um die volle Anzeige aller Elemente zu erhalten.&lt;br&gt;
+In den Einstellungen lassen sich für kleine Bildschirme mit der Option \'Anzeige optimieren\' einige Bildschirmelemente ausblenden um möglichst viel Fläche für die eigentliche Hausnummern-Erfassung zur Verfügung zu haben.&lt;br&gt;
+&lt;br&gt;
+&lt;h3&gt;&lt;u&gt;OpenCellIDs&lt;/u&gt;&lt;/h3&gt;
+&lt;a href=&quot;http://www.opencellids.org&quot;&gt;&lt;font color=&quot;#ffbf27&quot;&gt;www.opencellids.org&lt;/font&gt;&lt;/a&gt; ist ein Schwesterprojekt von OSM.&lt;br&gt;
+Dieses Projekt hat es sich zur Aufgabe gemacht, die GPS-Positionen von Mobilfunkmasten zu sammeln. Diese Daten sind genauso wie die OSM Daten für private wie für gewerbliche Anwendungen frei verfügbar und können auf www.opencellids.org heruntergeladen werden.&lt;br&gt;
+opencellids.org ist die größte freie Datenbank von GSM Basisstationen weltweit und enthielt am 1.1.2013 ca. 2.7 Millionen Basisstationen. Aktuell wächst die Datenbank um ca. 1.000 - 2.000 neue Zellen täglich. Insgesamt gibt es wahrscheinlich ca. 25 Millionen Zellen weltweit, es ist also noch einiges zu tun.&lt;br&gt;
+&lt;br&gt;
+Ein Schwerpunkt der Nutzung der OpenCellIDs Daten liegt in der Ortung ohne GPS, die deutlich stromsparender ist als die GPS-Ortung und auch inhouse funktioniert, allerdings im ländlichen Raum ungenauer ist.&lt;br&gt;
+&lt;br&gt;
+Im Keypad-Mapper 3 werden, da GPS ohnehin eingeschaltet ist, vollautomatisch im Hintergrund und völlig anonym gem. deutschen Datenschutzgesetzen Standortdaten von Mobilfunk-Sendemasten gesammelt. Keypad-Mapper 3 ist diesbzgl. eine besonders gute Datenquelle, weil, wie die Anzeige auf www.opencellids.org zeigt, zwar schon sehr viele GSM-Masten entlang von Hauptstraßen gefunden wurden, weniger jedoch in den Seitenstraßen und Wohngebieten. Genau dort aber kommen Keypad-Mapper 3 Anwender beim Erfassen der Hausnummern bevorzugt und systematisch lang, mithin also ein perfekter Synergieeffekt ohne Nachteil für den Nutzer von Keypad-Mapper 3.</string>
+    <string name="prefsUseWifiOnlyTitle">Nur WLAN benutzen</string>
+    <string name="rateme_thankyou">Danke für die Benutzung von</string>
+    <string name="rateme_keypad">Keypad-Mapper 3!</string>
+    <string name="rateme_text">Wir würden uns über eine Bewertung des Keypad-Mapper 3 in Google Play freuen!\n\nJetzt bewerten?</string>
+    <string name="rateme_yes">Ja</string>
+    <string name="rateme_later">Später</string>
+    <string name="rateme_dont_ask">Nicht mehr fragen</string>
+    <string name="statusAccuracy">%d m</string>
+    <string name="statusAccuracyFt">%d ft</string>
+    <string name="prefsOptimizeLayout">Anzeige optimieren</string>
+    <string name="prefsUseWifiOnlySummary">Straßenname und Postleitzahl werden nur angezeigt, wenn eine WLAN Verbindung aktiv ist</string>
+    <string name="prefsHelpTitle">Hilfe</string>
+    <string name="prefsHelpSummary">Tipps für diese App</string>
+</resources>

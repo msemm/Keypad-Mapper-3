@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+    <LinearLayout
+        android:layout_width="@dimen/menu_row_width"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="2dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="3dp"
+        android:layout_marginTop="2dp"
+        android:orientation="vertical" >
+        <FrameLayout
+            android:id="@+id/menu_home"
+            android:layout_width="@dimen/menu_home_height"
+            android:layout_height="@dimen/menu_home_width"
+            android:layout_marginRight="2dp"
+            android:background="@drawable/icon_app_empty" >
+            <TextView
+                android:id="@+id/menu_addresses_count"
+                android:layout_width="18dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|right"
+                android:layout_marginRight="12dp"
+                android:layout_marginTop="13dp"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="@android:color/white"
+                android:textSize="10sp" />
+        </FrameLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="15" />
+        <Button
+            android:id="@+id/menu_undo"
+            android:layout_width="@dimen/menu_icon_size"
+            android:layout_height="@dimen/menu_icon_size"
+            android:background="@drawable/icon_undo_grey" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="12" />
+        <Button
+            android:id="@+id/menu_freeze_gps"
+            android:layout_width="@dimen/menu_icon_size"
+            android:layout_height="@dimen/menu_icon_size"
+            android:background="@drawable/icon_freeze_inactive" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="12" />
+        <Button
+            android:id="@+id/menu_make_photo"
+            android:layout_width="@dimen/menu_icon_size"
+            android:layout_height="@dimen/menu_icon_size"
+            android:background="@drawable/icon_camera" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="12" />
+        <FrameLayout
+            android:id="@+id/menu_gps_accuracy"
+            android:layout_width="@dimen/menu_icon_size"
+            android:layout_height="@dimen/menu_icon_size"
+            android:background="@drawable/icon_gps_precision"
+            android:visibility="gone" >
+            <TextView
+                android:id="@+id/menu_gps_accureacy_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|right"
+                android:textColor="#f9be27"
+                android:textSize="10sp" />
+        </FrameLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="12"
+            android:visibility="gone" />
+        <Button
+            android:id="@+id/menu_keypad"
+            android:layout_width="@dimen/menu_icon_size"
+            android:layout_height="@dimen/menu_icon_size"
+            android:background="@drawable/icon_keypad" />
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/menu_delimenter"
+        android:layout_width="2dp"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:src="@drawable/icon_line_menu" />
+</LinearLayout>

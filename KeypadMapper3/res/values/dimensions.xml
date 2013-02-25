@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="keypad_row_height">0dp</dimen>
+    <string name="keypad_row_weight">1</string>
+    <dimen name="keypad_button_text_size">22sp</dimen>
+    <dimen name="keypad_fadeout_button_text_size">28sp</dimen>
+    <dimen name="keypad_button_text_size_land">22sp</dimen>
+    <dimen name="extended_address_editor_margin">10dp</dimen>
+    <dimen name="menu_icon_size">48dp</dimen>
+    <dimen name="menu_popup_icon_size">48dp</dimen>
+    <dimen name="menu_home_height">48dp</dimen>
+    <dimen name="menu_home_width">48dp</dimen>
+    <dimen name="menu_row_height">48dp</dimen>
+    <dimen name="menu_row_width">49dp</dimen>
+    <dimen name="left_margin">10dp</dimen>
+    <dimen name="right_margin">10dp</dimen>
+    <dimen name="extended_address_middle_margin">5.5dp</dimen>
+</resources>

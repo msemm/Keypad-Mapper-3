@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<resources>
+    <string name="menu_undo">annuler</string>
+    <string name="app_name">Keypad-Mapper 3</string>
+    <string name="buttonLeft">G</string>
+    <string name="buttonFront">F</string>
+    <string name="buttonRight">D</string>
+    <string name="button1">1</string>
+    <string name="button2">2</string>
+    <string name="button3">3</string>
+    <string name="button4">4</string>
+    <string name="button5">5</string>
+    <string name="button6">6</string>
+    <string name="button7">7</string>
+    <string name="button8">8</string>
+    <string name="button9">9</string>
+    <string name="button0">0</string>
+    <string name="buttonA">a</string>
+    <string name="buttonB">b</string>
+    <string name="buttonC">c</string>
+    <string name="buttonD">d</string>
+    <string name="buttonE">e</string>
+    <string name="buttonF">f</string>
+    <string name="buttonG">g</string>
+    <string name="buttonI">i</string>
+    <string name="buttonJ">j</string>
+    <string name="buttonK">k</string>
+    <string name="buttonL">l</string>
+    <string name="buttonH">h</string>
+    <string name="buttonSep1">,</string>
+    <string name="buttonSep2">-</string>
+    <string name="buttonSep3">/</string>
+    <string name="buttonCLR">Suppr</string>
+    <string name="errorFileOpen">erreur durant l\'écriture du fichier</string>
+    <string name="errorGpsDisabled">Le GPS est désactivé. Pour utiliser cette application, vous devez activer la fonction GPS.</string>
+    <string name="errorStorageRO">Le périphérique de stockage externe est en lecture seule. Keypad-Mapper 3 a besoin des droits en écriture pour y sauvegarder des données.</string>
+    <string name="errorStorageUnavailable">Le périphérique de stockage externe est indisponible. Keypad-Mapper 3 doit pouvoir accéder au disque pour y sauvegarder des données.</string>
+    <string name="OK">ok</string>
+    <string name="quit">quitter</string>
+    <string name="menu_settings">réglages</string>
+    <string name="system_settings">réglages</string>
+    <string name="writeToNewFile">copier dans un nouveau fichier</string>
+    <string name="Housenumber">numéro de rue</string>
+    <string name="Housename">nom du bâtiment</string>
+    <string name="Street">rue</string>
+    <string name="Postcode">code postal</string>
+    <string name="City">ville</string>
+    <string name="Countrycode">pays</string>
+    <string name="menu_address_keypad">clavier</string>
+    <string name="menu_address_editor">éditeur d\'adresse</string>
+    <string name="FolderCreationFailed">impossible de créer un fichier sur le périphérique de stockage externe</string>
+    <string name="locationNotAvailable">impossible de détecter votre position</string>
+    <string name="prefsDataPlacementDistance">distance de l\'adresse des nœuds</string>
+    <string name="prefsAbout">à propos</string>
+    <string name="prefsAboutDetails">des informations concernant cette application</string>
+    <string name="prefsShare">partager les données recueillies</string>
+    <string name="prefsShareDetails">partager les fichiers *.gpx, *.osm et *.jpg</string>
+    <string name="prefsLanguageTitle">langue</string>
+    <string name="prefsLanguageSummary">choisir la langue : Deutsch, English, Español, Ελληνικά, Русский</string>
+    <string name="zip_fail">impossible de créer le fichier zip</string>
+    <string name="about_message">&lt;br/&gt;
+%1$s&lt;BR/&gt; 
+Version : %2$s&lt;br/&gt;
+&lt;br/&gt;
+L\'application keypadmapper, initialement développée par &lt;font color=#ffbf27&gt;&lt;a href=&quot;mailto:nroets@gmail.com&quot;&gt;Nic Roets&lt;/a&gt;, &lt;/font&gt; est sortie à la fin de l’année 2010.&lt;br/&gt;
+Au milieu de l’année 2011, keypadmapper2 a été lancé, un fork de keypadmapper.&lt;br/&gt;
+Au début de l’année 2013, &lt;font color=#ffbf27&gt;&lt;ahref=&quot;https://www.enaikoon.com&quot;&gt;ENAiKOON&lt;/a&gt;&lt;/font&gt; s’est servi de cette version  pour implémenter la version actuelle de l\'application. Le code source a été déployé pour ?????.&lt;br/&gt;
+&lt;br/&gt;
+Nous souhaitons ici remercier Nic, qui nous a donné quelques bonnes idées et qui nous a assisté avec patience tout au long de l’implémentation de cette version !&lt;br/&gt;
+&lt;br/&gt;
+En cas de problème, ou si vous souhaitez nous poser une question ou nous transmettre un commentaire, n’hésitez pas à nous envoyer un e-mail à &lt;font color=#ffbf27&gt;&lt;a href=&quot;mailto:inviu@enaikoon.de&quot;&gt;inViu@enaikoon.de&lt;/a&gt;&lt;/font&gt; ou à nous appeler au +49 30 397 475-30.&lt;br/&gt;
+&lt;br/&gt;
+&lt;b&gt;Heures d’ouverture d’ENAiKOON :&lt;/b&gt;&lt;br/&gt;
+Lun.-Ven. de 9h00 à 13h00&lt;br/&gt;
+et de 14h00 à 18h00&lt;br/&gt;
+&lt;br/&gt;
+&lt;b&gt;Notre adresse :&lt;/b&gt;&lt;br/&gt;
+ENAiKOON GmbH&lt;BR/&gt; Telematics Factory&lt;br/&gt;
+Helmholtzstrasse 2-9&lt;br/&gt;
+10587 Berlin&lt;br/&gt;
+Allemagne</string>
+    <string name="close">fermer</string>
+    <string name="about">A propos de Keypad-Mapper 3</string>
+    <string name="about_logo_url">http://www.enaikoon.com/fr/footer/imprint.html</string>
+    <string name="bugreport_subject">rapport de bug Keypad-Mapper 3</string>
+    <string name="bugreport_dialogheader">erreur dans Keypad-Mapper 3</string>
+    <string name="options_bugreport_question">Keypad-Mapper 3 a dû redémarrer de force !\nSouhaitez-vous envoyer un rapport de bug aux développeurs ?</string>
+    <string name="options_bugreport_send">envoyer</string>
+    <string name="options_bugreport_dontsend">ne pas envoyer</string>
+    <string name="options_bugreport_ok">ok</string>
+    <string name="options_bugreport">envoyer les rapports d\'erreur</string>
+    <string name="options_bugreport_summary">souhaitez-vous envoyer les rapports d\'erreur aux développeurs ?</string>
+    <string name="options_bugreport_neversendmessage">Keypad-Mapper 3 a dû redémarrer de force !\nSi vous souhaitez envoyer les rapports de bug aux développeurs, merci d\'activer l\'option &quot;envoyer les rapports d\'erreurs&quot; dans les réglages de l\'application !</string>
+    <string name="options_bugreport_values_1">ne jamais envoyer</string>
+    <string name="options_bugreport_values_2">toujours envoyer</string>
+    <string name="options_bugreport_values_3">demander avant d\'envoyer</string>
+    <string name="menu_freeze_gps">geler le GPS</string>
+    <string name="no_location">désolé, votre demande ne peut être traitée qu\'avec une position valide</string>
+    <string name="prefsDataDistanceEntries_1">1 m</string>
+    <string name="prefsDataDistanceEntries_2">2 m</string>
+    <string name="prefsDataDistanceEntries_5">5 m</string>
+    <string name="prefsDataDistanceEntries_8">8 m</string>
+    <string name="prefsDataDistanceEntries_10">10 m</string>
+    <string name="prefsDataDistanceEntries_15">15 m</string>
+    <string name="prefsDataDistanceEntries_20">20 m</string>
+    <string name="prefsDataDistanceEntries_25">25 m</string>
+    <string name="cancel">annuler</string>
+    <string name="prefsClearFolderTitle">supprimer toutes les données recueillies</string>
+    <string name="prefsClearFolderQuestion">voulez-vous vraiment supprimer tous les fichiers enregistrés par Keypad-Mapper 3 ?</string>
+    <string name="prefsClearFolderQuestionYes">oui</string>
+    <string name="prefsClearFolderQuestionNo">non</string>
+    <string name="prefsShareEmailTitle">indiquer un destinataire</string>
+    <string name="prefsShareEmailHint">e-mail</string>
+    <string name="prefsShareEmailShare">partager</string>
+    <string name="prefsShareEmailCancel">annuler</string>
+    <string name="help_title">aide</string>
+    <string name="help_text_1"> &lt;h2&gt;&lt;font color=&quot;#ffbf27&quot;&gt;Merci d’avoir choisi la nouvelle version Keypad-Mapper 3&amp;nbsp;!&lt;/font&gt;&lt;/h2&gt;
+Cette application permet d’ajouter de manière optimale des numéros de rue et de taguer des adresses dans la base de données d’OpenStreetMap.&lt;br&gt;
+&lt;br&gt;
+&lt;h3&gt;&lt;u&gt;Voici comment l’application fonctionne&amp;nbsp;:&lt;br&gt;&lt;/u&gt;&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li value=&quot;1&quot;&gt;activer le GPS&amp;nbsp;: il est impossible de sauvegarder des numéros de rue si le GPS ne détecte pas correctement la position GPS du téléphone&amp;nbsp;; un message d’erreur s’affiche lorsque le GPS est indisponible &lt;/li&gt;&lt;br&gt;
+&lt;li value=&quot;2&quot;&gt;cliquer sur l’icône en forme de clavier dans le coin supérieur droit de l’écran&lt;/li&gt;&lt;br&gt;
+&lt;li value=&quot;3&quot;&gt;marcher jusqu’au premier numéro de rue à enregistrer&amp;nbsp;; au moment de l\'enregistrement, il faut s\'assurer que le numéro de rue est exactement sur la gauche ou sur la droite du téléphone&amp;nbsp;; si ce n’est pas le cas, il sera ensuite plus difficile d’associer correctement l’adresse d\'un nœud à un bâtiment sur OSM&lt;/li&gt;&lt;br&gt;
+&lt;li value=&quot;4&quot;&gt;entrer le numéro de rue en utilisant le pavé numérique&lt;/li&gt;&lt;br&gt;
+&lt;li value=&quot;5&quot;&gt;enregistrer le numéro de rue en cliquant sur les touches G/F/D&amp;nbsp;:&lt;br&gt;
+&lt;br&gt;
+&lt;ul&gt;
+&lt;li&gt;\'G\' indique que le numéro de rue est situé à gauche du téléphone, en fonction de son orientation&lt;/li&gt;&lt;br&gt;
+&lt;li&gt;\'D\' indique que le numéro de rue est situé à droite du téléphone, en fonction de son orientation&lt;/li&gt;&lt;br&gt;
+&lt;li&gt;\'F\' indique que le numéro de rue est situé en face du téléphone, à un carrefour en T par exemple&lt;/li&gt;&lt;br&gt;
+&lt;/ul&gt;
+Sur l’icône de l’application, visible dans le coin supérieur gauche de l\'écran, un numéro est affiché dans un cercle&amp;nbsp;; il indique le nombre d’adresses de nœud qui ont été ajoutées au cours de la session de cartographie en cours.&lt;br&gt;
+Répéter l‘étape 3), 4) et 5) jusqu’à ce que tous les numéros de rue soient enregistrés.&lt;/li&gt;&lt;br&gt;
+&lt;li value=&quot;6&quot;&gt;
+une fois ces étapes terminées, il faut cliquer sur l’icône en forme de maison pour ouvrir le menu de navigation&amp;nbsp;; cliquer ensuite sur le menu \'réglages\'&lt;/li&gt;&lt;br&gt;
+&lt;li value=&quot;7&quot;&gt;dans le menu des réglages, l’option \'partager les données enregistrées\' permet d’envoyer par e-mail l’ensemble des données recueillies, afin d’y accéder à partir d’un PC en utilisant un éditeur OSM (ex&amp;nbsp;: JOSM ou Potlach)&lt;/li&gt;&lt;br&gt;
+&lt;li value=&quot;8&quot;&gt;ouvrir l’e-mail et enregistrer les pièces jointes sur le disque dur &lt;/li&gt;&lt;br&gt;
+&lt;li value=&quot;9&quot;&gt;démarrer l’éditeur OSM, puis ouvrir les fichiers *.gpx et *.osm, qui portent le même nom, ainsi que les photos qui y sont associées et télécharger les données OSM déjà existantes&amp;nbsp;;&lt;br&gt;
+le parcours suivi, les numéros de rue et les photos associées sont alors affichées dans l’éditeur OSM&lt;/li&gt;&lt;br&gt;
+&lt;li value=&quot;10&quot;&gt;si cela n’a pas déjà été fait au moment de l’enregistrement, il faut ajouter un code postal, un nom de rue, une ville et un pays pour chaque adresse de noeud, puis optimiser la position de chaque adresse de noeud&lt;/li&gt;&lt;br&gt;
+&lt;li value=&quot;11&quot;&gt;mettre en ligne les données OSM ainsi optimisées et complétées&lt;/li&gt;&lt;br&gt;
+&lt;li value=&quot;12&quot;&gt;supprimer les données enregistrées sur le téléphone&amp;nbsp;/ la tablette tactile en cliquant sur \'supprimer toutes les données recueillies\' dans le menu des réglages&lt;/li&gt;&lt;br&gt;
+&lt;/ol&gt;
+Attendre quelques minutes, puis actualiser la carte OSM du navigateur. Les numéros de rue qui ont été ajoutés devraient s\'afficher sur la carte lorsque le zoom est suffisamment augmenté.&lt;br&gt;
+
+&lt;br&gt;
+&lt;h3&gt;&lt;u&gt;Fonctions avancées &lt;/u&gt;&lt;/h3&gt;
+L’application propose quatre écrans&amp;nbsp;:
+&lt;ol&gt;
+&lt;li&gt;l’écran du clavier&lt;/li&gt;
+&lt;li&gt;l’éditeur d’adresse &lt;/li&gt;
+&lt;li&gt;les informations sur le GPS &lt;/li&gt;
+&lt;li&gt;les réglages&lt;/li&gt;
+&lt;/ol&gt;
+Il existe trois façons de sélectionner ces écrans&amp;nbsp;:&lt;br&gt;
+&lt;ol&gt;
+&lt;li&gt;cliquer sur l’une des icônes situées en haut de l’écran&lt;/li&gt;&lt;br&gt;
+&lt;li&gt;cliquer sur l’icône en forme de maison, puis sélectionner le menu souhaité dans l’écran qui s\'est ouvert&lt;/li&gt;&lt;br&gt;
+&lt;li&gt;passer son doigt horizontalement sur l’écran pour accéder au menu de gauche ou de droite&lt;/li&gt;
+&lt;/ol&gt;
+&lt;b&gt;L’appareil photo&amp;nbsp;:&lt;/b&gt;&lt;br&gt;
+l’icône de l’appareil photo permet de prendre une photo GPS&amp;nbsp;; elle sera sauvegardée puis transmise par e-mail avec ses fichiers .osm et .gpx, pour les ajouter dans l’éditeur OSM. &lt;br&gt;
+Si la zone est complexe, cette fonction permet de garder en mémoire la configuration de la rue et d’y associer une position GPS exacte, pour pouvoir ensuite éditer avec certitude les données dans l’éditeur OSM.&lt;br&gt;</string>
+    <string name="prefsMeasurementTitle">unité de mesure</string>
+    <string name="prefsMeasurementsEntries_1">m</string>
+    <string name="prefsMeasurementsEntries_2">pi</string>
+    <string name="prefsDataDistanceEntriesFt_1">3 pi</string>
+    <string name="prefsDataDistanceEntriesFt_2">5 pi</string>
+    <string name="prefsDataDistanceEntriesFt_5">15 pi</string>
+    <string name="prefsDataDistanceEntriesFt_8">25 pi</string>
+    <string name="prefsDataDistanceEntriesFt_10">35 pi</string>
+    <string name="prefsDataDistanceEntriesFt_15">50 pi</string>
+    <string name="prefsDataDistanceEntriesFt_20">65 pi</string>
+    <string name="prefsDataDistanceEntriesFt_25">80 pi</string>
+    <string name="menu_share">partager les données\nrecueillies</string>
+    <string name="menu_unfreeze_gps">dégeler le GPS</string>
+    <string name="menu_camera">appareil photo</string>
+    <string name="menu_gps_accuracy">précision du GPS</string>
+    <string name="keypad_info_hint">notes sur ce numéro de rue</string>
+    <string name="satellite_n_a">n/a</string>
+    <string name="satellite_gps">GPS</string>
+    <string name="satellite_glonass">GLONASS</string>
+    <string name="satellite_accuracy">précision</string>
+    <string name="satellite_in_view">visible :</string>
+    <string name="satellite_in_use">utilisé :</string>
+    <string name="satellite_no_gps">veuillez rechercher\nune position offrant\nune meilleure réception GPS</string>
+    <string name="prefsScreenOnTitle">garder l\'écran allumé</string>
+    <string name="prefsScreenOnSummary">si cette option est activée, l\'écran reste allumé en permanence et le téléphone consomme plus de batterie</string>
+    <string name="prefsMeasurementSummary">choisir entre &quot;m&quot; et &quot;pi&quot;</string>
+    <string name="prefsDataPlacementDistanceSummary">distance qui sépare le module de l\'adresse des noeuds lorsque le numéro de rue est enregistré</string>
+    <string name="prefsClearFolderSummary">Cette option supprime l\'ensemble des données recueillies par l\'application et qui ont été enregistrées sur ce téléphone : les fichers *.osm, *.gpx et les photos prises avec cette application. Normalement, cette option ne sert qu\'après avoir envoyé par e-mail les données au PC.</string>
+    <string name="help_text_2">&lt;br&gt;
+&lt;b&gt;Geler la position GPS&amp;nbsp;:&lt;/b&gt;&lt;br&gt;
+l’adresse du nouveau nœud doit normalement correspondre à l’emplacement de la position GPS enregistrée, c\'est à dire à la position de l’utilisateur au moment où celui-ci clique sur G/F/D.&lt;br&gt;
+Il peut néanmoins arriver que le numéro d’un bâtiment ne soit pas visible depuis la position GPS à définir comme adresse de nœud. Pour éviter de marcher jusqu’à un point où le numéro du bâtiment est visible, puis de revenir à l’emplacement initial, pour enfin enregistrer le numéro de rue avec les bonnes coordonnées GPS, l’icône en forme de flocon de neige permet de geler temporairement les coordonnées GPS sur la position à sauvegarder. Il est ensuite possible de se rendre à un autre emplacement, où le numéro du bâtiment est visible. Lorsque le numéro de rue est renseigné, il est associé aux coordonnées GPS précédemment enregistrées au moment du gel du GPS. Le GPS est alors automatiquement dégelé.&lt;br&gt;
+&lt;br&gt;
+&lt;b&gt;Entrer des informations supplémentaires au format texte&amp;nbsp;:&lt;/b&gt;&lt;br&gt;
+au moment de l’optimisation des données avec l’éditeur OSM, il peut être utile d’avoir des informations au format texte en plus, ou au lieu, de la photo GPS. Ces informations sont enregistrées avec le numéro de rue au moment où l’utilisateur clique sur G/F/D.&lt;br&gt;
+Il est possible d’ajouter du texte dans le champ situé en dessous de la grande icône blanche en forme de maison, à laquelle est associé le numéro de rue&amp;nbsp;; un clavier complet s’affiche permettant d\'entrer les informations souhaitées.&lt;br&gt;
+Pour refermer le clavier et sauvegarder le numéro de rue et le texte supplémentaire, il suffit de cliquer sur G/F/D.&lt;br&gt;
+Il est également possible de fermer le clavier en cliquant dans le champ du numéro de rue.&lt;br&gt;
+Dans l’éditeur OSM, ce texte sera affiché en tant que &quot;nom&quot; du tag. Une fois l’information utilisée, elle sera probablement supprimée ou déplacée (en tant que &quot;note&quot; par ex.) par l’utilisateur.&lt;br&gt;
+&lt;br&gt;
+&lt;b&gt;Annuler la création de l’icône&amp;nbsp;:&lt;/b&gt;&lt;br&gt;
+les derniers numéros de rue enregistrés sont visibles à droite du champ réservé à l’enregistrement des numéros de rue. Le dernier numéro de rue enregistré est affiché en haut de la liste.&lt;br&gt;
+Cliquer sur l‘icône d’annulation, visible dans la barre de menu (première icône à droite de l’icône du bâtiment), pour supprimer le dernier numéro enregistré. Il est impossible de supprimer plus d\'un numéro de rue.&lt;br&gt;
+&lt;br&gt;
+&lt;b&gt;La distance qui sépare le téléphone des numéros de rue à enregistrer&amp;nbsp;:&lt;/b&gt;&lt;br&gt;
+le menu des réglages permet de définir la distance entre le téléphone et l’adresse des nœuds.&lt;br&gt;
+Si une rue est particulièrement large et que les maisons sont loin du trottoir, il est recommandé d’augmenter la valeur associée à cette option. Il est également possible de rectifier ces informations sur l’éditeur OSM.&lt;br&gt;
+&lt;br&gt;
+&lt;h3&gt;&lt;u&gt;Trucs et astuces&lt;/u&gt;&lt;/h3&gt;
+&lt;b&gt;Le processus de cartographie des numéros de rue&amp;nbsp;:&lt;/b&gt;&lt;br&gt;
+il s’avère plus efficace de marcher d’un seul côté de la rue et d’enregistrer en même temps les numéros situés des deux côtés.&lt;br&gt;
+Avec un peu de pratique, il est possible d’entrer les numéros de rue sans avoir à s’arrêter devant chaque bâtiment. En adaptant sa vitesse, l’utilisateur peut trouver un rythme de marche très efficace, permettant à la fois d’enregistrer consciencieusement les numéros de rue et de traiter le plus de numéros de rue possible.&lt;br&gt;
+&lt;br&gt;
+
+&lt;b&gt;Cartographier des informations qui ne sont pas liées à un numéro de rue&amp;nbsp;:&lt;/b&gt;&lt;br&gt;
+au cours de leurs promenades, les utilisateurs les plus enthousiastes de Keypad-Mapper 3 auront peut-être envie de cartographier des informations supplémentaires, bien qu’elles n’aient pas de rapport avec les numéros de rue ou les adresses des bâtiments.&lt;br&gt;
+L’expérience a prouvé qu’il n’est pas efficace de recenser ces informations, car si l’utilisateur concentre son énergie sur les numéros de rue, il enrichira la base de données d’un plus grand nombre d’informations. &lt;br&gt;
+C’est aussi valable pour l’enregistrement des noms de rue, des codes-postaux ou d’autres informations concernant les adresses&amp;nbsp;: un grand nombre de rues ont déjà été correctement taguées, avec le code-postal, le nom de la ville et le pays associé. Il est alors plus efficace de travailler par la suite sur l’éditeur pour copier ces informations depuis le champ de la rue vers le champ du numéro, au lieu d\'entrer ces informations à la main sur son mobile / sa tablette. Au final, cette approche permet de gagner beaucoup de temps, afin de fournir un plus grand nombre d’informations à OSM pour une période de temps comparable.&lt;br&gt;
+&lt;br&gt;
+&lt;b&gt;La connexion Internet pour valider l’adresse&amp;nbsp;:&lt;/b&gt;&lt;br&gt;
+une option dans Keypad-Mapper 3 permet d’afficher sur le clavier virtuel le code-postal et le nom de la rue qui sont associés à la position GPS du téléphone. Cela permet de voir si OSM connait déjà le code-postal et le nom de la rue pour la position en cours d’enregistrement.&lt;br&gt;</string>
+    <string name="help_text_3">Pour ce faire, l’application utilise NOMINATIM, un serveur d’adresse qui n’utilise qu’OpenStreetMap. ENAiKOON fournit le serveur NOMINATIM. Il est mis à jour tous les week-ends.&lt;br&gt;
+Pour afficher le nom d\'une rue et son code-postal, le module doit être connecté à Internet. Dans le menu des réglages, il est possible de limiter la connexion Internet au Wi-Fi. Si cette option est activée et que l\'utilisateur est à l\'extérieur, il est en général impossible d\'afficher le nom de la rue ou le code-postal.&lt;br&gt;
+Le nom de la rue et le code-postal qui s\'affichent sur l\'écran du clavier sont mis à jour toutes les 10 secondes, ce qui entraîne un trafic de données important et risque de consommer l\'intégralité des données GPRS incluses dans le forfait mobile.&lt;br&gt;
+&lt;br&gt;
+&lt;b&gt;L\'éditeur d\'adresse&amp;nbsp;:&lt;/b&gt;&lt;br&gt;
+Lorsque l\'application n\'affiche pas de code-postal et / ou de nom de rue, ou qu\'elle propose une adresse incorrecte, cela indique en général que la base de données OSM n\'a pas d\'informations correctes sur la position actuelle du téléphone. Dans ce cas, il est possible d\'ajouter manuellement ces informations dans l\'éditeur d\'adresse de l\'application, en cliquant sur l\'icône en forme de maison, puis sur \'éditeur d\'adresse\'.&lt;br&gt;
+Ces informations sont également sauvegardées au format *.osm, afin de pouvoir les envoyer ultérieurement par e-mail à l\'éditeur OSM installé sur un PC. Dans l\'éditeur OSM, ces informations sont automatiquement regroupées sous un même numéro de rue.&lt;br&gt;
+&lt;br&gt;
+&lt;b&gt;Optimiser l\'affichage de l\'écran&amp;nbsp;:&lt;/b&gt;&lt;br&gt;
+Suivant la résolution de l\'écran du téléphone, la mise en page du clavier peut varier&amp;nbsp;: les petits écrans affichent les lettres de \'a\' à \'c\', qui servent à préciser le numéro du bâtiment, tandis que les grands proposent les lettres de \'a\' à \'l\'.&lt;br&gt;
+Si le module utilisé a un petit écran et que les lettres de \'d\' à \'l\' sont nécessaires, il suffit de basculer le téléphone en format paysage. L\'écran affiche alors l\'ensemble des lettres de \'a\' à \'l\'.&lt;br&gt;
+Pour les modules qui ont un petit écran, l\'application propose l\'option \'optimiser l\'affichage\', qui permet de supprimer certaines informations optionnelles sur l\'écran du clavier. Cela permet de maximiser l\'espace disponible, afin d\'afficher au mieux les fonctions de base du clavier.&lt;br&gt;
+&lt;br&gt;
+&lt;h3&gt;&lt;u&gt;Les OpenCellID&lt;/u&gt;&lt;/h3&gt;
+&lt;a href=&quot;http://www.opencellids.org&quot;&gt;&lt;font color=&quot;#ffbf27&quot;&gt;www.opencellids.org&lt;/font&gt;&lt;/a&gt; est un projet open-source qui complète OSM.&lt;br&gt;
+Le but de ce projet est de recueillir les positions GPS des stations de base de téléphonie mobile. Les données recueillies par les contributeurs du projet peuvent être téléchargées sur www.opencellids.org et utilisées à volonté, pour un usage aussi bien privé que commercial.&lt;br&gt;
+La collecte les données OpenCellID est importante pour plusieurs raisons, la principale étant que ces données permettront par la suite de géolocaliser les modules dans des espaces fermés, lorsque le GPS est indisponible. De plus, la géolocalisation par le réseau mobile consomme beaucoup moins de batterie que le GPS. Elle n\'est cependant par aussi précise que la géolocalisation par GPS, surtout en zone rurale.&lt;br&gt;
+OpenCellID constitue la collection open-source de positions de stations mobiles la plus importante du monde. Au début de l\'année 2013, la base de données regroupait plus de 2,7 millions de cellules uniques. Actuellement, la base de données reçoit 1 000 à 2 000 nouvelles cellules uniques par jour. Au total, nous estimons qu\'il existe 25 millions de cellules mobiles uniques dans le monde, ce qui veut dire que seulement 10-15% des cellules ont été découvertes.&lt;br&gt;
+Keypad-Mapper 3 recueille automatiquement les données OpenCellID en arrière plan et ne requiert aucune interaction de la part de l\'utilisateur. Le mode d\'implémentation choisi pour cette fonctionnalité permet de recueillir les données de manière parfaitement anonyme, afin de respecter les lois allemandes extrêmement strictes concernant le respect de la vie privée.&lt;br&gt;
+L\'application Keypad-Mapper 3 est idéale pour recueillir les données OpenCellIDs en même temps que les numéros de rue, car l\'utilisateur doit nécessairement se déplacer dans les rues pour utiliser l\'application, ce qui garantie une collecte optimale de données pour OpenCellID. Les stations de base situées le long des routes principales ont peut-être déjà été recensées par la base de données mais les stations de base plus reculées le sont plus rarement.</string>
+    <string name="prefsUseWifiOnlyTitle">seulement les données Wi-fi</string>
+    <string name="rateme_thankyou">Merci pour votre utilisation</string>
+    <string name="rateme_keypad">Keypad-Mapper 3 !</string>
+    <string name="rateme_text">Nous apprécierions beaucoup si vous laissiez un commentaire ou si vous notiez Keypad-Mapper 3 sur Google Play.\n\nVoulez-vous le faire maintenant ?</string>
+    <string name="rateme_yes">oui</string>
+    <string name="rateme_later">plus tard</string>
+    <string name="rateme_dont_ask">ne pas redemander</string>
+    <string name="statusAccuracy">%d m</string>
+    <string name="statusAccuracyFt">%d pi</string>
+    <string name="prefsOptimizeLayout">optimiser l\'affichage</string>
+    <string name="prefsUseWifiOnlySummary">Utiliser le Wi-fi uniquement pour la transmission des données. Tant qu\'il n\'y aura pas de connexion Wi-fi disponible, les données seront sauvegardées sur le module. Aucune donnée ne sera perdue.</string>
+    <string name="prefsHelpTitle">aide</string>
+    <string name="prefsHelpSummary">aide pour utiliser l\'application</string>
+</resources>

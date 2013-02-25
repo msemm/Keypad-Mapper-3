@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<resources>
+    <string name="menu_undo">undo</string>
+    <string name="app_name">Keypad-Mapper 3</string>
+    <string name="buttonLeft">L</string>
+    <string name="buttonFront">F</string>
+    <string name="buttonRight">R</string>
+    <string name="button1">1</string>
+    <string name="button2">2</string>
+    <string name="button3">3</string>
+    <string name="button4">4</string>
+    <string name="button5">5</string>
+    <string name="button6">6</string>
+    <string name="button7">7</string>
+    <string name="button8">8</string>
+    <string name="button9">9</string>
+    <string name="button0">0</string>
+    <string name="buttonA">a</string>
+    <string name="buttonB">b</string>
+    <string name="buttonC">c</string>
+    <string name="buttonD">d</string>
+    <string name="buttonE">e</string>
+    <string name="buttonF">f</string>
+    <string name="buttonG">g</string>
+    <string name="buttonI">i</string>
+    <string name="buttonJ">j</string>
+    <string name="buttonK">k</string>
+    <string name="buttonL">l</string>
+    <string name="buttonH">h</string>
+    <string name="buttonSep1">,</string>
+    <string name="buttonSep2">-</string>
+    <string name="buttonSep3">/</string>
+    <string name="buttonCLR">CLR</string>
+    <string name="errorFileOpen">error writing data files</string>
+    <string name="errorGpsDisabled">GPS is disabled. Please enable GPS to use this application.</string>
+    <string name="errorStorageRO">The external storage is read-only. Keypad-Mapper 3 needs writing access for saving the data you enter.</string>
+    <string name="errorStorageUnavailable">The external storage is unavailable. Keypad-Mapper 3 needs to access it for saving the data you enter.</string>
+    <string name="OK">ok</string>
+    <string name="quit">quit</string>
+    <string name="menu_settings">settings</string>
+    <string name="system_settings">settings</string>
+    <string name="writeToNewFile">writing to new files</string>
+    <string name="Housenumber">house number</string>
+    <string name="Housename">house name</string>
+    <string name="Street">street</string>
+    <string name="Postcode">postal code</string>
+    <string name="City">city</string>
+    <string name="Countrycode">country code</string>
+    <string name="menu_address_keypad">keypad</string>
+    <string name="menu_address_editor">address editor</string>
+    <string name="FolderCreationFailed">the folder storing the data on the external storage could not be created</string>
+    <string name="locationNotAvailable">house number cannot be saved because there is no GPS reception</string>
+    <string name="prefsDataPlacementDistance">distance of the address nodes</string>
+    <string name="prefsAbout">about</string>
+    <string name="prefsAboutDetails">check application info</string>
+    <string name="prefsShare">share recorded data</string>
+    <string name="prefsShareDetails">Share *GPX, *OSM, and *JPEG files</string>
+    <string name="prefsLanguageTitle">language</string>
+    <string name="prefsLanguageSummary">choose your language: Deutsch, Español, Français, Ελληνικά, Русский</string>
+    <string name="zip_fail">could not create zip file</string>
+    <string name="about_message">&lt;br/&gt;
+%1$s&lt;BR/&gt; 
+Version: %2$s&lt;br/&gt;
+&lt;br/&gt;
+keypadmapper has originally been developed by &lt;font color=#ffbf27&gt;&lt;a href=&quot;mailto:nroets@gmail.com&quot;&gt;Nic Roets&lt;/a&gt; &lt;/font&gt; and was published at the end of the year 2010.&lt;br/&gt;
+Mid 2011 keypadmapper2 was presented, a fork of keypadmapper.&lt;br/&gt;
+This version was used by &lt;font color=#ffbf27&gt;&lt;a href=&quot;https://www.enaikoon.com&quot;&gt;ENAiKOON&lt;/a&gt;&lt;/font&gt; beginning of 2013 to implement the present version. The source code has been deployed to github ?????.&lt;br/&gt;
+&lt;br/&gt;
+Herewith we would like to express our gratitude to Nic, who supported us during the implementation of this app\'s version with his good ideas and patience.&lt;br/&gt;
+&lt;br/&gt;
+For comments, suggestions, or problems regarding this app, please do not hesitate to contact ENAiKOON by e-mail &lt;font color=#ffbf27&gt;&lt;a href=&quot;mailto:inviu@enaikoon.de&quot;&gt;inViu@enaikoon.de&lt;/a&gt;&lt;/font&gt; or phone +49 30 397 475-30.&lt;br/&gt;
+&lt;br/&gt;
+&lt;b&gt;ENAiKOON office hours:&lt;/b&gt;&lt;br/&gt;
+Mo.-Fr. from 9:00 am to 1:00 pm&lt;br/&gt;
+and from 2:00 pm to 6:00 pm&lt;br/&gt;
+&lt;br/&gt;
+&lt;b&gt;Our address:&lt;/b&gt;&lt;br/&gt;
+ENAiKOON GmbH&lt;BR/&gt; Telematics Factory&lt;br/&gt;
+Helmholtzstrasse 2-9&lt;br/&gt;
+10587 Berlin&lt;br/&gt;
+Germany</string>
+    <string name="close">close</string>
+    <string name="about">about Keypad-Mapper 3</string>
+    <string name="about_logo_url">http://www.enaikoon.com/en/footer/imprint.html</string>
+    <string name="bugreport_subject">Keypad-Mapper 3 bug report</string>
+    <string name="bugreport_dialogheader">Keypad-Mapper 3 error</string>
+    <string name="options_bugreport_question">Keypad-Mapper 3 was forcibly restarted! Do you want to send a bug report to the developers?</string>
+    <string name="options_bugreport_send">send</string>
+    <string name="options_bugreport_dontsend">don\'t send</string>
+    <string name="options_bugreport_ok">ok</string>
+    <string name="options_bugreport">error reporting</string>
+    <string name="options_bugreport_summary">Do you want to send bug reports to the developers?</string>
+    <string name="options_bugreport_neversendmessage">Keypad-Mapper 3 was forcibly restarted! If you want to send a bug report to the developers then please enable \'Error reporting\' in the settings of this app.</string>
+    <string name="options_bugreport_values_1">never</string>
+    <string name="options_bugreport_values_2">always</string>
+    <string name="options_bugreport_values_3">ask before sending</string>
+    <string name="menu_freeze_gps">freeze GPS</string>
+    <string name="no_location">sorry, your action could not be completed without GPS reception</string>
+    <string name="prefsDataDistanceEntries_1">1 m</string>
+    <string name="prefsDataDistanceEntries_2">2 m</string>
+    <string name="prefsDataDistanceEntries_5">5 m</string>
+    <string name="prefsDataDistanceEntries_8">8 m</string>
+    <string name="prefsDataDistanceEntries_10">10 m</string>
+    <string name="prefsDataDistanceEntries_15">15 m</string>
+    <string name="prefsDataDistanceEntries_20">20 m</string>
+    <string name="prefsDataDistanceEntries_25">25 m</string>
+    <string name="cancel">cancel</string>
+    <string name="prefsClearFolderTitle">delete all collected data</string>
+    <string name="prefsClearFolderQuestion">Do you want to delete all files recorded by Keypad-Mapper 3?</string>
+    <string name="prefsClearFolderQuestionYes">delete all data</string>
+    <string name="prefsClearFolderQuestionNo">cancel</string>
+    <string name="prefsShareEmailTitle">enter e-mail recipient</string>
+    <string name="prefsShareEmailHint">e-mail</string>
+    <string name="prefsShareEmailShare">share</string>
+    <string name="prefsShareEmailCancel">cancel</string>
+    <string name="help_title">Tips and tricks</string>
+    <string name="help_text_1">&lt;h2&gt;&lt;font color=&quot;#ffbf27&quot;&gt;Thank you for using the new Keypad-Mapper 3!&lt;/font&gt;&lt;/h2&gt;
+
+This app is highly optimised to add house numbers and address tags to the OpenStreetMap database.&lt;br&gt;
+&lt;br&gt;
+&lt;h3&gt;&lt;u&gt;How it works:&lt;br&gt;&lt;/u&gt;&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li value=&quot;1&quot;&gt;switch GPS on: it is not possible to store house numbers with poor GPS reception. An error message will appear if GPS is not available.&lt;/li&gt;&lt;br&gt;
+&lt;li value=&quot;2&quot;&gt;tap on the keypad icon in the top right corner of the screen&lt;/li&gt;&lt;br&gt;
+&lt;li value=&quot;3&quot;&gt;walk to the position where you want to record the first house number; ensure, that the house number is exactly on your right side or on your left side at the moment when you are saving the information; otherwise, it is more difficult to assign the address node to the correct building at a later time in your OSM editor.&lt;/li&gt;&lt;br&gt;
+&lt;li value=&quot;4&quot;&gt;type the house number on the keypad&lt;/li&gt;&lt;br&gt;
+&lt;li value=&quot;5&quot;&gt;save the house number by tapping on one of the L/F/R keys:&lt;br&gt;
+&lt;br&gt;
+&lt;ul&gt;
+&lt;li&gt;\'L\' means that the house number is on your left side in relation to your walking direction&lt;/li&gt;&lt;br&gt;
+&lt;li&gt;\'R\' means that the house number is on your right side in relation to your walking direction&lt;/li&gt;&lt;br&gt;
+&lt;li&gt;\'F\' means that the house number is in front of you (e.g. at a T crossing)&lt;/li&gt;&lt;br&gt;
+&lt;/ul&gt;
+The circle in the top left corner app icon will reveal the number of address nodes you have added during the current mapping session.&lt;br&gt;
+Repeat step 3, 4, and 5 until all house numbers are recorded.&lt;/li&gt;&lt;br&gt;
+&lt;li value=&quot;6&quot;&gt;when you have finished recording, tap on the icon with the house to open the navigation menu and then tap on \'settings\'&lt;/li&gt;&lt;br&gt;
+&lt;li value=&quot;7&quot;&gt;in the settings menu you can find the option \'share recorded data\' which allows you to send all collected data as e-mail attachments to the PC running your favourite OSM editor (e.g. JOSM or Potlach)&lt;/li&gt;&lt;br&gt;
+&lt;li value=&quot;8&quot;&gt;open the e-mail and save the attached files to your hard drive&lt;/li&gt;&lt;br&gt;
+&lt;li value=&quot;9&quot;&gt;open the OSM editor, then the GPX and OSM file with the same name as well as the corresponding photos; load the already existing OSM data;&lt;br&gt;
+now you can see your track, all recorded house numbers, and the related pictures in your OSM editor&lt;/li&gt;&lt;br&gt;
+&lt;li value=&quot;10&quot;&gt;add postal code, street name, city, and country to each address node if they were not entered while using the app walking through the streets; optimise the position of each address node&lt;/li&gt;&lt;br&gt;
+&lt;li value=&quot;11&quot;&gt;upload the optimised and complete data to OSM&lt;/li&gt;&lt;br&gt;
+&lt;li value=&quot;12&quot;&gt;delete the recorded data on your phone&amp;nbsp;/ tablet with menu option \'delete all recorded data\' in the settings menu&lt;/li&gt;&lt;br&gt;
+&lt;/ol&gt;
+Allow a few minutes and a refresh of the OSM map in your browser to view the newly recorded house numbers on the map in the high zoom levels.&lt;br&gt;</string>
+    <string name="prefsMeasurementTitle">measurement units</string>
+    <string name="prefsMeasurementsEntries_1">m</string>
+    <string name="prefsMeasurementsEntries_2">ft</string>
+    <string name="prefsDataDistanceEntriesFt_1">3 ft</string>
+    <string name="prefsDataDistanceEntriesFt_2">5 ft</string>
+    <string name="prefsDataDistanceEntriesFt_5">15 ft</string>
+    <string name="prefsDataDistanceEntriesFt_8">25 ft</string>
+    <string name="prefsDataDistanceEntriesFt_10">35 ft</string>
+    <string name="prefsDataDistanceEntriesFt_15">50 ft</string>
+    <string name="prefsDataDistanceEntriesFt_20">65 ft</string>
+    <string name="prefsDataDistanceEntriesFt_25">80 ft</string>
+    <string name="menu_share">share recorded\ndata</string>
+    <string name="menu_unfreeze_gps">unfreeze GPS</string>
+    <string name="menu_camera">camera</string>
+    <string name="menu_gps_accuracy">GPS precision</string>
+    <string name="keypad_info_hint">note for this house no.</string>
+    <string name="satellite_n_a">n/a</string>
+    <string name="satellite_gps">GPS</string>
+    <string name="satellite_glonass">GLONASS</string>
+    <string name="satellite_accuracy">accuracy</string>
+    <string name="satellite_in_view">in view:</string>
+    <string name="satellite_in_use">in use:</string>
+    <string name="satellite_no_gps">please change your location\nto a place with\nbetter GPS reception</string>
+    <string name="prefsScreenOnTitle">keep screen on</string>
+    <string name="prefsScreenOnSummary">The screen will remain on when activated. Activating this option will drain the battery.</string>
+    <string name="prefsMeasurementSummary">you can choose between &quot;metres&quot; and &quot;feet&quot;</string>
+    <string name="prefsDataPlacementDistanceSummary">distance of the address nodes from the current position of the device when the house number is stored</string>
+    <string name="prefsClearFolderSummary">This option deletes all collected data stored by the app on this device: OSM files, GPX files, and photos taken with this app. You would normally use this feature after successfully transmitting the data via email to your PC.</string>
+    <string name="help_text_2">&lt;br&gt;
+&lt;h3&gt;&lt;u&gt;Extended features&lt;/u&gt;&lt;/h3&gt;
+The app provides four screens:
+&lt;ol&gt;
+&lt;li&gt;keypad screen&lt;/li&gt;
+&lt;li&gt;address editor&lt;/li&gt;
+&lt;li&gt;GPS details&lt;/li&gt;
+&lt;li&gt;settings&lt;/li&gt;
+&lt;/ol&gt;
+You have three options to access the different screens:&lt;br&gt;
+&lt;ol&gt;
+&lt;li&gt;tap on the icon in the top menu of the screen&lt;/li&gt;&lt;br&gt;
+&lt;li&gt;tap on the icon with the house and then tap on the icon of the screen you want to see&lt;/li&gt;&lt;br&gt;
+&lt;li&gt;swipe left or right by moving your finger horizontally across the screen&lt;/li&gt;
+&lt;/ol&gt;
+&lt;b&gt;Camera:&lt;/b&gt;&lt;br&gt;
+The camera icon allows you to take GPS photos which will be stored and transmitted by e-mail along with the OSM and GPX files for loading them into the OSM editor.&lt;br&gt;
+This allows you to reference the photo with exact GPS coordinates for details of the particular address when editing the data in the OSM editor at a later time.&lt;br&gt;
+&lt;br&gt;
+&lt;b&gt;Freeze GPS position:&lt;/b&gt;&lt;br&gt;
+An address node is normally stored with the GPS position of the device the moment the user taps on L/F/R.&lt;br&gt;
+When the house number cannot be read from where the GPS coordinates should be stored for a particular house, it is possible to freeze the GPS position while walking to see the house number. Avoid walking back and forth by clicking on the snow flake icon to freeze the GPS coordinates at the correct position. Save the address node once the house number is entered. Saving it will automatically use the previously frozen GPS coordinates and unfreeze it for the next address node.&lt;br&gt;
+&lt;br&gt;
+&lt;b&gt;Add additional notes:&lt;/b&gt;&lt;br&gt;
+It is useful to save a note in addition to or instead of a GPS photo to be referenced later in the OSM editor when optimising the recorded data. This text information is stored along with the house number after tapping on L/F/R.&lt;br&gt;
+You can add a note to any address node by tapping into the \'note for this house no.\' text entry line below the big white house number entry field. A full keyboard will open for you to enter the text information.&lt;br&gt;
+Tapping on L/F/R closes the full keyboard and saves the house number along with the note.&lt;br&gt;
+Tapping into the big white house number entry field also closes the full keyboard.&lt;br&gt;
+In the OSM editor, this note will be presented as a \'name\' tag. You can delete this tag after using the information or rename the tag.&lt;br&gt;
+&lt;br&gt;
+&lt;b&gt;Undo Icon:&lt;/b&gt;&lt;br&gt;
+On the right side of the house number entry field are the last entered house numbers. The latest house number is shown at the top of the list.&lt;br&gt;
+By tapping on the undo icon in the menu bar (second icon from the left) the last entered house number can be deleted. It is not possible to delete multiple house numbers.&lt;br&gt;
+&lt;br&gt;
+&lt;b&gt;Distance of house numbers from device position:&lt;/b&gt;&lt;br&gt;
+The settings menu allows you to define the distance of the address nodes from the device position where the user stands.&lt;br&gt;
+If there is an unusually wide street where the houses are far away from the pavement, it is recommended to set this option to a larger value. Alternatively, these corrections can be made in the OSM editor at a later time.&lt;br&gt;
+&lt;br&gt;
+&lt;h3&gt;&lt;u&gt;Tips and tricks&lt;/u&gt;&lt;/h3&gt;
+&lt;b&gt;House number mapping process:&lt;/b&gt;&lt;br&gt;
+It is most effective to walk on one side of the street along the pavement to record the house numbers of both sides of the street at the same time.&lt;br&gt;
+With practice, it is possible to enter the house numbers without stopping at each house. By adopting an optimal walking speed, it is possible to find a rhythm that allows the user to record all house numbers carefully while processing as many house numbers as possibe.&lt;br&gt;
+&lt;br&gt;</string>
+    <string name="help_text_3">&lt;b&gt;Mapping of information that has nothing to do with house numbers&lt;/b&gt;&lt;br&gt;
+Enthusiastic mappers may feel compelled to map additional information that has nothing to do with house numbers and addresses while walking through the streets with Kepad-Mapper 3.&lt;br&gt;
+
+Reality has proven that it is not efficient to do so as much less information will be mapped compared to focusing on house numbers.&lt;br&gt;
+This also applies for recording street names, postal codes, and other address information; many streets are already tagged with the postal code, city, and country, which means that it is easier to copy this information later from the street entry to the house number entry instead of typing all this information on your phone&amp;nbsp;/ tablet. This approach saves a lot of time, allowing you to contribute more information to OSM in a given time frame.&lt;br&gt;
+&lt;br&gt;
+&lt;b&gt;Internet connection for address validation:&lt;/b&gt;&lt;br&gt;
+Keypad-Mapper 3 has a feature that shows the postal code and street name of the current GPS position in the keypad screen. This is useful to see if OSM already knows the correct postcode and street name of the actual position.&lt;br&gt;
+The app uses NOMINATIM for this purpose, an address server which uses OpenStreetMap data only. The NOMINATIM server used is provided by ENAiKOON. It is regularly updated on weekends.&lt;br&gt;
+Displaying street name and postal code information requires the device to be connected to the internet. In the settings menu, you can limit the internet connection to Wi-Fi connections only. In this case, showing the postal code and street name does not work while walking along the streets.&lt;br&gt;
+The street name and postal code shown in the keypad screen is updated every 10 seconds. This causes some data traffic that may eat up your GPRS inclusive data volume of your data plan.&lt;br&gt;
+&lt;br&gt;
+&lt;b&gt;Address editor:&lt;/b&gt;&lt;br&gt;
+If no postal code and / or street name is shown or invalid address data is shown, this normally means that the OSM database does not contain correct data for the particular location. In this case. it is possible to add this data in the address editor screen of the app by tapping on the icon with the house and then tapping on \'address editor\'.&lt;br&gt;
+This information is then saved in the OSM file for transmitting it later via e-mail to the PC with the OSM editor. In your OSM editor, this information will be automatically grouped together with the house number.&lt;br&gt;
+&lt;br&gt;
+&lt;b&gt;Optimised screen layout:&lt;/b&gt;&lt;br&gt;
+Depending on the screen resolution, the keypad screen has a different layout: the letters for house numbers are \'a\' to \'c\' on small screens and \'a\' to \'l\' on bigger screens.&lt;br&gt;
+If you are using a device with a small screen but require the use of letters \'d\' to \'l\', turn the screen to landscape. You will have the letters from  \'a\' to \'l\' available on the keypad.&lt;br&gt;
+If running the app on devices with small screens, it provides an additional settings option \'optimise layout\' which allows suppressing various optional information on the keypad screen. This is intended to maximize the available space for the basic features of the keypad screen.&lt;br&gt;
+&lt;br&gt;
+&lt;h3&gt;&lt;u&gt;OpenCellIDs&lt;/u&gt;&lt;/h3&gt;
+&lt;a href=&quot;http://www.opencellids.org&quot;&gt;&lt;font color=&quot;#ffbf27&quot;&gt;www.opencellids.org&lt;/font&gt;&lt;/a&gt; is an open source project complementary to OSM.&lt;br&gt;
+The intention of this project is to collect GPS positions of GSM base stations. The data collected by the contributors of this project can be downloaded from www.opencellids.org for unlimited private and commercial use.&lt;br&gt;
+One of the main reasons for collecting OpenCellIDs data is that it can later be used for locating devices in areas where GPS reception is not available. In addition, GSM localisation consumes significantly less battery power than GPS-based localisation; however, GSM is known to be less accurate than GPS in rural areas. &lt;br&gt;
+OpenCellIDs is the biggest open source collection of GPS positions of GSM base stations worldwide. At the beginning of 2013, the database held approx. 2.7 million unique cells. Currently the database is growing by 1,000 to 2,000 new unique cells per calendar day. In total, we estimate that there are at least 25 million unique GSM cells worldwide; this means that 10-15% of the world\'s cells have already been discovered.&lt;br&gt;
+Keypad-Mapper 3 is automatically collecting OpenCellIDs data in the background without any interaction required by the user. The chosen way of implementing this feature ensures that the data is collected fully anonymous ensuring full compliance with the very strict German privacy laws.&lt;br&gt;
+Keypad-Mapper 3 is a perfect application for collecting OpenCellIDs data while simultaneously collecting house numbers because Keypad-Mapper 3 users systematically walk down many different streets which guarantees optimal data for OpenCellID. Base stations along main roads can already be found in the database but base stations off the main streets are rare.</string>
+    <string name="prefsUseWifiOnlyTitle">Wi-Fi data only</string>
+    <string name="rateme_thankyou">Thank you for using</string>
+    <string name="rateme_keypad">Keypad-Mapper 3!</string>
+    <string name="rateme_text">We would really appreciate it if you could review or rate Keypad-Mapper 3 in Google Play.\n\nWould you like to do this now?</string>
+    <string name="rateme_yes">yes</string>
+    <string name="rateme_later">later</string>
+    <string name="rateme_dont_ask">don\'t ask again</string>
+    <string name="statusAccuracy">%d m</string>
+    <string name="statusAccuracyFt">%d ft</string>
+    <string name="prefsOptimizeLayout">optimise layout</string>
+    <string name="prefsUseWifiOnlySummary">show street name and postcode only if a WI-Fi connection exists</string>
+    <string name="prefsHelpTitle">help</string>
+    <string name="prefsHelpSummary">get tips for using this app</string>
+</resources>

@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<resources>
+    <string name="menu_undo">Αναίρεση</string>
+    <string name="app_name">Keypad-Mapper 3</string>
+    <string name="buttonLeft">Α</string>
+    <string name="buttonFront">Ε</string>
+    <string name="buttonRight">Δ</string>
+    <string name="button1">1</string>
+    <string name="button2">2</string>
+    <string name="button3">3</string>
+    <string name="button4">4</string>
+    <string name="button5">5</string>
+    <string name="button6">6</string>
+    <string name="button7">7</string>
+    <string name="button8">8</string>
+    <string name="button9">9</string>
+    <string name="button0">0</string>
+    <string name="buttonA">a</string>
+    <string name="buttonB">b</string>
+    <string name="buttonC">c</string>
+    <string name="buttonD">d</string>
+    <string name="buttonE">e</string>
+    <string name="buttonF">f</string>
+    <string name="buttonG">g</string>
+    <string name="buttonI">i</string>
+    <string name="buttonJ">j</string>
+    <string name="buttonK">k</string>
+    <string name="buttonL">l</string>
+    <string name="buttonH">h</string>
+    <string name="buttonSep1">,</string>
+    <string name="buttonSep2">-</string>
+    <string name="buttonSep3">/</string>
+    <string name="buttonCLR">CLR</string>
+    <string name="errorFileOpen">Σφάλμα εγγραφής δεδομένων σε αρχείο</string>
+    <string name="errorGpsDisabled">Το GPS είναι απενεργεποιημένο. Παρακαλώ ενεργοποιήστε τον δέκτη σας για τη χρήση της εφαρμογής.</string>
+    <string name="errorStorageRO">Η εξωτερική αποθήκευση είναι read-only. Το Keypad-Mapper 3 απαιτεί πρόσβαση εγγραφής για την αποθήκευση των εισαγομένων πληροφοριών.</string>
+    <string name="errorStorageUnavailable">Η εξωτερική αποθήκευση δεν είναι διαθέσιμη. Το Keypad-Mapper 3 απαιτεί πρόσβαση για την αποθήκευση των εισαγομένων πληροφοριών.</string>
+    <string name="OK">ΟΚ</string>
+    <string name="quit">Κλείσιμο</string>
+    <string name="menu_settings">Ρυθμίσεις</string>
+    <string name="system_settings">Ρυθμίσεις</string>
+    <string name="writeToNewFile">Εγγραφή σε νέο αρχείο</string>
+    <string name="Housenumber">Αριθμός κατοικίας</string>
+    <string name="Housename">Διεύθυνση κατοικίας</string>
+    <string name="Street">Οδός</string>
+    <string name="Postcode">Ταχ. κώδικας</string>
+    <string name="City">Πόλη</string>
+    <string name="Countrycode">Κωδικός χώρας</string>
+    <string name="menu_address_keypad">Πληκτρολόγιο</string>
+    <string name="menu_address_editor">Επεξεργασία διεύθυνσης</string>
+    <string name="FolderCreationFailed">Δεν μπορεί να δημιουργηθεί ο φάκελος αποθήκευσης πληροφοριών στο εξωτερικό μἐσο αποθήκευσης</string>
+    <string name="locationNotAvailable">Μη ανιχνεύσιμη τοποθεσία</string>
+    <string name="prefsDataPlacementDistance">Απόσταση από τους κόμβους της διεύθυνσης</string>
+    <string name="prefsAbout">Σχετικά</string>
+    <string name="prefsAboutDetails">Πληροφορίες σχετικά με την εφαρμογή</string>
+    <string name="prefsShare">Διαμοιρασμός αποθηκευμένων </string>
+    <string name="prefsShareDetails">Διαμοιρασμός *.gpx, *.osm και *.jpg αρχείων</string>
+    <string name="prefsLanguageTitle">Γλώσσα</string>
+    <string name="prefsLanguageSummary">Επιλογή γλώσσας: Deutsch, English, Español, Français, Русский</string>
+    <string name="zip_fail">Μη εφικτή η δημιουργία συμπιεσμένου αρχείου</string>
+    <string name="about_message">&lt;br/&gt;
+%1$s&lt;BR/&gt; 
+Έκδοση: %2$s&lt;br/&gt;
+&lt;br/&gt;
+Το keypadmapper αρχικά είχε αναπτυχθεί από &lt;font color=#ffbf27&gt;&lt;a href=&quot;mailto:nroets@gmail.com&quot;&gt;Nic Roets&lt;/a&gt; &lt;/font&gt; και εκδόθηκε στα τέλη του 2010.&lt;br/&gt;
+Στα μέσα του 2011 το keypadmapper2 παρουσιάστηκε ως αναβάθμιση του keypadmapper.&lt;br/&gt;
+Η έκδοση αυτή είναι υπο τη χρήση &lt;font color=#ffbf27&gt;&lt;a href=&quot;https://www.enaikoon.com&quot;&gt;ENAiKOON&lt;/a&gt;&lt;/font&gt; στις αρχές του 2013 η κατασκευή της τρέχουσας έκδοσης. &lt;br/&gt;
+&lt;br/&gt;
+Ευχαριστούμε πολύ τον Nic, για την υποστήριξη και συμβολή του κατα τη ανάπτυξη αυτή της έκδοσης με νέες ιδέες και πολύ υπομονή!&lt;br/&gt;
+&lt;br/&gt;
+Εαν θέλετε να κάνετε σχόλια, προτάσεις ή να αναφέρετε προβλήματα παρακαλώ επικοινωνήστε με την ENAiKOON μέσω e-mail &lt;font color=#ffbf27&gt;&lt;a href=&quot;mailto:inviu@enaikoon.de&quot;&gt;inViu@enaikoon.de&lt;/a&gt;&lt;/font&gt; ή καλέστε στο +49 30 397 475-30.&lt;br/&gt;
+&lt;br/&gt;
+&lt;b&gt;ENAiKOON Ώρες γραφείου:&lt;/b&gt;&lt;br/&gt;
+Δε.-Πα. απο τις 9:00 πμ έως τη 1:00 μμ&lt;br/&gt;
+και από τις 2:00 μμ έως τις 6:00 μμ&lt;br/&gt;
+&lt;br/&gt;
+&lt;b&gt;Η διεύθυνση μας:&lt;/b&gt;&lt;br/&gt;
+ENAiKOON GmbH&lt;BR/&gt; Telematics Factory&lt;br/&gt;
+Helmholtzstrasse 2-9&lt;br/&gt;
+10587 Berlin&lt;br/&gt;
+Germany</string>
+    <string name="close">Κλείσιμο</string>
+    <string name="about">Σχετικά με το Keypad-Mapper 3</string>
+    <string name="about_logo_url">http://www.enaikoon.com/en/footer/imprint.html</string>
+    <string name="bugreport_subject">Keypad-Mapper 3 αναφορά σφάλματος</string>
+    <string name="bugreport_dialogheader">Keypad-Mapper 3 σφάλμα</string>
+    <string name="options_bugreport_question">Keypad-Mapper 3 μη αναμενόμενη επανεκκίνηση!\n Αποστολή αναφοράς σφάλματος στους προγραμματιστές?</string>
+    <string name="options_bugreport_send">Αποστολή</string>
+    <string name="options_bugreport_dontsend">Μη αποστολή</string>
+    <string name="options_bugreport_ok">ΟΚ</string>
+    <string name="options_bugreport">Αναφορά σφάλματος</string>
+    <string name="options_bugreport_summary">Αποστολή αναφοράς σφάλματος στους προγραμματιστές?</string>
+    <string name="options_bugreport_neversendmessage">Keypad-Mapper 3 μη αναμενόμενη επανεκκίνηση!\n Εάν θέλετε να αποστείλετε την αναφορά σφάλματος στους προγραμματιστές παρακαλώ ενεργοποιήστε \'Αναφορά σφάλματος\' στις ρυθμίσεις της εφαρμογής!</string>
+    <string name="options_bugreport_values_1">Καμία αποστολή</string>
+    <string name="options_bugreport_values_2">Πάντα αποστολή</string>
+    <string name="options_bugreport_values_3">Ερώτηση πριν την αποστολή</string>
+    <string name="menu_freeze_gps">Κλειδώστε το GPS</string>
+    <string name="no_location">Λυπούμαστε, δεν μπορεί να ολοκληρωθεί η ενέργεια χωρίς κάλυψη GPS</string>
+    <string name="prefsDataDistanceEntries_1">1 μ</string>
+    <string name="prefsDataDistanceEntries_2">2 μ</string>
+    <string name="prefsDataDistanceEntries_5">5 μ</string>
+    <string name="prefsDataDistanceEntries_8">8 μ</string>
+    <string name="prefsDataDistanceEntries_10">10 μ</string>
+    <string name="prefsDataDistanceEntries_15">15 μ</string>
+    <string name="prefsDataDistanceEntries_20">20 μ</string>
+    <string name="prefsDataDistanceEntries_25">25 μ</string>
+    <string name="cancel">Ακύρωση</string>
+    <string name="prefsClearFolderTitle">Διαγραφή των αποθηκευμένων πληροφοριών</string>
+    <string name="prefsClearFolderQuestion">Θέλετε να διαγράψετε τις καταχωρήσεις του Keypad-Mapper 3?</string>
+    <string name="prefsClearFolderQuestionYes">Ναι</string>
+    <string name="prefsClearFolderQuestionNo">Όχι</string>
+    <string name="prefsShareEmailTitle">Εισαγωγή παραλήπτη</string>
+    <string name="prefsShareEmailHint">e-mail</string>
+    <string name="prefsShareEmailShare">Διαμοιρασμός</string>
+    <string name="prefsShareEmailCancel">Ακύρωση</string>
+    <string name="help_title">Βοήθεια</string>
+    <string name="help_text_1">&lt;h2&gt;&lt;font color=&quot;#ffbf27&quot;&gt;Σας ευχαριστούμε που επιλέξατε το νέο Keypad-Mapper 3!&lt;/font&gt;&lt;/h2&gt;
+
+Αυτή είναι η πλήρως αναβαθμισμένη εφαρμογή για την προσθήκη αριθμών κατοικίας και διευθύνσεων στη βάση δεδομένων του OpenStreetMap.&lt;br&gt;
+&lt;br&gt;
+&lt;h3&gt;&lt;u&gt;Πως λειτουργεί:&lt;br&gt;&lt;/u&gt;&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li value=&quot;1&quot;&gt;Ενεργοποίηση του GPS: δεν είναι δυνατή η αποθήκευση αριθμών κατοικίας εάν το GPS δεν παρέχει ακριβή θέση GPS. Εμφάνιση μηνύματος λάθους σε περίπτωση που δεν υπάρχει διαθέσιμο GPS.&lt;/li&gt;&lt;br&gt;
+&lt;li value=&quot;2&quot;&gt;Πατήστε το εικονίδιο του keypad στη δεξιά πάνω γωνία της οθόνης σας&lt;/li&gt;&lt;br&gt;
+&lt;li value=&quot;3&quot;&gt;Βαδίστε προς τη θέση που θέλετε να καταγράψετε το πρώτο νούμερο κατοικίας; σιγουρευτείτε ότι το νούμερο κατοικίας είναι ακριβώς στη δεξιά πλευρά σας ή στην αριστερή σας τη στιγμή της αποθήκευσης; αλλιώς θα είναι δύσκολο αργότερα στον OSM επεξεργαστή να αντιστοιχίσετε τον κόμβο διεύθυνσης στο σωστό κτίριο.&lt;/li&gt;&lt;br&gt;
+&lt;li value=&quot;4&quot;&gt;Πληκτρολογείστε τον αριθμό κατοικίας στο keypad&lt;/li&gt;&lt;br&gt;
+&lt;li value=&quot;5&quot;&gt;Αποθηκεύστε τον αριθμό κατοικίας πατώντας σε ένα απο τα πλήκτρα Α/Ε/Δ:&lt;br&gt;
+&lt;br&gt;
+&lt;ul&gt;
+&lt;li&gt;\'Α\' το νούμερο κατοικίας είναι στα αριστερά σας σε σχέση με την κατεύθυνση που βαδίζετε&lt;/li&gt;&lt;br&gt;
+&lt;li&gt;\'Δ\' το νούμερο κατοικίας είναι στα δεξιά σας σε σχέση με την κατεύθυνση που βαδίζετε&lt;/li&gt;&lt;br&gt;
+&lt;li&gt;\'Ε\' το νούμερο κατοικίας είναι ακριβώς μπροστά σας π.χ σε διασταύρωση&lt;/li&gt;&lt;br&gt;
+&lt;/ul&gt;
+Στη πάνω αριστερή γωνία μέσα στον κύκλο του εικονιδίου της εφαρμογής μπορείτε να δείτε τον αριθμό των κόμβων διευθύνσεων που έχετε προσθέσει κατα τη διάρκεια της τρέχουσας κατάστασης.&lt;br&gt;
+Επαναλάβετε τα βήματα 3), 4) και 5) έως να καταγραφούν όλοι οι αριθμοί κατοικίας.&lt;/li&gt;&lt;br&gt;
+&lt;li value=&quot;6&quot;&gt;Όταν ολοκληρώσετε, πατήστε στο εικονίδιο με τη κατοικία για να ανοίξετε το μενού πλοήγησης και κατόπιν πατήστε στο μενού επιλογές \'ρυθμίσεις\'&lt;/li&gt;&lt;br&gt;
+&lt;li value=&quot;7&quot;&gt;Στο μενού ρυθμίσεις μπορείτε να βρείτε την επιλογή \'διαμοιρασμός καταγεγραμμένων πληροφοριών\' που σας επιτρέπει να αποστείλλετε όλες τις συλλεγμένες πληροφορίες επισυναπτόμενες στο e-mail του υπολογιστή που τρέχει τον επιλεγμένο επεξεργαστή OSM (πχ. JOSM ή Potlach)&lt;/li&gt;&lt;br&gt;
+&lt;li value=&quot;8&quot;&gt;Άνοιγμα του e-mail και αποθήκευση των επισυναπτόμενων αρχείων στον σκληρό σας δίσκο&lt;/li&gt;&lt;br&gt;
+&lt;li value=&quot;9&quot;&gt;Άνοιγμα του OSM επεξεργαστή, ακολούθως του .gpx και .osm αρχείου με το ίδιο όνομα όπως και τις σχετικές εικόνες; φόρτωση των ήδη υπάρχοντων πληροφοριών του OSM;&lt;br&gt;
+Πλέον μπορείτε να δείτε τη διαδρομή σας, όλους τους καταγεγραμμένους αριθμούς κατοικιών και τις σχετικές εικόνες στον OSM επεξεργαστή&lt;/li&gt;&lt;br&gt;
+&lt;li value=&quot;10&quot;&gt;Προσθήκη τκ, διεύθυνσης, πόλης και χώρας στον κόμβο διεύθυνσης, έαν δεν έχετε ήδη κάνει κατα την περιήγηση σας στις οδούς, και βελτιστοποίηση της θέσης κάθε κόμβου διεύθυνσης&lt;/li&gt;&lt;br&gt;
+&lt;li value=&quot;11&quot;&gt;Μεταφόρτωση της βελτιωμένης πληροφορίας στο OSM&lt;/li&gt;&lt;br&gt;
+&lt;li value=&quot;12&quot;&gt;Διαγραφή της καταγεγραμμένης πληροφορίας στο κινητό σας&amp;nbsp;/ ταμπλέτα με επιλογή μενού \'διαγραφή όλων των καταγεγραμμένων πληροφοριών\' στο μενού ρυθμίσεις&lt;/li&gt;&lt;br&gt;
+&lt;/ol&gt;
+Κατόπιν μερικών λεπτών και ανανέωσης του OSM χάρτη στον περιηγητή σας θα πρέπει να βλέπετε τον πρόσφατο καταγεγγραμένο αριθμό κατοικίας στον χάρτη σε υψηλή μεγέθυνση.&lt;br&gt;</string>
+    <string name="prefsMeasurementTitle">Μονάδες μέτρησης</string>
+    <string name="prefsMeasurementsEntries_1">μ</string>
+    <string name="prefsMeasurementsEntries_2">ft</string>
+    <string name="prefsDataDistanceEntriesFt_1">3 ft</string>
+    <string name="prefsDataDistanceEntriesFt_2">5 ft</string>
+    <string name="prefsDataDistanceEntriesFt_5">15 ft</string>
+    <string name="prefsDataDistanceEntriesFt_8">25 ft</string>
+    <string name="prefsDataDistanceEntriesFt_10">35 ft</string>
+    <string name="prefsDataDistanceEntriesFt_15">50 ft</string>
+    <string name="prefsDataDistanceEntriesFt_20">65 ft</string>
+    <string name="prefsDataDistanceEntriesFt_25">80 ft</string>
+    <string name="menu_share">Διαμοιρασμός εγγεγραμένων\nπληροφοριών</string>
+    <string name="menu_unfreeze_gps">Ξεκλείδωμα του GPS</string>
+    <string name="menu_camera">Κάμερα</string>
+    <string name="menu_gps_accuracy">Ακρίβεια του GPS</string>
+    <string name="keypad_info_hint">Σημειώσεις για τη συγκεκριμένη κατοικία</string>
+    <string name="satellite_n_a">n/a</string>
+    <string name="satellite_gps">GPS</string>
+    <string name="satellite_glonass">GLONASS</string>
+    <string name="satellite_accuracy">Ακρίβεια</string>
+    <string name="satellite_in_view">Ορατοί:</string>
+    <string name="satellite_in_use">Σε χρήση:</string>
+    <string name="satellite_no_gps">Παρακαλώ αλλάξτε τη θέση σας\nσε σημείο με\nκαλύτερη κάλυψη GPS </string>
+    <string name="prefsScreenOnTitle">Ρύθμιση οθόνης</string>
+    <string name="prefsScreenOnSummary">Παραμονή της οθόνης σε ενεργή κατάσταση. Αύξηση της κατανάλωσης μπαταρίας.</string>
+    <string name="prefsMeasurementSummary">Επιλέξτε μεταξύ &quot;μέτρα&quot; ή &quot;πόδια&quot;</string>
+    <string name="prefsDataPlacementDistanceSummary">Απόσταση των κόμβων διεύθυνσης από την τρέχουσα θέση σας κατα τη στιγμή καταχώρησης του αριθμού κατοικίας</string>
+    <string name="prefsClearFolderSummary">Διαγραφή όλων των πληροφοριών που έχει αποθηκεύσει η εφαρμογή στη συσκευή σας: όπως αρχεία .osm, αρχεία .gpx, και φωτογραφίες που έχετε βγάλει με αυτή την εφαρμογή. Αυτό το χαρακτηριστικό χρησιμοποιείται κυρίως μετα απο την επιτυχημένη αποστολή των πληροφοριών μέσω email στον υπολογιστή σας.</string>
+    <string name="help_text_2">&lt;br&gt;
+&lt;h3&gt;&lt;u&gt;Εκτεταμένες λειτουργίες&lt;/u&gt;&lt;/h3&gt;
+Η εφαρμογή διαθέτει τέσσερις οθόνες:
+&lt;ol&gt;
+&lt;li&gt;οθόνη keypad &lt;/li&gt;
+&lt;li&gt;επεξεργαστής διεύθυνσης&lt;/li&gt;
+&lt;li&gt;πληροφορίες GPS&lt;/li&gt;
+&lt;li&gt;ρυθμίσεις&lt;/li&gt;
+&lt;/ol&gt;
+Έχετε τρείς επιλογές για να διαλέξετε μία απο τις οθόνες:&lt;br&gt;
+&lt;ol&gt;
+&lt;li&gt;Πατήστε στο εικονίδιο στο πανω άκρο της οθόνης&lt;/li&gt;&lt;br&gt;
+&lt;li&gt;Πατήστε στο εικονίδιο με τις κατοικίες και μετα πατήστε στο εικονίδιο της οθόνης που έχετε επιλέξει&lt;/li&gt;&lt;br&gt;
+&lt;li&gt;Αλλάξτε κατεύθυνση αριστερά ή δεξιά μετακινώντας το δάκτυλο σας οριζόντια κατα μήκος της οθόνης&lt;/li&gt;
+&lt;/ol&gt;
+&lt;b&gt;Κάμερα:&lt;/b&gt;&lt;br&gt;
+Η επιλογή της κάμερα σας επιτρέπει να πάρετε GPS φωτογραφίες οι οποίες θα αποθηκευτούν και αποσταλλούν μέσω e-mail μαζί με τα .osm και .gpx αρχεία για φόρτωση στον OSM επεξεργαστή.&lt;br&gt;
+Αυτό μας επιτρέπει να θυμόμαστε περίπλοκες περιπτώσεις συμπεριλαμβανομένου της ακριβούς GPS θέσης για την αποφυγή αμφιβολιών αργότερα όταν επεξεργάζεστε τις πληροφορίες στον OSM επεξεργαστή.&lt;br&gt;
+&lt;br&gt;
+&lt;b&gt;Κλείδωμα GPS θέσης:&lt;/b&gt;&lt;br&gt;
+Συνήθως ο κόμβος διεύθυνσης είναι αποθηκευμένος στη GPS θέση η οποία είναι πραγματική τη στιγμή που ο χρήστης πατάει Α/Ε/Δ.&lt;br&gt;
+Κάποιες φορές απαιτείται να αποθηκεύσετε τον κόμβο διεύθυνσης με τη GPS θέση, όπου οι πραγματικοοι αριθμοί κατοικιών δεν μπορούν να διαβαστούν. Για την αποφυγή να πηγαινοέρχεστε πολλες φορές για να αποθηκεύσετε τον αριθμό κατοικίας με τις σωστές GPS συντεταγμένες αφού τον διαβάσετε, το εικονίδιο με τη νιφάδα χιονιού σας επιτρέπει να κλειδώσετε τις GPS συντεταγμένες στη θέση που πρέπει να αποθηκευτεί και μετα βαδίστε στη θέση που ο αριθμός κατοικίας πρέπει να διαβαστεί. Τώρα με την αποθήκευση του αριθμού κατοικίας αποθηκεύονται και οι κλειδωμένες GPS συντεταγμένες οι οποίες αυτόματα θα ξεκλειδώσουν.&lt;br&gt;
+&lt;br&gt;
+&lt;b&gt;Προσθήκη περισσότερων κειμένων:&lt;/b&gt;&lt;br&gt;
+Ορισμένες φορές είναι χρήσιμο να μπορείτε να αποθηκεύσετε κάποιες παραπανω πληροφορίες επιπρόσθετα ή αντί μιας φωτογραφίας GPS που θα χρησιμοποιηθεί αργότερα στον OSM επεξεργαστή κατα τη βελτιστοποίηση των καταγεγραμμένων πληροφοριών. Αυτά τα κείμενα αποθηκεύονται μαζί με τους αριθμούς των κατοικιών αφότου πατήσετε Α/Ε/Δ.&lt;br&gt;
+Μπορείται να προσθέσετε παραπάνω κείμενο κάτω απο το μεγάλο λευκό πεδίο εγγραφής του αριθμού κατοικίας πατώντας μέσα στο πεδίο εγγραφής κειμένου και εισάγετε τις πληροφορίες μέσω του ενεργοποιημένου πληκτρολογίου.&lt;br&gt;
+Πατώντας Α/Ε/Δ απενεργοποιεί το πληκτρολόγιο και αποθηκεύει τον αριθμό κατοικίας μαζί με το πρόσθετο κείμενο.&lt;br&gt;
+Πατώντας στο μεγάλο λευκό πεδίο εισαγωγής του αριθμού κατοικίας κλείνει επίσης το πληκτρολόγιο.&lt;br&gt;
+Στον OSM επεξεργαστή το κείμενο θα παρουσιάζεται με μια ετικέτα που θα διαθέτει το \'όνομα\'. Μπορείτε να διαγράψετε αυτή την ετικέτα μόλις χρησιμοποιήσετε τις πληροφορίες ή να αλλάξετε το όνομα της ετικέτας πχ. σε \'σημειώσεις\'.&lt;br&gt;
+&lt;br&gt;
+&lt;b&gt;Εικονίδιο αναίρεσης:&lt;/b&gt;&lt;br&gt;
+Στη δεξιά πλευρά του πεδίου καταχώρησης του αριθμού κατοικίας θα βρείτε τους τελευταίους καταχωρημένους αριθμούς κατοικιών. Ο τελευταίος αριθμός κατοικίας είναι στη κορυφή της λίστας.&lt;br&gt;
+Πατώντας στο εικονίδιο αναίρεσης στη μπάρα του μενού (πρώτο εικονίδιο στη δεξιά πλευρά απο το εικονίδιο με το κτίριο) διαγράφει τον τελευταίο καταχωρημένο αριθμό κατοικίας. Δεν είναι εφικτό να διαγραφούν πολλαπλοί αριθμοί κατοικιών.&lt;br&gt;
+&lt;br&gt;
+&lt;b&gt;Απόσταση των αριθμών κατοικιών απο τη τρέχουσα θέση σας:&lt;/b&gt;&lt;br&gt;
+Το μενού ρυθμίσεις σας επιτρέπει να ορίσετε την απόσταση του κόμβου διεύθυνσης από τη τρέχουσα θέση σας.&lt;br&gt;
+Εάν υπάρχει μια ασυνήθιστα ευρεία οδός, όπου οι κατοικίες είναι μακριά απο το πεζοδρόμιο, προτείνεται να θέσετε αυτή την επιλογή σε μεγαλύτερη τιμή. Εναλλακτικά αυτές οι διορθώσεις μπορούν να γίνουν αργότερα στον OSM επεξεργαστή.&lt;br&gt;
+&lt;br&gt;
+&lt;h3&gt;&lt;u&gt;Συμβουλές και άλλα&lt;/u&gt;&lt;/h3&gt;
+&lt;b&gt;Διαδικασία χαρτογράφησης αριθμού κατοικίας:&lt;/b&gt;&lt;br&gt;
+Φαίνεται να είναι πιο αποτελεσματικό να βαδίζετε σε μία πλευρά του δρόμου κατα μήκος του πεζοδρομίου και να καταγράφετε τους αριθμούς κατοικιών και στις δύο πλευρές του δρόμου παράλληλα.&lt;br&gt;
+Με λίγη εξάσκηση παραπάνω θα είναι δυνατό να καταχωρείτε τους αριθμούς των κατοικιών χωρίς να χρειάζεται να σταματάτε κάθε φορά. Υιοθετώντας την ταχύτητα βαδίσματος είναι πιθανό να βρείτε έναν ικανοποιητικό ρυθμό που σας επιτρέπει στη μία πλευρά να καταγράφετε όλους τους αριθμούς κατοικιών και απο την άλλη να επεξεργάζεστε όσο γίνεται περισσότερους αριθμούς κατοικιών.&lt;br&gt;</string>
+    <string name="help_text_3">&lt;b&gt;Χαρτογράφηση άλλων πληροφοριών εκτός των αριθμών κατοικιών&lt;/b&gt;&lt;br&gt;
+Ενθουσιώδεις χαρτογράφοι σε περίπτωση που χρειαστούν να χαρτογραφίσουν επιπρόσθετες πληροφορίες που δεν έχουν σχέση με αριθμούς κατοικιών και διευθύνσεις καθώς βαδίζουν στο δρόμο με το Keypad-Mapper 3.&lt;br&gt;
+
+Στη πραγματικότητα δεν είναι ιδιαίτερα αποτελεσματικό να το κάνετε αυτό γιατι στό τέλος πολύ λιγότερες πληροφόριες θα χαρτογραφηθούν σε σχέση με το να είσαστε συγκεντρώμενοι στους αριθμούς κατοικιών.&lt;br&gt;
+Αυτό ισχύει και σε σχέση με την καταγραφή οδών, τκ και άλλων σχετικών πληροφοριών καθώς είστε στο δρόμο: πολλές οδοί έχουν ήδη πολύ καλές ετικέτες και τκ, πόλη και όνομα χώρας που σημαίνει ότι είνια ευκολότερο να αντιγράωετε αυτές τις πληροφορίες αργότερα μέσω της καταχώρησης οδού στη καταχώρηση αριθμού κατοικίας αντί να πληκτρολογείτε όλη αυτή την πληροφορία στο κινητό σας&amp;nbsp;/ ταμπλέτα. Αυτή η προσέγγιση εξοικονομεί χρόνο έτσι ώστε να μπορείτε να συνεισφέρετε περισσότερες πληροφορίες στο OSM σε ένα συγκεκριμένο χρονικό διάστημα.&lt;br&gt;
+&lt;br&gt;
+&lt;b&gt;Σύνδεση ίντερνετ για την επικύρωση της διεύθυνσης:&lt;/b&gt;&lt;br&gt;
+Το Keypad-Mapper 3 παρέχει το τκ και το όνομα της διεύθυνσης της τρέχουσας GPS θέσης στην keypad οθόνη. Με αυτό τον τρόπο μπορείτε να πιστοποιήσετε ότι το OSM διαθέτει ναι ή όχι το σωστό τκ και όνομα διεύθυνσης της πραγματικής σας θέσης.&lt;br&gt;
+Η εφαρμογή χρησιμοποιεί NOMINATIM για αυτόν ακριβώς τον λόγο, έναν διακομιστή διευθύνσεων που χρησιμοποιεί πληροφορίες OpenStreetMap μόνο. Ο NOMINATIM διακομιστής ανήκει στην ENAiKOON. Ενημερώνετε σε τακτά διαστήματα κυρίως κατα το τέλος κάθε εβδομάδας.&lt;br&gt;
+Για την εμφάνιση διευθύνσεων και τκ απαιτείται η συσκευή σας να είναι συνδεδεμένη με το ίντερνετ. Στο μενού ρυθμίσεις μπορείτε να περιορίσετε την σύνδεση ίντερνετ σε σύνδεση μέσω Wi-Fi. Σε αυτή τη περίπτωση η εμφάνιση τκ και διεύθυνσης δεν είναι εφικτή καθώς βαδίζετε στον δρόμο.&lt;br&gt;
+Το όνομα της οδού και το τκ που εμφανίζονται στη keypad οθόνη ανανεώνονται κάθε 10 δευτερόλεπτα. Αυτό δημιουργεί επιπρόσθετη κίνηση στο ίντερνετ με αποτέλεσμα την υπέρογκη χρήση του προσωπικού σας ορίου GPRS δεδομένων.&lt;br&gt;
+&lt;br&gt;
+&lt;b&gt;Επεξεργαστής διεύθυνσης:&lt;/b&gt;&lt;br&gt;
+Εαν κανένα τκ και / ή καμία διεύθυνση δεν εμφανίζονται ή εμφανίζεται λανθασμένη διεύθυνση αυτό σημαίνει πως για τη συγκεκριμένη θέση σας η βάση του OSM δεν διαθέτει σωστές πληροφορίες. Σε αυτή τη περίπτωση είναι εφικτό να προσθέσετε αυτή τη πληροφορία στην οθόνη επεξεργασίας διεύθυνσης της εφαρμογής πατώντας το εικονίδιο με το σπίτι και επιλέξτε \'επεξεργασία δειύθυνσης\'.&lt;br&gt;
+Αυτή η πληροφορία αποθηκεύεται στο .osm αρχείο για την προώθηση του αργότερα μέσω e-mail στον υπολογιστή που διαθέτει OSM επεξεργαστή. Στον OSM επεξεργαστή σας αυτή η πληροφορία θα ομαδοποιηθεί αυτόματα με τον αριθμό κατοικίας.&lt;br&gt;
+&lt;br&gt;
+&lt;b&gt;Βελτιστοποιημένη διάταξη οθόνης:&lt;/b&gt;&lt;br&gt;
+Αναλόγως την ανάλυση οθόνης, η οθόνη του keypad έχει διαφορετική διάταξη: οι χαρακτήρες για τους αριθμούς κατοικίας είναι \'a\'..\'c\' σε μικρές οθόνες και \'a\'..\'l\' σε μεγαλύτερες.&lt;br&gt;
+Εάν χρησιμοποιείται συσκευή με μικρή οθόνη αλλά συχνά χρειάζεστε χαρακτήρες \'d\'..\'l\' γυρίστε την οθόνη σας σε landscape. Τώρα διαθέτετε όλους τους διαθέσιμους χαρακτήρες \'a\'..\'l\'.&lt;br&gt;
+Όταν η εφαρμογή τρέχει σε συσκευές με μικρή οθόνη παρέχει επιπρόσθετες επιλογές ρυθμίσεωνn \'βελτιστοποίηση διάταξης\' που επιτρέπει την εμφάνιση διάφορων προαιρετικών πληροφοριών στη keypad οθόνη. Αυτό αποσκοπεί στη μεγιστοποίηση του διαθέσιμου χώρου για τις βασικές λειτουργίες της keypad οθόνης.&lt;br&gt;
+&lt;br&gt;
+&lt;h3&gt;&lt;u&gt;OpenCellIDs&lt;/u&gt;&lt;/h3&gt;
+&lt;a href=&quot;http://www.opencellids.org&quot;&gt;&lt;font color=&quot;#ffbf27&quot;&gt;www.opencellids.org&lt;/font&gt;&lt;/a&gt; είναι ένα open source έργο συμπληρωματικό ως προς το OSM.&lt;br&gt;
+Αυτό το έργο έγινε με βάση τη συλλογή GPS θέσεων των GSM σταθμών βάσης. Τα δεδομένα που έχουν συλλέξει όσοι σεμμετέχουν σε αυτή την πρωτοβουλία μπορούν να μεταφορτωθούν από το www.opencellids.org για απεριόριστη ιδιωτική και εμπορική χρήση.&lt;br&gt;
+Ένας από τους κύριους λόγους για τη συλλογή δεδομένων OpenCellIDs είναι ότι αργότερα μπορούν να χρησιμοποιηθούν για συσκευές εντοπισμού στο-σπίτι όπου το GPS δεν είναι διαθέσιμο. Επιπρόσθετα ο εντοπισμός μέσω GSM καταναλώνει αρκετά λιγότερη μπαταρία σε σχέση με τη χρήση του GPS για τον εντοπισμό. Παράλλημα όμως και ιδιαίτερα στην επαρχία είναι κατα πολύ λιγότερο ακριβές σε σχέση με το GPS.&lt;br&gt;
+To OpenCellIDs διαθέτει τη μεγαλύτερη open source συλλογή GPS δεδομένων από σταθμούς βάσης GSM σε παγκόσμιο επίπεδο. Στις αρχές του 2013 η βάση μας διέθετε περίπου 2.7 εκατ μοναδικές κυψέλες. Αυτή τη στιγμή η βάση μας αυξάνεται καθημερινά κατα 1,000 με 2,000 νέες μαναδικές κυψέλες. Υπολογίζουμε ότι το σύνολο φτάνει τουλάχιστον στα 25 εκατ. μοναδικές GSM κυψέλες παγκοσμίως που σημαίνει ότι 10-15% όλων των κυψελών παγκοσμίως έχουν ήδη ανακαλυφτεί.&lt;br&gt;
+Το Keypad-Mapper 3 συλλέγει αυτόματα δεδομένα OpenCellIDs χωρίς να παρενοχλεί τον χρήστη. Η τρόπος που γίνεται η συλλογή πληροφοριών εξασφαλίζει τη ανωνυμία και πλήρη συμμόρφωση με τους Γερμανικούς κανόνες περί ιδιωτικής ζωής.&lt;br&gt;</string>
+    <string name="prefsUseWifiOnlyTitle">Wi-Fi μόνο για ίντερνετ</string>
+    <string name="rateme_thankyou">Ευχαριστούμε για την προτίμηση</string>
+    <string name="rateme_keypad">Keypad-Mapper 3!</string>
+    <string name="rateme_text">Είναι σημαντικό για εμάς εαν μπορέσετε να αφιερώσετε λίγο χρόνο στην εφαρμογή και να βαθμολογήσετε το Keypad-Mapper 3 στο Google Play.\n\nΘέλετε να το κάνετε τώρα?</string>
+    <string name="rateme_yes">Ναι</string>
+    <string name="rateme_later">Αργότερα</string>
+    <string name="rateme_dont_ask">Να μη γίνει ερώτηση ξανα</string>
+    <string name="statusAccuracy">%d μ</string>
+    <string name="statusAccuracyFt">%d ft</string>
+    <string name="prefsOptimizeLayout">Βελτιστοποίηση διάταξης</string>
+    <string name="prefsUseWifiOnlySummary">Χρήση μόνο των ρυθμίσεων του Wi-Fi</string>
+    <string name="prefsHelpTitle">Βοήθεια</string>
+    <string name="prefsHelpSummary">Περιγραφή βοήθειας</string>
+</resources>

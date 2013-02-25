@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="lang_support_codes">de\nen\nes\nfr\nel\nru</string>
+    <string name="lang_support_names">Deutsch\nEnglish\nEspañol\nFrançais\nΕλληνικά\nРусский</string>
+    <string name="lang_support_urls"><![CDATA[http://liferay.enaikoon.de:8080/10-resourceeditor-services/zip/resources?applicationCode=keypadmapper&domainName=general&languageCode=de_DE\nhttp://liferay.enaikoon.de:8080/10-resourceeditor-services/zip/resources?applicationCode=keypadmapper&domainName=general&languageCode=en_GB\nhttp://liferay.enaikoon.de:8080/10-resourceeditor-services/zip/resources?applicationCode=keypadmapper&domainName=general&languageCode=es_ES\nhttp://liferay.enaikoon.de:8080/10-resourceeditor-services/zip/resources?applicationCode=keypadmapper&domainName=general&languageCode=fr_FR\nhttp://liferay.enaikoon.de:8080/10-resourceeditor-services/zip/resources?applicationCode=keypadmapper&domainName=general&languageCode=el_GR\nhttp://liferay.enaikoon.de:8080/10-resourceeditor-services/zip/resources?applicationCode=keypadmapper&amp;domainName=general&amp;languageCode=ru_RU]]></string>
+    <string-array name="language_names">
+        <item>English</item>
+        <item>Deutsch</item>
+        <item>Français</item>
+        <item>Español</item>
+        <item>Ελληνικά</item>
+        <item>Русский</item>
+    </string-array>
+    <string-array name="language_codes">
+        <item>en</item>
+        <item>de</item>
+        <item>fr</item>
+        <item>es</item>
+        <item>el</item>
+        <item>ru</item>
+    </string-array>
+    <string-array name="prefsDataDistanceValues">
+        <!-- string-array instead of integer-array because of http://code.google.com/p/android/issues/detail?id=2096 -->
+        <item>1</item>
+        <item>2</item>
+        <item>5</item>
+        <item>8</item>
+        <item>10</item>
+        <item>15</item>
+        <item>20</item>
+        <item>25</item>
+    </string-array>
+    <string-array name="bugreport_persons">
+        <item>ilya.v.tretyakov@gmail.com</item>
+        <item>inviu@enaikoon.com</item>
+    </string-array>
+    <string name="options_bugreport_default">ask</string>
+    <string-array name="options_bugreport_keys">
+        <item>never</item>
+        <item>always</item>
+        <item>ask</item>
+    </string-array>
+    <string-array name="prefsMeasurementsValues">
+        <item>m</item>
+        <item>ft</item>
+    </string-array>
+    <string name="prefsMeasurementsDefaultValue">m</string>
+    <string-array name="prefsMeasurementsEntries">
+        <item>m</item>
+        <item>ft</item>
+    </string-array>
+    <string-array name="options_bugreport_values">
+        <item>never send</item>
+        <item>always send</item>
+        <item>ask before sending</item>
+    </string-array>
+    <string-array name="prefsDataDistanceEntries">
+        <item>1 m</item>
+        <item>2 m</item>
+        <item>5 m</item>
+        <item>8 m</item>
+        <item>10 m</item>
+        <item>15 m</item>
+        <item>20 m</item>
+        <item>25 m</item>
+    </string-array>
+</resources>

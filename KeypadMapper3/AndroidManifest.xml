@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="de.enaikoon.android.keypadmapper3"
+    android:versionCode="27"
+    android:versionName="3.0.16" >
+    <uses-sdk
+        android:minSdkVersion="7"
+        android:targetSdkVersion="15" />
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="false"
+        android:xlargeScreens="true" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-feature android:name="android.hardware.camera" />
+    <!-- Opencellid library new permissions start -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <!-- Opencellid library finish -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <application
+        android:name="KeypadMapperApplication"
+        android:icon="@drawable/icon_keypadmapper"
+        android:label="@string/app_name" >
+        <activity
+            android:name="org.osm.keypadmapper2.KeypadMapper2Activity"
+            android:configChanges="keyboardHidden"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:theme="@style/Theme.Sherlock.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="org.osm.keypadmapper2.Preferences"
+            android:theme="@style/SettingsTheme" >
+        </activity>
+        <activity
+            android:name="ExceptionActivity"
+            android:configChanges="locale|keyboardHidden|orientation" >
+        </activity>
+        <activity
+            android:name="ShareFilesActivity"
+            android:configChanges="locale|keyboardHidden|orientation"
+            android:label="@string/prefsShare"
+            android:theme="@android:style/Theme.Dialog" >
+        </activity>
+        <activity
+            android:name="HelpActivity"
+            android:configChanges="locale|keyboardHidden|orientation"
+            android:label="@string/help_title"
+            android:theme="@style/Theme.Sherlock" >
+        </activity>
+        <activity
+            android:name="RateMeActivity"
+            android:configChanges="locale|keyboardHidden|orientation"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+        </activity>
+        <service android:name="de.enaikoon.android.keypadmapper3.services.ControllableResourceInitializerService" />
+        <service android:name="de.enaikoon.android.inviu.opencellidlibrary.CellIDCollectionService" />
+        <service android:name="de.enaikoon.android.inviu.opencellidlibrary.UploadService" />
+    </application>
+</manifest>

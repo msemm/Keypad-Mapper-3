@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <LinearLayout
+        android:id="@+id/noSatInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:paddingLeft="34dp"
+        android:paddingRight="34dp" >
+        <TextView
+            android:id="@+id/noGpsReceptionText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/satellite_no_gps"
+            android:textColor="#f9be27"
+            android:textSize="23sp" />
+        <ImageView
+            android:id="@+id/noGpsReceptionImage"
+            android:layout_width="87dp"
+            android:layout_height="87dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/no_gps_reception" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/satInfo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="visible" >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="12dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="12dp" >
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="72dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_grey"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp" >
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="top|center_horizontal"
+                    android:orientation="vertical" >
+                    <TextView
+                        android:id="@+id/inViewText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="@string/satellite_in_view"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@android:color/white" />
+                    <TextView
+                        android:id="@+id/inUseText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="@string/satellite_in_use"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@android:color/white" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+                    <TextView
+                        android:id="@+id/satInView"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        android:text="0"
+                        android:textColor="#ffbf27"
+                        android:textSize="30sp" />
+                    <TextView
+                        android:id="@+id/satInUse"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        android:shadowColor="#ffbf27"
+                        android:shadowDx="0"
+                        android:shadowDy="0"
+                        android:shadowRadius="@integer/shadow_size"
+                        android:text="0"
+                        android:textColor="@android:color/white"
+                        android:textSize="30sp" />
+                </LinearLayout>
+            </LinearLayout>
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="72dp"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_grey" >
+                <TextView
+                    android:id="@+id/accuracyTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top|center_horizontal"
+                    android:layout_marginTop="3dp"
+                    android:text="@string/satellite_accuracy"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@android:color/white" />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|center_horizontal" >
+                    <TextView
+                        android:id="@+id/accuracyValue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="2dp"
+                        android:paddingRight="2dp"
+                        android:shadowColor="#ffbf27"
+                        android:shadowDx="0"
+                        android:shadowDy="0"
+                        android:shadowRadius="@integer/shadow_size"
+                        android:text="@string/satellite_n_a"
+                        android:textColor="@android:color/white"
+                        android:textSize="40sp" />
+                    <TextView
+                        android:id="@+id/accuracyValueMeasure"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="2dp"
+                        android:text="@string/prefsMeasurementsEntries_1"
+                        android:textColor="#ffbf27"
+                        android:textSize="40sp" />
+                </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+        <de.enaikoon.android.keypadmapper3.view.BarChart
+            android:id="@+id/chart"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+</FrameLayout>

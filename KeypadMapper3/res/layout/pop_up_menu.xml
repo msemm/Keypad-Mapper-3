@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+    <ScrollView
+        android:id="@+id/popUpMenuContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="11dp"
+        android:layout_marginTop="3dp"
+        android:background="@drawable/pop_up_window_small" >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="5dp"
+            android:paddingRight="10dp" >
+            <LinearLayout
+                android:id="@+id/popUpAddressEditorLine"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+                <ImageView
+                    android:id="@+id/popUpAddressEditor"
+                    android:layout_width="@dimen/menu_popup_icon_size"
+                    android:layout_height="@dimen/menu_popup_icon_size"
+                    android:src="@drawable/icon_adress_editor" />
+                <TextView
+                    android:id="@+id/popUpAddressEditorText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/menu_address_editor"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@android:color/white" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/popUpShareLine"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+                <ImageView
+                    android:id="@+id/popUpShare"
+                    android:layout_width="@dimen/menu_popup_icon_size"
+                    android:layout_height="@dimen/menu_popup_icon_size"
+                    android:src="@drawable/icon_share" />
+                <TextView
+                    android:id="@+id/popUpShareText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/menu_share"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@android:color/white" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/popUpUndoLine"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+                <ImageView
+                    android:id="@+id/popUpUndo"
+                    android:layout_width="@dimen/menu_popup_icon_size"
+                    android:layout_height="@dimen/menu_popup_icon_size"
+                    android:src="@drawable/icon_undo" />
+                <TextView
+                    android:id="@+id/popUpUndoText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/menu_undo"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@android:color/white" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/popUpFreezeGpsLine"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+                <ImageView
+                    android:id="@+id/popUpFreezeGps"
+                    android:layout_width="@dimen/menu_popup_icon_size"
+                    android:layout_height="@dimen/menu_popup_icon_size"
+                    android:src="@drawable/icon_freeze_inactive" />
+                <TextView
+                    android:id="@+id/popUpFreezeGpsText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/menu_freeze_gps"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@android:color/white" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/popUpCameraLine"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+                <ImageView
+                    android:id="@+id/popUpCamera"
+                    android:layout_width="@dimen/menu_popup_icon_size"
+                    android:layout_height="@dimen/menu_popup_icon_size"
+                    android:src="@drawable/icon_camera" />
+                <TextView
+                    android:id="@+id/popUpCameraText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/menu_camera"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@android:color/white" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/popUpGpsAccuracyLine"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+                <ImageView
+                    android:id="@+id/popUpGpsAccuracy"
+                    android:layout_width="@dimen/menu_popup_icon_size"
+                    android:layout_height="@dimen/menu_popup_icon_size"
+                    android:src="@drawable/icon_gps_precision" />
+                <TextView
+                    android:id="@+id/popUpGpsAccuracyText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/menu_gps_accuracy"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@android:color/white" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/popUpSettingsLine"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+                <ImageView
+                    android:id="@+id/popUpSettigs"
+                    android:layout_width="@dimen/menu_popup_icon_size"
+                    android:layout_height="@dimen/menu_popup_icon_size"
+                    android:src="@drawable/icon_settings" />
+                <TextView
+                    android:id="@+id/popUpSettingsText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/menu_settings"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@android:color/white" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

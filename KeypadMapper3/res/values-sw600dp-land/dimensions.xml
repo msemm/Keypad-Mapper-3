@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="extended_address_editor_margin">42dp</dimen>
+</resources>
