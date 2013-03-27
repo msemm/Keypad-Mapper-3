@@ -52,7 +52,7 @@ public class OsmWriter {
                 + "\" lon=\"" + lon + "\">\n");
         lineNumber++;
         for (Entry<String, String> entry : tags.entrySet()) {
-            if (entry.getValue() != null && !entry.getValue().isEmpty()
+            if (entry.getValue() != null && entry.getValue().length() != 0
                     && !entry.getValue().equalsIgnoreCase("null")) {
                 osmFile.write("\t\t<tag k=\"" + entry.getKey() + "\" v=\"" + entry.getValue()
                         + "\"/>\n");

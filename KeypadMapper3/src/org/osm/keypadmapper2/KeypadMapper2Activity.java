@@ -228,6 +228,7 @@ public class KeypadMapper2Activity extends FragmentActivity implements AddressIn
         // starting cellid library
         if (!CellIDCollectionService.isServiceStarted) {
             Configurator.setPRODUCTION_VERSION(true);
+            Configurator.setGpsTimeout(0);
             Configurator.setSDCARD_DIRECTORY_NAME(KeypadMapperApplication.getInstance()
                     .getKeypadMapperDirectory().getAbsolutePath()
                     + "/" + "opencellid/");

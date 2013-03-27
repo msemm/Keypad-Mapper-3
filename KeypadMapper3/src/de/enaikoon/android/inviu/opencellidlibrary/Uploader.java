@@ -69,7 +69,7 @@ public class Uploader implements Runnable {
             if (Configurator.isPRODUCTION_VERSION()) {
                 IP = "www.enaikoon.de";
             } else {
-                IP = "217.70.136.102";
+                IP = "www.enaikoon.de";// "217.70.136.102";
             }
 
             HttpPost httppost = new HttpPost("http://" + IP + "/gpsSuiteCellId/measure/uploadCsv");

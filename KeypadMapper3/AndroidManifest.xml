@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="de.enaikoon.android.keypadmapper3"
-    android:versionCode="27"
-    android:versionName="3.0.16" >
+    android:installLocation="auto"
+    android:versionCode="31"
+    android:versionName="3.0.20" >
     <uses-sdk
         android:minSdkVersion="7"
         android:targetSdkVersion="15" />
@@ -16,7 +17,9 @@
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.CAMERA" />
-    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
     <!-- Opencellid library new permissions start -->
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
