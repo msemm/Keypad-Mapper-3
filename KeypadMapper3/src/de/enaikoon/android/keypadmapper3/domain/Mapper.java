@@ -14,18 +14,23 @@ import java.util.Set;
 import java.util.concurrent.CopyOnWriteArrayList;
 import java.util.concurrent.Executors;
 
+import org.osm.keypadmapper2.KeypadMapper2Activity;
+
+import android.app.Activity;
 import android.content.Context;
 import android.location.Location;
 import android.location.LocationListener;
 import android.os.Bundle;
 import android.os.Handler;
 import android.text.TextUtils;
+import android.util.Log;
 import android.widget.Toast;
 import de.enaikoon.android.keypadmapper3.KeypadMapperApplication;
 import de.enaikoon.android.keypadmapper3.LocationNotAvailableException;
-import de.enaikoon.android.keypadmapper3.file.KeypadMapperFolderCleaner;
+import de.enaikoon.android.keypadmapper3.settings.KeypadMapperSettings;
 import de.enaikoon.android.keypadmapper3.utils.SerialExecutor;
 import de.enaikoon.android.keypadmapper3.writers.DataWritingManager;
+import de.enaikoon.android.keypadmapper3.writers.OsmWriter;
 import de.enaikoon.android.library.resources.locale.Localizer;
 
 /**
@@ -54,7 +59,11 @@ public class Mapper implements LocationListener {
     private List<Trackpoint> trackpoints;
 
     private Address currentAddress;
-
+    
+    private int houseNumberCount;
+    
+    private static volatile boolean appending;
+    
     private DataWritingManager writingManager = new DataWritingManager(KeypadMapperApplication
             .getInstance().getKeypadMapperDirectory()) {
 
@@ -68,7 +77,6 @@ public class Mapper implements LocationListener {
                         listener.notifyAboutFatalError(message);
                     }
                 }
-
             });
         }
     };
@@ -77,14 +85,16 @@ public class Mapper implements LocationListener {
 
     private Handler handler;
 
-    private SerialExecutor executor;
-
+    private SerialExecutor gpxExecutor;
+    private SerialExecutor osmExecutor;
+    
     private Location photoLocation;
 
     public Mapper(Context context) {
         this.context = context;
         handler = new Handler();
-        executor = new SerialExecutor(Executors.newFixedThreadPool(1));
+        gpxExecutor = new SerialExecutor(Executors.newFixedThreadPool(1));
+        osmExecutor = new SerialExecutor(Executors.newFixedThreadPool(1));
         freezedLocationListeners = new ArrayList<FreezedLocationListener>();
         undoListeners = new ArrayList<UndoAvailabilityListener>();
         localizer = KeypadMapperApplication.getInstance().getLocalizer();
@@ -113,6 +123,7 @@ public class Mapper implements LocationListener {
 
     public void clearAllCurrentData() {
         addresses.clear();
+        houseNumberCount = 0;
         trackpoints.clear();
         writingManager.initBasename();
         setUndoAvailable(false);
@@ -122,8 +133,12 @@ public class Mapper implements LocationListener {
         setFreezedLocation(null);
     }
 
-    public void freezeUnfreezeLocation() {
+    public void freezeUnfreezeLocation(Activity activity) {
         if (freezedLocation == null) {
+            if (!KeypadMapperApplication.getInstance().getSettings().isRecording()) {
+                Toast.makeText(activity, localizer.getString("error_not_recording"), Toast.LENGTH_LONG).show();
+                return;
+            }
             setFreezedLocation(getCurrentLocation());
             if (freezedLocation == null) {
                 String message = localizer.getString("no_location");
@@ -143,11 +158,6 @@ public class Mapper implements LocationListener {
     }
 
     public Location getCurrentLocation() {
-        // Location tmp = new Location("gps");
-        // tmp.setAccuracy(33);
-        // tmp.setLatitude(10);
-        // tmp.setLongitude(20);
-        // currentLocation = tmp;
         return currentLocation;
     }
 
@@ -156,13 +166,7 @@ public class Mapper implements LocationListener {
     }
 
     public int getHouseNumberCount() {
-        int count = 0;
-        for (Address address : addresses) {
-            if (TextUtils.isEmpty(address.getNumber())) {
-                count++;
-            }
-        }
-        return addresses.size() - count;
+        return houseNumberCount;
     }
 
     public String[] getLast3HouseNumbers() {
@@ -199,12 +203,28 @@ public class Mapper implements LocationListener {
      */
     @Override
     public void onLocationChanged(Location location) {
+        // it's okay to be null
         setCurrentLocation(location);
-        if (location != null && location.getLatitude() != 0.0 && location.getLongitude() != 0.0
-                && location.getAccuracy() < 500 /* m */) {
+        
+        if (location != null && location.getLatitude() != 0.0 && location.getLongitude() != 0.0  && location.getAccuracy() < 500 /* m */) {
             Trackpoint point =
                     new Trackpoint(location.getLatitude(), location.getLongitude(),
-                            location.getTime());
+                            location.getTime(), null, location.getSpeed());
+            if (location.hasAltitude()) {
+                point.setAltitude(location.getAltitude());
+            }
+            trackpoints.add(point);
+        }
+    }
+    
+    public void addWavTrackpoint(Location location, String filename) {
+        if (location != null && filename != null
+                && location.getLatitude() != 0.0 && location.getLongitude() != 0.0
+                && location.getAccuracy() < 500 /* m */) {
+            Trackpoint point = new Trackpoint(location.getLatitude(), 
+                                              location.getLongitude(),
+                                              location.getTime(), 
+                                              filename, 0);
             if (location.hasAltitude()) {
                 point.setAltitude(location.getAltitude());
             }
@@ -213,9 +233,7 @@ public class Mapper implements LocationListener {
     }
 
     public void onPause() {
-        saveAll();
         KeypadMapperApplication.getInstance().getLocationProvider().removeLocationListener(this);
-
     }
 
     /*
@@ -242,7 +260,6 @@ public class Mapper implements LocationListener {
         KeypadMapperApplication.getInstance().getLocationProvider().addLocationListener(this);
         writingManager.checkExternalStorageStatus();
         writingManager.initKeypadMapperFolder();
-
     }
 
     /*
@@ -266,11 +283,32 @@ public class Mapper implements LocationListener {
     public void removeUndoListener(UndoAvailabilityListener undoListener) {
         undoListeners.remove(undoListener);
     }
+    
+    public void stopRecording() {
+        stopAppendingTrackpoints();
+        clearAllCurrentData();
+        clearFreezedLocation();
+        setCurrentLocation(null);
+        KeypadMapperApplication.getInstance().checkLastGpxFile();
+        KeypadMapperApplication.getInstance().getSettings().setLastGpxFile(null);
+        KeypadMapperApplication.getInstance().checkLastOsmFile();
+        // reset last file names
+        KeypadMapperApplication.getInstance().getSettings().setLastOsmFile(null);
+        KeypadMapperApplication.getInstance().getLocationProvider().removeLocationListener(this);
+    }
+    
+    public void startRecording() {
+        clearAllCurrentData();
+        KeypadMapperApplication.getInstance().getLocationProvider().addLocationListener(this);
+        writingManager.initGpx();
+        writingManager.initOsm();
+        startAppendingTrackpoints();
+    }
 
     public void reset() {
         writingManager.initBasename();
-        trackpoints.clear();
         addresses.clear();
+        houseNumberCount = 0;
         setUndoAvailable(false);
     }
 
@@ -281,7 +319,7 @@ public class Mapper implements LocationListener {
             left /= 111111;
 
             Location locationToSave = getCurrentLocation();
-
+            
             if (getFreezedLocation() != null) {
                 locationToSave = getFreezedLocation();
                 clearFreezedLocation();
@@ -290,36 +328,86 @@ public class Mapper implements LocationListener {
             if (locationToSave == null) {
                 throw new LocationNotAvailableException("Location is not available");
             }
-            double lat =
-                    (locationToSave.getLatitude()
-                            + Math.sin(Math.PI / 180 * locationToSave.getBearing()) * left + Math
-                            .cos(Math.PI / 180 * locationToSave.getBearing()) * forward);
-            double lon =
-                    (locationToSave.getLongitude() + (Math.sin(Math.PI / 180
-                            * locationToSave.getBearing())
-                            * forward - Math.cos(Math.PI / 180 * locationToSave.getBearing())
-                            * left)
-                            / Math.cos(Math.PI / 180 * locationToSave.getLatitude()));
+            double lat = 0.0d;
+            double lon = 0.0d;
+            
+            double speed = locationToSave.getSpeed();
+            KeypadMapperSettings settings = KeypadMapperApplication.getInstance().getSettings();
+            // convert meters per second to km/h or mph
+            if (settings.getMeasurement().equals(KeypadMapperSettings.UNIT_METER)) {
+                // meters
+                speed = speed * KeypadMapperSettings.M_PER_SEC_HAS_KM_PER_HOUR;
+            } else {
+                // feet
+                speed = speed * KeypadMapperSettings.M_PER_SEC_HAS_MILES_PER_HOUR;
+            }
+            
+            Log.i("KeypadMapper", "Speed at trackpoint: " + speed + " km/h");
+            if (settings.isCompassAvailable() &&
+                    (((speed > 0.0 && settings.getUseCompassAtSpeed() > 0.0
+                       && speed < settings.getUseCompassAtSpeed()) || 
+                       (speed == 0.0 && settings.getUseCompassAtSpeed() > 0.0)))) {
 
+                float azimuth = (float) Math.toDegrees(KeypadMapper2Activity.azimuth); // orientation
+                if (azimuth < 0.0f) {
+                    azimuth = (azimuth + 360);
+                }
+                float bearing = azimuth;
+               
+                lat =
+                        (locationToSave.getLatitude()
+                                + Math.sin(Math.PI / 180 * bearing) * left + Math
+                                .cos(Math.PI / 180 * bearing) * forward);
+                lon =
+                        (locationToSave.getLongitude() + (Math.sin(Math.PI / 180
+                                * bearing)
+                                * forward - Math.cos(Math.PI / 180 * bearing)
+                                * left)
+                                / Math.cos(Math.PI / 180 * locationToSave.getLatitude()));
+                Log.i("KeypadMapper", "Used compass calculation: lat=" + lat + " lon=" + lon);
+            } else {
+                // use bearing
+                lat =
+                        (locationToSave.getLatitude()
+                                + Math.sin(Math.PI / 180 * locationToSave.getBearing()) * left + Math
+                                .cos(Math.PI / 180 * locationToSave.getBearing()) * forward);
+                lon =
+                        (locationToSave.getLongitude() + (Math.sin(Math.PI / 180
+                                * locationToSave.getBearing())
+                                * forward - Math.cos(Math.PI / 180 * locationToSave.getBearing())
+                                * left)
+                                / Math.cos(Math.PI / 180 * locationToSave.getLatitude()));
+                Log.i("KeypadMapper", "Used normal calculation: lat=" + lat + " lon=" + lon);
+            }
+            
             Address addressToSave = new Address(currentAddress);
             addressToSave.setLocation(lat, lon);
+            
+            // make sure addresses are 4 or less
+            if (addresses.size() > 4) {
+                addresses.remove(0);
+            }
+            
+            houseNumberCount++;
             addresses.add(addressToSave);
             setUndoAvailable(true);
-
-            saveAll();
+            
+            saveAddress(addressToSave);
 
             currentAddress.setNumber("");
             currentAddress.setNotes("");
+            currentAddress.setHousename("");
         }
     }
-
+    
     public void setCurrentAddress(Address currentAddress) {
         if (currentAddress == null) {
             throw new IllegalArgumentException("You could not set null instead of address");
         }
         this.currentAddress = currentAddress;
     }
-
+    
+   
     public void setFolderCleared(boolean folderCleared) {
         this.folderCleared = folderCleared;
     }
@@ -330,8 +418,9 @@ public class Mapper implements LocationListener {
 
     public void undo() {
         if (!addresses.isEmpty() && isUndoAvailable()) {
-            addresses.remove(addresses.size() - 1);
-            saveAll();
+            Address lastNode = addresses.remove(addresses.size() - 1);
+            houseNumberCount --;
+            deleteLastNode();
             setUndoAvailable(false);
         }
     }
@@ -346,18 +435,52 @@ public class Mapper implements LocationListener {
             listener.undoStateChanged(undoAvailable);
         }
     }
-
-    private void saveAll() {
-        executor.execute(new Runnable() {
-
+    
+    private void deleteLastNode() {
+        osmExecutor.execute(new Runnable() {
             @Override
             public void run() {
-                writingManager.saveAddresses(addresses);
-                writingManager.saveTrackpoints(trackpoints);
-                KeypadMapperFolderCleaner.cleanFolderFromEmptyFiles(KeypadMapperApplication
-                        .getInstance().getKeypadMapperDirectory());
+                OsmWriter osm = new OsmWriter();
+                osm.deleteLastNode();
+            } 
+        });
+    }
+
+    private void saveAddress(final Address a) {
+        osmExecutor.execute(new Runnable() {
+            @Override
+            public void run() {
+                if (writingManager != null) {
+                    writingManager.saveAddress(a);
+                }
             }
         });
+    }
+    
+    private void startAppendingTrackpoints() {
+        appending = true;
+        gpxExecutor.execute(new Runnable() {
+            
+            @Override
+            public void run() {
+                while (appending) {
+                    if (trackpoints != null && writingManager != null) {
+                        List<Trackpoint> tpList = new ArrayList<Trackpoint>();
+                        tpList.addAll(trackpoints);
+                        trackpoints.clear();
+                        writingManager.saveTrackpoints(tpList, true);
+                    }
+                    
+                    try {
+                        Thread.sleep(5000L);
+                    } catch (Exception e) {}
+                }
+            }
+        });
+    }
+    
+    private void stopAppendingTrackpoints() {
+        appending = false;
     }
 
     private void setFreezedLocation(Location freezedLocation) {

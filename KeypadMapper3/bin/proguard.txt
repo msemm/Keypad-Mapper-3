@@ -1,0 +1,137 @@
+# view res/layout/abs__screen_action_bar.xml #generated:43
+# view res/layout/abs__screen_action_bar_overlay.xml #generated:26
+# view res/layout/abs__screen_simple.xml #generated:32
+# view res/layout/abs__screen_simple_overlay_action_mode.xml #generated:27
+# view xlarge\res/layout-xlarge/abs__screen_action_bar.xml #generated:43
+# view xlarge\res/layout-xlarge/abs__screen_action_bar_overlay.xml #generated:24
+-keep class com.actionbarsherlock.internal.nineoldandroids.widget.NineFrameLayout { <init>(...); }
+
+# view large\res/layout-large/abs__action_mode_close_item.xml #generated:17
+# view res/layout/abs__action_mode_close_item.xml #generated:17
+-keep class com.actionbarsherlock.internal.nineoldandroids.widget.NineLinearLayout { <init>(...); }
+
+# view res/layout/abs__action_menu_item_layout.xml #generated:17
+-keep class com.actionbarsherlock.internal.view.menu.ActionMenuItemView { <init>(...); }
+
+# view res/layout/abs__action_menu_layout.xml #generated:17
+-keep class com.actionbarsherlock.internal.view.menu.ActionMenuView { <init>(...); }
+
+# view res/layout/abs__list_menu_item_layout.xml #generated:17
+# view res/layout/abs__popup_menu_item_layout.xml #generated:17
+-keep class com.actionbarsherlock.internal.view.menu.ListMenuItemView { <init>(...); }
+
+# view res/layout/abs__screen_action_bar.xml #generated:26
+# view res/layout/abs__screen_action_bar.xml #generated:50
+# view res/layout/abs__screen_action_bar_overlay.xml #generated:29
+# view res/layout/abs__screen_action_bar_overlay.xml #generated:52
+# view xlarge\res/layout-xlarge/abs__screen_action_bar.xml #generated:26
+# view xlarge\res/layout-xlarge/abs__screen_action_bar_overlay.xml #generated:27
+-keep class com.actionbarsherlock.internal.widget.ActionBarContainer { <init>(...); }
+
+# view res/layout/abs__action_mode_bar.xml #generated:19
+# view res/layout/abs__screen_action_bar.xml #generated:36
+# view res/layout/abs__screen_action_bar_overlay.xml #generated:40
+# view xlarge\res/layout-xlarge/abs__screen_action_bar.xml #generated:36
+# view xlarge\res/layout-xlarge/abs__screen_action_bar_overlay.xml #generated:37
+-keep class com.actionbarsherlock.internal.widget.ActionBarContextView { <init>(...); }
+
+# view res/layout/abs__screen_action_bar.xml #generated:31
+# view res/layout/abs__screen_action_bar_overlay.xml #generated:35
+# view xlarge\res/layout-xlarge/abs__screen_action_bar.xml #generated:31
+# view xlarge\res/layout-xlarge/abs__screen_action_bar_overlay.xml #generated:32
+-keep class com.actionbarsherlock.internal.widget.ActionBarView { <init>(...); }
+
+# view res/layout/abs__action_bar_home.xml #generated:17
+-keep class com.actionbarsherlock.internal.widget.ActionBarView$HomeView { <init>(...); }
+
+# view res/layout/abs__action_menu_item_layout.xml #generated:40
+-keep class com.actionbarsherlock.internal.widget.CapitalizingButton { <init>(...); }
+
+# view res/layout/abs__dialog_title_holo.xml #generated:23
+-keep class com.actionbarsherlock.internal.widget.FakeDialogPhoneWindow { <init>(...); }
+
+# view res/layout/abs__action_bar_tab_bar_view.xml #generated:3
+# view res/layout/abs__activity_chooser_view.xml #generated:19
+-keep class com.actionbarsherlock.internal.widget.IcsLinearLayout { <init>(...); }
+
+# view res/layout/abs__action_bar_tab.xml #generated:3
+-keep class com.actionbarsherlock.internal.widget.ScrollingTabContainerView$TabView { <init>(...); }
+
+# view res/layout/abs__search_view.xml #generated:84
+-keep class com.actionbarsherlock.widget.SearchView$SearchAutoComplete { <init>(...); }
+
+# view AndroidManifest.xml #generated:74
+-keep class de.enaikoon.android.inviu.opencellidlibrary.CellIDCollectionService { <init>(...); }
+
+# view AndroidManifest.xml #generated:75
+-keep class de.enaikoon.android.inviu.opencellidlibrary.UploadService { <init>(...); }
+
+# view AndroidManifest.xml #generated:52
+-keep class de.enaikoon.android.keypadmapper3.ExceptionActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:62
+-keep class de.enaikoon.android.keypadmapper3.HelpActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:32
+-keep class de.enaikoon.android.keypadmapper3.KeypadMapperApplication { <init>(...); }
+
+# view AndroidManifest.xml #generated:68
+-keep class de.enaikoon.android.keypadmapper3.RateMeActivity { <init>(...); }
+
+# view land\res/layout-land/main.xml #generated:20
+# view res/layout/main.xml #generated:20
+# view sw600dp-land\res/layout-sw600dp-land/main.xml #generated:20
+# view sw600dp\res/layout-sw600dp/main.xml #generated:20
+# view sw720dp-land\res/layout-sw720dp-land/main.xml #generated:20
+# view sw720dp\res/layout-sw720dp/main.xml #generated:20
+# view xlarge-land\res/layout-xlarge-land/main.xml #generated:20
+# view xlarge-port\res/layout-xlarge-port/main.xml #generated:20
+-keep class de.enaikoon.android.keypadmapper3.SatelliteInfoFragment { <init>(...); }
+
+# view AndroidManifest.xml #generated:48
+-keep class de.enaikoon.android.keypadmapper3.SettingsActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:56
+-keep class de.enaikoon.android.keypadmapper3.ShareFilesActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:73
+-keep class de.enaikoon.android.keypadmapper3.services.ControllableResourceInitializerService { <init>(...); }
+
+# view res/layout/fragment_satellite_status.xml #generated:147
+-keep class de.enaikoon.android.keypadmapper3.view.BarChart { <init>(...); }
+
+# view land\res/layout-land/keypad_fragment.xml #generated:116
+# view land\res/layout-land/keypad_fragment_fadeout.xml #generated:118
+# view res/layout/keypad_fragment.xml #generated:117
+# view res/layout/keypad_fragment_fadeout.xml #generated:118
+# view sw600dp-land\res/layout-sw600dp-land/keypad_fragment.xml #generated:121
+# view sw600dp\res/layout-sw600dp/keypad_fragment.xml #generated:117
+# view sw720dp-land\res/layout-sw720dp-land/keypad_fragment.xml #generated:121
+# view sw720dp\res/layout-sw720dp/keypad_fragment.xml #generated:117
+# view xlarge-land\res/layout-xlarge-land/keypad_fragment.xml #generated:121
+# view xlarge-port\res/layout-xlarge-port/keypad_fragment.xml #generated:117
+-keep class de.enaikoon.android.keypadmapper3.view.HideCursorEditText { <init>(...); }
+
+# view land\res/layout-land/main.xml #generated:46
+# view res/layout/main.xml #generated:46
+# view sw600dp-land\res/layout-sw600dp-land/keypad_fragment.xml #generated:140
+# view sw600dp\res/layout-sw600dp/keypad_fragment.xml #generated:136
+# view sw720dp-land\res/layout-sw720dp-land/keypad_fragment.xml #generated:140
+# view sw720dp\res/layout-sw720dp/keypad_fragment.xml #generated:136
+# view xlarge-land\res/layout-xlarge-land/keypad_fragment.xml #generated:140
+# view xlarge-port\res/layout-xlarge-port/keypad_fragment.xml #generated:136
+-keep class org.osm.keypadmapper2.ExtendedAddressFragment { <init>(...); }
+
+# view land\res/layout-land/main.xml #generated:33
+# view res/layout/main.xml #generated:33
+# view sw600dp-land\res/layout-sw600dp-land/main.xml #generated:33
+# view sw600dp\res/layout-sw600dp/main.xml #generated:33
+# view sw720dp-land\res/layout-sw720dp-land/main.xml #generated:33
+# view sw720dp\res/layout-sw720dp/main.xml #generated:33
+# view xlarge-land\res/layout-xlarge-land/main.xml #generated:33
+# view xlarge-port\res/layout-xlarge-port/main.xml #generated:33
+-keep class org.osm.keypadmapper2.KeypadFragment { <init>(...); }
+
+# view AndroidManifest.xml #generated:36
+-keep class org.osm.keypadmapper2.KeypadMapper2Activity { <init>(...); }
+

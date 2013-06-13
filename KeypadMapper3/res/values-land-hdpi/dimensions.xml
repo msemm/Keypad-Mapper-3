@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	 <dimen name="keypad_button_text_size">22sp</dimen>
+    <dimen name="keypad_fadeout_button_text_size">32sp</dimen>
+    <dimen name="keypad_button_text_size_land">24sp</dimen>
+    <dimen name="extended_address_editor_margin">12dp</dimen>
+    
+    <style name="ExtendedScreenTitle">
+        <item name="android:textSize">17sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/ENAiKOON_orange</item>
+    </style>
+    <style name="ExtendedScreenField">
+        <item name="android:textSize">24sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/ENAiKOON_darkness</item>
+    </style>
+    <dimen name="satellite_view_text_size">19sp</dimen>
+    <dimen name="satellite_info_view_size">85dp</dimen>
+</resources>

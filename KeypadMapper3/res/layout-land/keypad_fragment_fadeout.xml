@@ -13,6 +13,16 @@
         android:layout_marginTop="6dp"
         android:orientation="horizontal"
         android:visibility="gone" >
+        <Button 
+            android:id="@+id/btnTestVersion"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12dip"
+            android:padding="2dp"
+            android:singleLine="true"
+            android:text="@string/test_version"
+            />
         <TextView
             android:id="@+id/text_geoinfo"
             android:layout_width="0dp"
@@ -24,7 +34,10 @@
             android:textAppearance="?android:attr/textAppearanceSmall"
             android:textColor="@android:color/white"
             android:textSize="12sp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:cursorVisible="false"
+            android:focusable="true"
+            android:focusableInTouchMode="true" />
         <ImageView
             android:id="@+id/helpBtn"
             android:layout_width="9dp"
@@ -41,16 +54,18 @@
         android:layout_marginRight="@dimen/right_margin"
         android:layout_marginTop="10dp"
         android:orientation="horizontal" >
-        <TextView
+        <EditText
             android:id="@+id/text_housenumber"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_gravity="center"
             android:layout_weight="213"
-            android:background="@drawable/house_number_entry_field"
+            android:background="@drawable/house_number_background"
             android:focusable="true"
             android:focusableInTouchMode="true"
             android:gravity="center"
+            android:hint=""
+            android:cursorVisible="true"
             android:includeFontPadding="false"
             android:singleLine="true"
             android:textColor="@android:color/black"
@@ -117,7 +132,7 @@
         android:singleLine="false"
         android:textColor="@android:color/white"
         android:textColorHint="#afaead"
-        android:textSize="12sp"
+        android:textSize="18sp"
         android:visibility="gone" >
     </de.enaikoon.android.keypadmapper3.view.HideCursorEditText>
     <LinearLayout
@@ -131,26 +146,38 @@
             android:layout_width="85dp"
             android:layout_height="match_parent"
             android:orientation="vertical" >
-            <Button
+            <ImageButton
                 android:id="@+id/button_L"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"
-                android:text="@string/buttonLeft"
+                android:text=""
+                android:src="@drawable/icon_keypad_left"
+                android:layout_margin="3dp"
+                android:textColor="@color/white"
+                android:background="@drawable/button_back"
                 android:textSize="@dimen/keypad_fadeout_button_text_size" />
-            <Button
+            <ImageButton
                 android:id="@+id/button_F"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"
+                android:src="@drawable/icon_keypad_forward"
                 android:text="@string/buttonFront"
+                android:layout_margin="3dp"
+                android:textColor="@color/white"
+                android:background="@drawable/button_back"
                 android:textSize="@dimen/keypad_fadeout_button_text_size" />
-            <Button
+            <ImageButton
                 android:id="@+id/button_R"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"
+                android:src="@drawable/icon_keypad_right"
                 android:text="@string/buttonRight"
+                android:layout_margin="3dp"
+                android:textColor="@color/white"
+                android:background="@drawable/button_back"
                 android:textSize="@dimen/keypad_fadeout_button_text_size" />
         </LinearLayout>
         <View
@@ -179,7 +206,11 @@
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:tag="@string/buttonA"
+                    android:textStyle="bold"
                     android:text="@string/buttonA"
+                    android:layout_margin="3dp"
+               		android:textColor="@color/white"
+               		android:background="@drawable/button_back"
                     android:textSize="@dimen/keypad_fadeout_button_text_size" />
                 <Button
                     android:id="@+id/buttonB"
@@ -187,7 +218,11 @@
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:tag="@string/buttonB"
+                    android:textStyle="bold"
                     android:text="@string/buttonB"
+                    android:layout_margin="3dp"
+                	android:textColor="@color/white"
+                	android:background="@drawable/button_back"
                     android:textSize="@dimen/keypad_fadeout_button_text_size" />
                 <Button
                     android:id="@+id/buttonC"
@@ -195,7 +230,11 @@
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:tag="@string/buttonC"
+                    android:textStyle="bold"
                     android:text="@string/buttonC"
+                    android:layout_margin="3dp"
+                	android:textColor="@color/white"
+                	android:background="@drawable/button_back"
                     android:textSize="@dimen/keypad_fadeout_button_text_size" />
                 <Button
                     android:id="@+id/buttonD"
@@ -203,7 +242,11 @@
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:tag="@string/buttonD"
+                    android:textStyle="bold"
                     android:text="@string/buttonD"
+                    android:layout_margin="3dp"
+                	android:textColor="@color/white"
+                	android:background="@drawable/button_back"
                     android:textSize="@dimen/keypad_fadeout_button_text_size" />
             </LinearLayout>
             <LinearLayout
@@ -218,7 +261,11 @@
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:tag="@string/buttonE"
+                    android:textStyle="bold"
                     android:text="@string/buttonE"
+                    android:layout_margin="3dp"
+                	android:textColor="@color/white"
+                	android:background="@drawable/button_back"
                     android:textSize="@dimen/keypad_fadeout_button_text_size" />
                 <Button
                     android:id="@+id/buttonF"
@@ -226,7 +273,11 @@
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:tag="@string/buttonF"
+                    android:textStyle="bold"
                     android:text="@string/buttonF"
+                    android:layout_margin="3dp"
+                	android:textColor="@color/white"
+                	android:background="@drawable/button_back"
                     android:textSize="@dimen/keypad_fadeout_button_text_size" />
                 <Button
                     android:id="@+id/buttonG"
@@ -234,7 +285,11 @@
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:tag="@string/buttonG"
+                    android:textStyle="bold"
                     android:text="@string/buttonG"
+                    android:layout_margin="3dp"
+                	android:textColor="@color/white"
+                	android:background="@drawable/button_back"
                     android:textSize="@dimen/keypad_fadeout_button_text_size" />
                 <Button
                     android:id="@+id/buttonH"
@@ -242,7 +297,11 @@
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:tag="@string/buttonH"
+                    android:textStyle="bold"
                     android:text="@string/buttonH"
+                    android:layout_margin="3dp"
+                	android:textColor="@color/white"
+                	android:background="@drawable/button_back"
                     android:textSize="@dimen/keypad_fadeout_button_text_size" />
             </LinearLayout>
             <LinearLayout
@@ -257,7 +316,11 @@
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:tag="@string/buttonI"
+                    android:textStyle="bold"
                     android:text="@string/buttonI"
+                    android:layout_margin="3dp"
+                	android:textColor="@color/white"
+                	android:background="@drawable/button_back"
                     android:textSize="@dimen/keypad_fadeout_button_text_size" />
                 <Button
                     android:id="@+id/buttonJ"
@@ -265,7 +328,11 @@
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:tag="@string/buttonJ"
+                    android:textStyle="bold"
                     android:text="@string/buttonJ"
+                    android:layout_margin="3dp"
+                	android:textColor="@color/white"
+                	android:background="@drawable/button_back"
                     android:textSize="@dimen/keypad_fadeout_button_text_size" />
                 <Button
                     android:id="@+id/buttonK"
@@ -273,7 +340,11 @@
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:tag="@string/buttonK"
+                    android:textStyle="bold"
                     android:text="@string/buttonK"
+                    android:layout_margin="3dp"
+                	android:textColor="@color/white"
+                	android:background="@drawable/button_back"
                     android:textSize="@dimen/keypad_fadeout_button_text_size" />
                 <Button
                     android:id="@+id/buttonL"
@@ -281,7 +352,11 @@
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:tag="@string/buttonL"
+                    android:textStyle="bold"
                     android:text="@string/buttonL"
+                    android:layout_margin="3dp"
+                	android:textColor="@color/white"
+                	android:background="@drawable/button_back"
                     android:textSize="@dimen/keypad_fadeout_button_text_size" />
             </LinearLayout>
             <LinearLayout
@@ -296,7 +371,11 @@
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:tag="@string/buttonSep1"
+                    android:textStyle="bold"
                     android:text="@string/buttonSep1"
+                    android:layout_margin="3dp"
+                	android:textColor="@color/white"
+                	android:background="@drawable/button_back"
                     android:textSize="@dimen/keypad_fadeout_button_text_size" />
                 <Button
                     android:id="@+id/buttonSep2"
@@ -304,7 +383,11 @@
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:tag="@string/buttonSep2"
+                    android:textStyle="bold"
                     android:text="@string/buttonSep2"
+                    android:layout_margin="3dp"
+                	android:textColor="@color/white"
+                	android:background="@drawable/button_back"
                     android:textSize="@dimen/keypad_fadeout_button_text_size" />
                 <Button
                     android:id="@+id/buttonSep3"
@@ -312,7 +395,11 @@
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:tag="@string/buttonSep3"
+                    android:textStyle="bold"
                     android:text="@string/buttonSep3"
+                    android:layout_margin="3dp"
+                	android:textColor="@color/white"
+                	android:background="@drawable/button_back"
                     android:textSize="@dimen/keypad_fadeout_button_text_size" />
             </LinearLayout>
         </LinearLayout>
@@ -339,7 +426,11 @@
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:tag="@string/button1"
+                    android:textStyle="bold"
                     android:text="@string/button1"
+                    android:layout_margin="3dp"
+                	android:textColor="@color/white"
+                	android:background="@drawable/button_back"
                     android:textSize="@dimen/keypad_fadeout_button_text_size" />
                 <Button
                     android:id="@+id/button2"
@@ -347,7 +438,11 @@
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:tag="@string/button2"
+                    android:textStyle="bold"
                     android:text="@string/button2"
+                    android:layout_margin="3dp"
+                	android:textColor="@color/white"
+                	android:background="@drawable/button_back"
                     android:textSize="@dimen/keypad_fadeout_button_text_size" />
                 <Button
                     android:id="@+id/button3"
@@ -355,7 +450,11 @@
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:tag="@string/button3"
+                    android:textStyle="bold"
                     android:text="@string/button3"
+                    android:layout_margin="3dp"
+                	android:textColor="@color/white"
+                	android:background="@drawable/button_back"
                     android:textSize="@dimen/keypad_fadeout_button_text_size" />
             </LinearLayout>
             <LinearLayout
@@ -369,7 +468,11 @@
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:tag="@string/button4"
+                    android:textStyle="bold"
                     android:text="@string/button4"
+                    android:layout_margin="3dp"
+                	android:textColor="@color/white"
+                	android:background="@drawable/button_back"
                     android:textSize="@dimen/keypad_fadeout_button_text_size" />
                 <Button
                     android:id="@+id/button5"
@@ -377,7 +480,11 @@
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:tag="@string/button5"
+                    android:textStyle="bold"
                     android:text="@string/button5"
+                    android:layout_margin="3dp"
+                	android:textColor="@color/white"
+                	android:background="@drawable/button_back"
                     android:textSize="@dimen/keypad_fadeout_button_text_size" />
                 <Button
                     android:id="@+id/button6"
@@ -385,7 +492,11 @@
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:tag="@string/button6"
+                    android:textStyle="bold"
                     android:text="@string/button6"
+                    android:layout_margin="3dp"
+                	android:textColor="@color/white"
+                	android:background="@drawable/button_back"
                     android:textSize="@dimen/keypad_fadeout_button_text_size" />
             </LinearLayout>
             <LinearLayout
@@ -399,7 +510,11 @@
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:tag="@string/button7"
+                    android:textStyle="bold"
                     android:text="@string/button7"
+                    android:layout_margin="3dp"
+                	android:textColor="@color/white"
+                	android:background="@drawable/button_back"
                     android:textSize="@dimen/keypad_fadeout_button_text_size" />
                 <Button
                     android:id="@+id/button8"
@@ -407,7 +522,11 @@
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:tag="@string/button8"
+                    android:textStyle="bold"
                     android:text="@string/button8"
+                    android:layout_margin="3dp"
+                	android:textColor="@color/white"
+                	android:background="@drawable/button_back"
                     android:textSize="@dimen/keypad_fadeout_button_text_size" />
                 <Button
                     android:id="@+id/button9"
@@ -415,7 +534,11 @@
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:tag="@string/button9"
+                    android:textStyle="bold"
                     android:text="@string/button9"
+                    android:layout_margin="3dp"
+                	android:textColor="@color/white"
+                	android:background="@drawable/button_back"
                     android:textSize="@dimen/keypad_fadeout_button_text_size" />
             </LinearLayout>
             <LinearLayout
@@ -423,12 +546,17 @@
                 android:layout_height="@dimen/keypad_row_height"
                 android:layout_weight="@string/keypad_row_weight"
                 android:orientation="horizontal" >
-                <Button
+                <ImageButton
                     android:id="@+id/button_C"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:text="@string/buttonCLR"
+                    android:text=""
+                    android:src="@drawable/icon_keypad_delete"
+                    android:scaleType="centerInside"
+                    android:layout_margin="3dp"
+                	android:textColor="@color/white"
+                	android:background="@drawable/button_back"
                     android:textSize="@dimen/keypad_fadeout_button_text_size" />
                 <Button
                     android:id="@+id/button0"
@@ -436,22 +564,22 @@
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:tag="@string/button0"
+                    android:textStyle="bold"
                     android:text="@string/button0"
+                    android:layout_margin="3dp"
+                	android:textColor="@color/white"
+                	android:background="@drawable/button_back"
                     android:textSize="@dimen/keypad_fadeout_button_text_size" />
-                <FrameLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1" >
-                    <ImageButton
+                <ImageButton
                         android:id="@+id/button_DEL"
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent" />
-                    <ImageView
-                        android:layout_width="45dp"
-                        android:layout_height="45dp"
-                        android:layout_gravity="center"
-                        android:background="@android:drawable/ic_input_delete" />
-                </FrameLayout>
+                        android:layout_height="match_parent"
+                        android:layout_weight="1" 
+                        android:text=""
+                        android:layout_margin="3dp"
+                		android:textColor="@color/white"
+                		android:background="@drawable/button_back"
+                        android:src="@drawable/icon_keypad_clear" />
             </LinearLayout>
         </LinearLayout>
     </LinearLayout>

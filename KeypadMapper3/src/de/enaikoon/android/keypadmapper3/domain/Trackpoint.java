@@ -19,12 +19,25 @@ public class Trackpoint {
     private long time;
 
     private double altitude = Double.MIN_VALUE;
+    
+    /** WAV filename */
+    private String filename;
 
-    public Trackpoint(double latitude, double longitude, long time) {
+    private double speed;
+    /**
+     * 
+     * @param latitude
+     * @param longitude
+     * @param time
+     * @param filename set this to null for trackpoints which don't have a WAV file name
+     */
+    public Trackpoint(double latitude, double longitude, long time, String filename, double speed) {
         super();
         this.latitude = latitude;
         this.longitude = longitude;
         this.time = time;
+        this.filename = filename;
+        this.setSpeed(speed);
     }
 
     public double getAltitude() {
@@ -57,6 +70,22 @@ public class Trackpoint {
 
     public void setTime(long time) {
         this.time = time;
+    }
+
+    public String getFilename() {
+        return filename;
+    }
+
+    public void setFilename(String filename) {
+        this.filename = filename;
+    }
+
+    public double getSpeed() {
+        return speed;
+    }
+
+    public void setSpeed(double speed) {
+        this.speed = speed;
     }
 
 }

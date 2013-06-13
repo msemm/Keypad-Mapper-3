@@ -1,25 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string name="lang_support_codes">de\nen\nes\nfr\nel\nru</string>
-    <string name="lang_support_names">Deutsch\nEnglish\nEspañol\nFrançais\nΕλληνικά\nРусский</string>
-    <string name="lang_support_urls"><![CDATA[http://liferay.enaikoon.de:8080/10-resourceeditor-services/zip/resources?applicationCode=keypadmapper&domainName=general&languageCode=de_DE\nhttp://liferay.enaikoon.de:8080/10-resourceeditor-services/zip/resources?applicationCode=keypadmapper&domainName=general&languageCode=en_GB\nhttp://liferay.enaikoon.de:8080/10-resourceeditor-services/zip/resources?applicationCode=keypadmapper&domainName=general&languageCode=es_ES\nhttp://liferay.enaikoon.de:8080/10-resourceeditor-services/zip/resources?applicationCode=keypadmapper&domainName=general&languageCode=fr_FR\nhttp://liferay.enaikoon.de:8080/10-resourceeditor-services/zip/resources?applicationCode=keypadmapper&domainName=general&languageCode=el_GR\nhttp://liferay.enaikoon.de:8080/10-resourceeditor-services/zip/resources?applicationCode=keypadmapper&amp;domainName=general&amp;languageCode=ru_RU]]></string>
-    <string-array name="language_names">
-        <item>English</item>
-        <item>Deutsch</item>
-        <item>Français</item>
-        <item>Español</item>
-        <item>Ελληνικά</item>
-        <item>Русский</item>
-    </string-array>
-    <string-array name="language_codes">
-        <item>en</item>
-        <item>de</item>
-        <item>fr</item>
-        <item>es</item>
-        <item>el</item>
-        <item>ru</item>
-    </string-array>
-    <string-array name="prefsDataDistanceValues">
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+   <string-array name="prefsDataDistanceValues">
         <!-- string-array instead of integer-array because of http://code.google.com/p/android/issues/detail?id=2096 -->
         <item>1</item>
         <item>2</item>
@@ -31,28 +12,14 @@
         <item>25</item>
     </string-array>
     <string-array name="bugreport_persons">
-        <item>ilya.v.tretyakov@gmail.com</item>
-        <item>inviu@enaikoon.com</item>
+        <item>dkorunek@gmail.com</item>
+        <item>keypad-mapper@redmine.enaikoon.de</item>
     </string-array>
     <string name="options_bugreport_default">ask</string>
     <string-array name="options_bugreport_keys">
         <item>never</item>
         <item>always</item>
         <item>ask</item>
-    </string-array>
-    <string-array name="prefsMeasurementsValues">
-        <item>m</item>
-        <item>ft</item>
-    </string-array>
-    <string name="prefsMeasurementsDefaultValue">m</string>
-    <string-array name="prefsMeasurementsEntries">
-        <item>m</item>
-        <item>ft</item>
-    </string-array>
-    <string-array name="options_bugreport_values">
-        <item>never send</item>
-        <item>always send</item>
-        <item>ask before sending</item>
     </string-array>
     <string-array name="prefsDataDistanceEntries">
         <item>1 m</item>
@@ -64,4 +31,26 @@
         <item>20 m</item>
         <item>25 m</item>
     </string-array>
+    
+    <style name="CustomDialogTheme" parent="@android:style/Theme.Dialog">               
+    	<item name="android:windowBackground">@android:color/transparent</item>
+	    <item name="android:windowNoTitle">true</item>
+	    <item name="android:windowIsTranslucent">true</item>
+	    <item name="android:windowIsFloating">true</item>
+    	<item name="android:backgroundDimEnabled">false</item>
+    </style>
+  	
+    <color name="ENAiKOON_orange">#F9BE27</color>
+    <color name="ENAiKOON_background">#282727</color>
+    <color name="ENAiKOON_light_gray">#BEBEBE</color>
+    <color name="ENAiKOON_darkness">#414042</color>
+    <color name="disabled_title">#88898A</color>
+    <color name="disabled_summary">#67696A</color>
+    <color name="white">#FFFFFF</color>
+    
+    <string name="test_version">testscreen</string>
+    <string name="test_email_subject">Keypadmapper test screen entries</string>
+    
+    <string name="test_version_opencellid_upload_url">http://www.enaikoon.de/gpsSuiteCellId/measure/uploadCsv</string>
+    <string name="production_version_opencellid_upload_url">http://www.enaikoon.de/gpsSuiteCellId/measure/uploadCsv</string>
 </resources>

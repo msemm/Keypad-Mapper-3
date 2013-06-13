@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><resources><string name="menu_undo">ongedaan maken</string><string name="app_name">Keypad-Mapper 3</string><string name="buttonLeft">L</string><string name="buttonFront">V</string><string name="buttonRight">R</string><string name="button1">1</string><string name="button2">2</string><string name="button3">3</string><string name="button4">4</string><string name="button5">5</string><string name="button6">6</string><string name="button7">7</string><string name="button8">8</string><string name="button9">9</string><string name="button0">0</string><string name="buttonA">a</string><string name="buttonB">b</string><string name="buttonC">c</string><string name="buttonD">d</string><string name="buttonE">e</string><string name="buttonF">f</string><string name="buttonG">g</string><string name="buttonI">i</string><string name="buttonJ">j</string><string name="buttonK">k</string><string name="buttonL">l</string><string name="buttonH">h</string><string name="buttonSep1">,</string><string name="buttonSep2">-</string><string name="buttonSep3">/</string><string name="buttonCLR">VERW</string><string name="errorFileOpen">fout tijdens schrijven van data bestanden</string><string name="errorGpsDisabled">GPS is uitgeschakeld. Zet aub GPS aan om deze app te kunnen gebruiken.</string><string name="errorStorageRO">De externe opslag is schrijf-beveiligd. Keypad-Mapper 3 heeft schrijftoegang nodig om de data te kunnen opslaan.</string><string name="errorStorageUnavailable">The externe opslag is niet beschikbaar. Keypad-Mapper 3 heeft toegang nodig om de data te kunnen opslaan.</string><string name="OK">ok</string><string name="quit">afsluiten</string><string name="menu_settings">voorkeuren</string><string name="writeToNewFile">opslaan in nieuwe bestanden</string><string name="Housenumber">huisnummer</string><string name="Housename">huisnaam</string><string name="Street">straat</string><string name="Postcode">postcode</string><string name="City">stad</string><string name="Countrycode">landcode</string><string name="menu_address_keypad">toetsenbord</string><string name="menu_address_editor">adres editor</string><string name="FolderCreationFailed">de folder die de data bevat op de externe opslag kon niet gemaakt worden</string><string name="locationNotAvailable">huisnummer kan niet opgeslagen worden omdat er geen GPS ontvangst is</string><string name="prefsDataPlacementDistance">afstand tot de adres knooppunten</string><string name="prefsAbout">over</string><string name="prefsAboutDetails">toon applicatie info</string><string name="prefsShare">deel opgeslagen data</string><string name="prefsShareDetails">deel *.gpx, *.osm, *.wav, and *.jpg bestanden</string><string name="prefsLanguageTitle">taal</string><string name="prefsLanguageSummary">kies uw taal: Deutsch, English, Español, Français, Ελληνικά, Italiano, Polski, Русский</string><string name="zip_fail">kon zip bestand niet maken</string><string name="about_message">&lt;br/&gt;
+%1$s&lt;BR/&gt; 
+Versie: %2$s&lt;br/&gt;
+Nederlandse vertaling: Harry van der Wolf&lt;br&gt;
+&lt;br/&gt;
+keypadmapper is oorspronkelijk ontwikkeld door &lt;font color=#ffbf27&gt;&lt;a href=&quot;mailto:nroets@gmail.com&quot;&gt;Nic Roets&lt;/a&gt; &lt;/font&gt; en is gepubliceerd eind 2010.&lt;br/&gt;
+Keypadmapper2, een doorontwikkeling op keypadmapper, werd midden 2011 vrijgegeven.&lt;br/&gt;
+Die versie 2 is begin 2013 gebruikt door &lt;font color=#ffbf27&gt;&lt;a href=&quot;https://www.enaikoon.com&quot;&gt;ENAiKOON&lt;/a&gt;&lt;/font&gt; om deze huidige versie te maken. De broncode is op github beschikbaar gesteld https://github.com/msemm/Keypad-Mapper-3.git.&lt;br/&gt;
+&lt;br/&gt;
+Wij willen Nic, die ons geholpen heeft bij de implementatie van deze versie, bedanken voor zijn goede ideeën en geduld.&lt;br/&gt;
+&lt;br/&gt;
+Aarzel niet om commentaar, suggesties of problemen met deze app per email door te geven aan ENAiKOON via &lt;font color=#ffbf27&gt;&lt;a href=&quot;mailto:inviu@enaikoon.de&quot;&gt;inViu@enaikoon.de&lt;/a&gt;&lt;/font&gt; of via telefoon op +49 30 397 475-30.&lt;br/&gt;
+&lt;br/&gt;
+&lt;b&gt;ENAiKOON kantoor tijden:&lt;/b&gt;&lt;br/&gt;
+Ma.-Vr. van 9:00 tot 13:00&lt;br/&gt;
+en van 14:00 tot 18:00&lt;br/&gt;
+&lt;br/&gt;
+&lt;b&gt;Ons adres:&lt;/b&gt;&lt;br/&gt;
+ENAiKOON GmbH&lt;BR/&gt; Telematics Factory&lt;br/&gt;
+Helmholtzstrasse 2-9&lt;br/&gt;
+10587 Berlin&lt;br/&gt;
+Germany</string><string name="close">afsluiten</string><string name="about">over Keypad-Mapper 3</string><string name="about_logo_url">https://www.enaikoon.com/en/footer/imprint/</string><string name="bugreport_subject">Keypad-Mapper 3 foutmelding</string><string name="bugreport_dialogheader">Keypad-Mapper 3 fout</string><string name="options_bugreport_question">Keypad-Mapper 3 moest opnieuw gestart worden! Wilt u een foutmelding naar de ontwikkelaars sturen?</string><string name="options_bugreport_send">verstuur</string><string name="options_bugreport_dontsend">niet versturen</string><string name="options_bugreport_ok">ok</string><string name="options_bugreport">fouten melden</string><string name="options_bugreport_summary">Wilt u foutmeldingen naar de ontwikkelaars sturen?</string><string name="options_bugreport_neversendmessage">Keypad-Mapper 3 moest opnieuw gestart worden! Als u een foutmelding wilt doorgeven aan ontwikkelaars zet dan aub \'fouten melden\' aan in de voorkeuren van deze app.</string><string name="options_bugreport_values_1">nooit</string><string name="options_bugreport_values_2">altijd</string><string name="options_bugreport_values_3">vraag voor verzending</string><string name="menu_freeze_gps">GPS bevriezen</string><string name="no_location">sorry, your action could not be completed without GPS reception or valid filtered data</string><string name="prefsDataDistanceEntries_1">1 m</string><string name="prefsDataDistanceEntries_2">2 m</string><string name="prefsDataDistanceEntries_5">5 m</string><string name="prefsDataDistanceEntries_8">8 m</string><string name="prefsDataDistanceEntries_10">10 m</string><string name="prefsDataDistanceEntries_15">15 m</string><string name="prefsDataDistanceEntries_20">20 m</string><string name="prefsDataDistanceEntries_25">25 m</string><string name="cancel">annuleren</string><string name="prefsClearFolderTitle">verwijder alle verzamelde data</string><string name="prefsClearFolderQuestion">Wilt u alle door Keypad-Mapper 3 verzamelde data verwijderen?</string><string name="prefsClearFolderQuestionYes">verwijder alle data</string><string name="prefsClearFolderQuestionNo">annuleren</string><string name="prefsShareEmailTitle">geef e-mail adres ontvanger</string><string name="prefsShareEmailHint">e-mail</string><string name="prefsShareEmailShare">delen</string><string name="prefsShareEmailCancel">annuleren</string><string name="help_title">Tips en truuks</string><string name="help_text_1">&lt;h2&gt;&lt;font color=&quot;#ffbf27&quot;&gt;Thank you for using the new Keypad-Mapper 3.1!&lt;/font&gt;&lt;/h2&gt;
+
+This app is highly optimised to add house numbers and address tags to the OpenStreetMap database.&lt;br&gt;
+&lt;br&gt;
+&lt;h3&gt;&lt;u&gt;Quick start:&lt;br&gt;&lt;/u&gt;&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li value=&quot;1&quot;&gt;find an area where house numbers are missing &lt;a href=&quot;http://overpass-api.de/hausnummern.html&quot;&gt;&lt;font color=&quot;#ffbf27&quot;&gt;here&lt;/font&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li value=&quot;2&quot;&gt;print this area for easier navigation and go there.&lt;/li&gt;
+&lt;li value=&quot;3&quot;&gt;switch GPS on: it is not possible to store house numbers with poor GPS reception; an error message will appear if GPS is not available.&lt;/li&gt;
+&lt;li value=&quot;4&quot;&gt;tap on the app icon in the top left corner and then on menu option \'keypad\' or swipe to the keypad screen&lt;/li&gt;
+&lt;li value=&quot;5&quot;&gt;go to the position where you want to record the first house number; ensure that the house entrance is exactly to your right or to your left at the moment when you are saving the information; otherwise it will be difficult later to assign the house number node to the correct building in the OSM editor&lt;/li&gt;
+&lt;li value=&quot;6&quot;&gt;type the house number on the keypad&lt;/li&gt;
+&lt;li value=&quot;7&quot;&gt;save the house number by tapping on one of the three white arrows:&lt;br&gt;
+&lt;ul&gt;
+&lt;li&gt;the arrow pointing to the left means that the house number is on your left side in relation to your walking direction&lt;/li&gt;
+&lt;li&gt;the arrow pointing to the right means that the house number is on your right side in relation to your walking direction&lt;/li&gt;
+&lt;li&gt;the arrow pointing up means that the house number is in front of you (e.g. at a T crossing)&lt;/li&gt;
+&lt;/ul&gt;
+The circle in the top left corner app icon reveals the number of address nodes you have added during the current mapping session.&lt;br&gt;
+Repeat steps 5, 6, and 7 for each house number until all house numbers are recorded.&lt;/li&gt;
+&lt;li value=&quot;8&quot;&gt;when you are finished mapping house numbers, tap on the icon with the small house in the top left corner and then tap on \'share recorded data\'.&lt;br&gt;This allows you to send the recorded data as an email attachment to the computer used for the OSM editor (e.g. JOSM)&lt;/li&gt;
+&lt;li value=&quot;9&quot;&gt;open the e-mail and save the attached files to your PC&lt;/li&gt;
+&lt;li value=&quot;10&quot;&gt;open the OSM editor, then the .gpx and .osm file with the same name as well as the corresponding photos; load the already existing OSM data;&lt;br&gt;
+now you will see all recorded house numbers as well as the route taken while recording the data as well as an icon for each taken photo on top of the existing OSM data&lt;/li&gt;
+&lt;li value=&quot;11&quot;&gt;load the .wav files of the recorded audio notes with a right click on the .gpx file in the top right corner of JOSM and a subsequent click on \'Import Audio\'&lt;/li&gt;
+&lt;li value=&quot;12&quot;&gt;assign each house number to its respective building; look at the pictures and listen to the audio notes to remember all information available for optimizing the data&lt;/li&gt;
+&lt;li value=&quot;13&quot;&gt;add postal code, street name, city, and country to each address node if this information was not entered while using the app when walking through the streets&lt;/li&gt;
+&lt;li value=&quot;14&quot;&gt;upload the optimised and completed data to OSM&lt;/li&gt;
+&lt;li value=&quot;15&quot;&gt;delete the recorded data on the phone / tablet with settings menu option \'delete all recorded data\' on the settings screen&lt;/li&gt;
+&lt;/ol&gt;
+Allow a few minutes and a refresh of the OSM map in your browser to view the newly recorded house numbers on the map in the high zoom levels.&lt;br&gt;
+&lt;br&gt;
+&lt;h3&gt;&lt;u&gt;Keypad-Mapper 3 features&lt;/u&gt;&lt;/h3&gt;
+The app provides the following screens:
+&lt;ol&gt;
+&lt;li&gt;keypad screen&lt;/li&gt;
+&lt;li&gt;address editor&lt;/li&gt;
+&lt;li&gt;GPS details&lt;/li&gt;
+&lt;li&gt;settings&lt;/li&gt;
+&lt;/ol&gt;
+You have three options to access the different screens:&lt;br&gt;
+&lt;ol&gt;
+&lt;li&gt;tap on the icon in the top menu of the screen&lt;/li&gt;
+&lt;li&gt;tap on the icon with the house and then tap on the icon of the screen you want to see&lt;/li&gt;
+&lt;li&gt;swipe left or right by moving one finger horizontally across the screen&lt;/li&gt;
+&lt;/ol&gt;
+&lt;br&gt;
+&lt;b&gt;Recording data:&lt;/b&gt;&lt;br&gt;
+Keypad-Mapper provides a \'recording data\' menu option that allows users to start/stop recording of data and to start recording based on a new set of .osm / .gpx files.&lt;br&gt;
+In addition a settings option \'turn off GPS\' exists. The \'recording data\' feature and the \'turn off GPS\' feature correlate as follows:&lt;br&gt;
+&lt;ul&gt;
+&lt;li&gt;if recording is active, a .gpx track is recorded&lt;/li&gt;
+&lt;li&gt;if recording is active then a .gpx file is recorded even if the app is in the background&lt;/li&gt;
+&lt;li&gt;if recording is off and the \'turn off GPS\' feature is activated, then GPS is switched off in order to save battery power&lt;/li&gt;
+&lt;/ul&gt;</string><string name="prefsMeasurementTitle">afstand eenheden</string><string name="prefsMeasurementsEntries_1">m</string><string name="prefsMeasurementsEntries_2">ft</string><string name="prefsDataDistanceEntriesFt_1">3 voet</string><string name="prefsDataDistanceEntriesFt_2">5 voet</string><string name="prefsDataDistanceEntriesFt_5">15 voet</string><string name="prefsDataDistanceEntriesFt_8">25 voet</string><string name="prefsDataDistanceEntriesFt_10">35 voet</string><string name="prefsDataDistanceEntriesFt_15">50 voet</string><string name="prefsDataDistanceEntriesFt_20">65 voet</string><string name="prefsDataDistanceEntriesFt_25">80 voet</string><string name="lang_support_codes">de
+en
+es
+fr
+el
+it
+nl
+pl
+ru</string><string name="lang_support_names">Deutsch
+English
+Español
+Français
+Ελληνικά
+Italiano
+Nederlands
+Polski
+Русский</string><string name="lang_support_urls">http://liferay.enaikoon.de:8080/10-resourceeditor-services/zip/resources?applicationCode=keypadmapper&amp;domainName=general&amp;languageCode=de_DE
+http://liferay.enaikoon.de:8080/10-resourceeditor-services/zip/resources?applicationCode=keypadmapper&amp;domainName=general&amp;languageCode=en_GB
+http://liferay.enaikoon.de:8080/10-resourceeditor-services/zip/resources?applicationCode=keypadmapper&amp;domainName=general&amp;languageCode=es_ES
+http://liferay.enaikoon.de:8080/10-resourceeditor-services/zip/resources?applicationCode=keypadmapper&amp;domainName=general&amp;languageCode=fr_FR
+http://liferay.enaikoon.de:8080/10-resourceeditor-services/zip/resources?applicationCode=keypadmapper&amp;domainName=general&amp;languageCode=el_GR
+http://liferay.enaikoon.de:8080/10-resourceeditor-services/zip/resources?applicationCode=keypadmapper&amp;domainName=general&amp;languageCode=it_IT
+http://liferay.enaikoon.de:8080/10-resourceeditor-services/zip/resources?applicationCode=keypadmapper&amp;domainName=general&amp;languageCode=nl_NL
+http://liferay.enaikoon.de:8080/10-resourceeditor-services/zip/resources?applicationCode=keypadmapper&amp;domainName=general&amp;languageCode=pl_PL
+http://liferay.enaikoon.de:8080/10-resourceeditor-services/zip/resources?applicationCode=keypadmapper&amp;domainName=general&amp;languageCode=ru_RU</string><string name="menu_share">deel verzamelde data</string><string name="menu_unfreeze_gps">geef GPS vrij</string><string name="menu_camera">camera</string><string name="menu_gps_accuracy">GPS precisie</string><string name="keypad_info_hint">notitie voor deze locatie</string><string name="satellite_n_a">n/a</string><string name="satellite_gps">GPS</string><string name="satellite_glonass">GLONASS</string><string name="satellite_accuracy">nauwkeurigheid</string><string name="satellite_in_view">in beeld:</string><string name="satellite_in_use">in gebruik:</string><string name="satellite_no_gps">verander uw positie aub naar een plek met betere GPS ontvangst</string><string name="prefsScreenOnTitle">laat scherm aan</string><string name="prefsScreenOnSummary">Het scherm blijft aan met deze optie geactiveerd. Aanzetten van deze optie zal de batterij sneller ontladen.</string><string name="prefsMeasurementSummary">u kunt kiezen tussen &quot;metrisch&quot; en &quot;imperial&quot;</string><string name="prefsDataPlacementDistanceSummary">afstand tot het adres vanaf de huidige positie van het device op het moment dat het huisnummer wordt opgeslagen</string><string name="prefsClearFolderSummary">Deze optie verwijdert alle verzamelde en opgeslagen data van deze app op dit apparaat: OSM bestanden, GPX bestanden en foto\'s door deze app genomen. Normaal gesproken gebruikt u deze optie nadat u succesvol de data via email naar uw pc gestuurd hebt.</string><string name="help_text_2">&lt;b&gt;History information:&lt;/b&gt;&lt;br&gt;
+Two or three mapped house numbers appear on the right side of the house number entry field on the keypad screen. These house numbers are preceded with \'L:\', \'F:\' or \'R:\'. This makes it easier to check if recent house numbers were mapped on the correct side of the road.&lt;br&gt;
+&lt;br&gt;
+&lt;b&gt;The survey date is saved with each address tag:&lt;/b&gt;&lt;br&gt;
+Example:&lt;br&gt;
+&lt;br&gt;
+&amp;nbsp;&amp;nbsp;&amp;#60;node id=&quot;-1&quot; visible=&quot;true&quot; lat=&quot;52.497442495127025&quot; lon=&quot;13.350499497003666&quot;&amp;#62;&lt;br&gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;#60;tag k=&quot;survey:date&quot; v=&quot;2013-06-01&quot;/&amp;#62;&lt;br&gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;#60;tag k=&quot;addr:housenumber&quot; v=&quot;15&quot;/&amp;#62;&lt;br&gt;
+&amp;nbsp;&amp;nbsp;&amp;#60;/node&amp;#62;&lt;br&gt;
+
+&lt;br&gt;
+&lt;b&gt;Usability hints:&lt;/b&gt;&lt;br&gt;
+&lt;ul&gt;
+&lt;li&gt;a long tap on the house number entry field in the keypad screen opens a full keyboard for entering an unusual house number&lt;/li&gt;
+&lt;li&gt;various readability improvements (e.g. bigger characters, better contrast, etc.) especially for mapping under direct sunlight&lt;/li&gt;
+&lt;li&gt;improved response time of the app in case many house numbers were mapped&lt;/li&gt;
+&lt;li&gt;in the address editor screen the house name entry field was moved to the bottom of the page&lt;/li&gt;
+&lt;/ul&gt;
+&lt;br&gt;
+&lt;b&gt;Audio notes:&lt;/b&gt;&lt;br&gt;
+Recording an audio note is less conspicuous to others than taking a photo, therefore some mappers prefer to record voice memos instead of taking GPS photos in order to avoid calling the attention of passerby.&lt;br&gt;
+The audio note feature works similarly to the photo feature: it allows you to record a voice memo and save it along with a GPS coordinate. Unlike .jpg files, the GPS coordinates for audio notes are stored in the .gpx file, therefore the .gpx file must be loaded in JOSM before loading the .wav file.
+The audio note entry in the .gpx file has the following content:&lt;br&gt;
+&lt;br/&gt;
+&amp;nbsp;&amp;nbsp;&amp;#60;wpt lat=&quot;52.49739929702362&quot; lon=&quot;13.350353411755215&quot;&amp;#62;&lt;br&gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;#60;time&amp;#62;2013-06-01T14:17:14Z&amp;#60;/time&amp;#62;&lt;br&gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;#60;link href=&quot;file:///2013-06-01_16-17-13.wav&quot;&amp;#62;&amp;#60;text&gt;2013-06-01_16-17-13.wav&amp;#62;&amp;#60;/text&amp;#62;&amp;#60;/link&amp;#62;&lt;br&gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;#60;ele&amp;#62;89.50511403620409&amp;#60;/ele&amp;#62;&lt;br&gt;
+&amp;nbsp;&amp;nbsp;&amp;#60;/wpt&amp;#62;&lt;br&gt;
+&lt;br/&gt;
+Audio notes and all other recorded files used for editing the data are sent to the PC using the \'share recorded data\' feature.&lt;br&gt;
+JOSM allows you to load all mapped data including the recorded audio notes specific to the GPS position where it was recorded. Playing the audio note will help you remember details of that specific location.&lt;br&gt;
+In JOSM please proceed as follows to load and play a voice file:&lt;br&gt;
+&lt;ol&gt;
+&lt;li value=&quot;1&quot;&gt;launch JOSM&lt;/li&gt;
+&lt;li value=&quot;2&quot;&gt;open .osm, .gpx and eventually .jpg files of a mapping session&lt;/li&gt;
+&lt;li value=&quot;3&quot;&gt;right mouse click in the top right corner in section \'Layers\' on the .gpx file.&lt;/li&gt;
+&lt;li value=&quot;4&quot;&gt;select \'import audio\'&lt;/li&gt;
+&lt;li value=&quot;5&quot;&gt;click on the .wav files you want to load --&gt; voice note icons will appear on the map where they were recorded&lt;/li&gt;
+&lt;li value=&quot;6&quot;&gt;click on one of these icons to play the .wav file&lt;/li&gt;
+&lt;/ol&gt;
+Additional details can be found &lt;a href=&quot;http://wiki.openstreetmap.org/wiki/Audio_mapping&quot;&gt;&lt;font color=&quot;#ffbf27&quot;&gt;here&lt;/font&gt;&lt;/a&gt;&lt;br&gt;
+&lt;br&gt;
+&lt;b&gt;Camera:&lt;/b&gt;&lt;br&gt;
+The camera icon allows you to take GPS photos which will be stored and transmitted by e-mail along with the .osm and .gpx files for loading them into the OSM editor.&lt;br&gt;
+This allows you to reference the photo with exact GPS coordinates for details of the particular address when editing the data in the OSM editor at a later time.&lt;br&gt;
+&lt;br&gt;
+&lt;b&gt;Freeze GPS position:&lt;/b&gt;&lt;br&gt;
+An address node is normally stored with the GPS position of the device the moment the user taps on the arrpw keys in the keypad screen.&lt;br&gt;
+When the house number cannot be read from where the GPS coordinates should be stored for a particular house, it is possible to freeze the GPS position while walking to see the house number. Avoid walking back and forth by clicking on the snow flake icon to freeze the GPS coordinates at the correct position. Save the address node once the house number is entered. Saving it will automatically use the previously frozen GPS coordinates and unfreeze it for the next address node.&lt;br&gt;
+&lt;br&gt;</string><string name="help_text_3">&lt;b&gt;Add additional notes:&lt;/b&gt;&lt;br&gt;
+It is useful to save a note in addition to or instead of a GPS photo or an audio note to be referenced later in the OSM editor when optimising the recorded data. This text information is stored along with the house number after tapping on one of the arrow keys on the keypad screen.&lt;br&gt;
+You can add a note to any address node by tapping into the \'note for this location\' text entry line below the big white house number entry field. A full keyboard will open for you to enter the text information.&lt;br&gt;
+Tapping on one of the arrow keys on the keypad screen closes the full keyboard and saves the house number along with the note.&lt;br&gt;
+Tapping into the big white house number entry field also closes the full keyboard.&lt;br&gt;
+In the OSM editor, this note will be presented as a \'name\' tag. You can delete this tag after using the information or rename the tag.&lt;br&gt;
+&lt;br&gt;
+&lt;b&gt;Undo icon:&lt;/b&gt;&lt;br&gt;
+On the right side of the house number entry field are the last entered house numbers. The latest house number is shown at the top of the list. For each house number it is indicated if it was mapped to the left, to the right or in forward direction.&lt;br&gt;
+By tapping on the undo icon in the menu bar the last entered house number can be deleted. It is not possible to delete multiple house numbers.&lt;br&gt;
+&lt;br&gt;
+&lt;b&gt;Long tap on house number entry field opens full keyboard&lt;/b&gt;&lt;br&gt;
+In rare cases house numbers can be found which cannot be entered with the keys on the keypad screen. In such cases the mapper can now long tap on the house number entry field to open the full keyboard for writing any text. The full keyboard closes automatically after tapping on one of the three arrow tabs in the keypad-screen.&lt;br&gt;
+&lt;br&gt;
+&lt;b&gt;Settings options:&lt;/b&gt;&lt;br&gt;
+&lt;ul&gt;
+&lt;li&gt;language:&lt;br&gt;
+currently the Keypad-Mapper supports nine languages: Dutch, English, French, German, Greek, Italian, Polish, Russian, Spanish.&lt;br&gt;
+Pls contact ENAiKOON if you wish to translate this app into another language. Your inquiry will be very welcome!&lt;br&gt;
+Special thanks to Stefano for the Italian translation as well as for the promotion of Keypad-Mapper 3 on talk-it&lt;br&gt;
+Additional thanks to Adam for the Polish translation and to Harry for the Dutch translation.&lt;/li&gt;
+&lt;li&gt;rate the app:&lt;br&gt;
+In order to attract as many OSM mappers as possible a good rating of the app on Google Play is essential. Pls help us promoting this app with a good rating!&lt;/li&gt;
+&lt;li&gt;delete all collected data:&lt;br&gt;
+After transferring the mapped data to a PC and uploading it to OSM, you might want to delete the mapped data on the device in order to free some space for the next mapping tour. The \'delete all collected data\' feature in the settings screen can be used to delete the data.&lt;br&gt;
+In order to avoid an unattempted deleting of recorded data there is no \'delete all collected data\' button in the menu bar or in the navigation menu. Instead this option is available in the settings screen only.&lt;/li&gt;
+&lt;li&gt;keep screen on:&lt;br&gt;
+allows you to stop the device from switching off the screen after a while&lt;/li&gt;
+&lt;li&gt;use compass:&lt;br&gt;
+Normally the GPS heading information is used to calculate what is \'left\' or \'right\' from the path the mapper walks. If the walking speed is slow or if the mapper is even standing still the GPS heading information provided by the GPS receiver can be wrong. This is a weakness of the GPS technology.&lt;br&gt;
+To overcome this problem, the Keypad-Mapper can use the compass built into many Android devices. The settings option \'use compass\' allows configuring the maximum speed for the compass usage. If this slider is set to 0, the compass is not used at all. If the device does not provide a compass sensor, then the option is not available in the settings.&lt;/li&gt;
+&lt;li&gt;vibration on save:&lt;br&gt;
+defines the duration of the vibration in milliseconds when saving an address node by tapping on one of the three arrow keys on the keypad screen&lt;/li&gt;
+&lt;li&gt;keypad vibration:&lt;br&gt;
+defines the duration of the vibration in milliseconds when tapping on any key except one of the three arrow keys on the keypad screen&lt;/li&gt;
+&lt;li&gt;measurement units:&lt;br&gt;
+Both metric and imperial measurement units in metres and feet are supported for entering the distance between the current device position and the position of the address nodes. This allows the use of the software by users being used to imperial measuring units.&lt;/li&gt;
+&lt;li&gt;distance of the address nodes:&lt;br&gt;
+this option allows you to define the distance of the address nodes from the device position where the user stands.&lt;br&gt;
+If there is an unusually wide street where the houses are far away from the pavement, it is recommended to set this option to a larger value. Alternatively, these corrections can be made in the OSM editor at a later time.&lt;/li&gt;
+</string><string name="prefsUseWifiOnlyTitle">alleen Wi-Fi data</string><string name="rateme_thankyou">Bedankt voor het gebruik van</string><string name="rateme_keypad">Keypad-Mapper 3!</string><string name="rateme_text">We stellen het op prijs als u een recensie of waardering geeft aan Keypad-Mapper 3 in Google Play.
+
+Wilt u dat nu doen?</string><string name="rateme_yes">ja</string><string name="rateme_later">later</string><string name="rateme_dont_ask">niet opnieuw vragen</string><string name="statusAccuracy">%d m</string><string name="statusAccuracyFt">%d voet</string><string name="prefsOptimizeLayout">optimaliseer layout</string><string name="prefsUseWifiOnlySummary">toon straatnaam en postcode alleen bij een Wi-Fi connectie</string><string name="prefsHelpTitle">help</string><string name="prefsHelpSummary">lees tips voor het gebruik van deze app</string><string name="system_settings">voorkeuren</string><string name="prefsVibrationOnSave">vibreer bij opslaan</string><string name="prefsVibrationOnSaveSummary">vibreer wanneer knooppunt opgeslagen wordt gedurende aantal millisecondes zoals met onderstaande schuifbalk ingesteld</string><string name="menu_recording_GPS">data verwerking aan/uit</string><string name="prefsTurnOffGpsUpdatesTitle">schakel GPS uit</string><string name="prefsTurnOffGpsUpdatesSummary">schakel GPS uit om stroom te besparen als gebruiker data verwerking ge-deactiveerd heeft</string><string name="notRecording">huis nummer kan niet opgeslagen worden omdat u niet in data verweking modus bent.</string><string name="prefsUseCompassTitle">gebruik kompas</string><string name="prefsUseCompassSummary">Tot de met de schuifbalk ingestelde snelheid wordt de kompas informatie i.p.v. GPS informatie gebruikt voor de berekening van de adres knooppunt positie.
+Als de schuifbalk op nul ingesteld wordt, wordt geen kompas informatie gebruikt.
+Als de kompas optie gebruikt wordt, wordt de GPS precisie aangeduid met een geintegreerde kompas naald. Deze naald geeft NIET de huidige richting aan.</string><string name="prefsKeyboardVibrationTitle">toetsenbord vibratie</string><string name="prefsKeyboardVibrationSummary">vibreer gedurende aantal milliseconden bij tikken, zoals met schuifbalk hieronder ingesteld</string><string name="prefsComputerWaveFilePathTitle">.wav bestands pad</string><string name="prefsComputerWaveFilePathSummary">.wav bestands pad op uw computer dat gebruikt zal worden in tags in .GPX bestanden.</string><string name="dialog_wav_explanation_html">Geef a.u.b. het pad in dat gebruikt zal worden op uw JOSM/Potlach computer om de .wav bestanden op te slaan. Deze pad informatie wordt toegevoegd aan alle .wav bestanden in het .gpx bestand.&lt;br&gt;
+&lt;br&gt;
+Alle .wav bestanden moeten correct in dat pad te vinden zijn zodat JOSM / Potlach deze correct kunnen afspelen als het .gpx bestand geladen is en de audio marker geklikt.&lt;br&gt;
+&lt;br&gt;
+Als er geen pad geconfigureerd is zal als standaard c:\ gebruikt worden onder Windows en zal / gebruikt worden onder Linux.&lt;br&gt;
+&lt;br&gt;
+Voorbeelden van paden:&lt;br&gt;
+&amp;nbsp;&amp;nbsp;example 1: &lt;b&gt;c:\myrecordedfiles\&lt;/b&gt;&lt;br/&gt;
+&amp;nbsp;&amp;nbsp;example 2: &lt;b&gt;/usr/local/tmp/&lt;/b&gt;&lt;br/&gt;</string><string name="popupAudioText">audio notitie</string><string name="prefsMeasurementEntryMeters">metrisch</string><string name="prefsMeasurementEntryFeet">imperial</string><string name="meters_display_unit">m</string><string name="feet_display_unit">voet</string><string name="error_audio_init">Kan de audio recorder niet initialiseren.</string><string name="km_per_hour">km/h</string><string name="miles_per_hour">mph</string><string name="help_text_4">&lt;li&gt;turn off GPS:&lt;br&gt;
+allows to switch off GPS while the user has de-activated the recording in order to save battery&lt;/li&gt;
+&lt;li&gt;Wi-Fi data only:&lt;br&gt;
+this option is especially helpful if your current GSM data plan is expensive or if the amount of free data is limited.&lt;/li&gt;
+&lt;li&gt;.wav file path:&lt;br&gt;
+defines the .wav file path on your computer which will be used to save the recorded audio notes; this information is required by JOSM for proper loading of the .wav files&lt;/li&gt;
+&lt;li&gt;optimise layout:&lt;br&gt;
+this option is only available on small phones. It allows to remove some items from the keypad screen in order to use the available space optimally.&lt;/li&gt;
+&lt;li&gt;error reporting:&lt;br&gt;
+allows to send a bug report to the developers in case the app crashes; this enables the developers to identify the problem and to fix it&lt;/li&gt;
+&lt;li&gt;help:&lt;br&gt;
+shows this help file&lt;/li&gt;
+&lt;li&gt;about:&lt;br&gt;
+provides some general application information including the detailed version number&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;&lt;u&gt;Tips and tricks&lt;/u&gt;&lt;/h3&gt;
+&lt;b&gt;House number mapping process:&lt;/b&gt;&lt;br&gt;
+It is most effective to walk on one side of the street along the pavement to record the house numbers of both sides of the street at the same time.&lt;br&gt;
+With practice, it is possible to enter the house numbers without stopping at each house. By adopting an optimal walking speed, it is possible to find a rhythm that allows the user to record all house numbers carefully while processing as many house numbers as possible.&lt;br&gt;
+&lt;br&gt;
+&lt;b&gt;Mapping of information that has nothing to do with house numbers&lt;/b&gt;&lt;br&gt;
+Enthusiastic mappers may feel compelled to map additional information that has nothing to do with house numbers and addresses while walking through the streets with Keypad-Mapper 3.&lt;br&gt;
+Reality has proven that it is not efficient to do so as much less information will be mapped compared to focusing on house numbers.&lt;br&gt;
+This also applies for recording street names, postal codes, and other address information; many streets in OSM are already tagged with the postal code, city, and country, which means that it is easier to copy this information later from the street entry to the house number entry instead of typing all this information on your phone&amp;nbsp;/ tablet. This approach saves a lot of time, allowing you to contribute more information to OSM in a given time frame.&lt;br&gt;
+&lt;br&gt;
+&lt;b&gt;Internet connection for address validation:&lt;/b&gt;&lt;br&gt;
+Keypad-Mapper 3 has a feature that shows the postal code and street name of the current GPS position in the keypad screen. This is useful to see if OSM already knows the correct postcode and street name of the actual position.&lt;br&gt;
+The app uses NOMINATIM for this purpose, an address server which uses OpenStreetMap data only. The NOMINATIM server used is provided by ENAiKOON. It is regularly updated on weekends.&lt;br&gt;
+Displaying street name and postal code information requires the device to be connected to the internet. In the settings menu, you can limit the internet connection to Wi-Fi connections only. In this case, showing the postal code and street name does not work while walking along the streets.&lt;br&gt;
+The street name and postal code shown in the keypad screen is updated every 10 seconds. This causes some data traffic that may eat up your GPRS inclusive data volume of your data plan.&lt;br&gt;
+&lt;br&gt;
+&lt;b&gt;Address editor:&lt;/b&gt;&lt;br&gt;
+If no postal code and / or street name is shown or invalid address data is shown, this normally means that the OSM database does not contain correct data for the particular location. In this case it is possible to add this data in the address editor screen of the app by tapping on the icon with the house and then tapping on \'address editor\'.&lt;br&gt;
+This information is then saved in the OSM file for transmitting it later via e-mail to the PC with the OSM editor. In your OSM editor, this information will be automatically grouped together with the house number.&lt;br&gt;
+&lt;br&gt;
+</string><string name="help_text_5">&lt;b&gt;Screen layout:&lt;/b&gt;&lt;br&gt;
+Smartphones:&lt;br&gt;
+Depending on the screen resolution, the keypad screen has a different layout: the letters for house numbers are \'a\' to \'c\' on small screens and \'a\' to \'l\' on bigger screens.&lt;br&gt;
+If you are using a device with a small screen but require the use of letters \'d\' to \'l\', turn the screen to landscape. You will have the letters from  \'a\' to \'l\' available on the keypad. Another option is to long tap into the house number entry field. This activates the full keyboard.&lt;br&gt;
+If running the app on devices with small screens, it provides an additional settings option \'optimise layout\' which allows suppressing various optional information on the keypad screen. This is intended to maximize the available space for the basic features of the keypad screen.&lt;br&gt;
+&lt;br&gt;
+Tablets:&lt;br&gt;
+Some mappers are using 7&quot; to 10&quot; tablets for mapping. The relatively new Google Nexus 7 seems to be especially wide spread amongst mappers. This can be attributed to the fact that these devices have a longer battery life, allowing mappers to go on extended mapping tours without having to change the battery.&lt;br&gt;
+Keypad-Mapper 3 provides an optimised interface for tablet users in both landscape and portrait modes. This UI is automatically activated on all devices with a minimum screen size of 7&quot;. Samsung Galaxy Note 1 and 2 are NOT using the tablet layout. Despite the fact that they are categorised as tablets the screen area available on these devices is not big enough for a proper tablet layout.&lt;br&gt;
+&lt;br&gt;
+The tablet layout differentiates from the phone layout as follows:
+&lt;ul&gt;
+&lt;li&gt;different sorting order of the icons in the menu bar: the most important icons are as close to the position of the thumb as possible&lt;/li&gt;
+&lt;li&gt;more icons are shown in the menu bar compared to the phone layout&lt;/li&gt;
+&lt;li&gt;the keypad screen and the address editor screen are both visible at the same time:&lt;br&gt;this gives a better overview of the currently configured / mapped data&lt;/li&gt;
+&lt;li&gt;the house number entry field is missing in the address editor screen&lt;/li&gt;
+&lt;li&gt;in portrait mode, the keypad layout of the landscape mode for phone UI is used; this makes two-hand data entry possible&lt;/li&gt;
+&lt;/ul&gt;
+&lt;br&gt;
+&lt;b&gt;Additional tag for each house number / address node&lt;/b&gt;&lt;br&gt;
+The following tag is automatically added to each house number: source=survey:date&lt;br&gt;
+The tag states when the mapper was in fact at that position to record the house number. This date is normally earlier than the &quot;created&quot; timestamp in the OSM database.&lt;br&gt;
+&lt;br&gt;
+&lt;h3&gt;&lt;u&gt;OpenCellIDs&lt;/u&gt;&lt;/h3&gt;
+&lt;a href=&quot;http://www.opencellids.org&quot;&gt;&lt;font color=&quot;#ffbf27&quot;&gt;www.opencellids.org&lt;/font&gt;&lt;/a&gt; is an open source project complementary to OSM.&lt;br&gt;
+The intention of this project is to collect GPS positions of GSM base stations. The data collected by the contributors of this project can be downloaded from www.opencellids.org for unlimited private and commercial use.&lt;br&gt;
+One of the main reasons for collecting OpenCellIDs data is that it can later be used for locating devices in areas where GPS reception is not available. In addition, GSM localisation consumes significantly less battery power than GPS-based localisation; however, GSM is known to be less accurate than GPS in rural areas. &lt;br&gt;
+OpenCellIDs is the biggest open source collection of GPS positions of GSM base stations worldwide. At the beginning of 2013, the database held approx. 2.7 million unique cells. Currently the database is growing by 1,000 to 2,000 new unique cells per calendar day. In total, we estimate that there are at least 25 million unique GSM cells worldwide; this means that 10-15% of the world\'s cells have already been discovered.&lt;br&gt;
+Keypad-Mapper 3 is automatically collecting OpenCellIDs data in the background without any interaction required by the user. The chosen way of implementing this feature ensures that the data is collected fully anonymous ensuring full compliance with the very strict German privacy laws.&lt;br&gt;
+Keypad-Mapper 3 is a perfect application for collecting OpenCellIDs data while simultaneously collecting house numbers because Keypad-Mapper 3 users systematically walk down many different streets which guarantees optimal data for OpenCellID. Base stations along main roads can already be found in the database but base stations off the main streets are rare.
+</string><string name="settings_rate_title">Geef app waardering op Google Play</string><string name="settings_rate_summary">We stellen uw waardering van Keypad-Mapper 3 in Google Play zeer op prijs</string><string name="notification_title">Data verwerking is actief</string><string name="production_version_opencellid_upload_url">http://www.enaikoon.de/gpsSuiteCellId/measure/uploadCsv</string><string name="test_version_opencellid_upload_url">http://www.enaikoon.de/gpsSuiteCellId/measure/uploadCsv</string><string name="error_no_location_for_audio">U kunt geen audio opname maken als er geen GPS ontvangst is of geldige gefilterde locatie data.</string><string name="error_not_recording">opname moet geactiveerd worden voordat deze functie gebruikt kan worden</string><string name="hint_turn_off_gps_updates">Zet aub de optie &quot;uitzetten GPS updates&quot; in de voorkeuren uit, als u de GPS status wilt zien als ur niet registreert.</string><string name="help_text_header">&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD HTML 4.01 Transitional//EN&quot; &quot;http://www.w3.org/TR/html4/loose.dtd&quot;&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;title&gt;KPM31 help file&lt;/title&gt;
+&lt;style type=&quot;text/css&quot; &gt; &lt;/style&gt;
+&lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=utf-8&quot;&gt;
+&lt;/head&gt;
+
+&lt;body bgcolor=&quot;#000000&quot;&gt;
+&lt;font color=&quot;#ffffff&quot;&gt;</string><string name="help_text_footer">&lt;/font&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</string></resources>

@@ -1,14 +1,18 @@
 package org.osm.keypadmapper2;
 
 import android.app.Activity;
+import android.app.AlertDialog;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.res.Configuration;
 import android.os.Bundle;
+import android.os.Vibrator;
 import android.support.v4.app.Fragment;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.util.DisplayMetrics;
+import android.util.Log;
 import android.view.Gravity;
 import android.view.KeyEvent;
 import android.view.LayoutInflater;
@@ -17,10 +21,12 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.View.OnFocusChangeListener;
 import android.view.View.OnKeyListener;
+import android.view.View.OnLongClickListener;
 import android.view.View.OnTouchListener;
 import android.view.ViewGroup;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.FrameLayout;
 import android.widget.ImageButton;
 import android.widget.LinearLayout;
@@ -37,11 +43,12 @@ import de.enaikoon.android.keypadmapper3.domain.UndoAvailabilityListener;
 import de.enaikoon.android.keypadmapper3.geocode.ReverseGeocodeController;
 import de.enaikoon.android.keypadmapper3.view.HideCursorEditText;
 import de.enaikoon.android.keypadmapper3.view.HideCursorEditText.EditTextImeBackListener;
+import de.enaikoon.android.keypadmapper3.view.menu.KeypadMapperMenu;
 import de.enaikoon.android.library.resources.locale.Localizer;
 
 public class KeypadFragment extends Fragment implements OnClickListener, UndoAvailabilityListener {
 
-    private TextView textHousenumber;
+    private EditText textHousenumber;
 
     private TextView textGeoInfo;
 
@@ -64,10 +71,10 @@ public class KeypadFragment extends Fragment implements OnClickListener, UndoAva
     private Localizer localizer = KeypadMapperApplication.getInstance().getLocalizer();;
 
     private boolean cursorVisible = true;
-
+    
     private View root;
-
-    // private int height = -1;
+    
+    //private KeypadMapperMenu menu;
 
     private Mapper mapper = KeypadMapperApplication.getInstance().getMapper();
 
@@ -121,7 +128,11 @@ public class KeypadFragment extends Fragment implements OnClickListener, UndoAva
     @Override
     public void onClick(View v) {
         enableHousenumberView();
+        address = mapper.getCurrentAddress();
         addressCallback.extendedAddressInactive();
+        String housenumber = (String) textHousenumber.getText().toString();
+        textHousenumber.clearFocus();
+        
         try {
             switch (v.getId()) {
             case R.id.helpBtn:
@@ -130,37 +141,95 @@ public class KeypadFragment extends Fragment implements OnClickListener, UndoAva
                 break;
             case R.id.button_C:
                 // clear
+                keyboardVibrate();
                 clearInfo();
                 break;
             case R.id.button_DEL: {
+                keyboardVibrate();
                 // delete the last char
-                String housenumber = (String) textHousenumber.getText();
                 if (housenumber.length() > 0) {
-                    housenumber = housenumber.substring(0, housenumber.length() - 1);
-                    address.setNumber(housenumber);
+                    address.setNumber(housenumber.substring(0, housenumber.length()-1));
                     mapper.setCurrentAddress(address);
                 }
                 break;
             }
             case R.id.button_L:
+                if (!KeypadMapperApplication.getInstance().getSettings().isRecording()) {
+                    Toast.makeText(getActivity(), localizer.getString("notRecording"),
+                            Toast.LENGTH_SHORT).show();
+                    return;
+                }
+                
+                if (mapper.getCurrentLocation() == null && mapper.getFreezedLocation() == null) {
+                    throw new LocationNotAvailableException("Location is not available");
+                }
+                
+                // must update address if user has used soft-keyboard
+                if (housenumber.length() != 0) {
+                    address.setNumber(localizer.getString("buttonLeft") + ": " + housenumber);
+                }
+
+                mapper.setCurrentAddress(address);
                 // place address to the left
                 mapper.saveCurrentAddress(0, distance);
+                
                 clearInfo();
+                vibrate();
                 break;
             case R.id.button_F:
+                if (!KeypadMapperApplication.getInstance().getSettings().isRecording()) {
+                    Toast.makeText(getActivity(), localizer.getString("notRecording"),
+                            Toast.LENGTH_SHORT).show();
+                    return;
+                }
+                
+                if (mapper.getCurrentLocation() == null && mapper.getFreezedLocation() == null) {
+                    throw new LocationNotAvailableException("Location is not available");
+                }
+                
+                // must update address if user has used soft-keyboard
+                if (housenumber.length() != 0) {
+                    address.setNumber(localizer.getString("buttonFront") + ": " + housenumber);
+                }
+                mapper.setCurrentAddress(address);
                 // place address forwards
                 mapper.saveCurrentAddress(distance, 0);
+                
+                //menu.updateShareIcon();
+                
                 clearInfo();
+                vibrate();
                 break;
             case R.id.button_R:
+                if (!KeypadMapperApplication.getInstance().getSettings().isRecording()) {
+                    Toast.makeText(getActivity(), localizer.getString("notRecording"),
+                            Toast.LENGTH_SHORT).show();
+                    return;
+                }
+                             
+                if (mapper.getCurrentLocation() == null && mapper.getFreezedLocation() == null) {
+                    throw new LocationNotAvailableException("Location is not available");
+                }
+
+                // must update address if user has used soft-keyboard
+                if (housenumber.length() != 0) {
+                    address.setNumber(localizer.getString("buttonRight") + ": " + housenumber);
+                }
+                mapper.setCurrentAddress(address);
+                
+                
                 // place address to the right
                 mapper.saveCurrentAddress(0, -distance);
+                //menu.updateShareIcon();
+                
                 clearInfo();
+                vibrate();
                 break;
             default:
                 // all other buttons are used to add characters
-                String housenumber = (String) textHousenumber.getText();
+                keyboardVibrate();
                 housenumber += ((Button) v).getText();
+
                 address.setNumber(housenumber);
                 mapper.setCurrentAddress(address);
             }
@@ -179,6 +248,7 @@ public class KeypadFragment extends Fragment implements OnClickListener, UndoAva
             cursorVisible = savedInstanceState.getBoolean("cursor");
             // height = savedInstanceState.getInt("btn_height");
         }
+        Log.d("Keypad", "onCreate");
     }
 
     @Override
@@ -189,11 +259,42 @@ public class KeypadFragment extends Fragment implements OnClickListener, UndoAva
         } else {
             view = inflater.inflate(R.layout.keypad_fragment, container, false);
         }
-
+        Log.d("Keypad", "onCreateView");
         address = mapper.getCurrentAddress();
 
         root = view;
-        textHousenumber = (TextView) view.findViewById(R.id.text_housenumber);
+        textHousenumber = (EditText) view.findViewById(R.id.text_housenumber);
+        textHousenumber.setOnLongClickListener(new OnLongClickListener() {
+            @Override
+            public boolean onLongClick(View v) {
+                InputMethodManager imm = (InputMethodManager) getActivity().getSystemService(Context.INPUT_METHOD_SERVICE);
+                imm.showSoftInput(v, 0);
+                textHousenumber.setCursorVisible(true);
+                return true;
+            }
+        });
+        textHousenumber.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                InputMethodManager imm = (InputMethodManager) getActivity().getSystemService(Context.INPUT_METHOD_SERVICE);
+                imm.hideSoftInputFromWindow(v.getWindowToken(), 0, null);
+            }
+        });
+        textHousenumber.setOnFocusChangeListener(new OnFocusChangeListener() {
+            @Override
+            public void onFocusChange(View v, boolean hasFocus) {
+                if (!hasFocus) {
+                    InputMethodManager imm = (InputMethodManager) getActivity().getSystemService(Context.INPUT_METHOD_SERVICE);
+                    imm.hideSoftInputFromWindow(v.getWindowToken(), 0, null);
+                    
+                    textHousenumber.setCursorVisible(false);
+                } else {
+                    textHousenumber.setCursorVisible(true);
+                }
+            }
+        });
+        textHousenumber.clearFocus();
+        
         textlastHouseNumbers1 = (TextView) view.findViewById(R.id.text_last_housenumbers_1);
         textlastHouseNumbers2 = (TextView) view.findViewById(R.id.text_last_housenumbers_2);
         textlastHouseNumbers3 = (TextView) view.findViewById(R.id.text_last_housenumbers_3);
@@ -207,6 +308,7 @@ public class KeypadFragment extends Fragment implements OnClickListener, UndoAva
 
             @Override
             public void afterTextChanged(Editable s) {
+                address = mapper.getCurrentAddress();
                 address.setNotes(s.toString());
                 mapper.setCurrentAddress(address);
             }
@@ -274,6 +376,7 @@ public class KeypadFragment extends Fragment implements OnClickListener, UndoAva
                 return false;
             }
         });
+
         return view;
     }
 
@@ -287,13 +390,17 @@ public class KeypadFragment extends Fragment implements OnClickListener, UndoAva
     @Override
     public void onResume() {
         super.onResume();
-        distance = KeypadMapperApplication.getInstance().getSettings().getDistance();
+
+        distance = KeypadMapperApplication.getInstance().getSettings().getHouseNumberDistance();
+        
         geocodeController.onResume();
         address = mapper.getCurrentAddress();
         textHousenumber.setText(address.getNumber());
         inputNotes.setText(address.getNotes());
         updateLastHouseNumbers();
         mapper.addUndoListener(this);
+        textHousenumber.clearFocus();
+
         View middleButton = root.findViewById(R.id.keysLandMiddle);
         if (KeypadMapperApplication.getInstance().getSettings().isLayoutOptimizationEnabled()) {
             root.findViewById(R.id.geoinfo_container).setVisibility(View.GONE);
@@ -312,6 +419,9 @@ public class KeypadFragment extends Fragment implements OnClickListener, UndoAva
                 root.findViewById(R.id.delimiter1).setVisibility(View.VISIBLE);
             }
         }
+        
+        InputMethodManager imm = (InputMethodManager) getActivity().getSystemService(Context.INPUT_METHOD_SERVICE);
+        imm.hideSoftInputFromWindow(inputNotes.getApplicationWindowToken(), 0);
     }
 
     @Override
@@ -342,7 +452,10 @@ public class KeypadFragment extends Fragment implements OnClickListener, UndoAva
         inputNotes.setText("");
         address.setNotes("");
         address.setNumber("");
+        address.setHousename("");
         mapper.setCurrentAddress(address);
+        // update extended view
+        addressCallback.onAddressUpdated();
     }
 
     private int getScreenMaxHeight() {
@@ -389,7 +502,7 @@ public class KeypadFragment extends Fragment implements OnClickListener, UndoAva
             // do nothing
         } else if (dpMax > 480) {
             // remove one line
-            view.findViewById(R.id.keysRow3).setVisibility(View.GONE);
+            //view.findViewById(R.id.keysRow3).setVisibility(View.GONE);
             ((Button) view.findViewById(R.id.buttonJ)).setText(localizer.getString("buttonSep1"));
             ((Button) view.findViewById(R.id.buttonK)).setText(localizer.getString("buttonSep2"));
             ((Button) view.findViewById(R.id.buttonL)).setText(localizer.getString("buttonSep3"));
@@ -455,8 +568,7 @@ public class KeypadFragment extends Fragment implements OnClickListener, UndoAva
 
     private void updateTextOnLayout(View view) {
 
-        textHousenumber.setBackgroundDrawable(localizer
-                .get9PatchDrawable("house_number_entry_field"));
+        textHousenumber.setBackgroundDrawable(localizer.getDrawable("house_number_background"));
 
         inputNotes.setHint(localizer.getString("keypad_info_hint"));
         inputNotes.setBackgroundDrawable(localizer
@@ -473,12 +585,7 @@ public class KeypadFragment extends Fragment implements OnClickListener, UndoAva
             delimiter2.setBackgroundDrawable(localizer.getDrawable("icon_line_menu"));
         }
 
-        ((Button) view.findViewById(R.id.button_L)).setText(localizer.getString("buttonLeft"));
-
-        ((Button) view.findViewById(R.id.button_F)).setText(localizer.getString("buttonFront"));
-
-        ((Button) view.findViewById(R.id.button_R)).setText(localizer.getString("buttonRight"));
-
+        
         ((Button) view.findViewById(R.id.button1)).setText(localizer.getString("button1"));
 
         ((Button) view.findViewById(R.id.button1)).setText(localizer.getString("button1"));
@@ -491,8 +598,7 @@ public class KeypadFragment extends Fragment implements OnClickListener, UndoAva
         ((Button) view.findViewById(R.id.button8)).setText(localizer.getString("button8"));
         ((Button) view.findViewById(R.id.button9)).setText(localizer.getString("button9"));
         ((Button) view.findViewById(R.id.button0)).setText(localizer.getString("button0"));
-
-        ((Button) view.findViewById(R.id.button_C)).setText(localizer.getString("buttonCLR"));
+        
 
         ((Button) view.findViewById(R.id.buttonA)).setText(localizer.getString("buttonA"));
         ((Button) view.findViewById(R.id.buttonB)).setText(localizer.getString("buttonB"));
@@ -504,14 +610,31 @@ public class KeypadFragment extends Fragment implements OnClickListener, UndoAva
         ((Button) view.findViewById(R.id.buttonG)).setText(localizer.getString("buttonG"));
         ((Button) view.findViewById(R.id.buttonH)).setText(localizer.getString("buttonH"));
         ((Button) view.findViewById(R.id.buttonI)).setText(localizer.getString("buttonI"));
+
         ((Button) view.findViewById(R.id.buttonJ)).setText(localizer.getString("buttonJ"));
         ((Button) view.findViewById(R.id.buttonK)).setText(localizer.getString("buttonK"));
         ((Button) view.findViewById(R.id.buttonL)).setText(localizer.getString("buttonL"));
-
+        
         ((Button) view.findViewById(R.id.buttonSep1)).setText(localizer.getString("buttonSep1"));
         ((Button) view.findViewById(R.id.buttonSep2)).setText(localizer.getString("buttonSep2"));
         ((Button) view.findViewById(R.id.buttonSep3)).setText(localizer.getString("buttonSep3"));
 
         initLettersRows(view);
+    }
+    
+    private void vibrate() {
+        int vibTime = KeypadMapperApplication.getInstance().getSettings().getVibrationTime();
+        if (vibTime != 0) {
+            Vibrator vibrator = (Vibrator) getActivity().getSystemService(Context.VIBRATOR_SERVICE);
+            vibrator.vibrate(vibTime);
+        }
+    }
+    
+    private void keyboardVibrate() {
+        int vibTime = KeypadMapperApplication.getInstance().getSettings().getKeyboardVibrationTime();
+        if (vibTime != 0) {
+            Vibrator vibrator = (Vibrator) getActivity().getSystemService(Context.VIBRATOR_SERVICE);
+            vibrator.vibrate(vibTime);
+        }
     }
 }

@@ -9,6 +9,7 @@ package de.enaikoon.android.keypadmapper3.services;
 
 import android.content.Context;
 import android.content.Intent;
+import de.enaikoon.android.keypadmapper3.KeypadMapperApplication;
 import de.enaikoon.android.keypadmapper3.utils.ConnectivityUtils;
 import de.enaikoon.android.library.resources.locale.ResourcesInitializerService;
 
@@ -31,9 +32,8 @@ public class ControllableResourceInitializerService extends ResourcesInitializer
         context.startService(localeInitializerIntent);
     }
 
-    @Override
-    protected boolean isDownloadAllowed() {
-        return ConnectivityUtils.isDownloadAllowed(this);
+    protected static boolean isDownloadAllowed() {
+        return ConnectivityUtils.isDownloadAllowed(KeypadMapperApplication.getInstance());
     }
 
 }

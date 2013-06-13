@@ -7,6 +7,7 @@
 
 package de.enaikoon.android.keypadmapper3;
 
+import android.content.Context;
 import android.location.GpsSatellite;
 import android.location.GpsStatus;
 import android.location.GpsStatus.Listener;
@@ -14,11 +15,14 @@ import android.location.Location;
 import android.location.LocationListener;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.TextView;
 import de.enaikoon.android.keypadmapper3.location.LocationProvider;
+import de.enaikoon.android.keypadmapper3.settings.KeypadMapperSettings;
 import de.enaikoon.android.keypadmapper3.utils.UnitsConverter;
 import de.enaikoon.android.keypadmapper3.view.BarChart;
 import de.enaikoon.android.library.resources.locale.Localizer;
@@ -58,6 +62,7 @@ public class SatelliteInfoFragment extends Fragment implements LocationListener,
         noGpsReceptionView = view.findViewById(R.id.noSatInfo);
         satInfoView = view.findViewById(R.id.satInfo);
         init(view);
+        Log.d("Keypad", "sat info create view");
         return view;
     }
 
@@ -68,18 +73,7 @@ public class SatelliteInfoFragment extends Fragment implements LocationListener,
      */
     @Override
     public void onGpsStatusChanged(int event) {
-        switch (event) {
-        case GpsStatus.GPS_EVENT_STARTED:
-            break;
-        case GpsStatus.GPS_EVENT_STOPPED:
-            break;
-        case GpsStatus.GPS_EVENT_FIRST_FIX:
-            break;
-        case GpsStatus.GPS_EVENT_SATELLITE_STATUS:
-            GpsStatus gpsStatus = locationProvider.getLastKnownGpsStatus();
-            updateGpsSatellitesInfo(gpsStatus);
-            break;
-        }
+        updateGpsSatellitesInfo(locationProvider.getLastKnownGpsStatus());
     }
 
     /*
@@ -94,25 +88,27 @@ public class SatelliteInfoFragment extends Fragment implements LocationListener,
         String locationStatus = localizer.getString("satellite_n_a");
         String measurement = "";
         if (currentLocation != null) {
-            if (KeypadMapperApplication.getInstance().getSettings().getMeasurement()
-                    .equalsIgnoreCase("m")) {
+            String mv = KeypadMapperApplication.getInstance().getSettings().getMeasurement();
+            
+            if (mv.equalsIgnoreCase(KeypadMapperSettings.UNIT_METER)) {
                 locationStatus = "" + (int) currentLocation.getAccuracy();
-                measurement = localizer.getString("prefsMeasurementsEntries_1");
+                measurement = localizer.getString("meters_display_unit");
             } else {
                 locationStatus =
                         ""
                                 + (int) UnitsConverter.convertMetersToFeets(currentLocation
                                         .getAccuracy());
-                measurement = localizer.getString("prefsMeasurementsEntries_2");
+                measurement = localizer.getString("feet_display_unit");
             }
         }
+        
         accuracyMeasure.setText(measurement);
         accuracyValue.setText(locationStatus);
-
     }
 
     @Override
     public void onPause() {
+        
         locationProvider.removeGpsStatusListener(this);
         locationProvider.removeLocationListener(this);
         super.onPause();
@@ -136,16 +132,20 @@ public class SatelliteInfoFragment extends Fragment implements LocationListener,
      */
     @Override
     public void onProviderEnabled(String provider) {
-
     }
 
     @Override
     public void onResume() {
         super.onResume();
+        
+        Log.d("Keypad", "sat info resume");
         updateGpsSatellitesInfo(locationProvider.getLastKnownGpsStatus());
+        this.onLocationChanged(locationProvider.getLastKnownLocation());
         locationProvider.addGpsStatusListener(this);
         locationProvider.addLocationListener(this);
-        this.onLocationChanged(locationProvider.getLastKnownLocation());
+        
+        InputMethodManager imm = (InputMethodManager) getActivity().getSystemService(Context.INPUT_METHOD_SERVICE);
+        imm.hideSoftInputFromWindow(satInView.getApplicationWindowToken(), 0);
     }
 
     /*
@@ -167,6 +167,12 @@ public class SatelliteInfoFragment extends Fragment implements LocationListener,
                 .getString("satellite_in_use"));
         ((TextView) view.findViewById(R.id.accuracyTextView)).setText(localizer
                 .getString("satellite_accuracy"));
+        
+        updateGpsSatellitesInfo(locationProvider.getLastKnownGpsStatus());
+        onLocationChanged(locationProvider.getLastKnownLocation());
+        
+        InputMethodManager imm = (InputMethodManager) getActivity().getSystemService(Context.INPUT_METHOD_SERVICE);
+        imm.hideSoftInputFromWindow(satInView.getApplicationWindowToken(), 0);
     }
 
     private void updateGpsSatellitesInfo(GpsStatus gpsStatus) {
@@ -185,6 +191,7 @@ public class SatelliteInfoFragment extends Fragment implements LocationListener,
         }
         satInView.setText("" + maxSats);
         satInUse.setText("" + usedSats);
+
         if (maxSats == 0) {
             noGpsReceptionView.setVisibility(View.VISIBLE);
             satInfoView.setVisibility(View.GONE);

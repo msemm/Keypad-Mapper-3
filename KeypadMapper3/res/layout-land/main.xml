@@ -42,7 +42,7 @@
             android:id="@+id/extended_address_view"
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
-            android:visibility="gone" >
+            android:visibility="gone">
             <fragment
                 android:name="org.osm.keypadmapper2.ExtendedAddressFragment"
                 android:layout_width="match_parent"

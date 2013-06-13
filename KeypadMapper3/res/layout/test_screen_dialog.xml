@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:padding="15dp"
+    android:background="@drawable/dialogborder" >
+    
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="BAD DATA (AMONG 25 LAST LOCATIONS)"
+        android:textSize="9sp"
+        android:textStyle="bold"/>
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="100dip">
+        <TextView
+	        android:id="@+id/txtDuplicates"
+	        android:textColor="@color/ENAiKOON_orange"
+	        android:textStyle="normal"
+	        android:typeface="monospace"
+	        android:textSize="11sp"
+	    	android:layout_width="fill_parent"
+	    	android:layout_height="wrap_content"
+    	/>
+    </ScrollView>
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="ALL LOCATIONS"
+        android:textSize="10sp"
+        android:textStyle="bold"/>
+	<ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="180dip">
+        <TextView
+	        android:id="@+id/txtAllData"
+	        android:textColor="@color/ENAiKOON_light_gray"
+	        android:textStyle="normal"
+	        android:textSize="8sp"
+	        android:typeface="monospace"
+	    	android:layout_width="fill_parent"
+	    	android:layout_height="wrap_content"
+    	/>
+    </ScrollView>
+    
+    <LinearLayout 
+        android:layout_width="fill_parent"
+    	android:layout_height="30dip"
+    	android:orientation="horizontal">
+    	
+        <Button 
+            android:id="@+id/btnReset"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="reset"
+            android:textSize="10sp"
+            />
+        
+        <Button
+            android:id="@+id/btnClose"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="@string/close"
+            android:textSize="10sp"
+            />
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"/>
+        <Button
+            android:id="@+id/btnEmail"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="email it"
+            android:textSize="10sp"
+            />
+    </LinearLayout>
+</LinearLayout>

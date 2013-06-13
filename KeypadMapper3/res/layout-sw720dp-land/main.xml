@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+    <include
+        android:id="@+id/menu"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        layout="@layout/view_menu" />
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+        <LinearLayout
+            android:id="@+id/satellite_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone" >
+            <fragment
+                android:name="de.enaikoon.android.keypadmapper3.SatelliteInfoFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:tag="satellite"
+                tools:layout="@layout/fragment_satellite_status" >
+            </fragment>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/keypad_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible" >
+            <fragment
+                android:name="org.osm.keypadmapper2.KeypadFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:tag="keypad"
+                tools:layout="@layout/extended_address_fragment" >
+            </fragment>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/extended_address_view"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:visibility="gone">
+            <TextView 
+            	android:layout_width="match_parent"
+            	android:layout_height="match_parent"
+                />
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

@@ -17,6 +17,25 @@
             android:paddingLeft="5dp"
             android:paddingRight="10dp" >
             <LinearLayout
+                android:id="@+id/popupKeypadLine"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+                <ImageView
+                    android:id="@+id/popupKeypad"
+                    android:layout_width="@dimen/menu_popup_icon_size"
+                    android:layout_height="@dimen/menu_popup_icon_size"
+                    android:src="@drawable/icon_keypad" />
+                <TextView
+                    android:id="@+id/popupKeypadText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/menu_address_keypad"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@android:color/white" />
+            </LinearLayout>
+            <LinearLayout
                 android:id="@+id/popUpAddressEditorLine"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" >
@@ -78,7 +97,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" >
                 <ImageView
-                    android:id="@+id/popUpFreezeGps"
+                    android:id="@+id/popUpFreezeGpsImage"
                     android:layout_width="@dimen/menu_popup_icon_size"
                     android:layout_height="@dimen/menu_popup_icon_size"
                     android:src="@drawable/icon_freeze_inactive" />
@@ -89,25 +108,6 @@
                     android:layout_gravity="left|center_vertical"
                     android:layout_marginLeft="10dp"
                     android:text="@string/menu_freeze_gps"
-                    android:textAppearance="?android:attr/textAppearanceSmall"
-                    android:textColor="@android:color/white" />
-            </LinearLayout>
-            <LinearLayout
-                android:id="@+id/popUpCameraLine"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" >
-                <ImageView
-                    android:id="@+id/popUpCamera"
-                    android:layout_width="@dimen/menu_popup_icon_size"
-                    android:layout_height="@dimen/menu_popup_icon_size"
-                    android:src="@drawable/icon_camera" />
-                <TextView
-                    android:id="@+id/popUpCameraText"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="left|center_vertical"
-                    android:layout_marginLeft="10dp"
-                    android:text="@string/menu_camera"
                     android:textAppearance="?android:attr/textAppearanceSmall"
                     android:textColor="@android:color/white" />
             </LinearLayout>
@@ -130,12 +130,69 @@
                     android:textAppearance="?android:attr/textAppearanceSmall"
                     android:textColor="@android:color/white" />
             </LinearLayout>
+             <LinearLayout
+                android:id="@+id/popUpCameraLine"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+                <ImageView
+                    android:id="@+id/popUpCamera"
+                    android:layout_width="@dimen/menu_popup_icon_size"
+                    android:layout_height="@dimen/menu_popup_icon_size"
+                    android:src="@drawable/icon_camera" />
+                <TextView
+                    android:id="@+id/popUpCameraText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/menu_camera"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@android:color/white" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/popUpStartStopGpsLine"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+                <ImageView
+                    android:id="@+id/popUpStartStopGps"
+                    android:layout_width="@dimen/menu_popup_icon_size"
+                    android:layout_height="@dimen/menu_popup_icon_size"
+                    android:src="@drawable/start_recording_gps" />
+                <TextView
+                    android:id="@+id/popUpStartStopGpsText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/menu_settings"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@android:color/white" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/popupAudioNoteLine"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+                <ImageView
+                    android:id="@+id/popupAudioNoteImg"
+                    android:layout_width="@dimen/menu_popup_icon_size"
+                    android:layout_height="@dimen/menu_popup_icon_size"
+                    android:src="@drawable/audio" />
+                <TextView
+                    android:id="@+id/popupAudioText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/menu_address_keypad"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@android:color/white" />
+            </LinearLayout>
             <LinearLayout
                 android:id="@+id/popUpSettingsLine"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" >
                 <ImageView
-                    android:id="@+id/popUpSettigs"
+                    android:id="@+id/popUpSettingsImage"
                     android:layout_width="@dimen/menu_popup_icon_size"
                     android:layout_height="@dimen/menu_popup_icon_size"
                     android:src="@drawable/icon_settings" />

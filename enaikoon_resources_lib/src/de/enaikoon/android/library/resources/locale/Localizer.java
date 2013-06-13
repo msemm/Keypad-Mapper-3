@@ -22,9 +22,11 @@ import android.graphics.NinePatch;
 import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
 import android.graphics.drawable.NinePatchDrawable;
+import android.text.Html;
 import android.util.DisplayMetrics;
 import android.util.Log;
 import android.view.WindowManager;
+import android.widget.Chronometer;
 import de.enaikoon.android.library.resources.utils.NinePatchChunk;
 
 /**
@@ -40,7 +42,7 @@ public class Localizer {
 
     private static final String STORAGE_FILE_NAME = "resources";
 
-    private SharedPreferences storage;
+    public SharedPreferences storage;
 
     private Context context;
 
@@ -246,7 +248,14 @@ public class Localizer {
      */
     public String getString(String name, String locale) {
         String text = storage.getString(locale + "_" + name, null);
-        if (text != null) {
+        if (text != null && !text.equals("")) {
+        	if (text.contains("&lt;") || text.contains("&gt;"))
+        	{
+        		text = Html.fromHtml(text).toString();
+        	}
+        	
+        	text = text.replace("\\'", "\'").replace("\\u0020", " ").replace("\\n", "\n");
+        	
             return text;
         } else {
             int id = context.getResources().getIdentifier(name, "string", context.getPackageName());
@@ -320,6 +329,17 @@ public class Localizer {
         editor.putString("date_" + locale, dateInString);
         editor.commit();
     }
+    
+    /**
+     * Save the date when specified locale was updated last time
+     * 
+     * @param locale
+     * @param dateInString
+     *            date format yyyy-MM-dd HH:mm
+     */
+    public void saveLastUpdate(Editor editor, String locale, String dateInString) {
+        editor.putString("date_" + locale, dateInString);
+    }    
 
     /**
      * Set locale provider for indicating what text resources should be used
@@ -388,6 +408,20 @@ public class Localizer {
         editor.putString(locale + "_" + name, value);
         editor.commit();
     }
+    
+    /**
+     * Save the text resource for specified locale and value
+     * 
+     * @param locale
+     *            resource locale
+     * @param name
+     *            resource name
+     * @param value
+     *            resource value
+     */
+    protected void putStringResource(Editor editor, String locale, String name, String value) {
+        editor.putString(locale + "_" + name, value);
+    }    
 
     protected void setLanguagesCodeResourceName(String languagesCodeResourceName) {
         if (context.getResources().getIdentifier(languagesCodeResourceName, "string",
@@ -404,5 +438,42 @@ public class Localizer {
             return localeProvider.getLocale();
         }
     }
+    
+    /**
+     * Return a localized formatted resource, substituting the format arguments
+     * 
+     * @param name
+     * @param locale - if null, getLocale() will be used
+     * @param string arguments
+     * @return
+     */
+    public String getString(String name, String locale, Object... formatArgs) {
+    	if (locale==null)
+    	{
+    		locale=getLocale();
+    	}
+    	
+        String text = storage.getString(locale + "_" + name, null);
+        if (text != null && !text.equals("")) {
+        	String formattedText = String.format(text,formatArgs); 
+        	if (formattedText.contains("&lt;") || formattedText.contains("&gt;"))
+        	{
+        		formattedText = Html.fromHtml(formattedText).toString();
+        	}
+        	
+        	formattedText = formattedText.replace("\\'", "\'").replace("\\u0020", " ").replace("\\n", "\n");
+        	
+            return formattedText;
+        } else {
+            int id = context.getResources().getIdentifier(name, "string", context.getPackageName());
+            if (id == 0) {
+                return null;
+            }
+            
+            text = context.getString(id);
+            
+            return String.format(text,formatArgs);
+        }
+    }    
 
 }

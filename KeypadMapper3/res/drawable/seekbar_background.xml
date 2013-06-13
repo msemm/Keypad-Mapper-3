@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@android:id/background" >
+        <!-- 
+        <nine-patch xmlns:android="http://schemas.android.com/apk/res/android" 
+            android:src="@drawable/seek_container" 
+            android:dither="true"/> -->
+            <shape android:visible="true">
+                <corners android:radius="1dp"/>
+                <stroke android:width="2dp" android:color="#A6A6A6" />
+            </shape>
+    </item>
+    <item android:id="@android:id/progress" >
+	    <clip>
+	    <inset
+	        android:insetTop="2dp"
+	        android:insetBottom="2dp"
+	        android:insetRight="2dp"
+	        android:insetLeft="2dp">
+	        <shape>
+	             <solid android:color="#F9BE27"/>
+	        </shape>
+	    </inset>
+	    </clip>
+	</item>    
+        
+</layer-list>
