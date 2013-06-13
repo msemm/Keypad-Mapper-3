@@ -1,0 +1,35 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_root"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:padding="10dp" >
+    
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+        <LinearLayout 
+            android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:orientation="vertical">
+        	<TextView
+	            android:id="@+id/text"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:textColor="#ffffff" />
+        	<EditText
+	            android:id="@+id/edtWavPath"
+	            style="@style/ExtendedScreenField"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_marginBottom="@dimen/extended_address_editor_margin"
+	            android:background="@drawable/textfield_multiline_activated_holo_dark"
+	            android:textColor="@color/ENAiKOON_orange"
+	            android:ems="10"
+	            android:singleLine="true" />    
+        </LinearLayout>
+        
+    </ScrollView>
+    
+        
+</LinearLayout>

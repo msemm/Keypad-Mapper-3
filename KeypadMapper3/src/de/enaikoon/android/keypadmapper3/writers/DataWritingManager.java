@@ -8,14 +8,15 @@
 package de.enaikoon.android.keypadmapper3.writers;
 
 import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.IOException;
+import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.TimeZone;
 
 import android.os.Environment;
+import android.util.Log;
 import de.enaikoon.android.keypadmapper3.KeypadMapperApplication;
 import de.enaikoon.android.keypadmapper3.domain.Address;
 import de.enaikoon.android.keypadmapper3.domain.Trackpoint;
@@ -71,71 +72,75 @@ abstract public class DataWritingManager {
         }
     }
 
-    synchronized public void saveAddresses(List<Address> addresses) {
-        OsmWriter osmWriter =
-                new OsmWriter(kpmFolder + "/" + basename + ".osm~", localizer.getString("app_name"));
+    synchronized public void saveAddress(final Address address) {
+        OsmWriter osmWriter = new OsmWriter();
         try {
-
-            osmWriter.openOsmWriter(false);
-
-            for (Address address : addresses) {
-                osmWriter.addNode(address.getLatitude(), address.getLongitude(),
-                        convertToTags(address));
-            }
-
-            osmWriter.flush();
-
-        } catch (FileNotFoundException e) {
+            osmWriter.openOsmWriter(true);
+            osmWriter.addNode(address.getLatitude(), address.getLongitude(), convertToTags(address));
+            osmWriter.close();
+        } catch (Exception e) {
+            Log.e("KeypadMapper", "", e);
             showDialogFatalError(localizer.getString("errorFileOpen"));
-        } catch (IOException exception) {
-            showDialogFatalError(localizer.getString("errorFileOpen"));
-        } finally {
-            if (osmWriter != null) {
-                try {
-                    osmWriter.close();
-                } catch (IOException e) {
-                    showDialogFatalError(localizer.getString("errorFileOpen"));
-                }
-            }
-        }
-        File tmpFile = new File(kpmFolder + "/" + basename + ".osm~");
-        tmpFile.renameTo(new File(kpmFolder + "/" + basename + ".osm"));
-
+        } 
     }
-
-    synchronized public void saveTrackpoints(List<Trackpoint> trackpoints) {
-        GpxWriter trackWriter =
-                new GpxWriter(kpmFolder + "/" + basename + ".gpx", localizer.getString("app_name"));
+   
+    synchronized public void saveTrackpoints(List<Trackpoint> trackpoints, boolean append) {
+        GpxWriter trackWriter = new GpxWriter();
         try {
-            trackWriter.openGpxWriter(false);
+            trackWriter.openGpxWriter(append);
 
             for (Trackpoint trackpoint : trackpoints) {
                 if (trackpoint.getAltitude() != Double.MIN_VALUE) {
                     trackWriter.addTrackpoint(trackpoint.getLatitude(), trackpoint.getLongitude(),
-                            trackpoint.getTime(), trackpoint.getAltitude());
+                                              trackpoint.getTime(), trackpoint.getAltitude(), 
+                                              trackpoint.getFilename(), trackpoint.getSpeed());
                 } else {
-                    trackWriter.addTrackpoint(trackpoint.getLatitude(), trackpoint.getLongitude(),
-                            trackpoint.getTime());
+                    trackWriter.addTrackpoint(trackpoint.getLatitude(), trackpoint.getLongitude(), trackpoint.getTime(), 
+                                              trackpoint.getFilename(), trackpoint.getSpeed());
                 }
             }
-
-            trackWriter.flush();
-
-        } catch (FileNotFoundException e) {
-            showDialogFatalError(localizer.getString("errorFileOpen"));
-        } catch (IOException exception) {
+            
+        } catch (Exception e) {
             showDialogFatalError(localizer.getString("errorFileOpen"));
         } finally {
             if (trackWriter != null) {
                 try {
                     trackWriter.close();
-                } catch (IOException e) {
+                } catch (Exception e) {
                     showDialogFatalError(localizer.getString("errorFileOpen"));
                 }
             }
         }
-        File tmpFile = new File(kpmFolder + "/" + basename + ".gpx~");
-        tmpFile.renameTo(new File(kpmFolder + "/" + basename + ".gpx"));
+    }
+    
+    /**
+     * Only creates a new GPX file.
+     */
+    public void initGpx() {
+        GpxWriter tw = new GpxWriter();
+        try {
+            boolean append = KeypadMapperApplication.getInstance().getSettings().isRecording() 
+                             && KeypadMapperApplication.getInstance().getSettings().getLastGpxFile() != null;
+            
+            tw.openGpxWriter(append);
+            tw.close();
+        } catch (Exception e) {
+            Log.e("Keypad", "", e);
+            showDialogFatalError(localizer.getString("errorFileOpen"));
+        }
+    }
+    
+    public void initOsm() {
+        OsmWriter osm = new OsmWriter();
+        try {
+            boolean append = KeypadMapperApplication.getInstance().getSettings().isRecording() 
+                    && KeypadMapperApplication.getInstance().getSettings().getLastOsmFile() != null;
+            osm.openOsmWriter(append);
+            osm.close();
+        } catch (Exception e) {
+            Log.e("Keypad", "", e);
+            showDialogFatalError(localizer.getString("errorFileOpen"));
+        }
     }
 
     public void setBasename(String basename) {
@@ -147,12 +152,30 @@ abstract public class DataWritingManager {
     protected Map<String, String> convertToTags(Address address) {
         Map<String, String> map = new HashMap<String, String>();
         map.put("name", address.getNotes());
-        map.put("addr:housenumber", address.getNumber());
+        // remove "L/R/F: " from start of the string
+        String left = localizer.getString("buttonLeft") + ": ";
+        String front = localizer.getString("buttonFront") + ": ";
+        String right = localizer.getString("buttonRight") + ": ";
+        String houseNumber = address.getNumber();
+        if (houseNumber.startsWith(left)) {
+            houseNumber = houseNumber.replaceFirst(left, "");
+        } else if (houseNumber.startsWith(front)) {
+            houseNumber = houseNumber.replaceFirst(front, "");
+        } else if (houseNumber.startsWith(right)) {
+            houseNumber = houseNumber.replaceFirst(right, "");
+        }
+        map.put("addr:housenumber", houseNumber);
         map.put("addr:housename", address.getHousename());
         map.put("addr:street", address.getStreet());
         map.put("addr:postcode", address.getPostcode());
         map.put("addr:city", address.getCity());
         map.put("addr:country", address.getCountryCode());
+        
+        Calendar cal = Calendar.getInstance();
+        cal.setTimeInMillis(System.currentTimeMillis());
+        cal.setTimeZone(TimeZone.getTimeZone("UTC"));
+        map.put("survey:date", new SimpleDateFormat("yyyy-MM-dd").format(cal.getTime()));
+        
         return map;
     }
 }

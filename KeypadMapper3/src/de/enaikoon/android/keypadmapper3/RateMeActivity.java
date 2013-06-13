@@ -28,6 +28,7 @@ import de.enaikoon.android.library.resources.locale.Localizer;
 public class RateMeActivity extends Activity implements OnClickListener {
 
     public static void startRateMe(Context context) {
+ 
         KeypadMapperSettings settings = KeypadMapperApplication.getInstance().getSettings();
         if (System.currentTimeMillis() - settings.getLastTimeLaunch() > 5 * 1000L) {
             int count = settings.getLaunchCount() + 1;
@@ -37,7 +38,6 @@ public class RateMeActivity extends Activity implements OnClickListener {
                 context.startActivity(intent);
             }
         }
-
     }
 
     private Localizer localizer = KeypadMapperApplication.getInstance().getLocalizer();

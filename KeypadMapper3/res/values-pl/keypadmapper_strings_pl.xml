@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><resources><string name="menu_undo">cofnij</string><string name="app_name">Keypad-Mapper 3</string><string name="buttonLeft">L</string><string name="buttonFront">F</string><string name="buttonRight">P</string><string name="button1">1</string><string name="button2">2</string><string name="button3">3</string><string name="button4">4</string><string name="button5">5</string><string name="button6">6</string><string name="button7">7</string><string name="button8">8</string><string name="button9">9</string><string name="button0">0</string><string name="buttonA">a</string><string name="buttonB">b</string><string name="buttonC">c</string><string name="buttonD">d</string><string name="buttonE">e</string><string name="buttonF">f</string><string name="buttonG">g</string><string name="buttonI">i</string><string name="buttonJ">j</string><string name="buttonK">k</string><string name="buttonL">l</string><string name="buttonH">h</string><string name="buttonSep1">,</string><string name="buttonSep2">-</string><string name="buttonSep3">/</string><string name="buttonCLR">CLR</string><string name="errorFileOpen">błąd zapisu plików z danymi</string><string name="errorGpsDisabled">GPS jest wyłączony. Włącz GPS, aby skorzystać z aplikacji.</string><string name="errorStorageRO">Pamięć zewnętrzna jest dostępna tylko do odczytu. Keypad-Mapper 3 wymaga praw zapisu, aby przechowywać wprowadzone dane.</string><string name="errorStorageUnavailable">Pamięć zewnętrzna jest niedostępna. Keypad-Mapper 3 musi mieć do niej dostęp, aby zapisywać wprowadzone dane.</string><string name="OK">ok</string><string name="quit">wyjście</string><string name="menu_settings">ustawienia</string><string name="writeToNewFile">zapisywanie do nowych plików</string><string name="Housenumber">numer budynku</string><string name="Housename">nazwa budynku</string><string name="Street">ulica</string><string name="Postcode">kod pocztowy</string><string name="City">miasto</string><string name="Countrycode">kod kraju</string><string name="menu_address_keypad">klawiatura</string><string name="menu_address_editor">edytor adresu</string><string name="FolderCreationFailed">folder przechowujący dane w pamięci zewnętrznej nie został utworzony</string><string name="locationNotAvailable">numer budynku nie może być zapisany, ponieważ brakuje lokacji z GPS</string><string name="prefsDataPlacementDistance">odległość od węzła adresowego</string><string name="prefsAbout">o aplikacji</string><string name="prefsAboutDetails">zobacz informacje o aplikacji</string><string name="prefsShare">udostępnij zebrane dane</string><string name="prefsShareDetails">udostępnij pliki .gpx, .osm, .jpg oraz .wav</string><string name="prefsLanguageTitle">język</string><string name="prefsLanguageSummary">wybierz język: Deutsch, English, Español, Français, Ελληνικά, Italiano, Nederlands, Русский</string><string name="zip_fail">nie można utworzyć pliku zip</string><string name="about_message">&lt;br/&gt;
+%1$s&lt;BR/&gt; 
+Wersja: %2$s&lt;br/&gt;
+Polskie tłumaczenie: &lt;font color=#ffbf27&gt;&lt;a href=&quot;http://zamojski.info/&quot;&gt;Adam Zamojski&lt;/a&gt;&lt;/font&gt;&lt;br/&gt;
+&lt;br/&gt;
+Oryginalny keypadmapper został napisany przez &lt;font color=#ffbf27&gt;&lt;a href=&quot;mailto:nroets@gmail.com&quot;&gt;Nic\'a Roets\'a&lt;/a&gt; &lt;/font&gt; i został opublikowany pod koniec 2010 roku.&lt;br/&gt;
+W połowie 2011 roku zaprezentowany został keypadmapper2, fork keypadmapper\'a.&lt;br/&gt;
+&lt;font color=#ffbf27&gt;&lt;a href=&quot;https://www.enaikoon.com&quot;&gt;ENAiKOON&lt;/a&gt;&lt;/font&gt; skorzystał z niego, aby na początku 2013 roku zaimplementować obecną wersję. Kod źródłowy aplikacji można znaleźć pod adresem https://github.com/msemm/Keypad-Mapper-3.git.&lt;br/&gt;
+&lt;br/&gt;
+Niniejszym pragniemy wyrazić naszą wdzięczność wobec Nic\'a, który wspierał nas w trakcie implementacji tej wersji aplikacji swoimi dobrymi pomysłami i cierpliwością.&lt;br/&gt;
+&lt;br/&gt;
+Opinie, sugestie i problemy związane z aplikacją proszę zgłaszać do ENAiKOON poprzez email &lt;font color=#ffbf27&gt;&lt;a href=&quot;mailto:inviu@enaikoon.de&quot;&gt;inViu@enaikoon.de&lt;/a&gt;&lt;/font&gt; lub telefonicznie +49 30 397 475-30.&lt;br/&gt;
+&lt;br/&gt;
+&lt;b&gt;Godziny pracy ENAiKOON:&lt;/b&gt;&lt;br/&gt;
+Pon.-Pt. 9:00-13:00 oraz 14:00-18:00&lt;br/&gt;
+&lt;br/&gt;
+&lt;b&gt;Nasz adres:&lt;/b&gt;&lt;br/&gt;
+ENAiKOON GmbH&lt;BR/&gt; Telematics Factory&lt;br/&gt;
+Helmholtzstrasse 2-9&lt;br/&gt;
+10587 Berlin&lt;br/&gt;
+Germany</string><string name="close">zamknij</string><string name="about">o Keypad-Mapper 3</string><string name="about_logo_url">https://www.enaikoon.com/en/footer/imprint/</string><string name="bugreport_subject">Keypad-Mapper 3 bug report</string><string name="bugreport_dialogheader">Keypad-Mapper 3 błąd</string><string name="options_bugreport_question">Keypad-Mapper 3 został uruchomiony ponownie! Czy chcesz wysłać raport o błędzie do programistów?</string><string name="options_bugreport_send">wyślij</string><string name="options_bugreport_dontsend">nie wysyłaj</string><string name="options_bugreport_ok">ok</string><string name="options_bugreport">raportowanie błędów</string><string name="options_bugreport_summary">czy chcesz wysyłać raporty o błędach do programistów?</string><string name="options_bugreport_neversendmessage">Keypad-Mapper 3 został uruchomiony ponownie! Aby wysłać raport o błędzie do programistów, włącz opcję \'Raportowanie błędów\' w ustawieniach aplikacji.</string><string name="options_bugreport_values_1">nigdy</string><string name="options_bugreport_values_2">zawsze</string><string name="options_bugreport_values_3">zapytaj przed wysłaniem</string><string name="menu_freeze_gps">zamroź GPS</string><string name="no_location">sorry, your action could not be completed without GPS reception or valid filtered data</string><string name="prefsDataDistanceEntries_1">1 m</string><string name="prefsDataDistanceEntries_2">2 m</string><string name="prefsDataDistanceEntries_5">5 m</string><string name="prefsDataDistanceEntries_8">8 m</string><string name="prefsDataDistanceEntries_10">10 m</string><string name="prefsDataDistanceEntries_15">15 m</string><string name="prefsDataDistanceEntries_20">20 m</string><string name="prefsDataDistanceEntries_25">25 m</string><string name="cancel">anuluj</string><string name="prefsClearFolderTitle">usuń wszystkie zebrane dane</string><string name="prefsClearFolderQuestion">Czy chcesz usunąć wszystkie pliki utworzone przez Keypad-Mapper 3?</string><string name="prefsClearFolderQuestionYes">usuń wszystkie dane</string><string name="prefsClearFolderQuestionNo">anuluj</string><string name="prefsShareEmailTitle">wprowadź adresatów emaila</string><string name="prefsShareEmailHint">email</string><string name="prefsShareEmailShare">udostępnij</string><string name="prefsShareEmailCancel">anuluj</string><string name="help_title">Porady i wskazówki</string><string name="help_text_1">&lt;h2&gt;&lt;font color=&quot;#ffbf27&quot;&gt;Dziękujemy za używanie nowego Keypad-Mappera 3!&lt;/font&gt;&lt;/h2&gt;
+
+Aplikacja przeznaczona jest do dodawania numerów budynków i tagów adresowych do bazy danych OpenStreetMap.&lt;br&gt;
+&lt;br&gt;
+&lt;h3&gt;&lt;u&gt;Szybki start:&lt;br&gt;&lt;/u&gt;&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li value=&quot;1&quot;&gt;znajdź obszar, w którym brakuje numerów budynków &lt;a href=&quot;http://overpass-api.de/hausnummern.html&quot;&gt;&lt;font color=&quot;#ffbf27&quot;&gt;tutaj&lt;/font&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li value=&quot;2&quot;&gt;wydrukuj wybrany obszar w celu łatwego nawigowania i udaj się tam&lt;/li&gt;
+&lt;li value=&quot;3&quot;&gt;włącz GPS: zapisywanie numerów budynków nie jest możliwe przy słabej sile sygnału GPS; jeżeli sygnał będzie za słaby to wyświetlony zostanie komunikat błędu&lt;/li&gt;
+&lt;li value=&quot;4&quot;&gt;wybierz pozycję \'klawiatura\' w menu aplikacji w lewym górnym rogu ekranu lub przesuń w poziomie palcem po ekranie w celu wybrania klawiatury&lt;/li&gt;
+&lt;li value=&quot;5&quot;&gt;przejdź w miejsce, w którym chcesz zapisać pierwszy numer budynku; upewnij się, że wejście znajduje się dokładnie po twojej prawej lub lewej stronie w chwili zapisywania; w przeciwnym razie późniejsze przypisanie numeru do właściwego budynku w edytorze OSM będzie trudniejsze&lt;/li&gt;
+&lt;li value=&quot;6&quot;&gt;wprowadź numer budynku na klawiaturze&lt;/li&gt;
+&lt;li value=&quot;7&quot;&gt;zapisz wpisany numer wybierające jedną z trzech białych strzałek:&lt;br&gt;
+&lt;ul&gt;
+&lt;li&gt;strzałka skierowana w lewo oznacza, że budynek jest po lewej stronie w stosunku do twojego kierunku ruchu&lt;/li&gt;
+&lt;li&gt;strzałka skierowana w prawo oznacza, że budynek jest po prawej stronie w stosunku do twojego kierunku ruchu&lt;/li&gt;
+&lt;li&gt;strzałka skierowana w górę oznacza, że budynek jest na wprost ciebie (np. na końcu ślepej uliczki)&lt;/li&gt;
+&lt;/ul&gt;
+Okrąg na ikonie aplikacji wskazuje liczbę węzłów adresowych zebranych w trakcie obecnej sesji.&lt;br&gt;
+Powtarzaj kroki 5, 6, 7 dopóki wszystkie numery domów nie zostaną zapisane.&lt;/li&gt;
+&lt;li value=&quot;8&quot;&gt;
+kiedy skończysz zbieranie, wybierz pozycję \'udostępnij zebrane dane\' z menu aplikacji dostępnego w lewym górnym rogu ekranu.&lt;br&gt;
+Funkcja ta pozwoli przesłać email z załącznikiem do komputera, na którym zainstalowany jest edytor OSM (np. JOSM)&lt;/li&gt;
+&lt;li value=&quot;9&quot;&gt;otwórz pocztę i zapisz załączone do wiadomości pliki na dysku komputera&lt;/li&gt;
+&lt;li value=&quot;10&quot;&gt;
+otwórz edytor OSM, następnie pliki .gpx i .osm o takiej samej nazwie oraz powiązane zdjęcia; załaduj istniejące dane OSM;&lt;br&gt;
+w edytorze OSM powinieneś zobaczyć swoją ścieżkę, wszystkie zapisane numery budynków i powiązane zdjęcia&lt;/li&gt;
+&lt;li value=&quot;11&quot;&gt;
+załaduj pliki .wav zawierające notatki dźwiękowe poprzez kliknięcie prawym przyciskiem myszy na plik .gpx w prawym górnym rogu JOSM i wybranie opcji \'import audio\'&lt;/li&gt;
+&lt;li value=&quot;12&quot;&gt;
+przypisz numery do właściwych budynków; przejrzyj wykonane zdjęcia i przesłuchaj notatki audio w celu lepszego opisania adresów&lt;/li&gt;
+&lt;li value=&quot;13&quot;&gt;dodaj kod pocztowy, ulicę, miasto i kraj do każdego z węzłów adresowych, jeżeli nie zostały one wprowadzone w czasie spaceru z użyciem aplikacji&lt;/li&gt;
+&lt;li value=&quot;14&quot;&gt;prześlij poprawione i uzupełnione dane do OSM&lt;/li&gt;
+&lt;li value=&quot;15&quot;&gt;usuń zebrane dane z telefonu / tabletu poprzez opcję \'usuń wszystkie zebrane dane\' w ustawieniach aplikacji&lt;/li&gt;
+&lt;/ol&gt;
+Poczekaj kilka minut i odśwież mapę OSM w przeglądarce. Po przybliżeniu powinieneś zobaczyć nowo dodane numery budynków.&lt;br&gt;
+&lt;br&gt;
+&lt;h3&gt;&lt;u&gt;Funkcje Keypad-Mapper 3&lt;/u&gt;&lt;/h3&gt;
+Aplikacja składa się z następujących ekranów:
+&lt;ol&gt;
+&lt;li&gt;klawiatura&lt;/li&gt;
+&lt;li&gt;edytor adresu&lt;/li&gt;
+&lt;li&gt;informacje GPS&lt;/li&gt;
+&lt;li&gt;ustawienia&lt;/li&gt;
+&lt;/ol&gt;
+Dostęp do ekranów możesz uzyskać na 3 sposoby poprzez:&lt;br&gt;
+&lt;ol&gt;
+&lt;li&gt;wybór ikony z menu na górze ekranu&lt;/li&gt;
+&lt;li&gt;wybór ikony domu, a następnie ikony poszukiwanego ekranu&lt;/li&gt;
+&lt;li&gt;przesunięcie palcem w lewo lub prawo po powierzchni ekranu&lt;/li&gt;
+&lt;/ol&gt;
+&lt;br&gt;
+&lt;b&gt;Rejestrowanie danych:&lt;/b&gt;&lt;br&gt;
+Keypad-Mapper udostępnia w menu pozycję \'rejestracja danych\', której zadaniem jest uruchamianie/zatrzymywanie zapisywania danych. Po każdorazowym uruchomieniu tworzony jest  nowy zestawów plików .osm / .gpx.&lt;br&gt;
+Dodatkowo w ustawieniach dostępna jest opcja \'wyłącz GPS\'. Powiązania pomiędzy tymi opcjami prezentują się następująco:&lt;br&gt;</string><string name="prefsMeasurementTitle">jednostki miary</string><string name="prefsMeasurementsEntries_1">m</string><string name="prefsMeasurementsEntries_2">ft</string><string name="prefsDataDistanceEntriesFt_1">3 ft</string><string name="prefsDataDistanceEntriesFt_2">5 ft</string><string name="prefsDataDistanceEntriesFt_5">15 ft</string><string name="prefsDataDistanceEntriesFt_8">25 ft</string><string name="prefsDataDistanceEntriesFt_10">35 ft</string><string name="prefsDataDistanceEntriesFt_15">50 ft</string><string name="prefsDataDistanceEntriesFt_20">65 ft</string><string name="prefsDataDistanceEntriesFt_25">80 ft</string><string name="lang_support_codes">de
+en
+es
+fr
+el
+it
+nl
+pl
+ru</string><string name="lang_support_names">Deutsch
+English
+Español
+Français
+Ελληνικά
+Italiano
+Nederlands
+Polski
+Русский</string><string name="lang_support_urls">http://liferay.enaikoon.de:8080/10-resourceeditor-services/zip/resources?applicationCode=keypadmapper&amp;domainName=general&amp;languageCode=de_DE
+http://liferay.enaikoon.de:8080/10-resourceeditor-services/zip/resources?applicationCode=keypadmapper&amp;domainName=general&amp;languageCode=en_GB
+http://liferay.enaikoon.de:8080/10-resourceeditor-services/zip/resources?applicationCode=keypadmapper&amp;domainName=general&amp;languageCode=es_ES
+http://liferay.enaikoon.de:8080/10-resourceeditor-services/zip/resources?applicationCode=keypadmapper&amp;domainName=general&amp;languageCode=fr_FR
+http://liferay.enaikoon.de:8080/10-resourceeditor-services/zip/resources?applicationCode=keypadmapper&amp;domainName=general&amp;languageCode=el_GR
+http://liferay.enaikoon.de:8080/10-resourceeditor-services/zip/resources?applicationCode=keypadmapper&amp;domainName=general&amp;languageCode=it_IT
+http://liferay.enaikoon.de:8080/10-resourceeditor-services/zip/resources?applicationCode=keypadmapper&amp;domainName=general&amp;languageCode=nl_NL
+http://liferay.enaikoon.de:8080/10-resourceeditor-services/zip/resources?applicationCode=keypadmapper&amp;domainName=general&amp;languageCode=pl_PL
+http://liferay.enaikoon.de:8080/10-resourceeditor-services/zip/resources?applicationCode=keypadmapper&amp;domainName=general&amp;languageCode=ru_RU</string><string name="menu_share">udostępnij
+zebrane dane</string><string name="menu_unfreeze_gps">odmroź GPS</string><string name="menu_camera">aparat</string><string name="menu_gps_accuracy">informacje GPS</string><string name="keypad_info_hint">notatka dla tej lokalizacji</string><string name="satellite_n_a">brak</string><string name="satellite_gps">GPS</string><string name="satellite_glonass">GLONASS</string><string name="satellite_accuracy">dokładność</string><string name="satellite_in_view">widoczne:</string><string name="satellite_in_use">w użyciu:</string><string name="satellite_no_gps">przemieść się w miejsce, 
+w którym sygnał GPS 
+jest silniejszy</string><string name="prefsScreenOnTitle">utrzymuj ekran włączony</string><string name="prefsScreenOnSummary">ekran będzie cały czas włączony, aktywacja powoduje szybsze rozładowanie baterii</string><string name="prefsMeasurementSummary">możesz wybrać pomiędzy &quot;metrycznymi&quot; i &quot;imperialnymi&quot;</string><string name="prefsDataPlacementDistanceSummary">odległość węzła adresowego od bieżącego położenia urządzenia w czasie zapisywania numeru domu</string><string name="prefsClearFolderSummary">ta opcja usuwa wszystkie zebrane dane przechowywane w tym urządzeniu: pliki .osm, .gpx, zdjęcia i nagrania audio wykonane za pomocą aplikacji; możesz skorzystać z tej opcji po pomyślnym przesłaniu danych emailem do komputera</string><string name="help_text_2">&lt;ul&gt;
+&lt;li&gt;jeżeli rejestracja jest aktywna to plik .gpx jest zapisywany&lt;/li&gt;
+&lt;li&gt;jeżeli rejestracja jest aktywna to plik .gpx jest zapisywany również podczas pracy aplikacji w tle&lt;/li&gt;
+&lt;li&gt;jeżeli rejestracja jest wyłączona i opcja \'wyłącz GPS\' jest aktywna to GPS jest wyłączany w celu zredukowania zużycia enerii&lt;/li&gt;
+&lt;/ul&gt;
+&lt;br&gt;
+&lt;b&gt;Historia mapowania:&lt;/b&gt;&lt;br&gt;
+Na ekranie klawiatury, obok pola wprowadzania numeru domu,  wyświetlane są dwa lub trzy poprzednio zapisane numery. Każdy numer poprzedzony jest symbolem \'L:\', \'F:\' lub \'P:\'. Pozwala to na szybkie sprawdzenie, czy ostatnie wpisy zostały zmapowane po właściwej stronie drogi.&lt;br&gt;
+&lt;br&gt;
+&lt;b&gt;Data pomiaru jest zapisywana z każdym węzłem adresowym:&lt;/b&gt;&lt;br&gt;
+Przykład:&lt;br&gt;
+&lt;br&gt;
+&amp;nbsp;&amp;nbsp;&amp;#60;node id=&quot;-1&quot; visible=&quot;true&quot; lat=&quot;52.497442495127025&quot; lon=&quot;13.350499497003666&quot;&amp;#62;&lt;br&gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;#60;tag k=&quot;survey:date&quot; v=&quot;2013-06-01&quot;/&amp;#62;&lt;br&gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;#60;tag k=&quot;addr:housenumber&quot; v=&quot;15&quot;/&amp;#62;&lt;br&gt;
+&amp;nbsp;&amp;nbsp;&amp;#60;/node&amp;#62;&lt;br&gt;
+&lt;br&gt;
+&lt;b&gt;Użyteczne wskazówki:&lt;/b&gt;&lt;br&gt;
+&lt;ul&gt;
+&lt;li&gt;dłuższe przytrzymanie palca na polu służącym do wprowadzania numeru budynku spowoduje otwarcie pełnej klawiatury systemowej umożliwiającej wprowadzenie nietypowych numerów budynków&lt;/li&gt;
+&lt;li&gt;różne usprawnienia czytelności (np. większe znaki, lepszy kontrast) dostosowane do zbierania danych przy silnym nasłonecznieniu&lt;/li&gt;
+&lt;li&gt;poprawiony czas reakcji aplikacji w sytuacji, gdy dużo danych zostało zmapowanych&lt;/li&gt;
+&lt;li&gt;pole wprowadzania numeru domu zostało przesunięte na dół ekranu edytora adresu&lt;/li&gt;
+&lt;/ul&gt;
+&lt;br&gt;
+&lt;b&gt;Notatki audio:&lt;/b&gt;&lt;br&gt;
+Nagrywanie notatek dźwiękowych znacznie mniej rzuca się w oczy niż fotografowanie. Z tego powodu niektórzy użytkownicy preferują tworzenie notatek głosowych zamiast robienia zdjęć unikając tym samym zwracania na siebie uwagi przechodniów.&lt;br&gt;
+Notatki dźwiękowe działają na podobnej zasadzie jak funkcjonalność aparatu: pozwalają nagrać głos i zapisać go razem ze współrzędnymi GPS. W odróżnieniu od plików .jpg współrzędne GPS dla zapisków audio przechowywane są w plikach .gpx. Z tego powodu plik .gpx musi zostać załadowany do JOSM przed wczytaniem pliku .wav. Notatka audio zapisana w pliku .gpx ma postać:&lt;br&gt;
+
+&lt;br/&gt;
+&amp;nbsp;&amp;nbsp;&amp;#60;wpt lat=&quot;52.49739929702362&quot; lon=&quot;13.350353411755215&quot;&amp;#62;&lt;br&gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;#60;time&amp;#62;2013-06-01T14:17:14Z&amp;#60;/time&amp;#62;&lt;br&gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;#60;link href=&quot;file:///2013-06-01_16-17-13.wav&quot;&amp;#62;&amp;#60;text&gt;2013-06-01_16-17-13.wav&amp;#62;&amp;#60;/text&amp;#62;&amp;#60;/link&amp;#62;&lt;br&gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;#60;ele&amp;#62;89.50511403620409&amp;#60;/ele&amp;#62;&lt;br&gt;
+&amp;nbsp;&amp;nbsp;&amp;#60;/wpt&amp;#62;&lt;br&gt;
+&lt;br/&gt;
+
+Notatki dźwiękowe wysyłane są do komputera razem z pozostałymi zebranymi danymi po wybraniu opcji \'udostępnij zebrane dane\'.&lt;br&gt;
+JOSM pozwala załadować wszystkie zmapowane dane, włącznie z plikami dźwiękowymi, w miejsca powiązane ze współrzędnymi GPS. Odtworzenie notatki audio pozwoli przypomnieć więcej informacji na temat zapisanej lokalizacji.&lt;br&gt;
+Wykonaj następujące kroki w programie JOSM w celu załadowania i odtworzenia notatki:&lt;br&gt;
+&lt;ol&gt;
+&lt;li value=&quot;1&quot;&gt;uruchom JOSM&lt;/li&gt;
+&lt;li value=&quot;2&quot;&gt;otwórz pliki .osm, .gpx i opcjonalnie .jpg pochodzące z jednej sesji&lt;/li&gt;
+&lt;li value=&quot;3&quot;&gt;kliknij prawym przyciskiem myszy w prawym górnym rogu sekcji \'Layers\' pliku .gpx&lt;/li&gt;
+&lt;li value=&quot;4&quot;&gt;wybierz \'import audio\'&lt;/li&gt;
+&lt;li value=&quot;5&quot;&gt;wybierz plik .wav, który chcesz załadować --&gt; ikony notatek głosowych wyświetlane są na mapie w miejscu ich utworzenia&lt;/li&gt;
+&lt;li value=&quot;6&quot;&gt;kliknij na wybraną ikonę, aby odtworzyć plik .wav&lt;/li&gt;
+&lt;/ol&gt;
+Szczegóły znaleźć można &lt;a href=&quot;http://wiki.openstreetmap.org/wiki/Audio_mapping&quot;&gt;&lt;font color=&quot;#ffbf27&quot;&gt;tutaj&lt;/font&gt;&lt;/a&gt;&lt;br&gt;
+&lt;br&gt;
+&lt;b&gt;Aparat:&lt;/b&gt;&lt;br&gt;
+Ikona aparatu pozwala na wykonanie zdjęcia zawierającego współrzędne GPS, które będzie zapisane, następnie przesłane e-mailem razem z plikami .osm i .gpx celem załadowania do edytora OSM.&lt;br&gt;
+Podczas modyfikowania danych w edytorze OSM będziesz miał możliwość przypisania zdjęcia z koordynatami GPS do konkretnego adresu.&lt;br&gt;
+&lt;br&gt;
+&lt;b&gt;Zamroź GPS:&lt;/b&gt;&lt;br&gt;
+Normalnie węzeł adresowy jest zapisywany razem ze współrzędnymi GPS w momencie wybrania jednej ze strzałek na ekranie klawiatury.&lt;br&gt;
+Czasami  nie ma możliwości odczytania numeru budynku z miejsca, w którym współrzędne GPS powinny zostać zapisane. Wówczas należy skorzystać z opcji zamrożenia (zapamiętania) pozycji GPS, a następnie podejść do budynku w celu odczytania numeru.
+Unikaj chodzenia tam i z powrotem wybierając opcję zamrożenia i odmrożenia współrzędnych GPS. Zapisuj położenie w momencie wprowadzania numeru domu. Zapisanie automatycznie skorzysta z zapamiętanej pozycji GPS i wyłączy zamrożenie dla następnego węzła adresowego.&lt;br&gt;
+&lt;br&gt;</string><string name="help_text_3">&lt;b&gt;Dodatkowe notatki:&lt;/b&gt;&lt;br&gt;
+Czasami przydatną opcją jest dołączenie, oprócz zdjęcia i nagrania audio, również notatki tekstowej, która może zostać wykorzystana później w edytorze OSM. Taka notatka zostanie zapisana razem z numerem budynku w momencie wybrania jednej z trzech strzałek na ekranie klawiatury.&lt;br&gt;
+Możesz dodać notatkę do dowolnego węzła adresowego poprzez kliknięcie napisu \'notatka dla tej lokalizacji\' znajdującego się poniżej pola zawierającego wprowadzony numer domu. Wyświetlona zostanie pełna klawiatura systemowa pozwalająca wprowadzić dowolny tekst.&lt;br&gt;
+Wybranie jednej z trzech strzałek na ekranie klawiatury ukryje systemową klawiaturę i spowoduje zapisanie notatki razem z wprowadzonym numerem budynku.&lt;br&gt;
+Dotknięcie pola wprowadzania numeru również spowoduje zamknięcie systemowej klawiatury.&lt;br&gt;
+W edytorze OSM notatka będzie widoczna jako znacznik \'name\'. Po skorzystaniu z zawartych w niej informacji możesz zmienić nazwę znacznika lub usunąć go całkowicie.&lt;br&gt;
+&lt;br&gt;
+&lt;b&gt;Cofnij:&lt;/b&gt;&lt;br&gt;
+Po prawej stronie pola wprowadzania numeru wyświetlane są ostatnio zapisane numery budynków. Najnowszy znajduje się na górze listy. Każdy wpis zawiera informację o tym, czy został zapisany po prawej, lewej, czy na wprost.&lt;br&gt;
+Wybierając ikonę cofania w menu (druga od lewej) masz możliwość usunięcia ostatnio zapisanego numeru. Nie jest możliwe wielokrotne kasowanie zapisanych numerów budynków.&lt;br&gt;
+&lt;br&gt;
+&lt;b&gt;Dłuższe przytrzymanie palca na polu wprowadzania numeru wyświetla systemową klawiaturę&lt;/b&gt;&lt;br&gt;
+Istnieją rzadkie przypadki, w których nie można wprowadzić poprawnie numeru budynku z użyciem ekranu klawiatury. W tej sytuacji należy dłużej przytrzymać palec na polu wprowadzania numeru w celu otwarcia pełnej klawiatury systemowej. Wyświetlona klawiatura zostanie automatycznie zamknięta po wybraniu jednej z trzech strzałek z ekranu klawiatury.&lt;br&gt;
+&lt;br&gt;
+&lt;b&gt;Ustawienia:&lt;/b&gt;&lt;br&gt;
+&lt;ul&gt;
+&lt;li&gt;język:&lt;br&gt;
+W tej chwili Keypad-Mapper obsługuje dziewięć języków: angielski, francuski, hiszpański, holenderski, niemiecki, włoski, polski i rosyjski.&lt;br&gt;
+Jeżeli chcesz pomóc w tłumaczeniu aplikacji na inne języki skontaktuj się z ENAiKOON. Twoje zgłoszenie jest mile widziane!&lt;br&gt;
+Specjalne podziękowania dla Stefano za włoskie tłumaczenie, jak również za promocję Keypad-Mapper\'a 3 na talk-it&lt;br&gt;
+Dodatkowe podziękowania dla Adama za polskie tłumaczenie oraz dla Harry\'ego za przetłumaczenie na język holenderski.&lt;/li&gt;
+&lt;li&gt;oceń aplikację:&lt;br&gt;
+W celu przyciągnięcia jak największej liczby mapperów OSM istotna jest dobra ocena aplikacji na Google Play. Pomóż nam promować tę aplikację poprzez wysoką ocenę!&lt;/li&gt;
+&lt;li&gt;usuń wszystkie zebrane dane:&lt;br&gt;
+Po przeniesieniu zmapowanych danych na komputer i przesłaniu ich do OSM możesz chcieć usunąć dotychczas zebrane dane, aby zwolnić miejsce na potrzeby kolejnej wyprawy. W tym celu skorzystaj z opcji \'usuń wszystkie zebrane dane\' w ustawieniach aplikacji.&lt;br&gt;
+Aby uniknąć przypadkowego skasowania zebranych danych powyższa opcja nie jest dostępna na pasku menu ani w głównym menu aplikacji. Dostępna jest ona jedynie z poziomu ekranu ustawień.&lt;/li&gt;
+&lt;li&gt;utrzymuj ekran włączony:&lt;br&gt;
+Pozwala wstrzymać automatyczne wyłączanie ekranu przy braku aktywności.&lt;/li&gt;
+&lt;li&gt;korzystaj z kompasu:&lt;br&gt;
+Standardowo do określenia stron względem kierunku ruchu wykorzystywane są dane pochodzące z GPS. Jeżeli osoba mapująca porusza się zbyt wolno lub stoi w miejscu wówczas informacje o kierunku ruchu zwracane przez GPS mogą być błędne. Jest to jedna z wad GPS.&lt;br&gt;
+Aby przezwyciężyć ten problem Keypad-Mapper może skorzystać z kompasu wbudowanego w wiele urządzeń pracujących pod kontrolą systemu Android. Opcja \'korzystaj z kompasu\' pozwala określić maksymalną prędkość, przy której używane będą dane z kompasu. Po ustawieniu suwaka w pozycji 0 kompas będzie wyłączony. Jeżeli urządzenie nie jest wyposażone w kompas, to opisywana opcja nie jest dostępna w ustawieniach.&lt;/li&gt;
+&lt;li&gt;wibracje po zapisaniu:&lt;br&gt;
+Określa w milisekundach czas trwania wibracji po zapisaniu węzła adresowego po wybraniu jednej z trzech strzałek z ekranu klawiatury.&lt;/li&gt;
+&lt;li&gt;wibracja klawiatury:&lt;br&gt;
+Określa w milisekundach czas trwania wibracji po naciśnięciu dowolnego przycisku z ekranu klawiatury z wyłączeniem strzałek.&lt;/li&gt;
+&lt;li&gt;jednostki miary:&lt;br&gt;
+Przy definiowaniu odległości pomiędzy węzłem adresowym a urządzeniem użytkownika obsługiwane są zarówno jednostki metryczne, jak i imperialne. Ułatwia to korzystanie z aplikacji użytkownikom stosującym na co dzień jednostek imperialnych.&lt;/li&gt;
+&lt;li&gt;odległość od węzła adresowego:&lt;br&gt;
+Pozwala zdefiniować odległość pomiędzy pozycją węzła adresowego a współrzędnymi użytkownika.&lt;br&gt;
+Jeżeli budynki znajdują się daleko od chodnika wówczas zalecane jest ustawienie większej wartości. Stosowne poprawki mogą również zostać naniesione później w edytorze OSM.&lt;/li&gt;</string><string name="prefsUseWifiOnlyTitle">dane tylko przez Wi-Fi</string><string name="rateme_thankyou">Dziękujemy za używanie</string><string name="rateme_keypad">Keypad-Mapper 3!</string><string name="rateme_text">Będziemy bardzo wdzięczni, jeżeli napiszesz opinię lub ocenisz Keypad-Mapper 3 w Google Play.
+
+Czy chcesz to zrobić teraz?</string><string name="rateme_yes">tak</string><string name="rateme_later">później</string><string name="rateme_dont_ask">nie pytaj ponownie</string><string name="statusAccuracy">%d m</string><string name="statusAccuracyFt">%d ft</string><string name="prefsOptimizeLayout">dostosuj do małych ekranów</string><string name="prefsUseWifiOnlySummary">wyświetlaj nazwę ulicy i kod pocztowy tylko przy połączeniu przez Wi-Fi</string><string name="prefsHelpTitle">pomoc</string><string name="prefsHelpSummary">uzyskaj porady, jak używać aplikacji</string><string name="system_settings">ustawienia</string><string name="prefsVibrationOnSave">wibracje po zapisaniu</string><string name="prefsVibrationOnSaveSummary">wibracje w momencie zapisania węzła, długość w milisekundach ustawiona za pomocą poniższego suwaka</string><string name="menu_recording_GPS">rejestracja danych</string><string name="prefsTurnOffGpsUpdatesTitle">wyłącz GPS</string><string name="prefsTurnOffGpsUpdatesSummary">wyłącz GPS jeżeli rejestracja danych została wyłączona w celu oszczędzenia energii</string><string name="notRecording">numer budynku nie może być zapisany, ponieważ nie rejestrujesz lokalizacji GPS</string><string name="prefsUseCompassTitle">korzystaj z kompasu</string><string name="prefsUseCompassSummary">Do prędkości ustawionej poniższym suwakiem kierunek poruszania używany przy zapisie węzła adresowego odczytywany będzie z kompasu zamiast z GPSu.
+Jeżeli suwak ustawiony będzie na zero, to informacje z kompasu NIE będą używane.
+Jeżeli kompas będzie włączony, wówczas ikona dokładności GPS zawierać będzie dodatkowo igłę kompasu. Igła na ikonie NIE wskazuje aktualnego kierunku.</string><string name="prefsKeyboardVibrationTitle">wibracja klawiatury</string><string name="prefsKeyboardVibrationSummary">wibracje w momencie naciśnięcia klawisza, długość w milisekundach ustawiona za pomocą poniższego suwaka</string><string name="prefsComputerWaveFilePathTitle">ścieżka plików .wav</string><string name="prefsComputerWaveFilePathSummary">ścieżka do plików .wav na komputerze, która będzie użyta w tagach plików .gpx</string><string name="dialog_wav_explanation_html">Wprowadź ścieżkę, która będzie użyta do zapisywania plików .wav na komputerze z programem JOSM / Potlach. Ścieżka będzie wykorzystana do powiązania nagrań .wav wewnątrz plików .gpx.&lt;br&gt;
+&lt;br&gt;
+Wszystkie pliki .wav muszą znajdować się we wskazanej lokalizacji, aby program JOSM / Potlach mógł je odtworzyć po załadowaniu pliku .gpx i kliknięciu odpowiedniego przycisku.&lt;br&gt;
+&lt;br&gt;
+Jeżeli ścieżka nie zostanie zdefiniowana, to domyślną ścieżką w systemie Windows będzie C:\ oraz / na Linuksie.&lt;br&gt;
+&lt;br&gt;
+Przykładowe ścieżki:&lt;br&gt;
+&amp;nbsp;&amp;nbsp;przykład 1: &lt;b&gt;c:\myrecordedfiles\&lt;/b&gt;&lt;br/&gt;
+&amp;nbsp;&amp;nbsp; przykład 2: &lt;b&gt;/usr/local/tmp/&lt;/b&gt;&lt;br/&gt;</string><string name="popupAudioText">notatka audio</string><string name="prefsMeasurementEntryMeters">metryczne</string><string name="prefsMeasurementEntryFeet">imperialne</string><string name="meters_display_unit">m</string><string name="feet_display_unit">ft</string><string name="error_audio_init">nie można zainicjować rejestratora dźwięku</string><string name="km_per_hour">km/h</string><string name="miles_per_hour">mph</string><string name="help_text_4">&lt;li&gt;wyłącz GPS:&lt;br&gt;
+pozwala wyłączyć GPS w sytuacji, gdy użytkownik zatrzymał rejestrację danych w celu oszczędzenia baterii.&lt;/li&gt;
+&lt;li&gt;dane tylko przez Wi-Fi:&lt;br&gt;
+opcja jest przydatna, jeżeli twój mobilny pakiet danych jest drogi lub zużyty transfer jest bliski limitowi.&lt;/li&gt;
+&lt;li&gt;ścieżka plików .wav:&lt;br&gt;
+definiuje ścieżkę do plików .wav na komputerze, na którym będą zapisane notatki audio; informacja ta jest wymagana przez JOSM, aby poprawnie załadować pliki .wav.&lt;/li&gt;
+&lt;li&gt;dostosuj do małych ekranów:&lt;br&gt;
+ta opcja jest dostępna wyłącznie na małych telefonach; pozwala na usunięcie niektórych elementów z ekranu klawiatury w celu lepszego wykorzystania dostępnego miejsca.&lt;/li&gt;
+&lt;li&gt;raportowanie błędów:&lt;br&gt;
+pozwala określić czy raporty błędów mają być wysyłane do programistów w przypadku awarii aplikacji; raporty pozwalają programistom zidentyfikować i usunąć błędy.&lt;/li&gt;
+&lt;li&gt;pomoc:&lt;br&gt;
+wyświetla ten plik pomocy&lt;/li&gt;
+&lt;li&gt;o aplikacji:&lt;br&gt;
+wyświetla ogólne informacje o aplikacji włącznie ze szczegółowym numerem wersji&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;&lt;u&gt;Porady i wskazówki&lt;/u&gt;&lt;/h3&gt;
+&lt;b&gt;Proces przypisywania numerów budynków:&lt;/b&gt;&lt;br&gt;
+Poruszając się chodnikiem wzdłuż ulicy masz możliwość zbierania numerów domów z obu stron drogi jednocześnie.&lt;br&gt;
+Mając trochę doświadczenia, możesz wprowadzać numery bez zatrzymywania się przy każdym budynku. Odpowiednio dobierając prędkość marszu, można złapać rytm, który pozwoli na precyzyjne przypisanie wszystkich możliwych numerów domów.&lt;br&gt;
+&lt;br&gt;
+&lt;b&gt;Mapowanie informacji niepowiązanych z numerami budynków&lt;/b&gt;&lt;br&gt;
+Entuzjaści mapowania z użyciem Keypad-Mappera 3 mogą czuć się zmuszeni do wpisywania dodatkowych informacji, pozornie niepowiązanych z adresami i numerami budynków.&lt;br&gt;
+Rzeczywistość dowiodła jednak, że zbieranie wyłącznie wymaganych informacji jest nieefektywne.&lt;br&gt;
+Aplikacja pozwala dodatkowo na wprowadzenie nazwy ulicy, kodu pocztowego oraz innych informacji adresowych. Wiele ulic zostało już oznakowanych odpowiednimi informacjami, co oznacza, że można je skopiować, zamiast wpisywać ręcznie na telefonie / tablecie. Takie podejście pozwala zaoszczędzić mnóstwo czasu, umożliwiając w zamian zebranie większej liczby danych w tym samym czasie.&lt;br&gt;
+&lt;br&gt;
+&lt;b&gt;Połączenie z internetem w celu pobrania adresu:&lt;/b&gt;&lt;br&gt;
+Keypad-Mapper 3 posiada funkcjonalność wyświetlania kodu pocztowego i nazwy ulicy na ekranie klawiatury, bazując na danych z GPS. Funkcja ta pozwala zorientować się, czy baza OSM posiada już odpowiednie powiązanie kodu pocztowego i nazwy ulicy ze współrzędnymi geograficznymi.&lt;br&gt;
+W tym celu aplikacja korzysta z narzędzia NOMINATIM - serwera adresowego wspieranego wyłącznie przez dane pochodzące z OpenStreetMap. Wykorzystywany serwer NOMINATIM dostarczany jest przez ENAiKOON, a jego dane są regularnie aktualizowane w weekendy.&lt;br&gt;
+Wyświetlanie ulicy i kodu pocztowego wymaga połączenia z internetem. W ustawieniach możesz ograniczyć wykorzystanie internetu wyłącznie do połączeń przez Wi-Fi. W tym wypadku, funkcja ta nie będzie działała w terenie.&lt;br&gt;
+Nazwa ulicy i kod pocztowy pokazane przy klawiaturze aktualizowane są co 10 sekund. Powoduje to zwiększone zużycie twojego mobilnego pakietu danych.&lt;br&gt;
+&lt;br&gt;
+&lt;b&gt;Edytor adresu:&lt;/b&gt;&lt;br&gt;
+Jeżeli aplikacja nie wyświetla kodu pocztowego i / lub nazwy ulicy lub wyświetlany adres jest nieprawidłowy to oznacza, że baza OSM nie zawiera poprawnych danych dla aktualnej lokalizacji. Istnieje możliwość wprowadzenia tych danych w edytorze adresu wbudowanym w aplikację. Edytor dostępny jest po wybraniu pozycji \'edytor adresu\' z menu dostępnego po ikoną domu.&lt;br&gt;
+Wpisane informacje zostaną zapisane w pliku OSM, który zostanie później przesłany do komputera e-mailem. W edytorze OSM informacja będzie automatycznie powiązana z odpowiednim numerem budynku.&lt;br&gt;
+&lt;br&gt;</string><string name="help_text_5">&lt;b&gt;Interfejs aplikacji:&lt;/b&gt;&lt;br&gt;
+Smartfony:&lt;br&gt;
+Wygląd klawiatury zależy od rozdzielczości ekranu urządzenia. Na małych ekranach oprócz możliwości wprowadzenia numeru dostępne są także litery od \'a\' do \'c\', a na większych ekranach od \'a\' do \'l\'.&lt;br&gt;
+Jeżeli korzystasz z urządzenia z małym ekranem, ale potrzebujesz skorzystać z liter od \'d\' do \'l\', obróć ekran do pozycji poziomej. Wówczas na klawiaturze dostępny zostanie pełen zestaw liter od \'a\' do \'l\'. Innym rozwiązaniem jest dłuższe przytrzymanie palca na polu zawierającym wprowadzony numer budynku, co spowoduje wyświetlenie pełnej klawiatury telefonu.&lt;br&gt;
+Możesz dodatkowo zaznaczyć w ustawieniach opcję \'dostosuj do małych ekranów\', która ukryje różne opcjonalne elementy interfejsu. Opcja pozwala na maksymalne wykorzystanie dostępnej przestrzeni w celu zapewnienia komfortu korzystania z podstawowych funkcji klawiatury.&lt;br&gt;
+&lt;br&gt;
+Tablety:&lt;br&gt;
+Niektórzy użytkownicy do mapowania numerów korzystają z tabletów o rozmiarze od 7 do 10 cali. Stosunkowo nowy Google Nexus 7 jest jednym z najpopularniejszych urządzeń w tej kategorii. Popularność tabletów możne wynikać z dłuższego czasu pracy na baterii, pozwalającego użytkownikom na znacznie dłuższe spacery bez konieczności ładowania baterii.&lt;br&gt;
+Keypad-Mapper 3 udostępnia dostosowany do tabletów interfejs, pracujących zarówno w orientacji pionowej, jak i poziomej. Jest on automatycznie aktywowany na wszystkich urządzeniach wyposażonych w ekran o przekątnej wynoszącej minimum 7 cali. Samsung Galaxy Note 1 i 2 NIE korzystają z układu tabletów. Pomimo faktu, że urządzenia te są określane jako tablety, ich powierzchnia ekranu jest za mała, aby poprawnie wyświetlić układ dedykowany dla tabletów.&lt;br&gt;
+&lt;br&gt;
+Układ dostępny na tablecie różni się od układu telefonu poprzez:
+&lt;ul&gt;
+&lt;li&gt;inną kolejność pozycji na pasku menu: najważniejsze ikony umieszczone zostały możliwie blisko kciuka&lt;/li&gt;
+&lt;li&gt;wyświetlanie większej liczby ikon na pasku menu w porównaniu do układu telefonu&lt;/li&gt;
+&lt;li&gt;jednoczesne wyświetlanie ekranów klawiatury i edytora adresu:&lt;br&gt;pozwala to uzyskać lepszy pogląd na aktualnie skonfigurowane / mapowane dane&lt;/li&gt;
+&lt;li&gt;ukrycie pola wprowadzania numeru budynku na ekranie edytora adresu&lt;/li&gt;
+&lt;li&gt;wykorzystanie poziomego układu klawiatury z telefonu w pionowym układzie tabletu; pozwala to wprowadzać informacje z użyciem obu rąk&lt;/li&gt;
+&lt;/ul&gt;
+&lt;br&gt;
+&lt;b&gt;Dodatkowy znacznik dla każdego numeru budynku / węzła adresowego&lt;/b&gt;&lt;br&gt;
+Następujący znacznik jest automatycznie dodawany do każdego numeru budynku: source=survey:date&lt;br&gt;
+Znacznik ten zawiera informację o czasie, w którym użytkownik dokonał mapowania danego numeru. Zwykle data ta jest wcześniejsza niż znacznik czasu &quot;created&quot; w bazie danych OSM.&lt;br&gt;
+&lt;br&gt;
+&lt;h3&gt;&lt;u&gt;OpenCellIDs&lt;/u&gt;&lt;/h3&gt;
+&lt;a href=&quot;http://www.opencellids.org&quot;&gt;&lt;font color=&quot;#ffbf27&quot;&gt;www.opencellids.org&lt;/font&gt;&lt;/a&gt; jest open source\'owym uzupełniającym dla OSM projektem.&lt;br&gt;
+Jego celem jest zebranie współrzędnych GPS stacji przekaźnikowych sieci GSM. Zgromadzone w ramach projektu dane dostępne są do pobrania poprzez stronę www.opencellids.org. Można je wykorzystywać bez ograniczeń zarówno do użytku prywatnego, jak i komercyjnego.&lt;br&gt;
+Głównym powodem zbierania danych przez projekt OpenCellIDs jest możliwość ich późniejszego wykorzystania do lokalizowania urządzeń w miejscach, gdzie działanie sygnał GPS jest niedostępny. Lokalizowanie w oparciu o sieci GSM zużywa znacznie mniej energii niż GPS, jednakże dokładność pozycji uzyskanych w ten sposób pozycji na terenach niezabudowanych jest znacząco niższa.&lt;br&gt;
+OpenCellIDs jest największym na świecie open source\'owym zbiorem współrzędnych GPS nadajników sieci komórkowych. Na początku 2013 roku baza liczyła około 2,7 miliona unikatowych komórek (identyfikatorów nadajników). Każdego dnia dodawane jest od 1 000 do 2 000 nowych wież komórkowych. Szacujemy, że na świecie znajduje się co najmniej 25 milionów unikatowych identyfikatorów, co oznacza, że do tej pory odkrytych zostało około 10-15% z nich.&lt;br&gt;
+Keypad-Mapper 3 automatycznie zbiera w tle dane OpenCellIDs bez konieczności jakiegokolwiek działania ze strony użytkownika. Sposób implementacji tego rozwiązania zapewnia pełną anonimowość zgodnie z bardzo surowymi niemieckimi przepisami dotyczącymi prywatności.&lt;br&gt;
+Keypad-Mapper 3 jest doskonałą aplikacją do zbierania danych dla projektu OpenCellIDs. Podczas kolekcjonowania numerów budynków użytkownicy Keypad-Mappera systematycznie poruszają się wieloma różnymi ulicami, co gwarantuje uzyskanie odpowiednich danych dla projektu OpenCellID. Stacje przekaźnikowe wzdłuż głównych ulic zostały już wprowadzone do bazy danych, ale informacje o nadajnikach na mniej uczęszczanych szlakach są cały czas rzadkością.
+</string><string name="settings_rate_title">oceń aplikację na Google Play</string><string name="settings_rate_summary">będziemy bardzo wdzięczni, jeżeli napiszesz opinię lub ocenisz Keypad-Mapper 3 w Google Play</string><string name="notification_title">rejestracja danych jest aktywna</string><string name="production_version_opencellid_upload_url">http://www.enaikoon.de/gpsSuiteCellId/measure/uploadCsv</string><string name="test_version_opencellid_upload_url">http://www.enaikoon.de/gpsSuiteCellId/measure/uploadCsv</string><string name="error_no_location_for_audio">nie możesz tworzyć notatek audio jeżeli nie ma zasięgu GPS lub informacji o lokalizacji</string><string name="error_not_recording">rejestracja danych musi być włączona, aby skorzystać z tej funkcji</string><string name="hint_turn_off_gps_updates">proszę odznaczyć opcję &quot;wyłącz GPS&quot; w ustawieniach, aby zobaczyć status GPS kiedy dane nie są rejestrowane</string><string name="help_text_header">&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD HTML 4.01 Transitional//EN&quot; &quot;http://www.w3.org/TR/html4/loose.dtd&quot;&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;title&gt;KPM31 help file&lt;/title&gt;
+&lt;style type=&quot;text/css&quot; &gt; &lt;/style&gt;
+&lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=utf-8&quot;&gt;
+&lt;/head&gt;
+
+&lt;body bgcolor=&quot;#000000&quot;&gt;
+&lt;font color=&quot;#ffffff&quot;&gt;</string><string name="help_text_footer">&lt;/font&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</string></resources>

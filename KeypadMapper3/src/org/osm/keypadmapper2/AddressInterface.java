@@ -14,6 +14,12 @@ public interface AddressInterface {
      *            Currently entered housenumber.
      */
     public void onHousenumberChanged(String newHousenumber);
+    
+    /**
+     * Called when address has been updated and extended fragment has to refresh 
+     * data.
+     */
+    public void onAddressUpdated();
 
     void showMessage(String messageKey);
 }

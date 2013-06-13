@@ -10,6 +10,8 @@ package de.enaikoon.android.keypadmapper3;
 import java.net.URLEncoder;
 
 import android.os.Bundle;
+import android.view.MotionEvent;
+import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 import android.webkit.WebSettings;
@@ -39,25 +41,24 @@ public class HelpActivity extends SherlockFragmentActivity {
         Localizer localizer = KeypadMapperApplication.getInstance().getLocalizer();
 
         WebView webView = (WebView) findViewById(R.id.helpWebView);
+        
+        String header = localizer.getString("help_text_header");
         String text1 = localizer.getString("help_text_1");
         String text2 = localizer.getString("help_text_2");
         String text3 = localizer.getString("help_text_3");
+        String text4 = localizer.getString("help_text_4");
+        String text5 = localizer.getString("help_text_5");
+        String footer = localizer.getString("help_text_footer");
+        
         getSupportActionBar().setTitle(localizer.getString("help_title"));
 
         webView.getSettings().setRenderPriority(RenderPriority.HIGH);
         webView.getSettings().setCacheMode(WebSettings.LOAD_NO_CACHE);
         webView.setScrollBarStyle(WebView.SCROLLBARS_OUTSIDE_OVERLAY);
-
-        String top =
-                "<?xml version=\"1.0\" encoding=\"UTF-8\" ?>"
-                        + "<html><head>"
-                        + "<meta http-equiv=\"content-type\" content=\"text/html; charset=utf-8\" />"
-                        + "<head>";
-        String data =
-                top + "<body  bgcolor=\"#000000\"><font color=\"#ffffff\">" + text1 + text2 + text3
-                        + "</font></body></html>";
+       
+        String data = header + text1 + text2 + text3 + text4 + text5 + footer;
         webView.loadData(URLEncoder.encode(data).replaceAll("\\+", " "),
-                "text/html; charset=utf-8", "UTF-8");
+                                    "text/html; charset=utf-8", "UTF-8");
     }
 
     @Override

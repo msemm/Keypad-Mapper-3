@@ -1,6 +1,5 @@
 package de.enaikoon.android.keypadmapper3.writers;
 
-import de.enaikoon.android.keypadmapper3.R;
 import java.io.FileNotFoundException;
 
 public class FileFormatException extends FileNotFoundException {

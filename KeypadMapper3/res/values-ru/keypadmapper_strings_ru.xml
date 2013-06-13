@@ -1,70 +1,10 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<resources>
-    <string name="menu_undo">Отмена</string>
-    <string name="app_name">Keypad-Mapper 3</string>
-    <string name="buttonLeft">Л</string>
-    <string name="buttonFront">Прямо</string>
-    <string name="buttonRight">П</string>
-    <string name="button1">1</string>
-    <string name="button2">2</string>
-    <string name="button3">3</string>
-    <string name="button4">4</string>
-    <string name="button5">5</string>
-    <string name="button6">6</string>
-    <string name="button7">7</string>
-    <string name="button8">8</string>
-    <string name="button9">9</string>
-    <string name="button0">0</string>
-    <string name="buttonA">а</string>
-    <string name="buttonB">б</string>
-    <string name="buttonC">в</string>
-    <string name="buttonD">г</string>
-    <string name="buttonE">д</string>
-    <string name="buttonF">е</string>
-    <string name="buttonG">ж</string>
-    <string name="buttonI">и</string>
-    <string name="buttonJ">к</string>
-    <string name="buttonK">л</string>
-    <string name="buttonL">м</string>
-    <string name="buttonH">з</string>
-    <string name="buttonSep1">,</string>
-    <string name="buttonSep2">-</string>
-    <string name="buttonSep3">/</string>
-    <string name="buttonCLR">CLR</string>
-    <string name="errorFileOpen">Ошибка записи файлов данных</string>
-    <string name="errorGpsDisabled">GPS выключен. Включите его.</string>
-    <string name="errorStorageRO">Невозможно сохранить данные. Убедитесь, что Flash-карта установлена и доступна для записи.</string>
-    <string name="errorStorageUnavailable">Внешнее хранилище недоступно. Доступ к нему необходим для сохранения введённых данных.</string>
-    <string name="OK">OK</string>
-    <string name="quit">Выход</string>
-    <string name="menu_settings">Настройки</string>
-    <string name="system_settings">Настройки</string>
-    <string name="writeToNewFile">Запись в новый файл</string>
-    <string name="Housenumber">Номер дома</string>
-    <string name="Housename">Имя дома</string>
-    <string name="Street">Улица</string>
-    <string name="Postcode">Почтовый индекс</string>
-    <string name="City">Город</string>
-    <string name="Countrycode">Код страны</string>
-    <string name="menu_address_keypad">Клавиатура</string>
-    <string name="menu_address_editor">Редактор адреса</string>
-    <string name="FolderCreationFailed">Невозможно создать папку для данных на внешнем хранилище.</string>
-    <string name="locationNotAvailable">Невозможно определить ваше местоположение</string>
-    <string name="prefsDataPlacementDistance">Расстояние до объектов</string>
-    <string name="prefsAbout">О программе</string>
-    <string name="prefsAboutDetails">Показать информацию о программе</string>
-    <string name="prefsShare">Поделиться сохраненными данными…</string>
-    <string name="prefsShareDetails">Поделиться файлами *.gpx, *.osm и *.jpg</string>
-    <string name="prefsLanguageTitle">Язык</string>
-    <string name="prefsLanguageSummary">Выберите язык: Deutsch, English, Español, Français, Ελληνικά, Русский</string>
-    <string name="zip_fail">Невозможно создать zip-файл</string>
-    <string name="about_message">&lt;br/&gt;
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><resources><string name="menu_undo">Отмена</string><string name="app_name">Keypad-Mapper 3</string><string name="buttonLeft">Л</string><string name="buttonFront">Прямо</string><string name="buttonRight">П</string><string name="button1">1</string><string name="button2">2</string><string name="button3">3</string><string name="button4">4</string><string name="button5">5</string><string name="button6">6</string><string name="button7">7</string><string name="button8">8</string><string name="button9">9</string><string name="button0">0</string><string name="buttonA">а</string><string name="buttonB">б</string><string name="buttonC">в</string><string name="buttonD">г</string><string name="buttonE">д</string><string name="buttonF">е</string><string name="buttonG">ж</string><string name="buttonI">и</string><string name="buttonJ">к</string><string name="buttonK">л</string><string name="buttonL">м</string><string name="buttonH">з</string><string name="buttonSep1">,</string><string name="buttonSep2">-</string><string name="buttonSep3">/</string><string name="buttonCLR">CLR</string><string name="errorFileOpen">Ошибка записи файлов данных</string><string name="errorGpsDisabled">GPS выключен. Включите его.</string><string name="errorStorageRO">Невозможно сохранить данные. Убедитесь, что Flash-карта установлена и доступна для записи.</string><string name="errorStorageUnavailable">Внешнее хранилище недоступно. Доступ к нему необходим для сохранения введённых данных.</string><string name="OK">OK</string><string name="quit">Выход</string><string name="menu_settings">Настройки</string><string name="writeToNewFile">Запись в новый файл</string><string name="Housenumber">Номер дома</string><string name="Housename">Имя дома</string><string name="Street">Улица</string><string name="Postcode">Почтовый индекс</string><string name="City">Город</string><string name="Countrycode">Код страны</string><string name="menu_address_keypad">Клавиатура</string><string name="menu_address_editor">Редактор адреса</string><string name="FolderCreationFailed">Невозможно создать папку для данных на внешнем хранилище.</string><string name="locationNotAvailable">Невозможно определить ваше местоположение</string><string name="prefsDataPlacementDistance">Расстояние до объектов</string><string name="prefsAbout">О программе</string><string name="prefsAboutDetails">Показать информацию о программе</string><string name="prefsShare">Поделиться сохраненными данными…</string><string name="prefsShareDetails">Поделиться файлами *.gpx, *.osm, *.wav и *.jpg</string><string name="prefsLanguageTitle">Язык</string><string name="prefsLanguageSummary">Выберите язык: Deutsch, English, Español, Français, Ελληνικά, Italiano, Nederlands, Polski</string><string name="zip_fail">Невозможно создать zip-файл</string><string name="about_message">&lt;br/&gt;
 %1$s&lt;BR/&gt; 
 Версия: %2$s&lt;br/&gt;
 &lt;br/&gt;
 Первоначально keypadmapper был разработан &lt;font color=#ffbf27&gt;&lt;a href=&quot;mailto:nroets@gmail.com&quot;&gt;Ником Роетсом (Nic Roets).&lt;/a&gt; &lt;/font&gt; Программа вышла в свет в конце 2010 года.&lt;br/&gt;
 В середине 2011 года был представлен keypadmapper2, ответвление keypadmapper.&lt;br/&gt;
-Эта версия использовалась &lt;font color=#ffbf27&gt;&lt;a href=&quot;https://www.enaikoon.com&quot;&gt;ENAiKOON&lt;/a&gt;&lt;/font&gt; в начале 2013 для реализации текущей версии. Исходный код был помещен в github ?????.&lt;br/&gt;
+Эта версия использовалась &lt;font color=#ffbf27&gt;&lt;a href=&quot;https://www.enaikoon.com&quot;&gt;ENAiKOON&lt;/a&gt;&lt;/font&gt; в начале 2013 для реализации текущей версии. Исходный код был помещен в https://github.com/msemm/Keypad-Mapper-3.git.&lt;br/&gt;
 &lt;br/&gt;
 Таким образом, мы бы хотели сказать спасибо Нику, который поддерживал нас во время создания этой версии хорошими идеями и терпеньем!&lt;br/&gt;
 &lt;br/&gt;
@@ -79,251 +19,251 @@
 ENAiKOON GmbH&lt;BR/&gt; Telematics Factory&lt;br/&gt;
 Helmholtzstrasse 2-9&lt;br/&gt;
 10587 Berlin&lt;br/&gt;
-Germany</string>
-    <string name="close">Закрыть</string>
-    <string name="about">О Keypad-Mapper 3</string>
-    <string name="about_logo_url">http://www.enaikoon.com/en/footer/imprint.html</string>
-    <string name="bugreport_subject">Keypad-Mapper 3 отчет об ошибке</string>
-    <string name="bugreport_dialogheader">Keypad-Mapper 3 ошибка</string>
-    <string name="options_bugreport_question">Keypad-Mapper 3 был принудительно перезапущен!\n Вы хотите отправить отчет об ошибке?</string>
-    <string name="options_bugreport_send">Отправить</string>
-    <string name="options_bugreport_dontsend">Не отправлять</string>
-    <string name="options_bugreport_ok">OK</string>
-    <string name="options_bugreport">Отчеты об ошибках</string>
-    <string name="options_bugreport_summary">Вы хотите отправить отчет об ошибке?</string>
-    <string name="options_bugreport_neversendmessage">Keypad-Mapper 3 был принудительно перезапущен!\n Если вы хотите отправить отчет об ошибке, активируйте \'Отчеты об ошибках\' в настройках приложения!</string>
-    <string name="options_bugreport_values_1">Никогда не отправлять</string>
-    <string name="options_bugreport_values_2">Всегда отправлять</string>
-    <string name="options_bugreport_values_3">Спросить перед отправкой</string>
-    <string name="menu_freeze_gps">Зафиксировать координаты</string>
-    <string name="no_location">Извините, ваше действие не может быть завершено, пока невозможно определить местоположение</string>
-    <string name="prefsDataDistanceEntries_1">1 м</string>
-    <string name="prefsDataDistanceEntries_2">2 м</string>
-    <string name="prefsDataDistanceEntries_5">5 м</string>
-    <string name="prefsDataDistanceEntries_8">8 м</string>
-    <string name="prefsDataDistanceEntries_10">10 м</string>
-    <string name="prefsDataDistanceEntries_15">15 м</string>
-    <string name="prefsDataDistanceEntries_20">20 м</string>
-    <string name="prefsDataDistanceEntries_25">25 м</string>
-    <string name="cancel">Отмена</string>
-    <string name="prefsClearFolderTitle">Удалить все файлы Keypad-Mapper 3</string>
-    <string name="prefsClearFolderQuestion">Вы действительно хотите удалить все файлы созданные Keypad-Mapper3?</string>
-    <string name="prefsClearFolderQuestionYes">Да</string>
-    <string name="prefsClearFolderQuestionNo">Нет</string>
-    <string name="prefsShareEmailTitle">Введите получателя</string>
-    <string name="prefsShareEmailHint">e-mail</string>
-    <string name="prefsShareEmailShare">Поделиться</string>
-    <string name="prefsShareEmailCancel">Отмена</string>
-    <string name="help_title">Помощь</string>
-    <string name="help_text_1">&lt;h2&gt;&lt;font color=&quot;#ffbf27&quot;&gt;Спасибо за то, что вы используете новый Keypad-Mapper 3!&lt;/font&gt;&lt;/h2&gt;
+Germany</string><string name="close">Закрыть</string><string name="about">О Keypad-Mapper 3</string><string name="about_logo_url">https://www.enaikoon.com/en/footer/imprint/</string><string name="bugreport_subject">Keypad-Mapper 3 отчет об ошибке</string><string name="bugreport_dialogheader">Keypad-Mapper 3 ошибка</string><string name="options_bugreport_question">Keypad-Mapper 3 был принудительно перезапущен!\n Вы хотите отправить отчет об ошибке?</string><string name="options_bugreport_send">Отправить</string><string name="options_bugreport_dontsend">Не отправлять</string><string name="options_bugreport_ok">OK</string><string name="options_bugreport">Отчеты об ошибках</string><string name="options_bugreport_summary">Вы хотите отправить отчет об ошибке?</string><string name="options_bugreport_neversendmessage">Keypad-Mapper 3 был принудительно перезапущен!\n Если вы хотите отправить отчет об ошибке, активируйте \'Отчеты об ошибках\' в настройках приложения!</string><string name="options_bugreport_values_1">Никогда не отправлять</string><string name="options_bugreport_values_2">Всегда отправлять</string><string name="options_bugreport_values_3">Спросить перед отправкой</string><string name="menu_freeze_gps">Зафиксировать координаты</string><string name="no_location">sorry, your action could not be completed without GPS reception or valid filtered data</string><string name="prefsDataDistanceEntries_1">1 м</string><string name="prefsDataDistanceEntries_2">2 м</string><string name="prefsDataDistanceEntries_5">5 м</string><string name="prefsDataDistanceEntries_8">8 м</string><string name="prefsDataDistanceEntries_10">10 м</string><string name="prefsDataDistanceEntries_15">15 м</string><string name="prefsDataDistanceEntries_20">20 м</string><string name="prefsDataDistanceEntries_25">25 м</string><string name="cancel">Отмена</string><string name="prefsClearFolderTitle">Удалить все файлы Keypad-Mapper 3</string><string name="prefsClearFolderQuestion">Вы действительно хотите удалить все файлы созданные Keypad-Mapper3?</string><string name="prefsClearFolderQuestionYes">Да</string><string name="prefsClearFolderQuestionNo">Нет</string><string name="prefsShareEmailTitle">Введите получателя</string><string name="prefsShareEmailHint">e-mail</string><string name="prefsShareEmailShare">Поделиться</string><string name="prefsShareEmailCancel">Отмена</string><string name="help_title">Помощь</string><string name="help_text_1">&lt;h2&gt;&lt;font color=&quot;#ffbf27&quot;&gt;Спасибо за использование новой версии Keypad-Mapper 3.1!&lt;/font&gt;&lt;/h2&gt;
 
- 
-
-Это приложение оптимизировано так, что позволяет добавлять номера домов и адреса в базу данных OpenStreetMap.&lt;br&gt;
-
+Это приложение максимально оптимизировано для работы по добавлению адресов и тэгов в базу данных OpenStreetMap.&lt;br&gt;
 &lt;br&gt;
-
-&lt;h3&gt;&lt;u&gt;Вот как это работает:&lt;br&gt;&lt;/u&gt;&lt;/h3&gt;
-
+&lt;h3&gt;&lt;u&gt;Руководство к использованию:&lt;br&gt;&lt;/u&gt;&lt;/h3&gt;
 &lt;ol&gt;
-
-&lt;li value=&quot;1&quot;&gt;включите GPS: невозможно сохранять номера домов, если вы находитесь в зоне плохого приема GPS. Если GPS недоступен, то будет показано сообщение об ошибке.&lt;/li&gt;&lt;br&gt;
-
-&lt;li value=&quot;2&quot;&gt;коснитесь значка клавиатуры в правом верхнем углу экрана&lt;/li&gt;&lt;br&gt;
-
-&lt;li value=&quot;3&quot;&gt;подойдите туда, где вы хотите записать первый номер дома; убедитесь, что номер дома находится точно справа или слева от вас в момент сохранения информации; в противном случае, будет сложнее присвоить адресный узел правильному зданию в OSM редакторе.&lt;/li&gt;&lt;br&gt;
-
-&lt;li value=&quot;4&quot;&gt;наберите номер дома на клавиатуре&lt;/li&gt;&lt;br&gt;
-
-&lt;li value=&quot;5&quot;&gt;сохраните номер дома, коснувшись одной из клавиш Л/Прямо/П:&lt;br&gt;
-
+&lt;li value=&quot;1&quot;&gt;найдите область, где отсутствует нумерация домов &lt;a href=&quot;http://overpass-api.de/hausnummern.html&quot;&gt;&lt;font color=&quot;#ffbf27&quot;&gt;здесь&lt;/font&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li value=&quot;2&quot;&gt;распечатайте карту этой области для облегчения ее нахождения и отправляйтесь туда.&lt;/li&gt;
+&lt;li value=&quot;3&quot;&gt;включите GPS на устройстве: сохранить новые номера домов при слабом уровне сигнала GPS не получится; если GPS не доступен, то на вашем устройстве появится соответствующее уведомление.&lt;/li&gt;
+&lt;li value=&quot;4&quot;&gt;тапните на иконку приложения в верхнем левом углу экрана и затем выберите опцию &quot;клавиатура&quot; или просто переместитесь на экран с клавиатурой с помощью свайпа по экрану&lt;/li&gt;
+&lt;li value=&quot;5&quot;&gt;найдите и станьте в том месте, где вы хотите записать номер первого дома; убедитесь, что вход в здание находится строго справа или строго слева от вас в тот момент, когда вы сохраняете информацию; в противном случае, в будущем будет сложно назначить метку номера здания правильному строению на картах в редакторе OSM&lt;/li&gt;
+&lt;li value=&quot;6&quot;&gt;наберите номер дома с помощью клавиатуры&lt;/li&gt;
+&lt;li value=&quot;7&quot;&gt;сохраните номер дома, тапнув на одной из трех белых стрелок:&lt;br&gt;
 &lt;br&gt;
-
 &lt;ul&gt;
-
-&lt;li&gt;\'Л\' означает, что номер дома находится слева относительно направления вашего движения&lt;/li&gt;&lt;br&gt;
-
-&lt;li&gt;\'П\' означает, что номер дома находится справа относительно направления вашего движения&lt;/li&gt;&lt;br&gt;
-
-&lt;li&gt;\'Прямо\' означает, что номер дома прямо перед вами, например, на Т-образном перекрестке&lt;/li&gt;&lt;br&gt;
-
+&lt;li&gt;стрелка влево означает, что номер здания находится по левой стороне относительно направления вашего движения&lt;/li&gt;
+&lt;li&gt;стрелка вправо означает, что номер здания находится по правой стороне относительно направления вашего движения&lt;/li&gt;
+&lt;li&gt;стрелка вверх означает, что номер здания находится перед вами (например, на Т-образном перекрестке)&lt;/li&gt;
 &lt;/ul&gt;
-
-В верхнем левом углу в лупе на значке вы можете найти количество адресных узлов, которые вы добавили во время текущей картографической сессии.&lt;br&gt;
-
-Повторяйте шаги 3), 4) и 5) пока не запишите все номера домов.&lt;/li&gt;&lt;br&gt;
-
-&lt;li value=&quot;6&quot;&gt;когда вы закончили, коснитесь значка с домом, чтобы открыть навигационное меню, и выберите пункт \'настройки\'&lt;/li&gt;&lt;br&gt;
-
-&lt;li value=&quot;7&quot;&gt;в настройках вы можете найти опцию \'поделиться сохраненным\', которая позволяет отправить всю собранную информацию по e-mail на ПК с работающим на нем OSM редактором (например, JOSM или Potlach)&lt;/li&gt;&lt;br&gt;
-
-&lt;li value=&quot;8&quot;&gt;откройте электронную почту и сохраните прикрепленные файлы на жесткий диск&lt;/li&gt;&lt;br&gt;
-
-&lt;li value=&quot;9&quot;&gt;откройте OSM редактор, выберите .gpx и .osm с одинаковыми именами и фотографии; загрузите уже существующие OSM данные;&lt;br&gt;
-
-теперь вы можете видеть ваш путь, все записанные номера домов и соответствующие изображения в OSM редакторе&lt;/li&gt;&lt;br&gt;
-
-&lt;li value=&quot;10&quot;&gt;добавьте почтовый индекс, название улицы, города и страны к каждому адресному узлу, если вы этого еще не сделали во время прогулки, и оптимизируйте положение каждого адресного узла&lt;/li&gt;&lt;br&gt;
-
-&lt;li value=&quot;11&quot;&gt;выгрузите оптимизированные данные в OSM&lt;/li&gt;&lt;br&gt;
-
-&lt;li value=&quot;12&quot;&gt;удалите записанные данные с вашего телефона&amp;nbsp;/ планшета с помощью опции \'удалить все записанные данные\' в меню настроек&lt;/li&gt;&lt;br&gt;
-
+Круг в верхнем левом углу отображает информацию о количестве добавленных вами заметок в течение текущей сессии.&lt;br&gt;
+Повторяйте шаги 5, 6 и 7 для каждого номера дома до тех пор, пока вы не запишете все номера.&lt;/li&gt;
+&lt;li value=&quot;8&quot;&gt;как только вы окончите добавление номеров, нажмите на иконку с изображением дома вверху экрана, а затем нажмите \'поделиться записанными данными\'.&lt;br&gt;Это позволит вам отправить записанные данные по электронной почте на компьютер с редактором карт OSM&lt;/li&gt;
+&lt;li value=&quot;9&quot;&gt;откройте полученное электронное письмо и сохраните прикрепленные к нему файлы на своем компьютере; убедитесь в том, что файлы с расширением .wav сохранены в специальную папку, указанную в настройках Keypad-Mapper 3 в пункте \'путь к файлам .wav\'&lt;/li&gt;
+&lt;li value=&quot;10&quot;&gt;откройте редактор карт JOSM, откройте в нем файлы .gpx и .osm с одинаковыми именами вместе с соответствующими фотографиями; загрузите уже существующие данные OSM;&lt;br&gt;теперь вы сможете увидеть все записанные номера домов, а также маршрут, по которому они были записаны, иконку для запуска каждого файла .wav и иконку для каждой снятой фотографии поверх существующих данных OSM&lt;/li&gt;
+&lt;li value=&quot;11&quot;&gt;назначьте каждому номеру соответствующее здание; смотрите на фотографии и слушайте аудио-заметки, что не упустить из виду никакой доступной информации при оптимизировании данных&lt;/li&gt;
+&lt;li value=&quot;12&quot;&gt;добавьте почтовый индекс, название улицы, города и страны для каждого адреса, если эта информация не была введена ранее при использовании приложения во время сбора данных на улице&lt;/li&gt;
+&lt;li value=&quot;13&quot;&gt;загрузите оптимизированные и законченные данные на OSM&lt;/li&gt;
+&lt;li value=&quot;14&quot;&gt;удалите записанные данные на своем телефоне&amp;nbsp;/ планшете с помощью опции меню \'удалить все записанные данные\' в настройках&lt;/li&gt;
 &lt;/ol&gt;
-
-Через несколько минут обновите OSM карту в браузере, вам должны быть видны новые номера домов с высоким уровнем приближения.&lt;br&gt;</string>
-    <string name="prefsMeasurementTitle">единица измерения</string>
-    <string name="prefsMeasurementsEntries_1">м</string>
-    <string name="prefsMeasurementsEntries_2">фт</string>
-    <string name="prefsDataDistanceEntriesFt_1">3 фт</string>
-    <string name="prefsDataDistanceEntriesFt_2">5 фт</string>
-    <string name="prefsDataDistanceEntriesFt_5">15 фт</string>
-    <string name="prefsDataDistanceEntriesFt_8">25 фт</string>
-    <string name="prefsDataDistanceEntriesFt_10">35 фт</string>
-    <string name="prefsDataDistanceEntriesFt_15">50 фт</string>
-    <string name="prefsDataDistanceEntriesFt_20">65 фт</string>
-    <string name="prefsDataDistanceEntriesFt_25">80 фт</string>
-    <string name="menu_share">Поделиться сохраненными\nданными</string>
-    <string name="menu_unfreeze_gps">Очистить координаты</string>
-    <string name="menu_camera">Камера</string>
-    <string name="menu_gps_accuracy">GPS точность</string>
-    <string name="keypad_info_hint">Дополнительная информация</string>
-    <string name="satellite_n_a">-</string>
-    <string name="satellite_gps">GPS</string>
-    <string name="satellite_glonass">GLONASS</string>
-    <string name="satellite_accuracy">точность</string>
-    <string name="satellite_in_view">видимы:</string>
-    <string name="satellite_in_use">используются:</string>
-    <string name="satellite_no_gps">Пожалуйста, переместитесь в точку\nлучшего приема GPS</string>
-    <string name="prefsScreenOnTitle">Экран всегда включен</string>
-    <string name="prefsScreenOnSummary">Если активированный эран будет постоянно включен. Включение этой опции приведет к дополнительному разряду аккумулятора.</string>
-    <string name="prefsMeasurementSummary">Вы можете выбрать между &quot;метрами&quot; и &quot;футами&quot;</string>
-    <string name="prefsDataPlacementDistanceSummary">Расстояние до объектов от текущего положения аппарата в момент, когда номер дома сохранен. </string>
-    <string name="prefsClearFolderSummary">Эта опция удаляет все собранные и сохраненные приложением данные на этом устройстве: файлы *.osm, *.gpx, фото, сделанные этим приложением. Обычно ее используют после успешной передачи данных на ПК с помощью электронной почты. </string>
-    <string name="help_text_2">&lt;br&gt;
-
-&lt;h3&gt;&lt;u&gt;Расширенные возможности&lt;/u&gt;&lt;/h3&gt;
-
+Подождите несколько минут и обновите карту OSM в своем браузере, чтобы просмотреть добавленные адреса на карте в максимальном увеличении.&lt;br&gt;
+&lt;br&gt;
+&lt;h3&gt;&lt;u&gt;Особенности Keypad-Mapper 3&lt;/u&gt;&lt;/h3&gt;
+Приложение содержит несколько активных экранов:
+&lt;ol&gt;
+&lt;li&gt;экран клавиатуры&lt;/li&gt;
+&lt;li&gt;редактор адресов&lt;/li&gt;
+&lt;li&gt;детали GPS&lt;/li&gt;
+&lt;li&gt;настройки&lt;/li&gt;
+&lt;/ol&gt;
+Открыть каждый из них вы можете тремя различными путями:&lt;br&gt;
+&lt;ol&gt;
+&lt;li&gt;нажатием на иконку в верхнем меню экрана&lt;/li&gt;
+&lt;li&gt;нажатием на иконку с изображением дома и последующим выбором необходимого пункта меню&lt;/li&gt;
+&lt;li&gt;методом свайпа пальцем влево или вправо по экрану&lt;/li&gt;
+&lt;/ol&gt;
+&lt;br&gt;
+&lt;b&gt;Запись данных:&lt;/b&gt;&lt;br&gt;
+Keypad-Mapper имеет опцию \'запись данных\' в меню, которая позволяет пользователям стартовать или останавливать запись данных или начинать запись, исходя из новых наборов файлов .osm / .gpx.&lt;br&gt;
+В дополнение к этому существует опция \'выключить GPS\'. Функции \'запись данных\' и \'выключить GPS\' соотносятся друг с другом следующим образом:&lt;br&gt;</string><string name="prefsMeasurementTitle">единица измерения</string><string name="prefsMeasurementsEntries_1">м</string><string name="prefsMeasurementsEntries_2">фт</string><string name="prefsDataDistanceEntriesFt_1">3 фт</string><string name="prefsDataDistanceEntriesFt_2">5 фт</string><string name="prefsDataDistanceEntriesFt_5">15 фт</string><string name="prefsDataDistanceEntriesFt_8">25 фт</string><string name="prefsDataDistanceEntriesFt_10">35 фт</string><string name="prefsDataDistanceEntriesFt_15">50 фт</string><string name="prefsDataDistanceEntriesFt_20">65 фт</string><string name="prefsDataDistanceEntriesFt_25">80 фт</string><string name="lang_support_codes">de
+en
+es
+fr
+el
+it
+nl
+pl
+ru</string><string name="lang_support_names">Deutsch
+English
+Español
+Français
+Ελληνικά
+Italiano
+Nederlands
+Polski
+Русский</string><string name="lang_support_urls">http://liferay.enaikoon.de:8080/10-resourceeditor-services/zip/resources?applicationCode=keypadmapper&amp;domainName=general&amp;languageCode=de_DE
+http://liferay.enaikoon.de:8080/10-resourceeditor-services/zip/resources?applicationCode=keypadmapper&amp;domainName=general&amp;languageCode=en_GB
+http://liferay.enaikoon.de:8080/10-resourceeditor-services/zip/resources?applicationCode=keypadmapper&amp;domainName=general&amp;languageCode=es_ES
+http://liferay.enaikoon.de:8080/10-resourceeditor-services/zip/resources?applicationCode=keypadmapper&amp;domainName=general&amp;languageCode=fr_FR
+http://liferay.enaikoon.de:8080/10-resourceeditor-services/zip/resources?applicationCode=keypadmapper&amp;domainName=general&amp;languageCode=el_GR
+http://liferay.enaikoon.de:8080/10-resourceeditor-services/zip/resources?applicationCode=keypadmapper&amp;domainName=general&amp;languageCode=it_IT
+http://liferay.enaikoon.de:8080/10-resourceeditor-services/zip/resources?applicationCode=keypadmapper&amp;domainName=general&amp;languageCode=nl_NL
+http://liferay.enaikoon.de:8080/10-resourceeditor-services/zip/resources?applicationCode=keypadmapper&amp;domainName=general&amp;languageCode=pl_PL
+http://liferay.enaikoon.de:8080/10-resourceeditor-services/zip/resources?applicationCode=keypadmapper&amp;domainName=general&amp;languageCode=ru_RU</string><string name="menu_share">Поделиться сохраненными
+данными</string><string name="menu_unfreeze_gps">Очистить координаты</string><string name="menu_camera">Камера</string><string name="menu_gps_accuracy">GPS точность</string><string name="keypad_info_hint">Заметка для этого места</string><string name="satellite_n_a">-</string><string name="satellite_gps">GPS</string><string name="satellite_glonass">GLONASS</string><string name="satellite_accuracy">точность</string><string name="satellite_in_view">видимы:</string><string name="satellite_in_use">используются:</string><string name="satellite_no_gps">Пожалуйста, переместитесь в точку
+лучшего приема GPS</string><string name="prefsScreenOnTitle">Экран всегда включен</string><string name="prefsScreenOnSummary">Если активированный эран будет постоянно включен. Включение этой опции приведет к дополнительному разряду аккумулятора.</string><string name="prefsMeasurementSummary">Вы можете выбрать между &quot;метрической&quot; и &quot;британской&quot; системами мер</string><string name="prefsDataPlacementDistanceSummary">Расстояние до объектов от текущего положения аппарата в момент, когда номер дома сохранен. </string><string name="prefsClearFolderSummary">Эта опция удаляет все собранные и сохраненные приложением данные на этом устройстве: файлы *.osm, *.gpx, фото, сделанные этим приложением. Обычно ее используют после успешной передачи данных на ПК с помощью электронной почты. </string><string name="help_text_2">&lt;ul&gt;
+&lt;li&gt;Wenn \'Datenaufzeichnung\' aktiv ist wird eine .gpx Spur aufgezeichnet&lt;/li&gt;
+&lt;li&gt;Wenn \'Datenaufzeichnung\' aktiv ist wird eine Spur auch dann aufgezeichnet, wenn die App nicht im Vordergrund ist&lt;/li&gt;
+&lt;li&gt;Wenn \'Datenaufzeichnung\' in-aktiv ist und \'GPS Abschaltung\' aktiviert ist, dann wird GPS ausgeschaltet um den Akku zu schonen&lt;/li&gt;
+&lt;/ul&gt;
+&lt;br&gt;
+&lt;b&gt;Информация об истории:&lt;/b&gt;&lt;br&gt;
+Два или три номера одного дома отображаются в правой части записи о номере на экране клавиатуры. Эти номера сопровождаются символами \'L:\', \'F:\' или \'R:\'. Таким образом, становится проще выяснить, корректно ли добавлены недавние номера домов относительно стороны дороги.&lt;br&gt;
+&lt;br&gt;
+&lt;b&gt;Даты сбора информации сохраняются вместе с каждой меткой адреса:&lt;/b&gt;&lt;br&gt;
+Например:&lt;br&gt;
+&lt;br&gt;
+&amp;nbsp;&amp;nbsp;&amp;#60;node id=&quot;-1&quot; visible=&quot;true&quot; lat=&quot;52.497442495127025&quot; lon=&quot;13.350499497003666&quot;&amp;#62;&lt;br&gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;#60;tag k=&quot;survey:date&quot; v=&quot;2013-06-01&quot;/&amp;#62;&lt;br&gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;#60;tag k=&quot;addr:housenumber&quot; v=&quot;15&quot;/&amp;#62;&lt;br&gt;
+&amp;nbsp;&amp;nbsp;&amp;#60;/node&amp;#62;&lt;br&gt;
+&lt;br&gt;
+&lt;b&gt;Подсказки по использованию:&lt;/b&gt;&lt;br&gt;
+&lt;ul&gt;
+&lt;li&gt;долгое нажатие на записи о номере дома на экране клавиатуры откроет расширенную клавиатуру для ввода нетипичных номеров домов&lt;/li&gt;
+&lt;li&gt;возможности по улучшению читабельности (большие шрифты, лучшая контрастность и так далее) при работе при ярком дневном освещении&lt;/li&gt;
+&lt;li&gt;улучшено время отклика приложения для случаев, когда собрано большое количество данных&lt;/li&gt;
+&lt;li&gt;на экране редактирования адреса поле для записи имени здания было перемещено вниз страницы&lt;/li&gt;
+&lt;/ul&gt;
+&lt;br&gt;
+&lt;b&gt;Аудио-заметки:&lt;/b&gt;&lt;br&gt;
+Запись ауди-заметки менее заметна для окружающих, чем фотосъемка, поэтому многие картографы предпочитают пользоваться именно ей.&lt;br&gt;
+Функциональность аудио-заметки схожа с функциональностью фотосъемки: она позволяет записывать голосовые заметки и сохранять их вместе с координатами GPS. В отличие от фотографий, GPS координаты с аудио-заметками хранятся в файлах .gpx, поэтому эти файлы должны быть загружены в редактор JOSM до загрузки файлов .wav.
+Файлы .gpx содержат в себе следующую информацию:&lt;br&gt;
+&lt;br/&gt;
+&amp;nbsp;&amp;nbsp;&amp;#60;wpt lat=&quot;52.49739929702362&quot; lon=&quot;13.350353411755215&quot;&amp;#62;&lt;br&gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;#60;time&amp;#62;2013-06-01T14:17:14Z&amp;#60;/time&amp;#62;&lt;br&gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;#60;link href=&quot;file:///2013-06-01_16-17-13.wav&quot;&amp;#62;&amp;#60;text&gt;2013-06-01_16-17-13.wav&amp;#62;&amp;#60;/text&amp;#62;&amp;#60;/link&amp;#62;&lt;br&gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;#60;ele&amp;#62;89.50511403620409&amp;#60;/ele&amp;#62;&lt;br&gt;
+&amp;nbsp;&amp;nbsp;&amp;#60;/wpt&amp;#62;&lt;br&gt;
+&lt;br/&gt;
+Аудио-заметки, как и прочие записанные данные, используемые для редактирования данных, отсылаются на компьютер с помощью опции \'отправить записанные данные\'.&lt;br&gt;
+JOSM позволяет вам загрузить все данные. Проигрывание аудио-заметок после загрузки поможет вам вспомнить детали и особенности той или иной местности, где вы собирали данные.&lt;br&gt;
+В JOSM голосовые файлы загружаются автоматически вместе с файлами .gpx в том случае, если файлы .wav находятся в директории, обозначенной в настройках Keypad-Mapper 3 - \'путь к файлам .wav\'&lt;br&gt;
+Более подробную информацию можно найти &lt;font color=&quot;#ffbf27&quot;&gt;&lt;a href=&quot;http://wiki.openstreetmap.org/wiki/Audio_mapping&quot;&gt;здесь&lt;/a&gt;&lt;/font&gt;&lt;br&gt;
+&lt;br&gt;
 &lt;b&gt;Камера:&lt;/b&gt;&lt;br&gt;
-
-значок камеры позволяет получить GPS изображения, которые будут сохранены и переданы по e-mail, наряду с .osm и .gpx файлами, для загрузки в OSM редактор.&lt;br&gt;
-
-Это позволяет хранить в памяти сложные ситуации, включая точные GPS координаты для того, чтобы избежать сомнений в дальнейшем, при редактировании данных в OSM редакторе.&lt;br&gt;
-
+Камера позволяет делать снимки GPS, которые будут сохранены и переданы по электронной почте вместе с файлами .osm и .gpx для загрузки в редакторе OSM.&lt;br&gt;
+Это позволит вам соотносить фотографию с точными GPS координатами для уточнения деталей конкретного адреса при редактировании данных в редакторе OSM позднее.&lt;br&gt;
 &lt;br&gt;
-
-&lt;b&gt;Зафиксировать GPS координаты:&lt;/b&gt;&lt;br&gt;
-
-обычно адресный узел сохраняется с GPS координатами того места, где находится пользователь в момент касания Л/Прямо/П.&lt;br&gt;
-
-Но иногда требуется сохранить адресный узел с такими GPS координатами, что реальный номер дома не может быть прочитан. Чтобы избежать хождений вперед и назад для сохранения номера дома с корректными GPS координатами, используйте значок снежинки, который позволяет зафиксировать GPS координаты там, где они должны быть сохранены, и затем пройти к месту, где можно прочитать номер дома. Сохранение номера дома будет выполнено с зафиксированными GPS координатами, затем фиксация координат будет снята.&lt;br&gt;
-
+&lt;b&gt;Заморозка позиции GPS:&lt;/b&gt;&lt;br&gt;
+Заметка адреса в общем случае сохраняется с позицией GPS устройства в момент, когда пользователь нажимает на кнопку со стрелками на экране клавиатуры.&lt;br&gt;
+В том случае, когда номер дома не может быть прочитан с того места, где должны быть сохранены координаты, есть возможность заморозить позицию GPS на время, пока пользователь найдет номер дома. Предварительно заморозив полученные координаты путем нажатия иконки в виде снежинки, пользователю не придется возвращаться обратно. Сохранение адреса будет автоматически использовать замороженные GPS координаты и потом автоматически включит обычный режим работы GPS обратно.&lt;br&gt;
+&lt;br&gt;</string><string name="help_text_3">&lt;b&gt;Создание дополнительных заметок:&lt;/b&gt;&lt;br&gt;
+Иногда полезно сохранять заметки в дополнение или вместо фото или аудио для дальнейшего использования в редакторе OSM. Эта текстовая информация сохраняется вместе с номером дома после нажатия одной из стрелок на экране клавиатуры.&lt;br&gt;
+Вы можете создать заметку, нажав кнопку \'заметка для этой позиции\' и введя текст в поле ниже большого поля адреса. При этом будет открыта полноценная клавиатура.&lt;br&gt;
+Нажатие на любую из стрелок на экране клавиатуры закроет полную клавиатуру и сохранит номер дома вместе с текстовой заметкой.&lt;br&gt;
+Нажатие на большое белое поле номера дома также закроет полную клавиатуру.&lt;br&gt;
+В редакторе OSM, эта заметка будет представлена как метка \'имя\'. Вы можете удалить эту метку после использования или переименовать ее.&lt;br&gt;
 &lt;br&gt;
-
-&lt;b&gt;Добавить дополнительную информацию:&lt;/b&gt;&lt;br&gt;
-
-иногда полезно сохранить некоторую текстовую информацию в дополнение или вместо GPS изображения, чтобы затем использовать в OSM редакторе во время оптимизации сохраненных данных. Эта текстовая информация сохраняется наряду с номером дома после касания Л/Прямо/П.&lt;br&gt;
-
-Вы можете добавить такую дополнительную информацию под большим белым полем для номера дома. Коснувшись строки ввода текста, вы увидите полную клавиатуру и сможете ввести информацию.&lt;br&gt;
-
-Касание Л/Прямо/П закрывает полную клавиатуру и сохраняет номер дома с дополнительной информацией.&lt;br&gt;
-
-Касание большого белого поля для номера дома также закрывает полную клавиатуру.&lt;br&gt;
-
-В OSM редакторе эта информация будет представлена тегом \'имя\'. Наиболее вероятно, что вы удалите этот тег после использования информации или переименуете его, например, в \'примечание\'.&lt;br&gt;
-
+&lt;b&gt;Иконка отмены последнего действия:&lt;/b&gt;&lt;br&gt;
+В правой части поля номера дома находятся последние введенные номера. Самый последний из них находится вверху списка. Для каждого номера указано, в каком направлении он был отмечен - правом, левом или впереди.&lt;br&gt;
+Путем нажатия кнопки отмены можно удалить последний введенный номер. Удалить несколько номеров невозможно.&lt;br&gt;
 &lt;br&gt;
-
-&lt;b&gt;Значок Отмена:&lt;/b&gt;&lt;br&gt;
-
-Справа от поля номера дома можно найти последние введенные номера домов. Последний введенный номер показывается вверху списка.&lt;br&gt;
-
-Касаясь значка отмена в строке меню (первый значок справа от значка строения), вы сможете удалить последний введенный номер дома. Невозможно сразу удалить несколько номеров домов.&lt;br&gt;
-
+&lt;b&gt;Долгое нажатие на поле номера дома открывает полную клавиатуру&lt;/b&gt;&lt;br&gt;
+В редких случаях номера домов находятся в таких местах, которые невозможно отметить существующей системой стрелок в приложении на экране клавиатуры. Для таких случаев можно открыть долгим нажатием клавиатуру и создать заметку. Клавиатура закроется автоматически, если пользователь нажмет на любую из трех стрелок.&lt;br&gt;
 &lt;br&gt;
-
-&lt;b&gt;Расстояние от номера дома до положения дома:&lt;/b&gt;&lt;br&gt;
-
-Меню настроек позволяет определять расстояние от адресного узла до его положения.&lt;br&gt;
-
-Если улица необычайно широкая и дома находятся далеко от тротуара, рекомендуется увеличить значение этого парметра. Также корректировку можно провести позднее в OSM редакторе.&lt;br&gt;
-
+&lt;b&gt;Опции настроек:&lt;/b&gt;&lt;br&gt;
+&lt;ul&gt;
+&lt;li&gt;Язык:&lt;br&gt;
+в данный момент Keypad-Mapper поддерживает девять языков: Голландский, Английский, Французский, Немецкий, Греческий, Итальянский, Польский, Русский и Испанский.&lt;br&gt;
+Пожалуйста, свяжитесь с ENAiKOON, если желаете перевести приложение на свой родной язык. Мы с удовольствием пойдем вам навстречу!&lt;br&gt;
+Выражаем огромную благодарность Стефано за перевод на итальянский язык и продвижение Keypad-Mapper 3&lt;br&gt;
+Выражаем также благодарность Адаму за перевод на польский язык и Гарри за голландскую локализацию приложения.&lt;/li&gt;
+&lt;li&gt;оцените приложение:&lt;br&gt;
+Для того чтобы привлечь к работе с приложением как можно больше картографов, очень важен его рейтинг в Google Play. Пожалуйста, помогите нам в продвижении приложения, поставив ему положительную оценку!&lt;/li&gt;
+&lt;li&gt;удаление собранных данных:&lt;br&gt;
+После сохранения данных на компьютере и загрузки их в OSM, вы можете захотеть удалить эти данные со своего мобильного устройства, чтобы освободить на нем место. Для этого может быть использована функция \'удалить все собранные данные\', которая находится в меню настроек.&lt;/li&gt;
+&lt;li&gt;не выключать экран:&lt;br&gt;
+эта функция позволит вам предотвратить переход вашего устройства в спящий режим&lt;/li&gt;
+&lt;li&gt;компас:&lt;br&gt;
+Обычно для определения, где находятся \'право\' и \'лево\' при ходьбе на устройстве используются данные GPS. Если вы идете слишком медленно или если стоите на месте, то информация GPS может быть неверной. Это - одна из слабых сторон технологии GPS.&lt;br&gt;
+Чтобы предотвратить появление этой проблемы, Keypad-Mapper может использовать встроенный во многие устройства Android компас. Включенная настройка \'использовать компас\' позволит вам сконфигурировать максимальную скорость, до достижения которой приложением будет использоваться компас. Если слайдер настроек выставлен на значение 0, то компас не будет использоваться. Если же в устройстве отсутствует встроенный компас, то эта настройка будет неактивной.&lt;/li&gt;
+&lt;li&gt;вибрация при сохранении:&lt;br&gt;
+с помощью этой настройки можно выбрать продолжительность вибрации устройства в миллисекундах при сохранении данных после нажатия одной из трех стрелок на экране клавиатуры&lt;/li&gt;
+&lt;li&gt;вибрация клавиатуры:&lt;br&gt;
+с помощью этой настройки можно выбрать продолжительность вибрации устройства в миллисекундах после нажатия любой кнопки в приложении кроме трех стрелок на экране клавиатуры&lt;/li&gt;
+&lt;li&gt;единицы измерения:&lt;br&gt;
+При внесении данных о расстоянии между положением устройства и нахождением нужного узла адреса в приложении предусмотрена возможность измерять его как в метрической, так и в британской системах мер. Это позволяет использовать приложение пользователям, привыкшим к британской системе мер наряду с теми, кто обычно использует метрическую систему.&lt;/li&gt;
+&lt;li&gt;расстояние адресных узлов:&lt;br&gt;
+эта опция позволяет вам определить расстояние между адресным узлом и положением устройства в том месте, где вы стоите в данный момент.&lt;br&gt;
+Если вы находитесь на необычно широкой улице, дома на которой расположены далеко от тротуара, то рекомендуется выставить большее значение для этой опции. С другой стороны, корректировку можно произвести и позднее при редактировании карт OSM как таковых.&lt;/li&gt;</string><string name="prefsUseWifiOnlyTitle">использовать только Wi-Fi для загрузки данных</string><string name="rateme_thankyou">Спасибо за использование</string><string name="rateme_keypad">Keypad-Mapper 3!</string><string name="rateme_text">Мы будем очень благодарны, если вы сможете оставить комментарий или оценку Keypadmapper на Google Play.
+Сделать это сейчас?</string><string name="rateme_yes">Да</string><string name="rateme_later">Позже</string><string name="rateme_dont_ask">Никогда</string><string name="statusAccuracy">%d м</string><string name="statusAccuracyFt">%d фт</string><string name="prefsOptimizeLayout">Оптимизировать экран</string><string name="prefsUseWifiOnlySummary">Показывать название улицы и индекс только если используется Wi-Fi</string><string name="prefsHelpTitle">Помощь</string><string name="prefsHelpSummary">Описание приложения</string><string name="system_settings">Настройки</string><string name="prefsVibrationOnSave">Вибрация при сохранении</string><string name="prefsVibrationOnSaveSummary">Вибрация при сохранении узла в миллисекундах, настроенная с помощью слайдера ниже</string><string name="menu_recording_GPS">Запись данных</string><string name="prefsTurnOffGpsUpdatesTitle">Выключить GPS</string><string name="prefsTurnOffGpsUpdatesSummary">Выключить GPS на время остановки записи для экономии заряда батереи</string><string name="notRecording">Номер дома не может быть сохранен в связи с тем, что вы не ведете запись в данный момент</string><string name="prefsUseCompassTitle">Использовать компас</string><string name="prefsUseCompassSummary">Максимальная скорость, до достижения которой приложением будет использоваться компас вместо GPS для вычисления позиции адресного узла.
+Если слайдер настроек выставлен на значение 0, то компас не будет использоваться.
+Если компас включен, то иконка GPS отображает иглу компаса. Эта игла не указывает на текущее направление движения.</string><string name="prefsKeyboardVibrationTitle">Вибрация клавиатуры</string><string name="prefsKeyboardVibrationSummary">Вибрировать при нажатии клавиши в течение времени в миллисекундах, настроенном с помощью слайдера ниже</string><string name="prefsComputerWaveFilePathTitle">Путь к файлу.wav</string><string name="prefsComputerWaveFilePathSummary">Путь к файлу .wav на вашем комьютере, который будет использоваться в метках файлов GPX.</string><string name="dialog_wav_explanation_html">Пожалуйста, выберите путь, который будет использоваться на вашем JOSM / Potlach компьютере при сохранении файлов .wav. Эта информация будет добавлена во все файлы .wav и упомянута в файлах .gpx.&lt;br&gt;
 &lt;br&gt;
-
+Все файлы .wav должны быть расположены в этой папке для того, чтобы JOSM / Potlach мог корректно работать с ними, когда файл.gpx будет загружен и кликнут аудио маркер.&lt;br&gt;
+&lt;br&gt;
+Если путь не будет выбран, то по умолчанию будет использован c:\ на компьютерах с Windows и / на машинах с Linux.&lt;br&gt;
+&lt;br&gt;
+Примеры:&lt;br&gt;
+&amp;nbsp;&amp;nbsp;Windows: &lt;b&gt;c:\myrecordedfiles\&lt;/b&gt;&lt;br/&gt;
+&amp;nbsp;&amp;nbsp;Linux: &lt;b&gt;/usr/local/tmp/&lt;/b&gt;&lt;br/&gt;</string><string name="popupAudioText">Аудио-заметка</string><string name="prefsMeasurementEntryMeters">метрическая</string><string name="prefsMeasurementEntryFeet">британская</string><string name="meters_display_unit">м</string><string name="feet_display_unit">фт</string><string name="error_audio_init">Невозможно запустить запись аудио.</string><string name="km_per_hour">км/ч</string><string name="miles_per_hour">м/ч</string><string name="help_text_4">&lt;li&gt;выключить GPS:&lt;br&gt;
+эта опция позволяет выключить GPS на то время, пока пользователь прекратил сбор данных, для сохранения уровня заряда батареи устройства&lt;/li&gt;
+&lt;li&gt;использовать только Wi-Fi:&lt;br&gt;
+эта опция особенно полезна в том случае, если ваш тарифный план для подключения интернет слишком дорог или если осталось совсем немного свободного траффика на нем.&lt;/li&gt;
+&lt;li&gt;путь к файлу .wav:&lt;br&gt;
+определяет путь к файлу .wav на вашем компьютере, который будет использоваться для сохранения аудио-заметок; эта информация необходима JOSM для корректной обработки файлов .wav&lt;/li&gt;
+&lt;li&gt;оптимизировать элементы экрана:&lt;br&gt;
+эта опция актуальна только для смартфонов с небольшим разрешением экрана. Она позволяет удалить некоторые элементы с экрана приложения для оптимального использования пространства.&lt;/li&gt;
+&lt;li&gt;отчеты об ошибках:&lt;br&gt;
+позволяет отсылать отчеты разработчикам в случае ошибок приложения; таким образом, разработчикам приложения легче определить и устранить проблему&lt;/li&gt;
+&lt;li&gt;помощь:&lt;br&gt;
+эта опция открывает данный файл помощи по работе с приложением&lt;/li&gt;
+&lt;li&gt;о программе:&lt;br&gt;
+предоставляет основную информацию о приложении, включающую в себя детальный номер текущей версии&lt;/li&gt;
+&lt;/ul&gt;
 &lt;h3&gt;&lt;u&gt;Советы и рекомендации&lt;/u&gt;&lt;/h3&gt;
-
-&lt;b&gt;Процесс нанесения на карту номеров домов:&lt;/b&gt;&lt;br&gt;
-
-Оказалось, что наиболее эффективно идти по тротуару на одной стороне улицы и записывать номера домов с обоих сторон.&lt;br&gt;
-
-После недолгой практики можно вводить номера домов, не останавливаясь для этого. Можно подобрать такую скорость и ритм ходьбы, которые позволят записывать тщательно все номера домов, обрабатывая при этом как можно большее их количество.&lt;br&gt;</string>
-    <string name="help_text_3">&lt;b&gt;Нанесение на карту информации, которая не имеет ничего общего с номерами домов&lt;/b&gt;&lt;br&gt;
-
-Увлеченные картографы могут испытывать потребность нанести на карту дополнительную информацию, не имеющую ничего общего с номерами домов и адресами, во время прогулки по улице с Kepad-Mapper 3.&lt;br&gt;
-
- 
-
-Реальность показала, что так поступать неэффективно, так как в итоге отображается меньше информации по сравнению с акцентом на номера домов.&lt;br&gt;
-
-Это также верно для записи названий улиц, индексов и другой адресной информации, которая появляется в пути: многие улицы уже названы, часто с индексом, названием города и страны, поэтому проще скопировать эту информацию позднее, вместо того, чтобы вводить ее с телефона&amp;nbsp;/ планшета. Наконец, этот подход экономит много времени, поэтому вы можете ввести в OSM больше информации за определенный период времени.&lt;br&gt;
-
+&lt;b&gt;Процесс нанесения номера дома на карту:&lt;/b&gt;&lt;br&gt;
+Наиболее эффективно ходить по одной стороне улицы вдоль тротуара для записи данных о домах на обеих сторонах улицы одновременно.&lt;br&gt;
+Фактически, возможно вносить номера домов, не останавливаясь у каждого из них в отдельности. Настроившись на удобный вам ритм, возможно аккуратно сохранять все нужные данные без остановок.&lt;br&gt;
 &lt;br&gt;
-
-&lt;b&gt;Интернет соединение для проверки адреса:&lt;/b&gt;&lt;br&gt;
-
-Keypad-Mapper 3 может показывать на экране название улицы и индекс по текущим GPS координатам. Это полезно, так как позволяет увидеть, когда OSM уже знает правильный индекс и название улицы.&lt;br&gt;
-
-Для этой цели приложение использует NOMINATIM - сервер адресов, который работает только с информацией OpenStreetMap. Сервер NOMINATIM поддерживается ENAiKOON. Он регулярно обновляется в течение выходных.&lt;br&gt;
-
-Отображение названий улиц и индексов требует, чтобы устройство было подключено к интернету. В настройках вы можете ограничить соединение, выбрав Wi-Fi. В этом случае отображение названий улиц и индексов обычно не работает во время прогулки.&lt;br&gt;
-
-Название улицы и индекс, отображаемые на экране обновляются каждые 10 секунд. Это может быть причиной интернет трафика, превышающего включенный в ваш тарифный план.&lt;br&gt;
-
+&lt;b&gt;Нанесение на карту информации, которая не имеет отношения к номерам домов:&lt;/b&gt;&lt;br&gt;
+Многие картографы считают необходимым нанести на карту как можно больше объектов, прогуливаясь по улицам с приложением Keypad-Mapper 3.&lt;br&gt;
+Но опыт показывает, что это вовсе не обязательно делать в связи с тем, что обычно при таких случаях собирается гораздо меньше полезной информации по сравнению с пользователями, фокусирующимися лишь на номерах домов.&lt;br&gt;
+Это также справедливо и для записи названий улиц, почтовых индексов и прочей информации об адресе; многие улицы в OSM уже помечены соответствующими метками, равно как города и страны. Таким образом, гораздо легче скопировать уже существующую информацию в запись о новом адресе конкретного дома, чем набирать ее каждый раз на своем устройстве. Этот подход сократит вам кучу времени, которое вы сможете впоследствии потратить на сбор действительно нужных OSM данных.&lt;br&gt;
 &lt;br&gt;
-
-&lt;b&gt;Редактор адреса:&lt;/b&gt;&lt;br&gt;
-
-Если название улицы и/или индекс не отображаются или не верны, это обычно означает, что для текущего местоположения база данных OSM не содержит корректной информации. В таком случае можно добавить информацию на экране редактора адреса, коснувшись значка с домом, а затем выбрав \'редактор адреса\'.&lt;br&gt;
-
-Эта информация также сохранится в файле .osm для дальнейшей передачи с помощью e-mail на ПК с OSM редактором. В OSM редакторе эта информация будет автоматически сгруппирована с номером дома.&lt;br&gt;
-
+&lt;b&gt;Соединение с интернетом для валидации адреса:&lt;/b&gt;&lt;br&gt;
+Keypad-Mapper 3 умеет показывать почтовый индекс и название улицы, основываясь на текущих данных GPS. Эта опция будет полезной, если нужно узнать, существует ли уже в OSM текущие данные о почтовом индексе и названии улицы.&lt;br&gt;
+Приложение использует NOMINATIM для этих целей - сервер адресов, который использует исключительно данные OpenStreetMap. Сервер NOMINATIM предоставлен компанией ENAiKOON. Каждые выходные он обновляется.&lt;br&gt;
+Отображение названия улицы и почтового индекса предполагает активное соединение устройства с сетью интернет. В меню вы можете ограничить соединение с интернетом, активировав лишь использование Wi-Fi. В этом случае почтовый индекс и названия улиц могут быть недоступны во время нахождения на улице.&lt;br&gt;
+Данные о названии улицы и почтовом индексе обновляются каждый 10 секунд. Это может привести к &quot;съеданию&quot; части траффика на вашем тарифном плане.&lt;br&gt;
 &lt;br&gt;
-
-&lt;b&gt;Оптимизация формата экрана:&lt;/b&gt;&lt;br&gt;
-
-В зависимости от разрешения экрана клавиатура имеет разный формат: буквы для номеров домов \'а\'..\'в\' на маленьком экране и \'а\'..\'м\' на большом.&lt;br&gt;
-
-Если вы пользуетесь устройством с маленьким экраном, но вам нужны буквы \'г\'..\'м\' поверните экран на 90 градусов. Теперь вам доступны все буквы.&lt;br&gt;
-
-Для работы с устройствами с маленькими экранами приложение обладает дополнительной опцией \'оптимизация формата\', которая позволяет убирать некоторую информацию с экрана, чтобы освободить место для основных функций клавиатуры экрана.&lt;br&gt;
-
-
+&lt;b&gt;Редактор адресов:&lt;/b&gt;&lt;br&gt;
+Если почтовый индекс или название улицы недоступны или отображаются некорректные данные, то обычно это означает, что база данных OSM не содержит информации о данном местоположении. В таком случае можно добавить эти данные с помощью экрана редактирования адресов приложения путем нажатия на иконку с домом и открытия соответствующей опции.&lt;br&gt;
+Эта информация будет сохранена в файле OSM для последующей передачи с помощью электронного письма и редактирования на компьютере. В вашем редакторе карт OSM эта информация будет автоматически сгруппирована вместе с номером дома.&lt;br&gt;
+&lt;br&gt;</string><string name="help_text_5">&lt;b&gt;Структура экрана:&lt;/b&gt;&lt;br&gt;
+Смартфоны:&lt;br&gt;
+В зависимости от разрешения экрана приложение может иметь разную структуру экрана: буквы для номеров домов от \'а\' до \'б\' на маленьких экранах - и буквы от \'а\' до \'л\' на больших.&lt;br&gt;
+Если вы используете экран с маленьким разрешением экрана, но хотите использовать буквы от \'а\' до \'л\', то поверните устройство в ландшафтный режим. Также можно использовать долгое нажатие на поле записи о доме. Это автоматически активирует появление полной клавиатуры.&lt;br&gt;
+Если вы используете приложение на устройстве с маленьким разрешением экрана, то для него будет доступна настройка \'оптимизировать элементы экрана\', которая уберет некоторые опциональные элементы приложения, освободив таким образом пространство для работы.&lt;br&gt;
 &lt;br&gt;
-
+Планшеты:&lt;br&gt;
+Некоторые картографы используют 7&quot;-10&quot; планшеты для нанесения данных на карту. Особой популярностью пользуется планшет Google Nexus 7. Это связано с тем, что планшеты обычно имеют большую продолжительность жизни от одного заряда батареи, позволяя таким образом собрать больше данных за раз.&lt;br&gt;
+Keypad-Mapper 3 оптимизирован для работы с планшетами как в портретном, так и в ландшафтном режимах. Специальный пользовательский интерфейс автоматически активируется на устройствах с диагональю экрана больше 7&quot;. (Samsung Galaxy Note 1 и 2 не поддерживают структуру экрана для планшетов из-за недостатка свободного экранного пространства!).&lt;br&gt;
+&lt;br&gt;
+Отличия планшетного интерфейса от интерфейса приложения для смартфонов в следующем:
+&lt;ul&gt;
+&lt;li&gt;различная сортировка иконок в меню: наиболее важные иконки максимально близки к положению пальцев для планшетов&lt;/li&gt;
+&lt;li&gt;в планшетном интерфейсе отображается больше иконок в меню&lt;/li&gt;
+&lt;li&gt;экран клавиатуры и редактор адресов доступны одновременно:&lt;br&gt;это дает возможность лучше оценить только что собранные данные&lt;/li&gt;
+&lt;li&gt;на экране редактора адресов отсутствует поле номера дома&lt;/li&gt;
+&lt;li&gt;в портретном режиме планшетов используется интерфейс ландшафтного режима для смартфонов; это дает возможность вводить данные обеими руками одновременно&lt;/li&gt;
+&lt;/ul&gt;
+&lt;br&gt;
+&lt;b&gt;Дополнительные метки для каждого номера дома/адресного узла&lt;/b&gt;&lt;br&gt;
+Следующая метка автоматически добавляется для каждого номера дома: source=survey:date&lt;br&gt;
+Эта метка содержит информацию о том, когда пользователь фактически собрал данные о номере. Обычно эта дата меньше даты создания метки в базе OSM.&lt;br&gt;
+&lt;br&gt;
 &lt;h3&gt;&lt;u&gt;OpenCellIDs&lt;/u&gt;&lt;/h3&gt;
+&lt;a href=&quot;http://www.opencellids.org&quot;&gt;&lt;font color=&quot;#ffbf27&quot;&gt;www.opencellids.org&lt;/font&gt;&lt;/a&gt; - это проект с открытым кодом, дополняющий OSM.&lt;br&gt;
+Цель проекта - сбор данных GPS и GSM. Данные, собранные участниками проекта могут быть скачаны с сайта www.opencellids.org и использованы как для частных, так и для коммерческих целей.&lt;br&gt;
+Одной из основных целей сбора данных OpenCellIDs является возможность ее дальнейшего использования устройствами там, где прием сигнала GPS слаб или отсутствует. В дополнение к этому, локализации GSM потребляют значительно меньше энергии батареи устройства, чем GPS; тем не менее, известно, что GSM является менее точной технологией при использовании в сельской местности, нежели GPS.&lt;br&gt;
+OpenCellIDs - это крупнейшая открытая база данных GPS и GSM точек по всему миру. На начало 2013 года в базе насчитывалось около 2.7 миллионов уникальных ячеек. В настоящее время база данных ежедневно прирастает на 1000-2000 новых уникальных ячеек. В целом, мы прогнозируем базу из 25 миллионов уникальных ячеек; это означает, что на сегодняшний день исследовано лишь 10-15% от общего их числа.&lt;br&gt;
+Keypad-Mapper 3 автоматически собирает данные OpenCellIDs в фоновом режиме без участия пользователя. Выбранный путь реализации этой функциональности гарантирует полную анонимность сбора данных и полное соответствие законодательству Германии.&lt;br&gt;
+Keypad-Mapper 3 - отличное приложение для сбора данных OpenCellIDs одновременно с упорядочиванием номеров домов по той причине, что пользователи Keypad-Mapper 3 систематически ходят по множеству различных улиц одновременно, что гарантирует оптимальные данные для OpenCellID. Базовые станции вдоль дорог уже сегодня могут быть легко найдены в существующей базе данных, в то время как покрытие улиц все еще недостаточно.
+</string><string name="settings_rate_title">Оценить приложение в Google Play</string><string name="settings_rate_summary">Мы будем благодарны, если вы оцените или оставите комментарий на странице Keypad-Mapper 3 в Google Play</string><string name="notification_title">Запись данных активна</string><string name="production_version_opencellid_upload_url">http://www.enaikoon.de/gpsSuiteCellId/measure/uploadCsv</string><string name="test_version_opencellid_upload_url">http://www.enaikoon.de/gpsSuiteCellId/measure/uploadCsv</string><string name="error_no_location_for_audio">Вы не можете вести запись аудио-заметок пока отсутствует GPS соединение или существуют валидные локационные данные</string><string name="error_not_recording">Запись должна быть активна для того, чтобы использовать эту функцию</string><string name="hint_turn_off_gps_updates">Пожалуйста, деактивируйте функцию &quot;выключить GPS обновления&quot; в настройках, если хотите видеть статус GPS во время записи</string><string name="help_text_header">&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD HTML 4.01 Transitional//EN&quot; &quot;http://www.w3.org/TR/html4/loose.dtd&quot;&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;title&gt;KPM31 help file&lt;/title&gt;
+&lt;style type=&quot;text/css&quot; &gt; &lt;/style&gt;
+&lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=utf-8&quot;&gt;
+&lt;/head&gt;
 
-&lt;a href=&quot;http://www.opencellids.org&quot;&gt;&lt;font color=&quot;#ffbf27&quot;&gt;www.opencellids.org&lt;/font&gt;&lt;/a&gt; проект с открытым кодом дополнительно к OSM.&lt;br&gt;
-
-Целью этого проекта является сбор GPS координат базовых станций GSM. Информация, собранная участниками проекта, может быть скачана с www.opencellids.org как для коммерческого, так и частного использования.&lt;br&gt;
-
-Одной из главных причин сбора OpenCellIDs данных является то, что эта информация в дальнейшем может быть использована для локализации устройств там, где недоступна GPS. Кроме того, GSM локализация потребляет меньше энергии, чем GPS, но, в то же время, она менее точна, особенно за городом.&lt;br&gt;
-
-OpenCellIDs самая большая в мире открытая коллекция GPS координат базовых GSM станций. В начале 2013 года база данных насчитывала около 2.7 миллионов уникальных значений. В настоящее время прирост базы данных составляет от 1,000 до 2,000 новых уникальных записей в день. В целом мы оцениваем по крайней мере 25 миллионов уникальных GSM вышек по всему миру, что означает, что только 10-15% мировых станций уже открыты.&lt;br&gt;
-
-Keypad-Mapper 3 автоматически в фоновом режиме собирает данные OpenCellIDs, не требуя при этом от пользователя каких-либо действий. Выбранный способ реализации этой функции гарантирует, что данные собираются строго анонимно, обеспечивая соблюдение строгих немецких правил конфиденциальности.&lt;br&gt;
-
-Keypad-Mapper 3 является идеальным приложением для сбора данных OpenCellIDs одновременно со сбором информации о номерах домов, потому что пользователи Keypad-Mapper 3 систематически проходят много разных улиц, что гарантирует оптимальные для OpenCellID данные: в настоящее время базовые станции, располагающиеся вдоль основных дорог, могут быть найдены в базе данных, а базовые станции удаленные от основных магистралей редки.</string>
-    <string name="prefsUseWifiOnlyTitle">использовать только Wi-Fi для загрузки данных</string>
-    <string name="rateme_thankyou">Спасибо за использование</string>
-    <string name="rateme_keypad">Keypad-Mapper 3!</string>
-    <string name="rateme_text">Мы будем очень благодарны, если вы сможете оставить комментарий или оценку Keypadmapper на Google Play.\nСделать это сейчас?</string>
-    <string name="rateme_yes">Да</string>
-    <string name="rateme_later">Позже</string>
-    <string name="rateme_dont_ask">Никогда</string>
-    <string name="statusAccuracy">%d м</string>
-    <string name="statusAccuracyFt">%d фт</string>
-    <string name="prefsOptimizeLayout">Оптимизировать экран</string>
-    <string name="prefsUseWifiOnlySummary">Показывать название улицы и индекс только если используется Wi-Fi</string>
-    <string name="prefsHelpTitle">Помощь</string>
-    <string name="prefsHelpSummary">Описание приложения</string>
-</resources>
+&lt;body bgcolor=&quot;#000000&quot;&gt;
+&lt;font color=&quot;#ffffff&quot;&gt;</string><string name="help_text_footer">&lt;/font&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</string></resources>

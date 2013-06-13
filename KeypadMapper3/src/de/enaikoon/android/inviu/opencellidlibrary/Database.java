@@ -459,6 +459,13 @@ public class Database extends SQLiteOpenHelper
 		}
 	}
 
+	public boolean eraseUploadedMeasurements() {
+	    SQLiteDatabase db = getWritableDatabase();
+        int ret = db.delete(TABLENAME, COLUMN_UPLOADED + "=?", new String[] {"1"});
+        FileLog.writeToLog(getClass().getName() + "eraseUploadedMeasurements(): ERASED " + ret + " uploaded measurements.");
+        return (ret > 0) ? true : false;
+	}
+	
 	public DBIterator<Meassurement> getNonUploadedMeassurements()
 	{
 		FileLog.writeToLog(getClass().getName() + "getAllMeassurements(): getAllMeassurements");

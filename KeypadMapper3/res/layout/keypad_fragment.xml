@@ -12,6 +12,16 @@
         android:layout_marginRight="@dimen/right_margin"
         android:layout_marginTop="6dp"
         android:orientation="horizontal" >
+        <Button 
+            android:id="@+id/btnTestVersion"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12dip"
+            android:padding="2dp"
+            android:singleLine="true"
+            android:text="@string/test_version"
+            />
         <TextView
             android:id="@+id/text_geoinfo"
             android:layout_width="0dp"
@@ -23,7 +33,11 @@
             android:textAppearance="?android:attr/textAppearanceSmall"
             android:textColor="@android:color/white"
             android:textSize="12sp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:cursorVisible="false"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+             />
         <ImageView
             android:id="@+id/helpBtn"
             android:layout_width="9dp"
@@ -39,18 +53,20 @@
         android:layout_marginRight="@dimen/right_margin"
         android:layout_marginTop="8dp"
         android:orientation="horizontal" >
-        <TextView
+        <EditText
             android:id="@+id/text_housenumber"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_gravity="center"
             android:layout_weight="213"
-            android:background="@drawable/house_number_entry_field"
+            android:background="@drawable/house_number_background"
             android:focusable="true"
             android:focusableInTouchMode="true"
             android:gravity="center"
             android:includeFontPadding="false"
             android:singleLine="true"
+            android:hint=""
+            android:cursorVisible="true"
             android:textColor="@android:color/black"
             android:textSize="30sp" />
         <View
@@ -115,7 +131,7 @@
         android:singleLine="false"
         android:textColor="@android:color/white"
         android:textColorHint="#afaead"
-        android:textSize="14sp" >
+        android:textSize="@dimen/house_note_text_size" >
     </de.enaikoon.android.keypadmapper3.view.HideCursorEditText>
     <LinearLayout
         android:id="@+id/keypad"
@@ -128,26 +144,38 @@
             android:layout_height="@dimen/keypad_row_height"
             android:layout_weight="@string/keypad_row_weight"
             android:orientation="horizontal" >
-            <Button
+            <ImageButton
                 android:id="@+id/button_L"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:text="@string/buttonLeft"
+                android:src="@drawable/icon_keypad_left"
+                android:text=""
+                android:textColor="@color/white"
+                android:background="@drawable/button_back"
+                android:layout_margin="3dp"
                 android:textSize="@dimen/keypad_button_text_size" />
-            <Button
+            <ImageButton
                 android:id="@+id/button_F"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:text="@string/buttonFront"
+                android:src="@drawable/icon_keypad_forward"
+                android:text=""
+                android:textColor="@color/white"
+                android:background="@drawable/button_back"
+                android:layout_margin="3dp"
                 android:textSize="@dimen/keypad_button_text_size" />
-            <Button
+            <ImageButton
                 android:id="@+id/button_R"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:text="@string/buttonRight"
+                android:src="@drawable/icon_keypad_right"
+                android:text=""
+                android:textColor="@color/white"
+                android:background="@drawable/button_back"
+                android:layout_margin="3dp"
                 android:textSize="@dimen/keypad_button_text_size" />
         </LinearLayout>
         <LinearLayout
@@ -162,6 +190,10 @@
                 android:layout_weight="1"
                 android:tag="@string/button1"
                 android:text="@string/button1"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:background="@drawable/button_back"
+                android:layout_margin="3dp"
                 android:textSize="@dimen/keypad_button_text_size" />
             <Button
                 android:id="@+id/button2"
@@ -169,7 +201,11 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:tag="@string/button2"
+                android:textStyle="bold"
                 android:text="@string/button2"
+                android:textColor="@color/white"
+                android:background="@drawable/button_back"
+                android:layout_margin="3dp"
                 android:textSize="@dimen/keypad_button_text_size" />
             <Button
                 android:id="@+id/button3"
@@ -177,7 +213,11 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:tag="@string/button3"
+                android:textStyle="bold"
                 android:text="@string/button3"
+                android:textColor="@color/white"
+                android:background="@drawable/button_back"
+                android:layout_margin="3dp"
                 android:textSize="@dimen/keypad_button_text_size" />
         </LinearLayout>
         <LinearLayout
@@ -191,7 +231,11 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:tag="@string/button4"
+                android:textStyle="bold"
                 android:text="@string/button4"
+                android:textColor="@color/white"
+                android:background="@drawable/button_back"
+                android:layout_margin="3dp"
                 android:textSize="@dimen/keypad_button_text_size" />
             <Button
                 android:id="@+id/button5"
@@ -199,7 +243,11 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:tag="@string/button5"
+                android:textStyle="bold"
                 android:text="@string/button5"
+                android:textColor="@color/white"
+                android:background="@drawable/button_back"
+                android:layout_margin="3dp"
                 android:textSize="@dimen/keypad_button_text_size" />
             <Button
                 android:id="@+id/button6"
@@ -207,7 +255,11 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:tag="@string/button6"
+                android:textStyle="bold"
                 android:text="@string/button6"
+                android:textColor="@color/white"
+                android:background="@drawable/button_back"
+                android:layout_margin="3dp"
                 android:textSize="@dimen/keypad_button_text_size" />
         </LinearLayout>
         <LinearLayout
@@ -221,7 +273,11 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:tag="@string/button7"
+                android:textStyle="bold"
                 android:text="@string/button7"
+                android:textColor="@color/white"
+                android:background="@drawable/button_back"
+                android:layout_margin="3dp"
                 android:textSize="@dimen/keypad_button_text_size" />
             <Button
                 android:id="@+id/button8"
@@ -229,7 +285,11 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:tag="@string/button8"
+                android:textStyle="bold"
                 android:text="@string/button8"
+                android:textColor="@color/white"
+                android:background="@drawable/button_back"
+                android:layout_margin="3dp"
                 android:textSize="@dimen/keypad_button_text_size" />
             <Button
                 android:id="@+id/button9"
@@ -237,7 +297,12 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:tag="@string/button9"
+                android:textStyle="bold"
                 android:text="@string/button9"
+                android:paddingRight="-5dp"
+                android:textColor="@color/white"
+                android:background="@drawable/button_back"
+                android:layout_margin="3dp"
                 android:textSize="@dimen/keypad_button_text_size" />
         </LinearLayout>
         <LinearLayout
@@ -245,35 +310,40 @@
             android:layout_height="@dimen/keypad_row_height"
             android:layout_weight="@string/keypad_row_weight"
             android:orientation="horizontal" >
-            <Button
+            <ImageButton
                 android:id="@+id/button_C"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:text="@string/buttonCLR"
-                android:textSize="@dimen/keypad_button_text_size" />
+                android:src="@drawable/icon_keypad_delete"
+                android:text=""
+                android:textColor="@color/white"
+                android:background="@drawable/button_back"
+                android:layout_margin="3dp"
+                android:scaleType="centerInside"
+                />
             <Button
                 android:id="@+id/button0"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:tag="@string/button0"
+                android:textStyle="bold"
                 android:text="@string/button0"
+                android:layout_margin="3dp"
+                android:textColor="@color/white"
+                android:background="@drawable/button_back"
                 android:textSize="@dimen/keypad_button_text_size" />
-            <FrameLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1" >
-                <ImageButton
+            
+            <ImageButton
                     android:id="@+id/button_DEL"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent" />
-                <ImageView
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
-                    android:layout_gravity="center"
-                    android:background="@android:drawable/ic_input_delete" />
-            </FrameLayout>
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:src="@drawable/icon_keypad_clear" 
+                    android:textColor="@color/white"
+                	android:background="@drawable/button_back"
+                	android:layout_margin="3dp" />
         </LinearLayout>
         <LinearLayout
             android:id="@+id/keysRow1"
@@ -287,7 +357,11 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:tag="@string/buttonA"
+                android:textStyle="bold"
                 android:text="@string/buttonA"
+                android:textColor="@color/white"
+                android:background="@drawable/button_back"
+                android:layout_margin="3dp"
                 android:textSize="@dimen/keypad_button_text_size" />
             <Button
                 android:id="@+id/buttonB"
@@ -295,7 +369,11 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:tag="@string/buttonB"
+                android:textStyle="bold"
                 android:text="@string/buttonB"
+                android:textColor="@color/white"
+                android:background="@drawable/button_back"
+                android:layout_margin="3dp"
                 android:textSize="@dimen/keypad_button_text_size" />
             <Button
                 android:id="@+id/buttonC"
@@ -303,7 +381,11 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:tag="@string/buttonC"
+                android:textStyle="bold"
                 android:text="@string/buttonC"
+                android:textColor="@color/white"
+                android:background="@drawable/button_back"
+                android:layout_margin="3dp"
                 android:textSize="@dimen/keypad_button_text_size" />
             <Button
                 android:id="@+id/buttonD"
@@ -311,7 +393,11 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:tag="@string/buttonD"
+                android:textStyle="bold"
                 android:text="@string/buttonD"
+                android:textColor="@color/white"
+                android:background="@drawable/button_back"
+                android:layout_margin="3dp"
                 android:textSize="@dimen/keypad_button_text_size" />
             <Button
                 android:id="@+id/buttonE"
@@ -319,7 +405,11 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:tag="@string/buttonE"
+                android:textStyle="bold"
                 android:text="@string/buttonE"
+                android:textColor="@color/white"
+                android:background="@drawable/button_back"
+                android:layout_margin="3dp"
                 android:textSize="@dimen/keypad_button_text_size" />
             <Button
                 android:id="@+id/buttonF"
@@ -327,7 +417,11 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:tag="@string/buttonF"
+                android:textStyle="bold"
                 android:text="@string/buttonF"
+                android:textColor="@color/white"
+                android:background="@drawable/button_back"
+                android:layout_margin="3dp"
                 android:textSize="@dimen/keypad_button_text_size" />
         </LinearLayout>
         <LinearLayout
@@ -342,7 +436,11 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:tag="@string/buttonG"
+                android:textStyle="bold"
                 android:text="@string/buttonG"
+                android:textColor="@color/white"
+                android:background="@drawable/button_back"
+                android:layout_margin="3dp"
                 android:textSize="@dimen/keypad_button_text_size" />
             <Button
                 android:id="@+id/buttonH"
@@ -350,7 +448,11 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:tag="@string/buttonH"
+                android:textStyle="bold"
                 android:text="@string/buttonH"
+                android:textColor="@color/white"
+                android:background="@drawable/button_back"
+                android:layout_margin="3dp"
                 android:textSize="@dimen/keypad_button_text_size" />
             <Button
                 android:id="@+id/buttonI"
@@ -358,15 +460,23 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:tag="@string/buttonI"
+                android:textStyle="bold"
                 android:text="@string/buttonI"
+                android:textColor="@color/white"
+                android:background="@drawable/button_back"
+                android:layout_margin="3dp"
                 android:textSize="@dimen/keypad_button_text_size" />
-            <Button
+           	 <Button
                 android:id="@+id/buttonJ"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:tag="@string/buttonJ"
+                android:textStyle="bold"
                 android:text="@string/buttonJ"
+                android:textColor="@color/white"
+                android:background="@drawable/button_back"
+                android:layout_margin="3dp"
                 android:textSize="@dimen/keypad_button_text_size" />
             <Button
                 android:id="@+id/buttonK"
@@ -374,7 +484,11 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:tag="@string/buttonK"
+                android:textStyle="bold"
                 android:text="@string/buttonK"
+                android:textColor="@color/white"
+                android:background="@drawable/button_back"
+                android:layout_margin="3dp"
                 android:textSize="@dimen/keypad_button_text_size" />
             <Button
                 android:id="@+id/buttonL"
@@ -382,39 +496,55 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:tag="@string/buttonL"
+                android:textStyle="bold"
                 android:text="@string/buttonL"
-                android:textSize="@dimen/keypad_button_text_size" />
+                android:textColor="@color/white"
+                android:background="@drawable/button_back"
+                android:layout_margin="3dp"
+                android:textSize="@dimen/keypad_button_text_size" /> 
         </LinearLayout>
         <LinearLayout
-            android:id="@+id/keysRow3"
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/keypad_row_height"
-            android:layout_weight="@string/keypad_row_weight"
-            android:orientation="horizontal" >
-            <Button
-                android:id="@+id/buttonSep1"
+                android:id="@+id/keysRow3"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:tag="@string/buttonSep1"
-                android:text="@string/buttonSep1"
-                android:textSize="@dimen/keypad_button_text_size" />
-            <Button
-                android:id="@+id/buttonSep2"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:tag="@string/buttonSep2"
-                android:text="@string/buttonSep2"
-                android:textSize="@dimen/keypad_button_text_size" />
-            <Button
-                android:id="@+id/buttonSep3"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:tag="@string/buttonSep3"
-                android:text="@string/buttonSep3"
-                android:textSize="@dimen/keypad_button_text_size" />
-        </LinearLayout>
+                android:layout_height="@dimen/keypad_row_height"
+                android:layout_weight="@string/keypad_row_weight"
+                android:orientation="horizontal" >
+                <Button
+                    android:id="@+id/buttonSep1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:tag="@string/buttonSep1"
+                    android:textStyle="bold"
+                    android:text="@string/buttonSep1"
+                    android:textColor="@color/white"
+                	android:background="@drawable/button_back"
+                	android:layout_margin="3dp"
+                    android:textSize="@dimen/keypad_button_text_size_land" />
+                <Button
+                    android:id="@+id/buttonSep2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:tag="@string/buttonSep2"
+                    android:textStyle="bold"
+                    android:text="@string/buttonSep2"
+                    android:textColor="@color/white"
+                	android:background="@drawable/button_back"
+                	android:layout_margin="3dp"
+                    android:textSize="@dimen/keypad_button_text_size_land" />
+                <Button
+                    android:id="@+id/buttonSep3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:tag="@string/buttonSep3"
+                    android:textStyle="bold"
+                    android:text="@string/buttonSep3"
+                    android:textColor="@color/white"
+                    android:layout_margin="3dp"
+                	android:background="@drawable/button_back"
+                    android:textSize="@dimen/keypad_button_text_size_land" />
+            </LinearLayout>
     </LinearLayout>
 </LinearLayout>

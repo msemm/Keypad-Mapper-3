@@ -4,35 +4,27 @@
 package de.enaikoon.android.inviu.opencellidlibrary;
 
 import java.util.HashSet;
-import java.util.Locale;
 import java.util.Set;
 
-import android.app.Activity;
-import android.app.Application;
-import android.app.Notification;
 import android.app.NotificationManager;
-import android.app.PendingIntent;
 import android.app.Service;
 import android.content.Context;
 import android.content.Intent;
-import android.content.SharedPreferences;
-import android.content.SharedPreferences.Editor;
-import android.content.res.Configuration;
 import android.location.GpsSatellite;
 import android.location.GpsStatus;
 import android.location.GpsStatus.Listener;
+import android.location.GpsStatus.NmeaListener;
 import android.location.Location;
 import android.location.LocationListener;
 import android.location.LocationManager;
+import android.os.Binder;
 import android.os.Bundle;
-import android.os.Environment;
 import android.os.Handler;
 import android.os.HandlerThread;
 import android.os.IBinder;
 import android.os.Message;
 import android.os.PowerManager;
 import android.os.PowerManager.WakeLock;
-import android.preference.PreferenceManager;
 import android.telephony.CellLocation;
 import android.telephony.PhoneStateListener;
 import android.telephony.SignalStrength;
@@ -40,6 +32,7 @@ import android.telephony.TelephonyManager;
 import android.telephony.cdma.CdmaCellLocation;
 import android.telephony.gsm.GsmCellLocation;
 import android.util.Log;
+import de.enaikoon.android.keypadmapper3.KeypadMapperApplication;
 
 /**
  * This service collects cellids of the Android-device in the background.
@@ -51,6 +44,12 @@ public class CellIDCollectionService extends Service
 	private static boolean isonLocationChangedThreadRunning = false;
 	private static boolean isonGPSStatusChangedThreadRunning = false;
 	public static boolean isServiceStarted = false;
+	
+	private String TAG = "KeypadMapper";
+	
+	private static Location lastValidLocation = null;
+	private static int satInFix = 0;
+	private static NmeaListener myNmeaListener;
 
 	public interface GPSListener
 	{
@@ -62,7 +61,7 @@ public class CellIDCollectionService extends Service
 	 * A GPS-signal with less then this many satellites is considered invalid
 	 * and handled like not having a gps-fix.
 	 */
-	public static final int MINSATCOUNT = 3;
+	public static final int MINSATCOUNT = 4;
 
 	/**
 	 * Name of our power-management lock.
@@ -83,6 +82,14 @@ public class CellIDCollectionService extends Service
 	private static SignalStrength myLastSignalStrength = null;
 
 	NotificationManager mNM;
+	
+	public class LocalBinder extends Binder {
+	    public CellIDCollectionService getService() {
+            return CellIDCollectionService.this; 
+        }
+    }
+
+	private final IBinder mBinder = new LocalBinder();
 
 	/**
 	 * @return the myLastSignalStrength
@@ -139,6 +146,7 @@ public class CellIDCollectionService extends Service
 
 		// initialize fields
 		myDatabase = getDatabase(this);
+		
 		if (myLastMeassurement == null)
 		{
 			myLastMeassurement = myDatabase.getLastMeassurement();
@@ -195,6 +203,13 @@ public class CellIDCollectionService extends Service
 				@Override
 				public void onLocationChanged(final Location location)
 				{
+				    if (OpenCellIdGPSDataValidator.validateGPSData(lastValidLocation, location, satInFix, NMEAHelper.HDOP, NMEAHelper.VDOP)) {
+				        lastValidLocation = location;
+				        OpenCellIdGPSDataValidator.setLastRecodedLocation(lastValidLocation);
+				    } else {
+				        return;
+				    }
+				    
 					FileLog.writeToLog(getClass().getName() + "onLocationChanged(): isonLocationChangedThreadRunning=" + isonLocationChangedThreadRunning);
 					
 					if (!isonLocationChangedThreadRunning)
@@ -248,13 +263,24 @@ public class CellIDCollectionService extends Service
 			};
 			
 			FileLog.writeToLog(getClass().getName() + ":GPSManager: registering with location-provider \"" + "gps" + "\"");
-			//myLocationManager.requestLocationUpdates("gps", 0, 0, myLocationListener);			
+			startRequestingUpdates();
 		}
 
 		Location lastKnownLocation = myLocationManager.getLastKnownLocation("gps");
 		if (lastKnownLocation != null)
 		{
 			myLocationListener.onLocationChanged(lastKnownLocation);
+		}
+		
+		if (myNmeaListener == null) {
+		    myNmeaListener = new NmeaListener() {
+                
+                @Override
+                public void onNmeaReceived(long timestamp, String nmea) {
+                    NMEAHelper.parse(nmea);
+                }
+            };
+            myLocationManager.addNmeaListener(myNmeaListener);
 		}
 		
 		if (myGPSStatusListener==null)
@@ -281,7 +307,15 @@ public class CellIDCollectionService extends Service
 										myLocationManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
 									}
 									myLastGPSStatus = myLocationManager.getGpsStatus(myLastGPSStatus);
-
+									if (myLastGPSStatus != null) {
+									    satInFix = 0;
+									    for(GpsSatellite s : myLastGPSStatus.getSatellites()) {
+									        if (s.usedInFix()) {
+									            satInFix++;
+									        }
+									    }
+									}
+									
 									for (final GPSListener listener : myListeners)
 									{
 										// inform our listeners asynchronously to
@@ -310,7 +344,7 @@ public class CellIDCollectionService extends Service
 			};
 			myLocationManager.addGpsStatusListener(myGPSStatusListener);	
 		}
-
+		
 		if (myPhoneStateListener != null)
 		{
 			myTelephonyManager.listen(myPhoneStateListener, 0);
@@ -347,6 +381,20 @@ public class CellIDCollectionService extends Service
 		return myHandler;
 	}
 
+	public void startRequestingUpdates() {
+	    if ((KeypadMapperApplication.getInstance().getSettings().isTurnOffUpdates() 
+                && KeypadMapperApplication.getInstance().getSettings().isRecording()) ||
+                !KeypadMapperApplication.getInstance().getSettings().isTurnOffUpdates()) {
+	        Log.d(TAG, "Started cellID GPS updates!");
+            myLocationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER, 0, 0, myLocationListener);
+        }
+	}
+	
+	public void stopRequestingUpdates() {
+	    Log.d(TAG, "Removed cellID GPS updates!");
+	    myLocationManager.removeUpdates(myLocationListener);      
+	}
+	
 	/**
 	 * remove #myUpdater from {@link #myHandler}.
 	 * 
@@ -370,6 +418,12 @@ public class CellIDCollectionService extends Service
 				myLocationManager.removeGpsStatusListener(myGPSStatusListener);
 				// myGPSStatusListener = null;
 			}
+			
+			if (myNmeaListener != null) {
+                myLocationManager.removeNmeaListener(myNmeaListener);
+                myNmeaListener = null;
+            }
+			
 			if (myLocationListener != null)
 			{
 				FileLog.writeToLog(getClass().getName() + "onDestroy(): myLocationListener removed from listener");
@@ -377,7 +431,7 @@ public class CellIDCollectionService extends Service
 				FileLog.writeToLog("myLocationListener updates removed!");
 				// myLocationListener = null;
 			}
-
+			
 			myLocationManager = null;
 		} catch (Exception e1)
 		{
@@ -418,7 +472,7 @@ public class CellIDCollectionService extends Service
 	@Override
 	public IBinder onBind(final Intent anintent)
 	{
-		return null;
+		return mBinder;
 	}
 
 	/**
@@ -527,7 +581,7 @@ public class CellIDCollectionService extends Service
 					FileLog.writeExceptionToLog(ex);
 				}
 				
-				myLocationManager.requestLocationUpdates("gps", 0, 0, myLocationListener); 
+				startRequestingUpdates();
 				
 				if (Configurator.getGpsTimeout()>0)
 				{
@@ -563,6 +617,11 @@ public class CellIDCollectionService extends Service
 	private void updateCellLocation(final CellLocation cellLocation, final Location lastLocation, final String mccmnc, final long timeStamp)
 	{
 		FileLog.writeToLog(getClass().getName() + "updateCellLocation(): entering");
+		if (!KeypadMapperApplication.getInstance().getSettings().isRecording()) {
+		    FileLog.writeToLog(getClass().getName() + "updateCellLocation(): NOT RECORDING! exiting...");
+		    return;
+		}
+		
 		try
 		{
 			if (Configurator.isDatabaseValid())
@@ -592,7 +651,7 @@ public class CellIDCollectionService extends Service
 				
 				if (satCount < MINSATCOUNT)
 				{
-					FileLog.writeToLog(getClass().getName() + "updateCellLocation(): <3 GPS satelites used");
+					FileLog.writeToLog(getClass().getName() + "updateCellLocation(): <4 GPS satelites used");
 					return;
 				}
 
@@ -732,7 +791,7 @@ public class CellIDCollectionService extends Service
 		@Override
 		public void handleMessage(Message msg)
 		{
-			if (myLocationListener != null)
+			if (myLocationListener != null && myLocationManager != null)
 			{
 				myLocationManager.removeUpdates(myLocationListener);
 				// myLocationListener = null;

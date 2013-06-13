@@ -57,6 +57,11 @@ public class CameraHelper {
         Localizer localizer = KeypadMapperApplication.getInstance().getLocalizer();
         Location location = mapper.getCurrentLocation();
         // log.info("Making photo with location: " + location);
+        
+        if (!KeypadMapperApplication.getInstance().getSettings().isRecording()) {
+            Toast.makeText(activity, localizer.getString("error_not_recording"), Toast.LENGTH_LONG).show();
+            return;
+        }
 
         mapper.setPhotoLocation(location);
 

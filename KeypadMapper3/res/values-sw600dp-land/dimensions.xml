@@ -1,4 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <dimen name="extended_address_editor_margin">42dp</dimen>
+    <dimen name="keypad_button_text_size">36sp</dimen>
+    <dimen name="keypad_fadeout_button_text_size">28sp</dimen>
+    <dimen name="keypad_button_text_size_land">36sp</dimen>
+    <dimen name="extended_address_editor_margin">10dp</dimen>
+    <bool name="is_tablet">true</bool>
+    <dimen name="house_note_text_size">26sp</dimen>
 </resources>

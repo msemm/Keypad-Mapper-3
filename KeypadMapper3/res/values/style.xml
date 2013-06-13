@@ -6,12 +6,15 @@
         <item name="android:textColorSecondary">@color/secondary_text_dark</item>
         <item name="android:textColor">@color/primary_text_dark</item>
     </style>
+   
     <style name="Title">
         <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/white</item>
         <item name="android:textSize">22sp</item>
     </style>
     <style name="Summary">
         <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/ENAiKOON_light_gray</item>
         <item name="android:textSize">14sp</item>
     </style>
     <color name="bright_foreground_dark_disabled">#80ffffff</color>
@@ -21,14 +24,6 @@
     <color name="dim_foreground_dark">#bebebe</color>
     <color name="dim_foreground_dark_inverse_disabled">#80323232</color>
     <color name="dim_foreground_dark_inverse">#323232</color>
-    <style name="ExtendedScreenTitle">
-        <item name="android:textSize">13sp</item>
-        <item name="android:textStyle">bold</item>
-        <item name="android:textColor">@android:color/white</item>
-    </style>
-    <style name="ExtendedScreenField">
-        <item name="android:textSize">13sp</item>
-        <item name="android:textStyle">normal</item>
-        <item name="android:textColor">#afaead</item>
-    </style>
+    
+    <color name="button_back_color">#4E5153</color>
 </resources>

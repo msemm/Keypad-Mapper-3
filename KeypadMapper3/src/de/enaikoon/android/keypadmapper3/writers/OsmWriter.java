@@ -1,39 +1,41 @@
 package de.enaikoon.android.keypadmapper3.writers;
 
-import java.io.BufferedReader;
-import java.io.BufferedWriter;
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
+import java.io.ByteArrayOutputStream;
 import java.io.IOException;
-import java.io.InputStreamReader;
-import java.io.OutputStreamWriter;
+import java.io.RandomAccessFile;
+import java.nio.ByteBuffer;
+import java.util.Calendar;
 import java.util.Map;
 import java.util.Map.Entry;
 
+import android.util.Log;
+import de.enaikoon.android.keypadmapper3.KeypadMapperApplication;
+import de.enaikoon.android.keypadmapper3.settings.KeypadMapperSettings;
+import de.enaikoon.android.keypadmapper3.utils.ByteSearch;
+
 public class OsmWriter {
-    private BufferedWriter osmFile;
-
-    private String path;
-
     private int newNodeId = -1;
+    
+    private static final String OSM_HEADER = "<?xml version='1.0' encoding='UTF-8'?>\n" + 
+                                             "<osm version='0.6' generator='" + 
+                                             KeypadMapperApplication.getInstance().getLocalizer().getString("app_name") +
+                                             "'>\n";
+    private static final String OSM_FOOTER = "</osm>\n";
+    private KeypadMapperSettings settings;
+    
+    private RandomAccessFile osmFile;
 
-    private int lineNumber = 0;
-
-    private int undoLine = -1;
-
-    private String generatorName = "KeypadMapper";
-
-    public OsmWriter(String path) {
-        this.path = path;
+    public OsmWriter() {
+        settings = KeypadMapperApplication.getInstance().getSettings();
     }
+    
+    private String getNewFilename() {
+        String path = KeypadMapperApplication.getInstance().getKeypadMapperDirectory().getAbsolutePath();
 
-    public OsmWriter(String path, String generatorName) {
-        this.path = path;
-        this.generatorName = generatorName;
+        Calendar cal = Calendar.getInstance();
+        return path + "/" + String.format("%tF_%tH-%tM-%tS", cal, cal, cal, cal) + ".osm";
     }
-
+    
     /**
      * Adds a new node to the OSM file.
      * 
@@ -47,161 +49,121 @@ public class OsmWriter {
      *             if an I/O error occurs
      */
     public void addNode(double lat, double lon, Map<String, String> tags) throws IOException {
-        undoLine = lineNumber;
-        osmFile.write("\t<node id=\"" + newNodeId-- + "\" visible=\"true\" lat=\"" + lat
+        int nodeId = -KeypadMapperApplication.getInstance().getMapper().getHouseNumberCount();
+        
+        osmFile.writeBytes("\t<node id=\"" + nodeId + "\" visible=\"true\" lat=\"" + lat
                 + "\" lon=\"" + lon + "\">\n");
-        lineNumber++;
         for (Entry<String, String> entry : tags.entrySet()) {
             if (entry.getValue() != null && entry.getValue().length() != 0
                     && !entry.getValue().equalsIgnoreCase("null")) {
-                osmFile.write("\t\t<tag k=\"" + entry.getKey() + "\" v=\"" + entry.getValue()
+                osmFile.writeBytes("\t\t<tag k=\"" + entry.getKey() + "\" v=\"" + entry.getValue()
                         + "\"/>\n");
-                lineNumber++;
             }
         }
-        osmFile.write("\t</node>\n");
-        lineNumber++;
+        osmFile.writeBytes("\t</node>\n");
+
     }
 
-    /**
-     * Closes this OSM file. The file will also be closed.
-     * 
-     * @throws IOException
-     *             if an I/O error occurs
-     */
     public void close() throws IOException {
-        osmFile.write("</osm>\n");
+        osmFile.writeBytes(OSM_FOOTER);
         osmFile.close();
     }
 
-    public void deleteLastNode() throws IOException {
-        this.flush();
-        this.close();
-        int localUndoLine = undoLine;
-        undoLine = -1;
-        openOsmWriter(true, localUndoLine);
-    }
-
-    public void flush() throws IOException {
-        osmFile.flush();
-    }
-
-    public int getUndoLine() {
-        return undoLine;
-    }
-
-    public boolean isExist() {
-        File sourceFile = new File(path);
-        return sourceFile.exists();
-    }
-
-    public boolean isUndoAvailable() {
-        return undoLine != -1;
-    }
-
     /**
-     * Creates or opens a OSM file. There is no check whether the file exists,
-     * this has to be done by the caller. If append is set to false and the file
-     * exists, it will be overwritten. If append is set to true the new data
-     * will be added to the file. Please note that appending is only possible
-     * for files created by this class, appending to third-party files may break
-     * them.
-     * 
-     * @param append
-     *            set to true to append to existing file
-     * @throws FileNotFoundException
-     *             if the file cannot be opened or created
-     * @throws IOException
-     *             if any other I/O error occurs
-     * @throws FileFormatException
-     *             if the end of the OSM file is not as expected
+     * Removes last node.
+     * File will be open and closed by this function.
      */
-    public void openOsmWriter(boolean append) throws IOException {
-        openOsmWriter(append, -1);
-    }
-
-    public void reopenOsmWriter() throws IOException {
-        openOsmWriter(true);
-    }
-
-    public void setUndoLine(int undoLine) {
-        this.undoLine = undoLine;
-    }
-
-    /**
-     * Returns the complete path of the GPX file.
-     */
-    @Override
-    public String toString() {
-        return path;
-    }
-
-    /**
-     * Creates or opens a OSM file. There is no check whether the file exists,
-     * this has to be done by the caller. If append is set to false and the file
-     * exists, it will be overwritten. If append is set to true the new data
-     * will be added to the file. Please note that appending is only possible
-     * for files created by this class, appending to third-party files may break
-     * them.
-     * 
-     * @param append
-     *            set to true to append to existing file
-     * @throws FileNotFoundException
-     *             if the file cannot be opened or created
-     * @throws IOException
-     *             if any other I/O error occurs
-     * @throws FileFormatException
-     *             if the end of the OSM file is not as expected
-     */
-    private void openOsmWriter(boolean append, int lineLimit) throws IOException {
-        if (!append) {
-            // create/overwrite file
-            osmFile =
-                    new BufferedWriter(new OutputStreamWriter(new FileOutputStream(path), "UTF-8"));
-
-            osmFile.write("<?xml version='1.0' encoding='UTF-8'?>\n");
-            osmFile.write("<osm version='0.6' generator='" + generatorName + "'>\n");
-            lineNumber = 2;
-        } else {
-            // append to existing (and initialised) file
-            File oldOsmFile = new File(path);
-            File tempOsmFile = new File(path + "~");
-            BufferedReader oldOsmReader =
-                    new BufferedReader(new InputStreamReader(new FileInputStream(oldOsmFile),
-                            "UTF-8"));
-            osmFile =
-                    new BufferedWriter(new OutputStreamWriter(new FileOutputStream(tempOsmFile),
-                            "UTF-8"));
-
-            this.path = path;
-
-            // replace file, reopening the last track segment (remove everything
-            // added by close())
-            String line;
-            lineNumber = 0;
+    public void deleteLastNode() {
+        ByteArrayOutputStream baos = new ByteArrayOutputStream();
+        
+        try {
+            final int bufferSize = 128;
+            byte [] buffer = new byte[ bufferSize ];
+            
+            osmFile = new RandomAccessFile(settings.getLastOsmFile(), "rw");
+            if (osmFile.length() < (OSM_HEADER.getBytes().length + OSM_FOOTER.getBytes().length)) {
+                Log.e("KeypadMapper", "Cannot undo - no nodes");
+                return;
+            }
+            
+            osmFile.seek(osmFile.length());
+            
+            long seekTo = osmFile.length();
             while (true) {
-                line = oldOsmReader.readLine();
-                lineNumber++;
-                if (line == null) {
-                    // found end of file without </osm> - file is damaged,
-                    // delete temporary file
-                    osmFile.close();
-                    tempOsmFile.delete();
-                    throw new FileFormatException();
-                }
-                if (line.trim().equalsIgnoreCase("</osm>") || lineNumber > lineLimit
-                        && lineLimit > 0) {
-                    // replace file
-                    osmFile.flush();
-                    oldOsmReader.close();
-                    oldOsmFile.delete();
-                    tempOsmFile.renameTo(oldOsmFile);
-                    lineNumber--;
-                    break;
+                seekTo = seekTo - bufferSize;
+                if (seekTo >= 0) {
+                    osmFile.seek(seekTo);
                 } else {
-                    osmFile.write(line + "\n");
+                    osmFile.seek(osmFile.length());
+                    osmFile.close();
+                    return;
+                }
+                
+                int read = osmFile.read(buffer);
+                // read line by line
+                if (read == -1) {
+                    osmFile.close();
+                    baos.close();
+                    return;
+                }
+                
+                if (baos.size() == 0) {
+                    baos.write(buffer);
+                } else {
+                    ByteArrayOutputStream baos2 = new ByteArrayOutputStream();
+                    baos2.write(buffer);
+                    baos2.write(baos.toByteArray());
+                    baos = baos2;
+                    baos2 = null;
+                }
+                
+                int idx = ByteSearch.indexOf(baos.toByteArray(), "<node id".getBytes("UTF-8"));
+                if (idx >= 0) {
+                    
+                    osmFile.seek(seekTo + idx);
+                    osmFile.write(OSM_FOOTER.getBytes("UTF-8"));
+                    osmFile.setLength(osmFile.getFilePointer());
+                    osmFile.close();
+                    
+                    //Log.d("KeypadMapper", "Last node removed!");
+                    baos.close();
+                    return;
                 }
             }
+        } catch (Exception e) {
+            Log.e("KeypadMapper", "failed to delete last node", e);
+            if (osmFile != null) {
+                try {
+                    osmFile.close();
+                    baos.close();
+                } catch (Exception ignored) {}
+            }
+        } 
+    }
+    
+    public void openOsmWriter(boolean append) throws IOException {
+        if (!append || settings.getLastOsmFile() == null) {
+            // create/overwrite file
+            String newFile = getNewFilename();
+            settings.setLastOsmFile(newFile);
+            osmFile = new RandomAccessFile(newFile, "rw");
+            
+            osmFile.writeBytes(OSM_HEADER);
+        } else {
+            osmFile = new RandomAccessFile(settings.getLastOsmFile(), "rw");
+            Log.d("KeypadMapper", "header + footer len: " + (OSM_HEADER.getBytes().length + OSM_FOOTER.getBytes().length) + " osm len:" + osmFile.length());
+            if (osmFile.length() > 0) {
+                if (osmFile.length() >= (OSM_HEADER.getBytes().length + OSM_FOOTER.getBytes().length)) {
+                    osmFile.seek(osmFile.length() - OSM_FOOTER.getBytes().length);
+                } else {
+                    osmFile.seek(osmFile.length());
+                }
+            }
+            
         }
+    }
+    
+    public static int getEmptyFileSize() {
+        return OSM_HEADER.getBytes().length + OSM_FOOTER.getBytes().length;
     }
 }

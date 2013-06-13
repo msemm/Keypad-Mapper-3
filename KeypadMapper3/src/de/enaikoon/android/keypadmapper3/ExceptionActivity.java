@@ -10,22 +10,28 @@ import android.widget.Toast;
 
 public class ExceptionActivity extends Activity {
 
-    private SharedPreferences prefs;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
         final Bundle extras = getIntent().getExtras();
-
-        prefs = PreferenceManager.getDefaultSharedPreferences(getApplicationContext());
-
-        if (prefs.getString("list_errorreporting", "ask").equalsIgnoreCase("always")) {
+        
+        String setting = KeypadMapperApplication.getInstance().getSettings().getErrorReporting();
+        final String [] constantStrings = getResources().getStringArray(R.array.options_bugreport_keys);
+        int checkedItem = -1;
+        for (checkedItem = 0; checkedItem < constantStrings.length; checkedItem++) {
+            if (setting.equals(constantStrings[checkedItem])) {
+                break;
+            }
+        }
+        // ALWAYS
+        if (checkedItem == 1) {
             Toast.makeText(this, getString(R.string.bugreport_dialogheader), Toast.LENGTH_LONG)
                     .show();
             CustomExceptionHandler.sendEmail(extras.getString("bugReport"), this);
             finish();
-        } else if (prefs.getString("list_errorreporting", "ask").equalsIgnoreCase("ask")) {
+        }   // ASK
+            else if (checkedItem == 2) {
             AlertDialog ad =
                     new AlertDialog.Builder(this)
                             .setTitle(getString(R.string.bugreport_dialogheader))
@@ -52,6 +58,7 @@ public class ExceptionActivity extends Activity {
             ad.setCancelable(false);
             ad.show();
         } else {
+            // NEVER
             AlertDialog ad =
                     new AlertDialog.Builder(this)
                             .setTitle(getString(R.string.bugreport_dialogheader))

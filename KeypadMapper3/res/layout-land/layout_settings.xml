@@ -1,0 +1,668 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal">
+	
+	<include
+        android:id="@+id/menu"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        layout="@layout/view_menu" />
+    
+	<ScrollView 
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:id="@+id/svScrollView"
+	    android:background="@drawable/settings_item_bg">
+	    
+	   <LinearLayout 
+    		android:layout_width="fill_parent"
+    		android:layout_height="wrap_content"
+    		android:orientation="vertical"
+    		android:id="@+id/general_holder"	>
+	        
+		    <!-- general language -->
+		    <LinearLayout 
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:paddingLeft="15dp"
+	    		android:paddingRight="20dp"
+			    android:paddingTop="0dp"
+			    android:clickable="true"
+			    android:id="@+id/setting_general_language"
+			    android:orientation="vertical">
+			    <TextView 
+			        android:layout_width="wrap_content"
+			    	android:layout_height="wrap_content"
+			    	android:id="@+id/txtTitle"
+			    	android:textAppearance="?android:attr/textAppearanceMedium"
+			    	android:textColor="@color/white"/>
+			    
+			    <TextView 
+			        android:layout_width="fill_parent"
+			    	android:layout_height="wrap_content"
+			    	android:id="@+id/txtSummary"
+			    	android:textAppearance="?android:attr/textAppearanceSmall"
+			    	android:textColor="@color/ENAiKOON_light_gray"/>
+			</LinearLayout>
+			
+		    <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="" android:background="@drawable/gray_line"/>
+		    
+			<!-- rate -->
+		    <LinearLayout 
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:paddingLeft="15dp"
+	    		android:paddingRight="20dp"
+			    android:paddingTop="0dp"
+			    android:clickable="true"
+			    android:id="@+id/setting_rate"
+			    android:orientation="vertical">
+			    <TextView 
+			        android:layout_width="fill_parent"
+			    	android:layout_height="wrap_content"
+			    	android:id="@+id/txtTitle"
+			    	android:textAppearance="?android:attr/textAppearanceMedium"
+			    	android:textColor="@color/white"/>"
+			    
+			    <TextView 
+			        android:layout_width="fill_parent"
+			    	android:layout_height="wrap_content"
+			    	android:id="@+id/txtSummary"
+			    	android:textAppearance="?android:attr/textAppearanceSmall"
+			    	android:textColor="@color/ENAiKOON_light_gray"/>
+			</LinearLayout>
+		    
+		    <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="" android:background="@drawable/gray_line"/>
+		    
+		    <!-- share -->
+		    <LinearLayout 
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:paddingTop="0dp"
+			    android:paddingLeft="15dp"
+	    		android:paddingRight="20dp"
+			    android:clickable="true"
+			    android:id="@+id/setting_share"
+			    android:orientation="vertical">
+			    <TextView 
+			        android:layout_width="fill_parent"
+			    	android:layout_height="wrap_content"
+			    	android:id="@+id/txtTitle"
+			    	android:textAppearance="?android:attr/textAppearanceMedium"
+			    	android:textColor="@color/white"/>"
+			    
+			    <TextView 
+			        android:layout_width="fill_parent"
+			    	android:layout_height="wrap_content"
+			    	android:id="@+id/txtSummary"
+			    	android:textAppearance="?android:attr/textAppearanceSmall"
+			    	android:textColor="@color/ENAiKOON_light_gray"/>
+			</LinearLayout>
+			
+		    <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="" android:background="@drawable/gray_line"/>
+		    
+		    <!-- clear folder -->
+		    <LinearLayout 
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:paddingTop="0dp"
+			    android:paddingLeft="15dp"
+	    		android:paddingRight="20dp"
+	    		android:paddingBottom="0dp"
+			    android:clickable="true"
+			    android:id="@+id/setting_clear_folder"
+			    android:orientation="vertical">
+			    <TextView 
+			        android:layout_width="fill_parent"
+			    	android:layout_height="wrap_content"
+			    	android:id="@+id/txtTitle"
+			    	android:textAppearance="?android:attr/textAppearanceMedium"
+			    	android:textColor="@color/white"/>"
+			    
+			    <TextView 
+			        android:layout_width="fill_parent"
+			    	android:layout_height="wrap_content"
+			    	android:id="@+id/txtSummary"
+			    	android:textAppearance="?android:attr/textAppearanceSmall"
+			    	android:textColor="@color/ENAiKOON_light_gray"/>
+			</LinearLayout>
+			
+		    <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="" android:background="@drawable/gray_line"/>
+		    
+		    <!-- keep screen on -->
+		    <LinearLayout 
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:paddingTop="0dp"
+			    android:paddingLeft="15dp"
+	    		android:paddingRight="20dp"
+			    android:clickable="true"
+			    android:id="@+id/setting_screen_on"
+			    android:orientation="horizontal">
+			    
+			    <LinearLayout 
+				    android:layout_width="0dp"
+				    android:layout_weight="1"
+				    android:layout_height="wrap_content"
+				    android:orientation="vertical">
+					<TextView 
+				        android:layout_width="fill_parent"
+				    	android:layout_height="wrap_content"
+				    	android:id="@+id/txtTitle"
+				    	android:textAppearance="?android:attr/textAppearanceMedium"
+				    	android:textColor="@color/white"/>"
+				    
+				    <TextView 
+				        android:layout_width="fill_parent"
+				    	android:layout_height="wrap_content"
+				    	android:id="@+id/txtSummary"
+				    	android:textAppearance="?android:attr/textAppearanceSmall"
+				    	android:textColor="@color/ENAiKOON_light_gray"/>
+				</LinearLayout>
+				 <CheckBox 
+					android:id="@+id/btn_checkbox" android:layout_width="wrap_content"
+					android:layout_height="wrap_content" android:focusable="false"
+					android:focusableInTouchMode="false"
+					android:clickable="false" 
+					android:background="@drawable/checkbox"
+					android:button="@null"
+					android:padding="0dp"
+					android:layout_gravity="center"
+					android:gravity="center" 
+					android:lines="1"
+					android:layout_margin="0dp" />
+				    
+			</LinearLayout>
+			
+		    <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="" android:background="@drawable/gray_line"/>
+		    
+		    <!-- compass -->
+		    <LinearLayout 
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:paddingTop="0dp"
+			    android:paddingLeft="15dp"
+	    		android:paddingRight="20dp"
+			    android:clickable="true"
+			    android:id="@+id/setting_compass"
+			    android:orientation="vertical">
+			    
+			    <TextView 
+			        android:layout_width="fill_parent"
+			    	android:layout_height="wrap_content"
+			    	android:id="@+id/txtTitle"
+			    	android:textAppearance="?android:attr/textAppearanceMedium"
+			    	android:textColor="@color/white"/>"
+			    
+			    <TextView 
+			        android:layout_width="fill_parent"
+			    	android:layout_height="wrap_content"
+			    	android:id="@+id/txtSummary"
+			    	android:textAppearance="?android:attr/textAppearanceSmall"
+			    	android:textColor="@color/ENAiKOON_light_gray"/>
+			    
+			    <TextView
+			        android:id="@+id/seekBarPrefValue"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:layout_marginBottom="7dp"
+			        android:paddingBottom="7dp"
+			        android:paddingRight="30dp"
+			    	android:gravity="right"
+			    	android:text="test"
+			    	android:singleLine="true"
+			    	android:textColor="@color/ENAiKOON_light_gray"
+			    	android:textAppearance="?android:attr/textAppearanceSmall"
+		    	/>
+			    <SeekBar 
+			        android:id="@+id/seekbar"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:progressDrawable="@drawable/seekbar_background"
+		        	android:thumb="@drawable/slider"
+		        	android:thumbOffset="1dip"
+		        	android:icon="@null"
+		        	android:layout_marginLeft="20dp"
+		        	android:layout_marginRight="15dp"
+			        />
+			</LinearLayout>
+			
+		    <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="" android:background="@drawable/gray_line"/>
+		    
+			<!-- vibration_time -->
+		    <LinearLayout 
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:paddingTop="0dp"
+			    android:paddingLeft="15dp"
+	    		android:paddingRight="20dp"
+			    android:clickable="true"
+			    android:id="@+id/setting_vibration_time"
+			    android:orientation="vertical">
+			    
+			    <TextView 
+			        android:layout_width="fill_parent"
+			    	android:layout_height="wrap_content"
+			    	android:id="@+id/txtTitle"
+			    	android:textAppearance="?android:attr/textAppearanceMedium"
+			    	android:textColor="@color/white"/>"
+			    
+			    <TextView 
+			        android:layout_width="fill_parent"
+			    	android:layout_height="wrap_content"
+			    	android:id="@+id/txtSummary"
+			    	android:textAppearance="?android:attr/textAppearanceSmall"
+			    	android:textColor="@color/ENAiKOON_light_gray"/>
+			    
+			    <TextView
+			        android:id="@+id/seekBarPrefValue"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:layout_marginBottom="7dp"
+			        android:paddingBottom="7dp"
+			        android:paddingRight="30dp"
+			    	android:gravity="right"
+			    	android:singleLine="true"
+			    	android:textColor="@color/ENAiKOON_light_gray"
+			    	android:textAppearance="?android:attr/textAppearanceSmall"
+		    	/>
+			    <SeekBar 
+			        android:id="@+id/seekbar"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:progressDrawable="@drawable/seekbar_background"
+		        	android:thumb="@drawable/slider"
+		        	android:thumbOffset="1dip"
+		        	android:icon="@null"
+		        	android:layout_marginLeft="20dp"
+		        	android:layout_marginRight="15dp"
+			        />
+			</LinearLayout>
+			
+		    <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="" android:background="@drawable/gray_line"/>
+		    
+		    <!-- keyboardVibration -->
+		    <LinearLayout 
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:paddingTop="0dp"
+			    android:paddingLeft="15dp"
+	    		android:paddingRight="20dp"
+			    android:clickable="true"
+			    android:id="@+id/setting_keyboard_vibration"
+			    android:orientation="vertical">
+			    
+			    <TextView 
+			        android:layout_width="fill_parent"
+			    	android:layout_height="wrap_content"
+			    	android:id="@+id/txtTitle"
+			    	android:textAppearance="?android:attr/textAppearanceMedium"
+			    	android:textColor="@color/white"/>"
+			    
+			    <TextView 
+			        android:layout_width="fill_parent"
+			    	android:layout_height="wrap_content"
+			    	android:id="@+id/txtSummary"
+			    	android:textAppearance="?android:attr/textAppearanceSmall"
+			    	android:textColor="@color/ENAiKOON_light_gray"/>
+			    
+			    <TextView
+			        android:id="@+id/seekBarPrefValue"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:layout_marginBottom="7dp"
+			        android:paddingBottom="7dp"
+			        android:paddingRight="30dp"
+			    	android:gravity="right"
+			    	android:singleLine="true"
+			    	android:textColor="@color/ENAiKOON_light_gray"
+			    	android:textAppearance="?android:attr/textAppearanceSmall"
+		    	/>
+			    <SeekBar 
+			        android:id="@+id/seekbar"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:progressDrawable="@drawable/seekbar_background"
+		        	android:thumb="@drawable/slider"
+		        	android:thumbOffset="1dip"
+		        	android:icon="@null"
+		        	android:layout_marginLeft="20dp"
+		        	android:layout_marginRight="15dp"
+			        />
+			</LinearLayout>
+			
+		    <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="" android:background="@drawable/gray_line"/>
+		    
+		    <!-- measurement -->
+		    <LinearLayout 
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:paddingTop="0dp"
+			    android:paddingLeft="15dp"
+	    		android:paddingRight="20dp"
+			    android:clickable="true"
+			    android:id="@+id/setting_measurement"
+			    android:orientation="vertical">
+			    <TextView 
+			        android:layout_width="fill_parent"
+			    	android:layout_height="wrap_content"
+			    	android:id="@+id/txtTitle"
+			    	android:textAppearance="?android:attr/textAppearanceMedium"
+			    	android:textColor="@color/white"/>"
+			    
+			    <TextView 
+			        android:layout_width="fill_parent"
+			    	android:layout_height="wrap_content"
+			    	android:id="@+id/txtSummary"
+			    	android:textAppearance="?android:attr/textAppearanceSmall"
+			    	android:textColor="@color/ENAiKOON_light_gray"/>
+			</LinearLayout>
+			
+		    <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="" android:background="@drawable/gray_line"/>
+		    			
+		    <!-- housenumberDistance -->
+		    <LinearLayout 
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:paddingTop="0dp"
+			    android:paddingLeft="15dp"
+	    		android:paddingRight="20dp"
+			    android:clickable="true"
+			    android:id="@+id/setting_house_number_distance"
+			    android:orientation="vertical">
+			    <TextView 
+			        android:layout_width="fill_parent"
+			    	android:layout_height="wrap_content"
+			    	android:id="@+id/txtTitle"
+			    	android:textAppearance="?android:attr/textAppearanceMedium"
+			    	android:textColor="@color/white"/>"
+			    
+			    <TextView 
+			        android:layout_width="fill_parent"
+			    	android:layout_height="wrap_content"
+			    	android:id="@+id/txtSummary"
+			    	android:textAppearance="?android:attr/textAppearanceSmall"
+			    	android:textColor="@color/ENAiKOON_light_gray"/>
+			    
+			    <TextView
+			        android:id="@+id/seekBarPrefValue"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:layout_marginBottom="7dp"
+			        android:paddingBottom="7dp"
+			        android:paddingRight="30dp"
+			    	android:gravity="right"
+			    	android:singleLine="true"
+			    	android:textColor="@color/ENAiKOON_light_gray"
+			    	android:textAppearance="?android:attr/textAppearanceSmall"
+		    	/>
+			    <SeekBar 
+			        android:id="@+id/seekbar"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:progressDrawable="@drawable/seekbar_background"
+		        	android:thumb="@drawable/slider"
+		        	android:thumbOffset="1dip"
+		        	android:icon="@null"
+		        	android:layout_marginLeft="20dp"
+		        	android:layout_marginRight="15dp"
+			        />
+			</LinearLayout>
+			
+		    <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="" android:background="@drawable/gray_line"/>
+		    		    
+		    <!-- turnoff_updates -->
+		    <LinearLayout 
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:paddingTop="0dp"
+			    android:paddingLeft="15dp"
+	    		android:paddingRight="20dp"
+			    android:clickable="true"
+			    android:id="@+id/setting_turnoff_updates"
+			    android:orientation="horizontal">
+			    <LinearLayout 
+				    android:layout_width="0dp"
+				    android:layout_weight="1"
+				    android:layout_height="wrap_content"
+				    android:orientation="vertical">
+					    <TextView 
+				        android:layout_width="fill_parent"
+				    	android:layout_height="wrap_content"
+				    	android:id="@+id/txtTitle"
+				    	android:textAppearance="?android:attr/textAppearanceMedium"
+				    	android:textColor="@color/white"/>"
+				    
+				    <TextView 
+				        android:layout_width="fill_parent"
+				    	android:layout_height="wrap_content"
+				    	android:id="@+id/txtSummary"
+				    	android:textAppearance="?android:attr/textAppearanceSmall"
+				    	android:textColor="@color/ENAiKOON_light_gray"/>
+				</LinearLayout>
+				
+				<CheckBox 
+					android:id="@+id/btn_checkbox" android:layout_width="wrap_content"
+					android:layout_height="wrap_content" android:focusable="false"
+					android:focusableInTouchMode="false"
+					android:clickable="false" 
+					android:background="@drawable/checkbox"
+					android:button="@null"
+					android:padding="0dp"
+					android:layout_gravity="center"
+					android:gravity="center" 
+					android:lines="1"
+					android:layout_margin="0dp"
+				/>
+			</LinearLayout>
+			
+		    <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="" android:background="@drawable/gray_line"/>
+		    
+		    <!-- wifi_only -->
+		    <LinearLayout 
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:paddingTop="0dp"
+			    android:paddingLeft="15dp"
+	    		android:paddingRight="20dp"
+			    android:clickable="true"
+			    android:id="@+id/setting_wifi_only"
+			    android:orientation="horizontal">
+			    <LinearLayout 
+				    android:layout_width="0dp"
+				    android:layout_weight="1"
+				    android:layout_height="wrap_content"
+				    android:orientation="vertical">
+					<TextView 
+				        android:layout_width="fill_parent"
+				    	android:layout_height="wrap_content"
+				    	android:id="@+id/txtTitle"
+				    	android:textAppearance="?android:attr/textAppearanceMedium"
+				    	android:textColor="@color/white"/>"
+				    
+				    <TextView 
+				        android:layout_width="fill_parent"
+				    	android:layout_height="wrap_content"
+				    	android:id="@+id/txtSummary"
+				    	android:textAppearance="?android:attr/textAppearanceSmall"
+				    	android:textColor="@color/ENAiKOON_light_gray"/>
+				</LinearLayout>
+				
+				<CheckBox 
+					android:id="@+id/btn_checkbox" android:layout_width="wrap_content"
+					android:layout_height="wrap_content" android:focusable="false"
+					android:focusableInTouchMode="false"
+					android:clickable="false" 
+					android:background="@drawable/checkbox"
+					android:button="@null"
+					android:padding="0dp"
+					android:layout_gravity="center"
+					android:gravity="center" 
+					android:lines="1"
+					android:layout_margin="0dp"
+				/>
+			</LinearLayout>
+			
+		    <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="" android:background="@drawable/gray_line"/>
+		    
+		    <!-- wav path -->
+		    <LinearLayout 
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:paddingTop="0dp"
+			    android:paddingLeft="15dp"
+	    		android:paddingRight="20dp"
+			    android:clickable="true"
+			    android:id="@+id/setting_wav_path"
+			    android:orientation="vertical">
+			    <TextView 
+			        android:layout_width="fill_parent"
+			    	android:layout_height="wrap_content"
+			    	android:id="@+id/txtTitle"
+			    	android:textAppearance="?android:attr/textAppearanceMedium"
+			    	android:textColor="@color/white"/>"
+			    
+			    <TextView 
+			        android:layout_width="fill_parent"
+			    	android:layout_height="wrap_content"
+			    	android:id="@+id/txtSummary"
+			    	android:textAppearance="?android:attr/textAppearanceSmall"
+			    	android:textColor="@color/ENAiKOON_light_gray"/>
+			</LinearLayout>
+		    
+		    <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="" android:background="@drawable/gray_line"/>
+		    
+		    <!-- optimize layout -->
+		    <LinearLayout 
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:paddingTop="0dp"
+			    android:paddingLeft="15dp"
+	    		android:paddingRight="20dp"
+			    android:clickable="true"
+			    android:id="@+id/setting_optimize_layout"
+			    android:orientation="horizontal">
+			    <LinearLayout 
+				    android:layout_width="0dp"
+				    android:layout_weight="1"
+				    android:layout_height="wrap_content"
+				    android:orientation="vertical">
+					    <TextView 
+				        android:layout_width="fill_parent"
+				    	android:layout_height="wrap_content"
+				    	android:id="@+id/txtTitle"
+				    	android:textAppearance="?android:attr/textAppearanceMedium"
+				    	android:textColor="@color/white"/>"
+				    
+				    <TextView 
+				        android:layout_width="fill_parent"
+				    	android:layout_height="wrap_content"
+				    	android:id="@+id/txtSummary"
+				    	android:visibility="gone"
+				    	android:textAppearance="?android:attr/textAppearanceSmall"
+				    	android:textColor="@color/ENAiKOON_light_gray"/>
+				</LinearLayout>
+				
+				<CheckBox 
+					android:id="@+id/btn_checkbox" android:layout_width="wrap_content"
+					android:layout_height="wrap_content" android:focusable="false"
+					android:focusableInTouchMode="false"
+					android:clickable="false" 
+					android:background="@drawable/checkbox"
+					android:button="@null"
+					android:padding="0dp"
+					android:layout_gravity="center"
+					android:gravity="center" 
+					android:lines="1"
+					android:layout_margin="0dp"
+				/>
+			</LinearLayout>
+			
+		    <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="" android:background="@drawable/gray_line"/>
+		    		    
+		    <!-- bug_report -->
+		    <LinearLayout 
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:paddingTop="0dp"
+			    android:paddingLeft="15dp"
+	    		android:paddingRight="20dp"
+			    android:clickable="true"
+			    android:id="@+id/setting_bug_report"
+			    android:orientation="vertical">
+			    <TextView 
+			        android:layout_width="fill_parent"
+			    	android:layout_height="wrap_content"
+			    	android:id="@+id/txtTitle"
+			    	android:textAppearance="?android:attr/textAppearanceMedium"
+			    	android:textColor="@color/white"/>"
+			    
+			    <TextView 
+			        android:layout_width="fill_parent"
+			    	android:layout_height="wrap_content"
+			    	android:id="@+id/txtSummary"
+			    	android:textAppearance="?android:attr/textAppearanceSmall"
+			    	android:textColor="@color/ENAiKOON_light_gray"/>
+			</LinearLayout>
+			
+			<TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="" android:background="@drawable/gray_line"/>
+		    
+		    <!-- help -->
+		    <LinearLayout 
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:paddingTop="0dp"
+			    android:paddingLeft="15dp"
+	    		android:paddingRight="20dp"
+			    android:clickable="true"
+			    android:id="@+id/setting_help"
+			    android:orientation="vertical">
+			    <TextView 
+			        android:layout_width="fill_parent"
+			    	android:layout_height="wrap_content"
+			    	android:id="@+id/txtTitle"
+			    	android:textAppearance="?android:attr/textAppearanceMedium"
+			    	android:textColor="@color/white"/>"
+			    
+			    <TextView 
+			        android:layout_width="fill_parent"
+			    	android:layout_height="wrap_content"
+			    	android:id="@+id/txtSummary"
+			    	android:textAppearance="?android:attr/textAppearanceSmall"
+			    	android:textColor="@color/ENAiKOON_light_gray"/>
+			</LinearLayout>
+			
+			<TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="" android:background="@drawable/gray_line"/>
+		    
+		    <!-- about -->
+		    <LinearLayout 
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:paddingTop="0dp"
+			    android:paddingLeft="15dp"
+	    		android:paddingRight="20dp"
+			    android:clickable="true"
+			    android:id="@+id/setting_about"
+			    android:orientation="vertical">
+			    <TextView 
+			        android:layout_width="fill_parent"
+			    	android:layout_height="wrap_content"
+			    	android:id="@+id/txtTitle"
+			    	android:textAppearance="?android:attr/textAppearanceMedium"
+			    	android:textColor="@color/white"/>"
+			    
+			    <TextView 
+			        android:layout_width="fill_parent"
+			    	android:layout_height="wrap_content"
+			    	android:id="@+id/txtSummary"
+			    	android:textAppearance="?android:attr/textAppearanceSmall"
+			    	android:textColor="@color/ENAiKOON_light_gray"/>
+			</LinearLayout>
+			
+		    <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="" android:background="@drawable/gray_line"/>
+		    
+		</LinearLayout>
+	</ScrollView>
+</LinearLayout>

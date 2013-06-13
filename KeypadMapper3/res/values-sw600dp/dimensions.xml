@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <bool name="is_tablet">true</bool>
+    <dimen name="keypad_button_text_size">30sp</dimen>
+    <dimen name="keypad_fadeout_button_text_size">28sp</dimen>
+    <dimen name="keypad_button_text_size_land">28sp</dimen>
+    <dimen name="extended_address_editor_margin">10dp</dimen>
+    
+  	<style name="ExtendedScreenTitle">
+        <item name="android:textSize">26sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/ENAiKOON_orange</item>
+    </style>
+    <style name="ExtendedScreenField">
+        <item name="android:textSize">24sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/ENAiKOON_darkness</item>
+    </style>
+    <dimen name="extended_address_editor_margin_top">5dp</dimen>
+    <dimen name="extended_address_editor_margin_bottom">7dp</dimen>
+    <dimen name="house_note_text_size">26sp</dimen>
+    <dimen name="satellite_view_text_size">30sp</dimen>
+    <dimen name="satellite_info_view_size">115dp</dimen>
+</resources>

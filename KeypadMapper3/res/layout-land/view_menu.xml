@@ -33,39 +33,36 @@
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="15" />
-        <Button
+        <ImageButton
             android:id="@+id/menu_undo"
             android:layout_width="@dimen/menu_icon_size"
             android:layout_height="@dimen/menu_icon_size"
-            android:background="@drawable/icon_undo_grey" />
+            android:background="@android:color/transparent"
+            android:src="@drawable/icon_undo_grey" />
         <View
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="12" />
-        <Button
+            android:layout_weight="15" />
+        <ImageButton
             android:id="@+id/menu_freeze_gps"
             android:layout_width="@dimen/menu_icon_size"
             android:layout_height="@dimen/menu_icon_size"
-            android:background="@drawable/icon_freeze_inactive" />
+            android:background="@android:color/transparent"
+            android:src="@drawable/icon_freeze_inactive" />
         <View
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="12" />
-        <Button
-            android:id="@+id/menu_make_photo"
-            android:layout_width="@dimen/menu_icon_size"
-            android:layout_height="@dimen/menu_icon_size"
-            android:background="@drawable/icon_camera" />
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="12" />
-        <FrameLayout
-            android:id="@+id/menu_gps_accuracy"
-            android:layout_width="@dimen/menu_icon_size"
-            android:layout_height="@dimen/menu_icon_size"
-            android:background="@drawable/icon_gps_precision"
-            android:visibility="gone" >
+            android:layout_weight="15" />
+       <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+            <ImageButton
+                android:id="@+id/menu_gps_accuracy" 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icon_gps_precision"
+                android:background="@android:color/transparent"
+                />
             <TextView
                 android:id="@+id/menu_gps_accureacy_info"
                 android:layout_width="wrap_content"
@@ -73,17 +70,29 @@
                 android:layout_gravity="top|right"
                 android:textColor="#f9be27"
                 android:textSize="10sp" />
-        </FrameLayout>
+        </FrameLayout>    
         <View
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="12"
-            android:visibility="gone" />
-        <Button
-            android:id="@+id/menu_keypad"
+            android:layout_weight="15"
+            />
+        <ImageButton
+            android:id="@+id/menu_make_photo"
             android:layout_width="@dimen/menu_icon_size"
             android:layout_height="@dimen/menu_icon_size"
-            android:background="@drawable/icon_keypad" />
+            android:background="@android:color/transparent"
+            android:src="@drawable/icon_camera" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="15"
+            />
+        <ImageButton
+            android:id="@+id/menu_audio"
+            android:layout_width="@dimen/menu_icon_size"
+            android:layout_height="@dimen/menu_icon_size"
+            android:background="@android:color/transparent"
+            android:src="@drawable/audio" />
     </LinearLayout>
     <ImageView
         android:id="@+id/menu_delimenter"

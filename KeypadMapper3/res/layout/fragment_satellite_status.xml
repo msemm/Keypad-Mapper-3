@@ -17,7 +17,7 @@
             android:gravity="center"
             android:text="@string/satellite_no_gps"
             android:textColor="#f9be27"
-            android:textSize="23sp" />
+            android:textSize="@dimen/satellite_view_text_size" />
         <ImageView
             android:id="@+id/noGpsReceptionImage"
             android:layout_width="87dp"
@@ -31,17 +31,18 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        android:visibility="visible" >
+        android:visibility="visible" 
+        >
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="@dimen/satellite_info_view_size"
             android:paddingBottom="12dp"
             android:paddingLeft="20dp"
             android:paddingRight="20dp"
             android:paddingTop="12dp" >
             <LinearLayout
                 android:layout_width="0dp"
-                android:layout_height="72dp"
+                android:layout_height="wrap_content"
                 android:layout_marginRight="10dp"
                 android:layout_weight="1"
                 android:background="@drawable/button_grey"
@@ -84,7 +85,7 @@
                         android:gravity="center_horizontal"
                         android:text="0"
                         android:textColor="#ffbf27"
-                        android:textSize="30sp" />
+                        android:textSize="@dimen/satellite_view_text_size" />
                     <TextView
                         android:id="@+id/satInUse"
                         android:layout_width="match_parent"
@@ -97,12 +98,12 @@
                         android:shadowRadius="@integer/shadow_size"
                         android:text="0"
                         android:textColor="@android:color/white"
-                        android:textSize="30sp" />
+                        android:textSize="@dimen/satellite_view_text_size" />
                 </LinearLayout>
             </LinearLayout>
             <FrameLayout
                 android:layout_width="0dp"
-                android:layout_height="72dp"
+                android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
                 android:layout_weight="1"
                 android:background="@drawable/button_grey" >
@@ -131,15 +132,15 @@
                         android:shadowRadius="@integer/shadow_size"
                         android:text="@string/satellite_n_a"
                         android:textColor="@android:color/white"
-                        android:textSize="40sp" />
+                        android:textSize="@dimen/satellite_view_text_size" />
                     <TextView
                         android:id="@+id/accuracyValueMeasure"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="2dp"
-                        android:text="@string/prefsMeasurementsEntries_1"
+                        android:text="@string/meters_display_unit"
                         android:textColor="#ffbf27"
-                        android:textSize="40sp" />
+                        android:textSize="@dimen/satellite_view_text_size" />
                 </LinearLayout>
             </FrameLayout>
         </LinearLayout>

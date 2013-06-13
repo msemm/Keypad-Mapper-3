@@ -41,6 +41,8 @@ import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 import de.enaikoon.android.keypadmapper3.settings.KeypadMapperSettings;
+import de.enaikoon.android.keypadmapper3.writers.GpxWriter;
+import de.enaikoon.android.keypadmapper3.writers.OsmWriter;
 import de.enaikoon.android.library.resources.locale.Localizer;
 
 /**
@@ -89,6 +91,15 @@ public class ShareFilesActivity extends ListActivity {
             ZipOutputStream out = new ZipOutputStream(new FileOutputStream(zipFileName));
             out.setLevel(Deflater.DEFAULT_COMPRESSION);
             for (int i = 0; i < selected.length; i++) {
+                // skip empty files
+                if (selected[i].getAbsolutePath().endsWith(".gpx") && selected[i].length() <= GpxWriter.getEmptyFileSize()) {
+                    // skip it
+                    continue;
+                } else if (selected[i].getAbsolutePath().endsWith(".osm") && selected[i].length() <= OsmWriter.getEmptyFileSize()) {
+                    // skip it
+                    continue;
+                }
+                
                 FileInputStream in = new FileInputStream(selected[i]);
                 out.putNextEntry(new ZipEntry(selected[i].getName()));
                 int len;
@@ -109,15 +120,6 @@ public class ShareFilesActivity extends ListActivity {
         }
         return success;
     }
-
-    private FileFilter onlyFilesFilter = new FileFilter() {
-        @Override
-        public boolean accept(File file) {
-            return !file.isDirectory()
-                    && (file.getName().endsWith(".gpx") || file.getName().endsWith(".osm") || file
-                            .getName().endsWith(".jpg"));
-        }
-    };
 
     private ApplicationAdapter adapter = null;
 
@@ -232,8 +234,16 @@ public class ShareFilesActivity extends ListActivity {
         ArrayList<Uri> uris = new ArrayList<Uri>();
         // convert from paths to Android friendly Parcelable Uri's
         File kpmFolder = KeypadMapperApplication.getInstance().getKeypadMapperDirectory();
-        File[] filePaths = kpmFolder.listFiles(onlyFilesFilter);
+        File[] filePaths = kpmFolder.listFiles(KeypadMapperApplication.getInstance().getFileFilter());
         for (File file : filePaths) {
+            if (file.getAbsolutePath().endsWith(".gpx") && file.length() <= GpxWriter.getEmptyFileSize()) {
+                // skip it
+                continue;
+            } else if (file.getAbsolutePath().endsWith(".osm") && file.length() <= OsmWriter.getEmptyFileSize()) {
+                // skip it
+                continue;
+            }
+            
             Uri u = Uri.fromFile(file);
             uris.add(u);
         }
@@ -255,8 +265,8 @@ public class ShareFilesActivity extends ListActivity {
         if (!zipFolder.exists()) {
             zipFolder.mkdir();
         }
-        File[] filePaths = kpmFolder.listFiles(onlyFilesFilter);
-
+        File[] filePaths = kpmFolder.listFiles(KeypadMapperApplication.getInstance().getFileFilter());
+        
         File zipFile =
                 new File(zipFolder.getAbsolutePath() + "/" + System.currentTimeMillis() + ".zip");
 

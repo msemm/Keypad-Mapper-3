@@ -23,6 +23,7 @@ import org.apache.http.params.CoreProtocolPNames;
 import org.apache.http.util.EntityUtils;
 
 import android.content.Context;
+import de.enaikoon.android.keypadmapper3.KeypadMapperApplication;
 import de.enaikoon.android.keypadmapper3.utils.ConnectivityUtils;
 
 /**
@@ -67,15 +68,14 @@ public class Uploader implements Runnable {
 
             String IP = "";
             if (Configurator.isPRODUCTION_VERSION()) {
-                IP = "www.enaikoon.de";
+                IP = KeypadMapperApplication.getInstance().getLocalizer().getString("production_version_opencellid_upload_url");
             } else {
-                IP = "www.enaikoon.de";// "217.70.136.102";
+                IP = KeypadMapperApplication.getInstance().getLocalizer().getString("test_version_opencellid_upload_url");
             }
 
-            HttpPost httppost = new HttpPost("http://" + IP + "/gpsSuiteCellId/measure/uploadCsv");
+            HttpPost httppost = new HttpPost(IP);
 
-            FileLog.writeToLog("Upload request URL: " + "http://" + IP
-                    + "/gpsSuiteCellId/measure/uploadCsv");
+            FileLog.writeToLog("Upload request URL: " + IP);
 
             StringBuilder sb = null;
             NumberFormat format = NumberFormat.getNumberInstance(Locale.US);
@@ -87,7 +87,7 @@ public class Uploader implements Runnable {
                 int count = 0;
                 max = next.getCount();
 
-                FileLog.writeToLog(logTag + ": max=" + max);
+                FileLog.writeToLog(logTag + ": max records to be uploaded =" + max);
 
                 if (max > 0) {
                     while (next.hasNext()) {
@@ -121,7 +121,7 @@ public class Uploader implements Runnable {
                                     + ","
                                     + "TODO: UserID "
                                     + "," // TODO: UserID
-                                    + "Origin: ENAiKOON software"
+                                    + "Origin: KeypadMapper"
                                     + "," // extraInfo
                                     + myDatabase.getFirstMeassurement(meassurement.getCellid(),
                                             meassurement.getLac(), meassurement.getMcc(),
@@ -194,6 +194,8 @@ public class Uploader implements Runnable {
             }
 
             onStatus(max, max);
+            //delete uploaded records
+            myDatabase.eraseUploadedMeasurements();
             success = true;
 
         } catch (Exception ioe) {
