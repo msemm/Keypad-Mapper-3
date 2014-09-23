@@ -1,0 +1,43 @@
+{
+	"data_format": 1,
+	"project": {
+		"name": "Keypad Mapper",
+		"description": "Android app for easily recording house numbers and other address data. The data can then be exported as a .osm file, and uploaded to OSM via the user's preferred editor",
+		"project_url": "https://github.com/msemm/Keypad-Mapper-3",
+		"icon_url": "https://github.com/msemm/Keypad-Mapper-3/master/KeypadMapper3/res/drawable/big_icon.png",
+		"contact_name": "Markus Semm",
+		"contact_email": "marketing@enaikoon.com"
+	},
+	"tags": [
+		{
+			"key": "addr:housenumber",
+			"object_types": ["node"],
+			"description": "Addresses numbers are mapped during a survey (via a keypad)"
+		},
+		{
+			"key": "addr:housename",
+			"object_types": ["node"],
+			"description": "An address's house name is mapped during a survey"
+        {
+        	"key": "addr:street",
+        	"object_types": ["node"],
+        	"description": "An address's street name is mapped during a survey"
+        {
+        	"key": "addr:postcode",
+        	"object_types": ["node"],
+        	"description": "An address's postcode is mapped during a survey"
+        {
+        	"key": "addr:city",
+        	"object_types": ["node"],
+        	"description": "An address's city is mapped during a survey"
+        {
+        	"key": "addr:country",
+        	"object_types": ["node"],
+        	"description": "An address's country is mapped during a survey"
+		{
+			"key": "survey:date",
+			"object_types": ["node"],
+			"description": "A value for this tag is added every time an address node is added via Keypad-Mapper"
+		}
+	]
+}
