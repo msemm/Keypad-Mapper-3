@@ -2,6 +2,7 @@ package de.enaikoon.android.keypadmapper3.writers;
 
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
+import java.io.UnsupportedEncodingException;
 import java.io.RandomAccessFile;
 import java.nio.ByteBuffer;
 import java.util.Calendar;
@@ -85,7 +86,7 @@ public class OsmWriter {
             byte [] buffer = new byte[ bufferSize ];
             
             osmFile = new RandomAccessFile(settings.getLastOsmFile(), "rw");
-            if (osmFile.length() < (OSM_HEADER.getBytes().length + OSM_FOOTER.getBytes().length)) {
+            if (osmFile.length() < (OSM_HEADER.getBytes("UTF-8").length + OSM_FOOTER.getBytes("UTF-8").length)) {
                 Log.e("KeypadMapper", "Cannot undo - no nodes");
                 return;
             }
@@ -155,10 +156,10 @@ public class OsmWriter {
             writeString(OSM_HEADER);
         } else {
             osmFile = new RandomAccessFile(settings.getLastOsmFile(), "rw");
-            Log.d("KeypadMapper", "header + footer len: " + (OSM_HEADER.getBytes().length + OSM_FOOTER.getBytes().length) + " osm len:" + osmFile.length());
+            Log.d("KeypadMapper", "header + footer len: " + (OSM_HEADER.getBytes("UTF-8").length + OSM_FOOTER.getBytes("UTF-8").length) + " osm len:" + osmFile.length());
             if (osmFile.length() > 0) {
-                if (osmFile.length() >= (OSM_HEADER.getBytes().length + OSM_FOOTER.getBytes().length)) {
-                    osmFile.seek(osmFile.length() - OSM_FOOTER.getBytes().length);
+                if (osmFile.length() >= (OSM_HEADER.getBytes("UTF-8").length + OSM_FOOTER.getBytes("UTF-8").length)) {
+                    osmFile.seek(osmFile.length() - OSM_FOOTER.getBytes("UTF-8").length);
                 } else {
                     osmFile.seek(osmFile.length());
                 }
@@ -168,6 +169,10 @@ public class OsmWriter {
     }
     
     public static int getEmptyFileSize() {
-        return OSM_HEADER.getBytes().length + OSM_FOOTER.getBytes().length;
+        try {
+            return OSM_HEADER.getBytes("UTF-8").length + OSM_FOOTER.getBytes("UTF-8").length;
+        } catch (UnsupportedEncodingException e) {
+            throw new RuntimeException(e);
+        }
     }
 }
