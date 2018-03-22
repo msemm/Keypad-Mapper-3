@@ -2,6 +2,7 @@ package de.enaikoon.android.keypadmapper3.writers;
 
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
+import java.io.UnsupportedEncodingException;
 import java.io.RandomAccessFile;
 import java.nio.ByteBuffer;
 import java.util.Calendar;
@@ -50,13 +51,13 @@ public class OsmWriter {
      */
     public void addNode(double lat, double lon, Map<String, String> tags) throws IOException {
         int nodeId = -KeypadMapperApplication.getInstance().getMapper().getHouseNumberCount();
-        
-        osmFile.writeBytes("\t<node id=\"" + nodeId + "\" visible=\"true\" lat=\"" + lat
+
+        writeString("\t<node id=\"" + nodeId + "\" visible=\"true\" lat=\"" + lat
                 + "\" lon=\"" + lon + "\">\n");
         for (Entry<String, String> entry : tags.entrySet()) {
             if (entry.getValue() != null && entry.getValue().length() != 0
                     && !entry.getValue().equalsIgnoreCase("null")) {
-                osmFile.writeBytes("\t\t<tag k=\"" + entry.getKey() + "\" v=\"" + entry.getValue()
+                writeString("\t\t<tag k=\"" + entry.getKey() + "\" v=\"" + entry.getValue()
                         + "\"/>\n");
             }
         }
@@ -64,8 +65,12 @@ public class OsmWriter {
 
     }
 
+    private void writeString(String str) throws IOException {
+        osmFile.write(str.getBytes("UTF-8"));
+    }
+
     public void close() throws IOException {
-        osmFile.writeBytes(OSM_FOOTER);
+        writeString(OSM_FOOTER);
         osmFile.close();
     }
 
@@ -81,7 +86,7 @@ public class OsmWriter {
             byte [] buffer = new byte[ bufferSize ];
             
             osmFile = new RandomAccessFile(settings.getLastOsmFile(), "rw");
-            if (osmFile.length() < (OSM_HEADER.getBytes().length + OSM_FOOTER.getBytes().length)) {
+            if (osmFile.length() < (OSM_HEADER.getBytes("UTF-8").length + OSM_FOOTER.getBytes("UTF-8").length)) {
                 Log.e("KeypadMapper", "Cannot undo - no nodes");
                 return;
             }
@@ -148,13 +153,13 @@ public class OsmWriter {
             settings.setLastOsmFile(newFile);
             osmFile = new RandomAccessFile(newFile, "rw");
             
-            osmFile.writeBytes(OSM_HEADER);
+            writeString(OSM_HEADER);
         } else {
             osmFile = new RandomAccessFile(settings.getLastOsmFile(), "rw");
-            Log.d("KeypadMapper", "header + footer len: " + (OSM_HEADER.getBytes().length + OSM_FOOTER.getBytes().length) + " osm len:" + osmFile.length());
+            Log.d("KeypadMapper", "header + footer len: " + (OSM_HEADER.getBytes("UTF-8").length + OSM_FOOTER.getBytes("UTF-8").length) + " osm len:" + osmFile.length());
             if (osmFile.length() > 0) {
-                if (osmFile.length() >= (OSM_HEADER.getBytes().length + OSM_FOOTER.getBytes().length)) {
-                    osmFile.seek(osmFile.length() - OSM_FOOTER.getBytes().length);
+                if (osmFile.length() >= (OSM_HEADER.getBytes("UTF-8").length + OSM_FOOTER.getBytes("UTF-8").length)) {
+                    osmFile.seek(osmFile.length() - OSM_FOOTER.getBytes("UTF-8").length);
                 } else {
                     osmFile.seek(osmFile.length());
                 }
@@ -164,6 +169,10 @@ public class OsmWriter {
     }
     
     public static int getEmptyFileSize() {
-        return OSM_HEADER.getBytes().length + OSM_FOOTER.getBytes().length;
+        try {
+            return OSM_HEADER.getBytes("UTF-8").length + OSM_FOOTER.getBytes("UTF-8").length;
+        } catch (UnsupportedEncodingException e) {
+            throw new RuntimeException(e);
+        }
     }
 }
